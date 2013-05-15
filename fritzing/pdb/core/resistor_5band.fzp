@@ -45,7 +45,7 @@
                 <layer layerId="copper1" />
                 <layer layerId="keepout" />
                 <layer layerId="soldermask" />
-                <layer layerId="silkscreen" />
+                <layer layerId="silkscreen"/>
                 <layer layerId="outline" />
             </layers>
         </pcbView>

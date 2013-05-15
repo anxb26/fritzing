@@ -28,6 +28,7 @@
         <pcbView>
             <layers image="pcb/gogoboard_4.043282.svg">
                 <layer layerId="copper0"/>
+				<layer layerId="silkscreen"/>
                 <layer layerId="copper1"/>
             </layers>
         </pcbView>

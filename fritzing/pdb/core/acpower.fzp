@@ -40,6 +40,7 @@
   <pcbView>
    <layers image="schematic/acpower.svg" >
     <layer layerId="schematic" />
+	<layer layerId="silkscreen"/>
    </layers>
   </pcbView>
  </views>

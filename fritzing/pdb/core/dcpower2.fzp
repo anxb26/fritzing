@@ -39,6 +39,7 @@
   <pcbView>
    <layers image="schematic/dcpower.svg" >
     <layer layerId="schematic" />
+	<layer layerId="silkscreen"/>
    </layers>
   </pcbView>
  </views>

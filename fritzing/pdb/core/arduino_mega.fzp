@@ -23,6 +23,7 @@
         <pcbView>
             <layers image="pcb/pcb-arduino-mega-fp.svg">
                 <layer layerId="copper0"/>
+								<layer layerId="silkscreen"/>
             <layer layerId="copper1"/></layers>
         </pcbView>
         <schematicView>
@@ -48,6 +49,7 @@
                 </schematicView>
                 <pcbView>
                     <p layer="copper0" svgId="connector71pin"/>
+	
                 <p layer="copper1" svgId="connector71pin"/></pcbView>
             </views>
         </connector>

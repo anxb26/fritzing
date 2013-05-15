@@ -33,6 +33,7 @@
         <pcbView>
             <layers image="pcb/Arduino_LilyPad4b5.svg">
                 <layer layerId="copper0"/>
+				<layer layerId="silkscreen"/>
                 <layer layerId="copper1"/>
             </layers>
         </pcbView>

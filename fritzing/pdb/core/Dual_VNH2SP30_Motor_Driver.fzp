@@ -17,7 +17,12 @@
         <property name="family">Motor Driver</property>
         <property name="part number">MD03A</property>
     </properties>
-    <description>The Pololu dual high-power motor driver carrier for the VNH2SP30 motor driver integrated circuits from ST.
+    <description>The Pololu dual high-power motor driver carrier for the VNH2SP30 motor driver integrated circuits from ST.
+
+
+
+
+
 http://www.pololu.com/catalog/product/708</description>
     <views>
         <iconView>
@@ -38,6 +43,7 @@ http://www.pololu.com/catalog/product/708</description>
         <pcbView>
             <layers image="pcb/Dual_VNH2SP30_Motor_Driver_pcb.svg">
                 <layer layerId="copper0"/>
+				<layer layerId="silkscreen"/>
                 <layer layerId="copper1"/>
             </layers>
         </pcbView>
@@ -299,7 +305,14 @@ http://www.pololu.com/catalog/product/708</description>
             </views>
         </connector>
         <connector id="connector146" type="female" name="OUT 1A">
-            <description>Power connections to the motor 1.
+            <description>Power connections to the motor 1.
+
+
+
+
+
+
+
 Source of High-Side Switch A / Drain of Low-Side Switch A</description>
             <views>
                 <breadboardView>
@@ -315,7 +328,14 @@ Source of High-Side Switch A / Drain of Low-Side Switch A</description>
             </views>
         </connector>
         <connector id="connector147" type="female" name="OUT 1B">
-            <description>Power connections to the motor 1.
+            <description>Power connections to the motor 1.
+
+
+
+
+
+
+
 Source of High-Side Switch B / Drain of Low-Side Switch B</description>
             <views>
                 <breadboardView>
@@ -331,7 +351,14 @@ Source of High-Side Switch B / Drain of Low-Side Switch B</description>
             </views>
         </connector>
         <connector id="connector148" type="female" name="OUT 2A">
-            <description>Power connections to the motor 2.
+            <description>Power connections to the motor 2.
+
+
+
+
+
+
+
 Source of High-Side Switch A / Drain of Low-Side Switch A</description>
             <views>
                 <breadboardView>
@@ -347,7 +374,14 @@ Source of High-Side Switch A / Drain of Low-Side Switch A</description>
             </views>
         </connector>
         <connector id="connector149" type="female" name="OUT 2B">
-            <description>Power connections to the motor 1.
+            <description>Power connections to the motor 1.
+
+
+
+
+
+
+
 Source of High-Side Switch B / Drain of Low-Side Switch B</description>
             <views>
                 <breadboardView>

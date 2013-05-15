@@ -27,7 +27,16 @@
         <property name="part number">Wiring S</property>
         <property name="variant">S</property>
     </properties>
-    <description>An open source hardware platform based on the Atmel ATmega644P(A) microcontroller.  Programmable and powered via USB.  Can also be powered by external power supply.
+    <description>An open source hardware platform based on the Atmel ATmega644P(A) microcontroller.  Programmable and powered via USB.  Can also be powered by external power supply.
+
+
+
+
+
+
+
+
+
 http://wiring.org.co/</description>
     <views>
         <iconView>
@@ -48,6 +57,7 @@ http://wiring.org.co/</description>
         <pcbView>
             <layers image="pcb/Wiring_Sa99.svg">
                 <layer layerId="copper0"/>
+				<layer layerId="silkscreen"/>
                 <layer layerId="copper1"/>
             </layers>
         </pcbView>

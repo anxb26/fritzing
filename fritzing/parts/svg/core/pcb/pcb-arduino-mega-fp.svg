@@ -1,87 +1,93 @@
-<?xml version="1.0" encoding="UTF-8"?><!-- Created with Inkscape (http://www.inkscape.org/) --><svg height="1.969in" id="svg2" version="1.2" viewBox="0 0 2942 1969" width="2.9419999in" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
-  <defs id="defs34"/>
-  <g id="copper1"><g id="copper0">
-    <circle cx="34.5" cy="34.5" id="connector0pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="134.5" cy="34.5" id="connector1pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="234.5" cy="34.5" id="connector2pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="334.5" cy="34.5" id="connector3pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="434.5" cy="34.5" id="connector4pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="534.5" cy="34.5" id="connector5pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="634.5" cy="34.5" id="connector6pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="734.5" cy="34.5" id="connector7pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="904.5" cy="34.5" id="connector8pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="1004.5" cy="34.5" id="connector9pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="1104.5" cy="34.5" id="connector10pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="1204.5" cy="34.5" id="connector11pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="1304.5" cy="34.5" id="connector12pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="1404.5" cy="34.5" id="connector13pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="1504.5" cy="34.5" id="connector14pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="1604.5" cy="34.5" id="connector15pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="404.5" cy="1934.5" id="connector16pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="504.5" cy="1934.5" id="connector17pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="604.5" cy="1934.5" id="connector18pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="704.5" cy="1934.5" id="connector19pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="804.5" cy="1934.5" id="connector20pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="904.5" cy="1934.5" id="connector21pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="1104.5" cy="1934.5" id="connector22pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="1204.5" cy="1934.5" id="connector23pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="1304.5" cy="1934.5" id="connector24pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="1404.5" cy="1934.5" id="connector25pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="1504.5" cy="1934.5" id="connector26pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="1604.5" cy="1934.5" id="connector27pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="1804.5" cy="34.5" id="connector28pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="1904.5" cy="34.5" id="connector29pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2004.5" cy="34.5" id="connector30pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2104.5" cy="34.5" id="connector31pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2204.5" cy="34.5" id="connector32pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2304.5" cy="34.5" id="connector33pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2404.5" cy="34.5" id="connector34pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2504.5" cy="34.5" id="connector35pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="1704.5" cy="1934.5" id="connector70pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="1804.5" cy="1934.5" id="connector71pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2004.5" cy="1934.5" id="connector72pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2104.5" cy="1934.5" id="connector73pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2204.5" cy="1934.5" id="connector74pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2304.5" cy="1934.5" id="connector75pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2404.5" cy="1934.5" id="connector76pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2504.5" cy="1934.5" id="connector77pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2604.5" cy="1934.5" id="connector78pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2704.5" cy="1934.5" id="connector79pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2804.5" cy="34.5" id="connector80pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2904.5" cy="34.5" id="connector81pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2804.5" cy="134.5" id="connector36pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2904.5" cy="134.5" id="connector37pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2804.5" cy="234.5" id="connector38pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2904.5" cy="234.5" id="connector39pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2804.5" cy="334.5" id="connector40pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2904.5" cy="334.5" id="connector41pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2804.5" cy="434.5" id="connector42pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2904.5" cy="434.5" id="connector43pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2804.5" cy="534.5" id="connector44pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2904.5" cy="534.5" id="connector45pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2804.5" cy="634.5" id="connector46pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2904.5" cy="634.5" id="connector47pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2804.5" cy="734.5" id="connector48pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2904.5" cy="734.5" id="connector49pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2804.5" cy="834.5" id="connector50pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2904.5" cy="834.5" id="connector51pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2804.5" cy="934.5" id="connector52pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2904.5" cy="934.5" id="connector53pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2804.5" cy="1034.5" id="connector54pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2904.5" cy="1034.5" id="connector55pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2804.5" cy="1134.5" id="connector56pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2904.5" cy="1134.5" id="connector57pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2804.5" cy="1234.5" id="connector58pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2904.5" cy="1234.5" id="connector59pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2804.5" cy="1334.5" id="connector60pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2904.5" cy="1334.5" id="connector61pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2804.5" cy="1434.5" id="connector62pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2904.5" cy="1434.5" id="connector63pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2804.5" cy="1534.5" id="connector64pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2904.5" cy="1534.5" id="connector65pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2804.5" cy="1634.5" id="connector66pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2904.5" cy="1634.5" id="connector67pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2804.5" cy="1734.5" id="connector68pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-    <circle cx="2904.5" cy="1734.5" id="connector69pin" r="27.5" style="fill:none;stroke:#ffbf00;stroke-width:20"/>
-  </g></g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="svg2" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="211.824px"
+	 height="141.768px" viewBox="0 0 211.824 141.768" enable-background="new 0 0 211.824 141.768" xml:space="preserve">
+<g id="copper1">
+	<g id="copper0">
+		<circle id="connector0pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="2.484" cy="2.484" r="1.98"/>
+		<circle id="connector1pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="9.684" cy="2.484" r="1.98"/>
+		<circle id="connector2pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="16.884" cy="2.484" r="1.98"/>
+		<circle id="connector3pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="24.084" cy="2.484" r="1.98"/>
+		<circle id="connector4pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="31.284" cy="2.484" r="1.98"/>
+		<circle id="connector5pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="38.484" cy="2.484" r="1.98"/>
+		<circle id="connector6pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="45.684" cy="2.484" r="1.98"/>
+		<circle id="connector7pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="52.884" cy="2.484" r="1.98"/>
+		<circle id="connector8pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="65.124" cy="2.484" r="1.98"/>
+		<circle id="connector9pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="72.324" cy="2.484" r="1.98"/>
+		<circle id="connector10pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="79.524" cy="2.484" r="1.98"/>
+		<circle id="connector11pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="86.724" cy="2.484" r="1.98"/>
+		<circle id="connector12pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="93.924" cy="2.484" r="1.98"/>
+		<circle id="connector13pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="101.124" cy="2.484" r="1.98"/>
+		<circle id="connector14pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="108.324" cy="2.484" r="1.98"/>
+		<circle id="connector15pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="115.523" cy="2.484" r="1.98"/>
+		<circle id="connector16pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="29.124" cy="139.284" r="1.98"/>
+		<circle id="connector17pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="36.324" cy="139.284" r="1.98"/>
+		<circle id="connector18pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="43.524" cy="139.284" r="1.98"/>
+		<circle id="connector19pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="50.724" cy="139.284" r="1.98"/>
+		<circle id="connector20pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="57.924" cy="139.284" r="1.98"/>
+		<circle id="connector21pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="65.124" cy="139.284" r="1.98"/>
+		<circle id="connector22pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="79.524" cy="139.284" r="1.98"/>
+		<circle id="connector23pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="86.724" cy="139.284" r="1.98"/>
+		<circle id="connector24pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="93.924" cy="139.284" r="1.98"/>
+		<circle id="connector25pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="101.124" cy="139.284" r="1.98"/>
+		<circle id="connector26pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="108.324" cy="139.284" r="1.98"/>
+		<circle id="connector27pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="115.523" cy="139.284" r="1.98"/>
+		<circle id="connector28pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="129.924" cy="2.484" r="1.98"/>
+		<circle id="connector29pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="137.124" cy="2.484" r="1.98"/>
+		<circle id="connector30pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="144.324" cy="2.484" r="1.98"/>
+		<circle id="connector31pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="151.523" cy="2.484" r="1.98"/>
+		<circle id="connector32pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="158.725" cy="2.484" r="1.98"/>
+		<circle id="connector33pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="165.924" cy="2.484" r="1.98"/>
+		<circle id="connector34pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="173.124" cy="2.484" r="1.98"/>
+		<circle id="connector35pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="180.324" cy="2.484" r="1.98"/>
+		<circle id="connector70pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="122.725" cy="139.284" r="1.98"/>
+		<circle id="connector71pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="129.924" cy="139.284" r="1.98"/>
+		<circle id="connector72pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="144.324" cy="139.284" r="1.98"/>
+		<circle id="connector73pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="151.523" cy="139.284" r="1.98"/>
+		<circle id="connector74pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="158.725" cy="139.284" r="1.98"/>
+		<circle id="connector75pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="165.924" cy="139.284" r="1.98"/>
+		<circle id="connector76pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="173.124" cy="139.284" r="1.98"/>
+		<circle id="connector77pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="180.324" cy="139.284" r="1.98"/>
+		<circle id="connector78pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="187.523" cy="139.284" r="1.98"/>
+		<circle id="connector79pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="194.725" cy="139.284" r="1.98"/>
+		<circle id="connector80pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="201.924" cy="2.484" r="1.98"/>
+		<circle id="connector81pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="209.124" cy="2.484" r="1.98"/>
+		<circle id="connector36pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="201.924" cy="9.684" r="1.98"/>
+		<circle id="connector37pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="209.124" cy="9.684" r="1.98"/>
+		<circle id="connector38pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="201.924" cy="16.884" r="1.98"/>
+		<circle id="connector39pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="209.124" cy="16.884" r="1.98"/>
+		<circle id="connector40pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="201.924" cy="24.084" r="1.98"/>
+		<circle id="connector41pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="209.124" cy="24.084" r="1.98"/>
+		<circle id="connector42pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="201.924" cy="31.284" r="1.98"/>
+		<circle id="connector43pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="209.124" cy="31.284" r="1.98"/>
+		<circle id="connector44pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="201.924" cy="38.484" r="1.98"/>
+		<circle id="connector45pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="209.124" cy="38.484" r="1.98"/>
+		<circle id="connector46pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="201.924" cy="45.684" r="1.98"/>
+		<circle id="connector47pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="209.124" cy="45.684" r="1.98"/>
+		<circle id="connector48pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="201.924" cy="52.884" r="1.98"/>
+		<circle id="connector49pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="209.124" cy="52.884" r="1.98"/>
+		<circle id="connector50pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="201.924" cy="60.084" r="1.98"/>
+		<circle id="connector51pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="209.124" cy="60.084" r="1.98"/>
+		<circle id="connector52pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="201.924" cy="67.284" r="1.98"/>
+		<circle id="connector53pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="209.124" cy="67.284" r="1.98"/>
+		<circle id="connector54pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="201.924" cy="74.484" r="1.98"/>
+		<circle id="connector55pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="209.124" cy="74.484" r="1.98"/>
+		<circle id="connector56pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="201.924" cy="81.684" r="1.98"/>
+		<circle id="connector57pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="209.124" cy="81.684" r="1.98"/>
+		<circle id="connector58pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="201.924" cy="88.884" r="1.98"/>
+		<circle id="connector59pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="209.124" cy="88.884" r="1.98"/>
+		<circle id="connector60pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="201.924" cy="96.084" r="1.98"/>
+		<circle id="connector61pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="209.124" cy="96.084" r="1.98"/>
+		<circle id="connector62pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="201.924" cy="103.284" r="1.98"/>
+		<circle id="connector63pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="209.124" cy="103.284" r="1.98"/>
+		<circle id="connector64pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="201.924" cy="110.484" r="1.98"/>
+		<circle id="connector65pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="209.124" cy="110.484" r="1.98"/>
+		<circle id="connector66pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="201.924" cy="117.684" r="1.98"/>
+		<circle id="connector67pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="209.124" cy="117.684" r="1.98"/>
+		<circle id="connector68pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="201.924" cy="124.884" r="1.98"/>
+		<circle id="connector69pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="209.124" cy="124.884" r="1.98"/>
+	</g>
+</g>
 </svg>

@@ -31,7 +31,9 @@
         <pcbView>
             <layers image="pcb/pcb-arduino-uno-R3-fp.svg">
                 <layer layerId="copper0"/>
-            <layer layerId="copper1"/></layers>
+				<layer layerId="silkscreen"/>
+            <layer layerId="copper1"/>
+			</layers>
         </pcbView>
         <breadboardView>
             <layers image="breadboard/controller_arduino_uno_r3.svg">
