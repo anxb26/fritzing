@@ -213,7 +213,7 @@
                 </iconView>
             </views>
         </instance>
-       <instance moduleIdRef="ad901601e6d29266846fc9e4568504b6" modelIndex="21" path="parts/core/Barometric Pressure Sensor.fzp">
+       <instance moduleIdRef="BarometricPressureSensor" modelIndex="21" path="parts/core/Barometric Pressure Sensor.fzp">
             <views>
                 <iconView layer="icon">
                     <geometry z="-1" x="-1" y="-1"/>
@@ -319,7 +319,7 @@
                 </iconView>
             </views>
         </instance>
-        <instance moduleIdRef="8abf6496b5d466c7a1893c17a296a676" modelIndex="25" path="parts/core/piezo sensor.fzp">
+        <instance moduleIdRef="piezo-sensor" modelIndex="25" path="parts/core/piezo-sensor.fzp">
             <views>
                 <iconView layer="icon">
                     <geometry z="-1" x="-1" y="-1"/>
@@ -604,7 +604,7 @@
                 </iconView>
             </views>
         </instance>
-       <instance moduleIdRef="fuse_with_handler_cff5" modelIndex="41" path="parts/core/Fuse_with_Handler.fzp">
+       <instance moduleIdRef="SparkFun-Passives-FUSE-X20MM" modelIndex="41" path="parts/core/SparkFun-Passives-FUSE-X20MM.fzp">
             <views>
                 <iconView layer="icon">
                     <geometry z="-1" x="-1" y="-1"/>
