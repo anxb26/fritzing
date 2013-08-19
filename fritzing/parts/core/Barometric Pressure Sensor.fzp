@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><module fritzingVersion="0.4.1b.07.17.4356" moduleId="BarometricPressureSensor">
+<<<<<<< HEAD
     <author>f.althaus</author>
+=======
+    <author>tigoe</author>
+>>>>>>> 419ed6dc720b9316d0c79f0b0fa3c138de3230d5
     <title>Barometric Pressure Sensor</title>
     <label>U</label>
     <date>2010-08-03</date>
