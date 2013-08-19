@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" width="80.54px" height="68.14px" viewBox="0 0 80.54 68.14" xml:space="preserve">
+<g id="silkscreen">
+	<line fill="none" stroke="#FFFFFF" stroke-width="0.9" x1="33.041" y1="67.139" x2="47.441" y2="67.139"/>
+	<line fill="none" stroke="#FFFFFF" stroke-width="0.9" x1="47.441" y1="67.139" x2="47.441" y2="56.64"/>
+	<line fill="none" stroke="#FFFFFF" stroke-width="0.9" x1="33.041" y1="56.64" x2="33.041" y2="67.139"/>
+	<line fill="none" stroke="#FFFFFF" stroke-width="0.5" x1="35.561" y1="67.139" x2="33.041" y2="64.619"/>
+	<path fill="none" stroke="#FFFFFF" stroke-width="0.9" stroke-miterlimit="10" d="M75.802,23.987
+		c-1.298-0.326-5.609-1.416-8.222-2.076C64.318,9.865,53.317,1.003,40.24,1.003S16.162,9.866,12.901,21.912l-8.221,2.076
+		c-1.775,0.422-3.68,2.788-3.68,5.343s1.777,4.86,3.68,5.343c1.298,0.327,5.608,1.416,8.221,2.076
+		c3.261,12.046,14.262,20.909,27.339,20.909c13.079,0,24.081-8.865,27.341-20.912l8.221-2.076c1.774-0.423,3.681-2.788,3.681-5.343
+		C79.481,26.774,77.705,24.467,75.802,23.987z M6.488,31.383c-1.135,0-2.054-0.92-2.054-2.053c0-1.135,0.919-2.055,2.054-2.055
+		c1.134,0,2.053,0.92,2.053,2.055S7.622,31.383,6.488,31.383z M73.994,31.385c-1.133,0-2.054-0.92-2.054-2.054
+		s0.921-2.054,2.054-2.054c1.135,0,2.055,0.92,2.055,2.054S75.129,31.385,73.994,31.385z"/>
+</g>
+<g id="copper1">
+	<g id="copper0">
+		<rect id="square" x="34.553" y="61.451" fill="none" stroke="#FFBF00" width="4.176" height="4.176"/>
+		<circle id="connector0pin" fill="none" stroke="#FFBF00" cx="36.641" cy="63.539" r="2.088"/>
+		<circle id="connector1pin" fill="none" stroke="#FFBF00" cx="43.841" cy="63.539" r="2.088"/>
+	</g>
+</g>
+</svg>
