@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.418px"
+	 height="20.418px" viewBox="0 0 20.418 20.418" xml:space="preserve">
+<g id="copper1">
+	<circle id="connector0pad" fill="none" stroke="#F7BD13" stroke-width="0.416" cx="5.543" cy="9.926" r="2.291"/>
+	<path fill="#F7BD13" d="M2.663,7.046h5.76v5.76h-5.76V7.046z M3.843,9.926c-0.001,0.939,0.761,1.701,1.7,1.701
+		c0.938,0,1.7-0.761,1.701-1.7V9.926c0-0.939-0.762-1.701-1.701-1.701S3.843,8.987,3.843,9.926z"/>
+	<circle id="connector1pad" fill="none" stroke="#F7BD13" stroke-width="0.416" cx="15.465" cy="9.926" r="2.291"/>
+	<g id="copper0">
+		<circle id="connector0pad_1_" fill="none" stroke="#F7BD13" stroke-width="0.416" cx="5.543" cy="9.926" r="2.291"/>
+		<path fill="#F7BD13" d="M2.663,7.046h5.76v5.76h-5.76V7.046z M3.843,9.926c-0.001,0.939,0.761,1.701,1.7,1.701
+			c0.938,0,1.7-0.761,1.701-1.7V9.926c0-0.939-0.762-1.701-1.701-1.701S3.843,8.987,3.843,9.926z"/>
+		<circle id="connector1pad_1_" fill="none" stroke="#F7BD13" stroke-width="0.416" cx="15.465" cy="9.926" r="2.291"/>
+	</g>
+</g>
+<g id="silkscreen">
+	<line fill="none" stroke="#F0F0F0" stroke-width="0.2032" stroke-linecap="round" x1="0.288" y1="0.288" x2="20.13" y2="0.288"/>
+	<line fill="none" stroke="#F0F0F0" stroke-width="0.2032" stroke-linecap="round" x1="20.13" y1="0.288" x2="20.13" y2="17.296"/>
+	<line fill="none" stroke="#F0F0F0" stroke-width="0.2032" stroke-linecap="round" x1="20.13" y1="17.296" x2="20.13" y2="19.564"/>
+	<line fill="none" stroke="#F0F0F0" stroke-width="0.2032" stroke-linecap="round" x1="20.13" y1="19.564" x2="0.288" y2="19.564"/>
+	<line fill="none" stroke="#F0F0F0" stroke-width="0.2032" stroke-linecap="round" x1="0.288" y1="19.564" x2="0.288" y2="17.296"/>
+	<line fill="none" stroke="#F0F0F0" stroke-width="0.2032" stroke-linecap="round" x1="0.288" y1="17.296" x2="0.288" y2="0.288"/>
+	<line fill="none" stroke="#F0F0F0" stroke-width="0.2032" stroke-linecap="round" x1="20.13" y1="17.296" x2="0.288" y2="17.296"/>
+</g>
+</svg>
