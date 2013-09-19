@@ -21,7 +21,7 @@ Atmega 16U2 replace the 8U2.&#xd;&#xd;
  </tags>
  <properties>
   <property name="family">microcontroller board (arduino)</property>
-  <property name="part number"/>
+  <property name="part number"></property>
   <property name="type">Arduino UNO (Rev3)</property>
  </properties>
  <views>

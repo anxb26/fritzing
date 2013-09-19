@@ -12,13 +12,8 @@
  </tags>
  <properties>
   <property name="family">microcontroller board (arduino)</property>
-  <property name="variant">Garagino Rev 1</property>
+  <property name="type">Garagino (Rev 1)</property>
   <property name="package">DIP (Dual Inline) [THT]</property>
-  <property name="hole size"></property>
-  <property name="License">CC BY NC SA</property>
-  <property name="editable pin labels">false</property>
-  <property name="chip label">Garagino</property>
-  <property name="part number"></property>
   <property name="pin spacing">250mil</property>
   <property name="pins">28</property>
  </properties>

@@ -5,10 +5,10 @@
     <date>2010-01-12</date>
     <tags/>
     <properties>
-        <property name="family">Microcontroller Board (Arduino)</property>
+        <property name="family">microcontroller board (arduino)</property>
+        <property name="type">Modified pico</property>
         <property name="processor">ATmega</property>
-        <property name="variant">Modified pico</property>
-    </properties>
+</properties>
     <description>Arduino compatible microcontroller. http://www.modifiedelectronics.com</description>
     <views>
         <iconView>

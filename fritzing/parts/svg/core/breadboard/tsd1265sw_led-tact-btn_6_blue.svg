@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Drawn by: Mattia Cuttini http://mattiac.deviantart.com in the crew of Agenzia Zero.net http://www.agenziazero.net  -->
-<!-- Coded by: Carlos Hansen from http://tlaana.com -->
-<svg xmlns="http://www.w3.org/2000/svg" width="0.590542in" xml:space="preserve" xmlns:xml="http://www.w3.org/XML/1998/namespace" x="0px" version="1.2" y="0px" height="0.551889in" viewBox="0 0 42.519 39.736" baseProfile="tiny" id="LED_Tactile_Button">
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="LED_Tactile_Button" xmlns:xml="http://www.w3.org/XML/1998/namespace"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="42.52px"
+	 height="39.736px" viewBox="0 0 42.52 39.736" enable-background="new 0 0 42.52 39.736" xml:space="preserve">
 <g id="breadboard">
 	<circle id="connector5pin" cx="39.685" cy="20.115" r="1.417"/>
 	<circle id="connector5leg" fill="#8C8C8C" cx="39.685" cy="20.115" r="1.048"/>
@@ -31,18 +33,15 @@
 	<path fill="#B2B2B2" d="M8.882,8.07l0.862,0.372c0.03-0.07,0.084-0.119,0.161-0.135L9.739,7.411
 		C9.355,7.483,9.032,7.723,8.882,8.07z"/>
 	<circle cx="32.598" cy="8.506" r="1.417"/>
-	<path fill="#B2B2B2" d="M31.559,8.07l0.861,0.372c0.031-0.07,0.084-0.119,0.162-0.135l-0.167-0.896
+	<path fill="#B2B2B2" d="M31.559,8.07l0.86,0.372c0.031-0.07,0.084-0.119,0.162-0.135l-0.167-0.896
 		C32.033,7.483,31.709,7.723,31.559,8.07z"/>
 	<circle cx="9.921" cy="31.183" r="1.417"/>
 	<path fill="#B2B2B2" d="M8.882,30.748l0.862,0.371c0.03-0.07,0.084-0.119,0.161-0.135l-0.167-0.896
 		C9.355,30.16,9.032,30.399,8.882,30.748z"/>
 	<circle cx="32.598" cy="31.183" r="1.417"/>
-	<path fill="#B2B2B2" d="M31.559,30.748l0.861,0.371c0.031-0.07,0.084-0.119,0.162-0.135l-0.167-0.896
+	<path fill="#B2B2B2" d="M31.559,30.748l0.86,0.371c0.031-0.07,0.084-0.119,0.162-0.135l-0.167-0.896
 		C32.033,30.16,31.709,30.399,31.559,30.748z"/>
 	<circle fill="#E5E5E5" cx="21.355" cy="19.892" r="9.921"/>
-	<circle fill="#FFFFFF" cx="21.355" cy="19.893" r="9.212"/>
-	<path id="_x3C_Trazado_x3E__1_" fill="#FFFF64" d="M21.355,14.989c-2.708,0-4.902,2.195-4.902,4.903s2.193,4.902,4.902,4.902
-		s4.903-2.194,4.903-4.902S24.063,14.989,21.355,14.989z M21.355,24.015c-2.276,0-4.123-1.847-4.123-4.123
-		c0-2.277,1.846-4.123,4.123-4.123c2.278,0,4.123,1.846,4.123,4.123C25.478,22.169,23.633,24.015,21.355,24.015z"/>
+	<circle fill="#2A2AF4" cx="21.355" cy="19.893" r="9.212"/>
 </g>
 </svg>
