@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.2"
+   width="298.98163"
+   height="157.04865"
+   viewBox="0 0 3322.0181 1744.9849"
+   id="svg3543">
+  <desc
+     id="desc3545">Fritzing footprint SVG</desc>
+  <metadata
+     id="metadata3576">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3574" />
+  <g
+     transform="matrix(1.0512715,0,0,1.2228346,5.2563575,6.1141374)"
+     id="silkscreen">
+    <rect
+       width="3150"
+       height="1417"
+       x="0"
+       y="0"
+       id="rect3548"
+       style="fill:none;stroke:#ffffff;stroke-width:10" />
+    <rect
+       width="1600"
+       height="100"
+       x="270"
+       y="50"
+       id="rect3550"
+       style="fill:none;stroke:#ffffff;stroke-width:10" />
+  </g>
+  <g
+     transform="translate(80.913387,1543.2723)"
+     id="copper1">
+    <g
+       id="copper0">
+      <rect
+         width="55"
+         height="55"
+         x="287"
+         y="72"
+         id="rect3554"
+         style="fill:none;stroke:#ffbf00;stroke-width:20" />
+      <circle
+         cx="315"
+         cy="100"
+         r="27.5"
+         id="connector0pin"
+         style="fill:none;stroke:#ffbf00;stroke-width:20" />
+      <circle
+         cx="415"
+         cy="100"
+         r="27.5"
+         id="connector1pin"
+         style="fill:none;stroke:#ffbf00;stroke-width:20" />
+      <circle
+         cx="515"
+         cy="100"
+         r="27.5"
+         id="connector2pin"
+         style="fill:none;stroke:#ffbf00;stroke-width:20" />
+      <circle
+         cx="615"
+         cy="100"
+         r="27.5"
+         id="connector3pin"
+         style="fill:none;stroke:#ffbf00;stroke-width:20" />
+      <circle
+         cx="715"
+         cy="100"
+         r="27.5"
+         id="connector4pin"
+         style="fill:none;stroke:#ffbf00;stroke-width:20" />
+      <circle
+         cx="815"
+         cy="100"
+         r="27.5"
+         id="connector5pin"
+         style="fill:none;stroke:#ffbf00;stroke-width:20" />
+      <circle
+         cx="915"
+         cy="100"
+         r="27.5"
+         id="connector6pin"
+         style="fill:none;stroke:#ffbf00;stroke-width:20" />
+      <circle
+         cx="1015"
+         cy="100"
+         r="27.5"
+         id="connector7pin"
+         style="fill:none;stroke:#ffbf00;stroke-width:20" />
+      <circle
+         cx="1115"
+         cy="100"
+         r="27.5"
+         id="connector8pin"
+         style="fill:none;stroke:#ffbf00;stroke-width:20" />
+      <circle
+         cx="1215"
+         cy="100"
+         r="27.5"
+         id="connector9pin"
+         style="fill:none;stroke:#ffbf00;stroke-width:20" />
+      <circle
+         cx="1315"
+         cy="100"
+         r="27.5"
+         id="connector10pin"
+         style="fill:none;stroke:#ffbf00;stroke-width:20" />
+      <circle
+         cx="1415"
+         cy="100"
+         r="27.5"
+         id="connector11pin"
+         style="fill:none;stroke:#ffbf00;stroke-width:20" />
+      <circle
+         cx="1515"
+         cy="100"
+         r="27.5"
+         id="connector12pin"
+         style="fill:none;stroke:#ffbf00;stroke-width:20" />
+      <circle
+         cx="1615"
+         cy="100"
+         r="27.5"
+         id="connector13pin"
+         style="fill:none;stroke:#ffbf00;stroke-width:20" />
+      <circle
+         cx="1715"
+         cy="100"
+         r="27.5"
+         id="connector14pin"
+         style="fill:none;stroke:#ffbf00;stroke-width:20" />
+      <circle
+         cx="1815"
+         cy="100"
+         r="27.5"
+         id="connector15pin"
+         style="fill:none;stroke:#ffbf00;stroke-width:20" />
+    </g>
+  </g>
+</svg>

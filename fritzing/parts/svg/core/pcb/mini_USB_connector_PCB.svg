@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<svg xmlns="http://www.w3.org/2000/svg"  width="41.811024" version="1.2" height="37.913383" viewBox="0 0 46456.696 42125.98" id="0">
+ <desc   id="0.0" oldid="0.0">
+  <referenceFile   id="0.0.0" oldid="0.0.0">mini_USB_connector_PCB.svg</referenceFile>
+ </desc>
+ <metadata   id="0.1" oldid="0.1">
+  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  id="0.1.0" oldid="0.1.0">
+   <cc:Work xmlns:cc="http://creativecommons.org/ns#"  rdf:about="" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" id="0.1.0.0" oldid="0.1.0.0">
+    <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/"  id="0.1.0.0.0" oldid="0.1.0.0.0">image/svg+xml</dc:format>
+    <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/"  id="0.1.0.0.1" oldid="0.1.0.0.1" rdf:resource="http://purl.org/dc/dcmitype/StillImage" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"  id="0.1.0.0.2" oldid="0.1.0.0.2"/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs   id="0.2" oldid="0.2"/>
+ <desc   id="0.3" oldid="0.3">Fritzing footprint SVG</desc>
+ <g   id="0.4" transform="translate(0,-23874.018)">
+  <g   id="keepout"/>
+ </g>
+ <g   id="0.5" transform="translate(0,-23874.018)">
+  <g   id="soldermask"/>
+ </g>
+ <g   id="0.6" transform="translate(0,-23874.018)">
+  <g   id="outline"/>
+ </g>
+ <g   id="copper1">
+  <rect  width="6588.9854" x="2217.3188" y="24658.26" stroke-opacity="1" fill="#ffbf00"  height="8557.4893" stroke="#ffbf00" style="stroke-miterlimit:4;stroke-dasharray:none" fill-opacity="1" id="connector8pin" stroke-width="1285.03100586"/>
+  <rect  width="6588.9854" x="2217.3188" y="3004.7156" stroke-opacity="1" fill="#ffbf00"  height="8557.4893" stroke="#ffbf00" style="stroke-miterlimit:4;stroke-dasharray:none" fill-opacity="1" id="connector7pin" stroke-width="1285.03100586"/>
+  <rect  width="6588.9854" x="37256.691" y="3004.7156" stroke-opacity="1" fill="#ffbf00"  height="8557.4893" stroke="#ffbf00" style="stroke-miterlimit:4;stroke-dasharray:none" fill-opacity="1" id="connector6pin" stroke-width="1285.03100586"/>
+  <rect  width="6588.9854" x="37256.691" y="24658.26" stroke-opacity="1" fill="#ffbf00"  height="8557.4893" stroke="#ffbf00" style="stroke-miterlimit:4;stroke-dasharray:none" fill-opacity="1" id="connector5pin" stroke-width="1285.03100586"/>
+  <rect  width="1426.4896" x="16019.04" y="3026.908" stroke-opacity="1" fill="#ffbf00"  height="8316.2539" stroke="#ffbf00" style="stroke-miterlimit:4;stroke-dasharray:none" fill-opacity="1" id="connector0pin" stroke-width="935.715271"/>
+  <rect  width="4.724409742000003" x="16729.922595129" y="2549.798395329" fill="none"  height="18.503938342" stroke="none" id="connector0terminal" stroke-width="0"/>
+  <rect  width="1426.4896" x="28617.465" y="3026.908" stroke-opacity="1" fill="#ffbf00"  height="8316.2539" stroke="#ffbf00" style="stroke-miterlimit:4;stroke-dasharray:none" fill-opacity="1" id="connector4pin" stroke-width="935.715271"/>
+  <rect  width="4.724409742000003" x="29328.347595129" y="2549.798395329" fill="none"  height="18.503938342" stroke="none" id="connector4terminal" stroke-width="0"/>
+  <rect  width="1426.4896" x="25467.859" y="3026.908" stroke-opacity="1" fill="#ffbf00"  height="8316.2539" stroke="#ffbf00" style="stroke-miterlimit:4;stroke-dasharray:none" fill-opacity="1" id="connector3pin" stroke-width="935.715271"/>
+  <rect  width="4.724409742000003" x="26178.741595129" y="2549.798395329" fill="none"  height="18.503938342" stroke="none" id="connector3terminal" stroke-width="0"/>
+  <rect  width="1426.4896" x="22318.252" y="3026.908" stroke-opacity="1" fill="#ffbf00"  height="8316.2539" stroke="#ffbf00" style="stroke-miterlimit:4;stroke-dasharray:none" fill-opacity="1" id="connector2pin" stroke-width="935.715271"/>
+  <rect  width="4.724409742000003" x="23029.134595129" y="2549.798395329" fill="none"  height="18.503938342" stroke="none" id="connector2terminal" stroke-width="0"/>
+  <rect  width="1426.4896" x="19168.646" y="3026.908" stroke-opacity="1" fill="#ffbf00"  height="8316.2539" stroke="#ffbf00" style="stroke-miterlimit:4;stroke-dasharray:none" fill-opacity="1" id="connector1pin" stroke-width="935.715271"/>
+  <rect  width="4.724409742000003" x="19879.528595129" y="2549.798395329" fill="none"  height="18.503938342" stroke="none" id="connector1terminal" stroke-width="0"/>
+ </g>
+ <rect  width="45444.922" x="-20558.854" y="267816.22" stroke-opacity="1" fill="none"  height="41389.832" stroke="#ffffff" style="stroke-miterlimit:4;stroke-dasharray:none" id="silkscreen" stroke-width="1111.11120605"/>
+</svg>

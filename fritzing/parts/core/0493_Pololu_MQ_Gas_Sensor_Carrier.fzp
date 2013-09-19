@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<module fritzingVersion="0.5.2b.02.18.4756" moduleId="e8360ae23d733cf34d42fb59f43a9ebf_21" referenceFile="IR_Receiver_v14.fzp">
+ <version>4</version>
+ <date>Sun May 19 2013</date>
+ <author>B Klawans</author>
+ <description>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Lucida Grande'; font-size:13pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Pololu Item #1479&lt;/p>
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;br />&lt;/p>
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">This carrier board is designed to work with any of the MQ-series gas sensors, simplifying the interface from 6 to 3 pins—ground, power and analog voltage output—that are broken out with a 0.1&amp;quot; spacing, making the board compatible with 0.1&amp;quot; headers and standard breadboards and perfboards. This board has two mounting holes and provides convenient pads for mounting the gas sensor’s required sensitivity-setting resistor.&lt;/p>&lt;/body>&lt;/html></description>
+ <title>Pololu MQ Gas Sensor Carrier</title>
+ <url>http://www.pololu.com/catalog/product/1479</url>
+ <tags>
+  <tag>MQ</tag>
+  <tag>gas sensor</tag>
+ </tags>
+ <properties>
+  <property name="family">sensors</property>
+  <property name="variant">variant 1</property>
+  <property name="Manufacturer">Pololu</property>
+  <property name="Package">PCB</property>
+  <property name="part number">1479</property>
+ </properties>
+ <views>
+  <breadboardView>
+   <layers image="breadboard/pololu_mq_gas_sensor_carrier.svg">
+    <layer layerId="breadboard"/>
+   </layers>
+  </breadboardView>
+  <schematicView>
+   <layers image="schematic/pololu_mq_gas_sensor_carrier.svg">
+    <layer layerId="schematic"/>
+   </layers>
+  </schematicView>
+  <pcbView>
+   <layers image="pcb/pololu_mq_gas_sensor_carrier.svg">
+    <layer layerId="copper1"/>
+    <layer layerId="silkscreen"/>
+    <layer layerId="copper0"/>
+   </layers>
+  </pcbView>
+  <iconView>
+   <layers image="icon/pololu_mq_gas_sensor_carrier.svg">
+    <layer layerId="icon"/>
+   </layers>
+  </iconView>
+ </views>
+ <connectors>
+  <connector type="male" id="connector4" name="GND">
+   <description>GND</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector4pin" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector4pin" layer="schematic" terminalId="connector4terminal"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector4pad" layer="copper0"/>
+     <p svgId="connector4pad" layer="copper1"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector type="male" id="connector5" name="OUT">
+   <description>OUT</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector5pin" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector5pin" layer="schematic" terminalId="connector5terminal"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector5pad" layer="copper0"/>
+     <p svgId="connector5pad" layer="copper1"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector type="male" id="connector6" name="VCC">
+   <description>VCC</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector6pin" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector6pin" layer="schematic" terminalId="connector6terminal"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector6pad" layer="copper0"/>
+     <p svgId="connector6pad" layer="copper1"/>
+    </pcbView>
+   </views>
+  </connector>
+ </connectors>
+ <buses/>
+ <label>MQ Gas Sensor Carrier</label>
+</module>

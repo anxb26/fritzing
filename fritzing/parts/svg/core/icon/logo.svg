@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns="http://www.w3.org/2000/svg"  width="20" version="1.1" height="20" id="0">
+ <desc   id="0.0" oldid="0.0">
+  <referenceFile   id="0.0.0" oldid="0.0.0">logo.svg</referenceFile>
+ </desc>
+ <defs   id="0.1" oldid="0.1">
+  <linearGradient   id="0.1.0" oldid="0.1.0">
+   <stop  offset="0"  style="stop-color:#00de00;stop-opacity:1;" id="0.1.0.0" oldid="0.1.0.0"/>
+   <stop  offset="1"  style="stop-color:#008800;stop-opacity:1;" id="0.1.0.1" oldid="0.1.0.1"/>
+  </linearGradient>
+  <radialGradient  fx="9.7901917" fy="1042.2563" cx="9.7901917"  cy="1042.2563" gradientTransform="translate(0,-5.0211927e-4)" href="#linearGradient7381" id="0.1.1" r="9.1331453" oldid="0.1.1" gradientUnits="userSpaceOnUse"/>
+ </defs>
+ <metadata   id="0.2" oldid="0.2">
+  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  id="0.2.0" oldid="0.2.0">
+   <cc:Work xmlns:cc="http://creativecommons.org/ns#"  rdf:about="" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" id="0.2.0.0" oldid="0.2.0.0">
+    <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/"  id="0.2.0.0.0" oldid="0.2.0.0.0">image/svg+xml</dc:format>
+    <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/"  id="0.2.0.0.1" oldid="0.2.0.0.1" rdf:resource="http://purl.org/dc/dcmitype/StillImage" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"  id="0.2.0.0.2" oldid="0.2.0.0.2"/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g   id="layer1" transform="translate(0,-1032.3622)">
+  <path  stroke-opacity="1" fill="url(#radialGradient7387)"  stroke="#005000" style="stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;" fill-opacity="1.0" id="path7768" stroke-width="1" d="m 18.423337,1042.2565 c 0,4.7679 -3.865191,8.6331 -8.6331459,8.6331 -4.7679547,0 -8.6331453,-3.8652 -8.6331453,-8.6331 0,-4.768 3.8651906,-8.6332 8.6331453,-8.6332 4.7679549,0 8.6331459,3.8652 8.6331459,8.6332 z"/>
+  <path  stroke-opacity="1" fill="none"  stroke="#005000" style="stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none" id="path7772" stroke-width="1" d="m 6.8117482,1039.4685 c -1.9318817,1.7811 -4.2177345,4.7102 -2.880364,4.5139 1.5905227,-0.2335 5.3042872,-3.7438 4.6890402,-3.9583 -5.0409603,-1.7577 -5.8415884,2.445 -5.2810949,4.19 4.2864042,5.7836 8.8109975,-10.9384 12.8479495,-2.122 0.10247,2.6059 -0.565864,4.2998 -5.020209,2.9712 -0.508282,-0.1516 0.751641,-4.6088 4.49332,-3.4624 1.45315,0.4453 -2.332887,2.8796 -4.295915,3.3848"/>
+ </g>
+</svg>

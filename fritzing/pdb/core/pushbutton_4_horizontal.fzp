@@ -10,7 +10,8 @@
  </tags>
  <properties>
   <property name="family">Switch</property>
- <property name="package">[THT]</property></properties>
+ <property name="package">[THT]</property>
+ </properties>
  <description>A generic pushbutton.</description>
  <views>
   <iconView>

@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1.83in" version="1.2" gorn="0"  height="2.4300001in" viewBox="0 0 1830 2430" id="svg2">
+    <desc >
+        <referenceFile >HEF4071B_schematic.svg</referenceFile>
+    </desc>
+    <g gorn="0.1"  id="schematic">
+        <rect width="1200" x="315" y="15" gorn="0.1.0"  height="2400" style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round" id="rect5"/>
+        <text x="915" y="465" gorn="0.1.1"  style="font-size:235px;text-anchor:middle;fill:#000000;stroke:none;font-family:Droid Sans" id="label">4071</text>
+        <line fill="none" gorn="0.1.2"  stroke="#000000" stroke-linejoin="round" style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round" stroke-linecap="round" id="line8" y1="315" stroke-width="30" x1="15" y2="315" x2="300"/>
+        <rect width="300" x="0" y="300" gorn="0.1.3"  height="30" style="fill:none;stroke-width:0" id="connector0pin"/>
+        <rect width="30" x="0" y="300"  height="30" style="fill:none;stroke-width:0"/>
+        <text x="390" y="350" gorn="0.1.5"  style="font-size:130px;text-anchor:start;fill:#000000;stroke:none;font-family:Droid Sans" id="label0">I1</text>
+        <line fill="none" gorn="0.1.6"  stroke="#000000" stroke-linejoin="round" style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round" stroke-linecap="round" id="line13" y1="315" stroke-width="30" x1="1515" y2="315" x2="1815"/>
+        <rect width="300" x="1530" y="300" gorn="0.1.7"  height="30" style="fill:none;stroke-width:0" id="connector13pin"/>
+        <rect width="30" x="1830" y="300"  height="30" style="fill:none;stroke-width:0"/>
+        <text x="1440" y="350" gorn="0.1.9"  style="font-size:130px;text-anchor:end;fill:#000000;stroke:none;font-family:Droid Sans" id="label13">Vcc</text>
+        <line fill="none" gorn="0.1.10"  stroke="#000000" stroke-linejoin="round" style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round" stroke-linecap="round" id="line18" y1="615" stroke-width="30" x1="15" y2="615" x2="300"/>
+        <rect width="300" x="0" y="600" gorn="0.1.11"  height="30" style="fill:none;stroke-width:0" id="connector1pin"/>
+        <rect width="30" x="0" y="600"  height="30" style="fill:none;stroke-width:0"/>
+        <text x="390" y="650" gorn="0.1.13"  style="font-size:130px;text-anchor:start;fill:#000000;stroke:none;font-family:Droid Sans" id="label1">I2</text>
+        <line fill="none" gorn="0.1.14"  stroke="#000000" stroke-linejoin="round" style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round" stroke-linecap="round" id="line23" y1="615" stroke-width="30" x1="1515" y2="615" x2="1815"/>
+        <rect width="300" x="1530" y="600" gorn="0.1.15"  height="30" style="fill:none;stroke-width:0" id="connector12pin"/>
+        <rect width="30" x="1830" y="600"  height="30" style="fill:none;stroke-width:0"/>
+        <text x="1440" y="650" gorn="0.1.17"  style="font-size:130px;text-anchor:end;fill:#000000;stroke:none;font-family:Droid Sans" id="label12">I8</text>
+        <line fill="none" gorn="0.1.18"  stroke="#000000" stroke-linejoin="round" style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round" stroke-linecap="round" id="line28" y1="915" stroke-width="30" x1="15" y2="915" x2="300"/>
+        <rect width="300" x="0" y="900" gorn="0.1.19"  height="30" style="fill:none;stroke-width:0" id="connector2pin"/>
+        <rect width="30" x="0" y="900"  height="30" style="fill:none;stroke-width:0"/>
+        <text x="390" y="950" gorn="0.1.21"  style="font-size:130px;text-anchor:start;fill:#000000;stroke:none;font-family:Droid Sans" id="label2">O1</text>
+        <line fill="none" gorn="0.1.22"  stroke="#000000" stroke-linejoin="round" style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round" stroke-linecap="round" id="line33" y1="915" stroke-width="30" x1="1515" y2="915" x2="1815"/>
+        <rect width="300" x="1530" y="900" gorn="0.1.23"  height="30" style="fill:none;stroke-width:0" id="connector11pin"/>
+        <rect width="30" x="1830" y="900"  height="30" style="fill:none;stroke-width:0"/>
+        <text x="1440" y="950" gorn="0.1.25"  style="font-size:130px;text-anchor:end;fill:#000000;stroke:none;font-family:Droid Sans" id="label11">I7</text>
+        <line fill="none" gorn="0.1.26"  stroke="#000000" stroke-linejoin="round" style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round" stroke-linecap="round" id="line38" y1="1215" stroke-width="30" x1="15" y2="1215" x2="300"/>
+        <rect width="300" x="0" y="1200" gorn="0.1.27"  height="30" style="fill:none;stroke-width:0" id="connector3pin"/>
+        <rect width="30" x="0" y="1200"  height="30" style="fill:none;stroke-width:0"/>
+        <text x="390" y="1250" gorn="0.1.29"  style="font-size:130px;text-anchor:start;fill:#000000;stroke:none;font-family:Droid Sans" id="label3">O2</text>
+        <line fill="none" gorn="0.1.30"  stroke="#000000" stroke-linejoin="round" style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round" stroke-linecap="round" id="line43" y1="1215" stroke-width="30" x1="1515" y2="1215" x2="1815"/>
+        <rect width="300" x="1530" y="1200" gorn="0.1.31"  height="30" style="fill:none;stroke-width:0" id="connector10pin"/>
+        <rect width="30" x="1830" y="1200"  height="30" style="fill:none;stroke-width:0"/>
+        <text x="1440" y="1250" gorn="0.1.33"  style="font-size:130px;text-anchor:end;fill:#000000;stroke:none;font-family:Droid Sans" id="label10">O4</text>
+        <line fill="none" gorn="0.1.34"  stroke="#000000" stroke-linejoin="round" style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round" stroke-linecap="round" id="line48" y1="1515" stroke-width="30" x1="15" y2="1515" x2="300"/>
+        <rect width="300" x="0" y="1500" gorn="0.1.35"  height="30" style="fill:none;stroke-width:0" id="connector4pin"/>
+        <rect width="30" x="0" y="1500"  height="30" style="fill:none;stroke-width:0"/>
+        <text x="390" y="1550" gorn="0.1.37"  style="font-size:130px;text-anchor:start;fill:#000000;stroke:none;font-family:Droid Sans" id="label4">I3</text>
+        <line fill="none" gorn="0.1.38"  stroke="#000000" stroke-linejoin="round" style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round" stroke-linecap="round" id="line53" y1="1515" stroke-width="30" x1="1515" y2="1515" x2="1815"/>
+        <rect width="300" x="1530" y="1500" gorn="0.1.39"  height="30" style="fill:none;stroke-width:0" id="connector9pin"/>
+        <rect width="30" x="1830" y="1500"  height="30" style="fill:none;stroke-width:0"/>
+        <text x="1440" y="1550" gorn="0.1.41"  style="font-size:130px;text-anchor:end;fill:#000000;stroke:none;font-family:Droid Sans" id="label9">O3</text>
+        <line fill="none" gorn="0.1.42"  stroke="#000000" stroke-linejoin="round" style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round" stroke-linecap="round" id="line58" y1="1815" stroke-width="30" x1="15" y2="1815" x2="300"/>
+        <rect width="300" x="0" y="1800" gorn="0.1.43"  height="30" style="fill:none;stroke-width:0" id="connector5pin"/>
+        <rect width="30" x="0" y="1800"  height="30" style="fill:none;stroke-width:0"/>
+        <text x="390" y="1850" gorn="0.1.45"  style="font-size:130px;text-anchor:start;fill:#000000;stroke:none;font-family:Droid Sans" id="label5">I4</text>
+        <line fill="none" gorn="0.1.46"  stroke="#000000" stroke-linejoin="round" style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round" stroke-linecap="round" id="line63" y1="1815" stroke-width="30" x1="1515" y2="1815" x2="1815"/>
+        <rect width="300" x="1530" y="1800" gorn="0.1.47"  height="30" style="fill:none;stroke-width:0" id="connector8pin"/>
+        <rect width="30" x="1830" y="1800"  height="30" style="fill:none;stroke-width:0"/>
+        <text x="1440" y="1850" gorn="0.1.49"  style="font-size:130px;text-anchor:end;fill:#000000;stroke:none;font-family:Droid Sans" id="label8">I6</text>
+        <line fill="none" gorn="0.1.50"  stroke="#000000" stroke-linejoin="round" style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round" stroke-linecap="round" id="line68" y1="2115" stroke-width="30" x1="15" y2="2115" x2="300"/>
+        <rect width="300" x="0" y="2100" gorn="0.1.51"  height="30" style="fill:none;stroke-width:0" id="connector6pin"/>
+        <rect width="30" x="0" y="2100"  height="30" style="fill:none;stroke-width:0"/>
+        <text x="390" y="2150" gorn="0.1.53"  style="font-size:130px;text-anchor:start;fill:#000000;stroke:none;font-family:Droid Sans" id="label6">GND</text>
+        <line fill="none" gorn="0.1.54"  stroke="#000000" stroke-linejoin="round" style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round" stroke-linecap="round" id="line73" y1="2115" stroke-width="30" x1="1515" y2="2115" x2="1815"/>
+        <rect width="300" x="1530" y="2100" gorn="0.1.55"  height="30" style="fill:none;stroke-width:0" id="connector7pin"/>
+        <rect width="30" x="1830" y="2100"  height="30" style="fill:none;stroke-width:0"/>
+        <text x="1440" y="2150" gorn="0.1.57"  style="font-size:130px;text-anchor:end;fill:#000000;stroke:none;font-family:Droid Sans" id="label7">I5</text>
+    </g>
+</svg>

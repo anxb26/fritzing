@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns="http://www.w3.org/2000/svg"  width="268.74939" version="1.2" height="268.74814" viewBox="0 0 214.99903 214.99793" id="0">
+ <desc   id="0.0" oldid="0.0">
+  <referenceFile   id="0.0.0" oldid="0.0.0">HIH6130_schem.svg</referenceFile>
+ </desc>
+ <metadata   id="0.1" oldid="0.1">
+  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  id="0.1.0" oldid="0.1.0">
+   <cc:Work xmlns:cc="http://creativecommons.org/ns#"  rdf:about="" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" id="0.1.0.0" oldid="0.1.0.0">
+    <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/"  id="0.1.0.0.0" oldid="0.1.0.0.0">image/svg+xml</dc:format>
+    <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/"  id="0.1.0.0.1" oldid="0.1.0.0.1" rdf:resource="http://purl.org/dc/dcmitype/StillImage" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"  id="0.1.0.0.2" oldid="0.1.0.0.2"/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs   id="0.2" oldid="0.2"/>
+ <g   id="g3137" transform="translate(5.0067902e-6,-4.6248453e-5)">
+  <g   style="stroke-width:0" id="schematic">
+   <rect  width="170.078" x="22.4599" y="22.4599"  height="170.078" style="fill:none;stroke:#000000;stroke-width:2.40001011;stroke-linecap:round;stroke-linejoin:round" id="rect3140"/>
+   <text  x="107.499" y="64.979599"  style="font-size:18px;text-anchor:middle;fill:#000000;stroke:none;font-family:DroidSans" id="label">Humidity</text>
+   <text  x="107.499" y="86.239601"  style="font-size:18px;text-anchor:middle;fill:#000000;stroke:none;font-family:DroidSans" id="text3143">Temperature</text>
+   <text  x="107.499" y="107.499"  style="font-size:18px;text-anchor:middle;fill:#000000;stroke:none;font-family:DroidSans" id="text3145">Sensor</text>
+   <text  x="107.499" y="128.759"  style="font-size:18px;text-anchor:middle;fill:#000000;stroke:none;font-family:DroidSans" id="text3147">HIH6130</text>
+   <text  x="107.499" y="150.019"  style="font-size:18px;text-anchor:middle;fill:#000000;stroke:none;font-family:DroidSans" id="text3149">Breakout</text>
+   <line   style="fill:none;stroke:#000000;stroke-width:2.40001011;stroke-linecap:round;stroke-linejoin:round" id="line3151" y1="64.979599" x1="1.2" y2="64.979599" x2="21.259899"/>
+   <rect  width="21.259899" x="0" y="63.779598"  height="2.4000101" style="fill:none;stroke-width:0" id="connector11pin"/>
+   <rect  width="2.4000101" x="0" y="63.779598"  height="2.4000101" style="fill:none;stroke-width:0" id="connector11terminal"/>
+   <text  x="27.74" y="67.3797"  style="font-size:9.9360199px;text-anchor:start;fill:#000000;stroke:none;font-family:DroidSans" id="label7">AL_H</text>
+   <line   style="fill:none;stroke:#000000;stroke-width:2.40001011;stroke-linecap:round;stroke-linejoin:round" id="line3156" y1="86.239601" x1="1.2" y2="86.239601" x2="21.259899"/>
+   <rect  width="21.259899" x="0" y="85.039398"  height="2.4000101" style="fill:none;stroke-width:0" id="connector10pin"/>
+   <rect  width="2.4000101" x="0" y="85.039398"  height="2.4000101" style="fill:none;stroke-width:0" id="connector10terminal"/>
+   <text  x="27.74" y="88.639397"  style="font-size:9.9360199px;text-anchor:start;fill:#000000;stroke:none;font-family:DroidSans" id="label9">AL_L</text>
+   <line   style="fill:none;stroke:#000000;stroke-width:2.40001011;stroke-linecap:round;stroke-linejoin:round" id="line3161" y1="64.979599" x1="192.539" y2="64.979599" x2="213.798"/>
+   <rect  width="21.259899" x="193.73801" y="63.779598"  height="2.4000101" style="fill:none;stroke-width:0" id="connector9pin"/>
+   <rect  width="2.4000101" x="212.599" y="63.779598"  height="2.4000101" style="fill:none;stroke-width:0" id="connector9terminal"/>
+   <text  x="187.258" y="67.3797"  style="font-size:9.9360199px;text-anchor:end;fill:#000000;stroke:none;font-family:DroidSans" id="label8">SCL</text>
+   <line   style="fill:none;stroke:#000000;stroke-width:2.40001011;stroke-linecap:round;stroke-linejoin:round" id="line3166" y1="86.239601" x1="192.539" y2="86.239601" x2="213.798"/>
+   <rect  width="21.259899" x="193.73801" y="85.039398"  height="2.4000101" style="fill:none;stroke-width:0" id="connector8pin"/>
+   <rect  width="2.4000101" x="212.599" y="85.039398"  height="2.4000101" style="fill:none;stroke-width:0" id="connector8terminal"/>
+   <text  x="187.258" y="88.639397"  style="font-size:9.9360199px;text-anchor:end;fill:#000000;stroke:none;font-family:DroidSans" id="label10">SDA</text>
+   <line   style="fill:none;stroke:#000000;stroke-width:2.40001011;stroke-linecap:round;stroke-linejoin:round" id="line3171" y1="1.2" x1="107.499" y2="21.259899" x2="107.499"/>
+   <rect  width="2.4000101" x="106.299" y="0"  height="21.259899" style="fill:none;stroke-width:0" id="connector12pin"/>
+   <rect  width="2.4000101" x="106.299" y="0"  height="0" style="fill:none;stroke-width:0" id="connector12terminal"/>
+   <text  x="107.499" y="33.860001"  style="font-size:9.9360199px;text-anchor:middle;fill:#000000;stroke:none;font-family:DroidSans" id="label5">VDD</text>
+   <line   style="fill:none;stroke:#000000;stroke-width:2.40001011;stroke-linecap:round;stroke-linejoin:round" id="line3176" y1="193.73801" x1="107.499" y2="213.798" x2="107.499"/>
+   <rect  width="2.4000101" x="106.299" y="193.73801"  height="21.259899" style="fill:none;stroke-width:0" id="connector13pin"/>
+   <rect  width="2.4000101" x="106.299" y="214.998"  height="0" style="fill:none;stroke-width:0" id="connector13terminal"/>
+   <text  x="107.499" y="187.978"  style="font-size:9.9360199px;text-anchor:middle;fill:#000000;stroke:none;font-family:DroidSans" id="label6">GND</text>
+  </g>
+ </g>
+</svg>

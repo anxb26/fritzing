@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module fritzingVersion="0.7.4b.04.10.5970" moduleId="46bda96ebf3d41c46016168fc22a3cd7">
+    <version>4</version>
+    <author>Christopher Mann</author>
+    <title>DCF-77 Receiver</title>
+    <label>M5450</label>
+    <date>2012-03-04</date>
+    <tags>
+        <tag>DCF77</tag>
+    </tags>
+    <properties>
+        <property name="family">IC</property>
+        <property name="part number"></property>
+    </properties>
+    <description>This is a DCF-77 receiver.
+PON pin should be wired to Ground.
+DATA is the output signal pin, usually sent to an interrupt pin on the Arduino
+GND is Ground
+VDD is power</description>
+    <views>
+        <iconView>
+            <layers image="icon/dip.svg">
+                <layer layerId="icon"/>
+            </layers>
+        </iconView>
+        <breadboardView>
+            <layers image="breadboard/M5450_LED_Driver13.svg">
+                <layer layerId="breadboard"/>
+            </layers>
+        </breadboardView>
+        <pcbView>
+            <layers image="pcb/M5450_LED_Driver13.svg">
+                <layer layerId="copper0"/>
+                <layer layerId="silkscreen"/>
+                <layer layerId="copper1"/>
+            </layers>
+        </pcbView>
+        <schematicView>
+            <layers image="schematic/M5450_LED_Driver13.svg">
+                <layer layerId="schematic"/>
+            </layers>
+        </schematicView>
+    </views>
+    <connectors>
+        <connector id="connector40" type="male" name="VDD">
+            <description></description>
+            <views>
+                <breadboardView>
+                    <p layer="breadboard" svgId="connector40"/>
+                </breadboardView>
+                <schematicView>
+                    <p layer="schematic" svgId="connector40"/>
+                </schematicView>
+                <pcbView>
+                    <p layer="copper0" svgId="connector40"/>
+                </pcbView>
+            </views>
+        </connector>
+        <connector id="connector41" type="male" name="GND">
+            <description></description>
+            <views>
+                <breadboardView>
+                    <p layer="breadboard" svgId="connector41"/>
+                </breadboardView>
+                <schematicView>
+                    <p layer="schematic" svgId="connector41"/>
+                </schematicView>
+                <pcbView>
+                    <p layer="copper0" svgId="connector41"/>
+                </pcbView>
+            </views>
+        </connector>
+        <connector id="connector42" type="male" name="DATA">
+            <description>Usually connected to an interrupt input pin of an Arduino</description>
+            <views>
+                <breadboardView>
+                    <p layer="breadboard" svgId="connector42"/>
+                </breadboardView>
+                <schematicView>
+                    <p layer="schematic" svgId="connector42"/>
+                </schematicView>
+                <pcbView>
+                    <p layer="copper0" svgId="connector42"/>
+                </pcbView>
+            </views>
+        </connector>
+        <connector id="connector43" type="male" name="PON">
+            <description>Shoud be connected to ground</description>
+            <views>
+                <breadboardView>
+                    <p layer="breadboard" svgId="connector43"/>
+                </breadboardView>
+                <schematicView>
+                    <p layer="schematic" svgId="connector43"/>
+                </schematicView>
+                <pcbView>
+                    <p layer="copper0" svgId="connector43"/>
+                </pcbView>
+            </views>
+        </connector>
+    </connectors>
+</module>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg xmlns="http://www.w3.org/2000/svg"  width="0.2441in" xml:space="preserve" xmlns:xml="http://www.w3.org/XML/1998/namespace" x="0" version="1.1" y="0" height="0.2441in" viewBox="0 0 21.969 21.969" id="0" enable-background="new 0 0 21.969 21.969">
+ <desc   id="0.0">
+  <referenceFile   id="0.0.0">3mm_LED.svg</referenceFile>
+ </desc>
+ <g   id="copper0">
+  <g   id="copper1">
+   <circle  fill="none" cx="10.984"  cy="13.292" stroke="#F7BD13" id="connector1pad" r="2.126" stroke-width="1.4173"/>
+   <rect  width="4.252" x="8.858" y="11.166" fill="none"  height="4.252" stroke="#F7BD13" id="0.0.0.1" stroke-width="1.4173"/>
+   <circle  fill="none" cx="10.984"  cy="4.433" stroke="#F7BD13" id="connector0pad" r="2.126" stroke-width="1.4173"/>
+  </g>
+ </g>
+ <g   id="silkscreen">
+  <path  fill="none"  stroke="#FFFFFF" stroke-linejoin="round" id="path2820_2_" stroke-linecap="round" stroke-width="0.4608" d="&#xa;&#x9;&#x9;M7.534,14.506c-0.245-0.142-0.485-0.3-0.717-0.476c-3.046-2.3-3.65-6.636-1.349-9.682C5.86,3.83,6.322,3.37,6.841,2.98"/>
+  <path  fill="none"  stroke="#FFFFFF" stroke-linejoin="round" id="path2820_1_" stroke-linecap="round" stroke-width="0.4608" d="&#xa;&#x9;&#x9;M15.15,2.999c3.045,2.299,3.649,6.635,1.35,9.682c-0.553,0.732-1.224,1.323-1.966,1.767"/>
+  <path  fill="none"  stroke="#FFFFFF" id="path3707_2_" stroke-linecap="round" stroke-width="0.4608" d="M7.984,2.983H6.837"/>
+  <path  fill="none"  stroke="#FFFFFF" id="path3707_1_" stroke-linecap="round" stroke-width="0.4608" d="M15.131,2.983h-1.146"/>
+ </g>
+</svg>

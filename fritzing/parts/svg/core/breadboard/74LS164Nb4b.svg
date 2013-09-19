@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<svg width="62.881802" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" x="0px" version="1.1" y="0px" xmlns="http://www.w3.org/2000/svg" height="29.706125" viewBox="0 0 50.305442 23.7649" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:cc="http://creativecommons.org/ns#" id="svg2" enable-background="new 0 0 57.6 23.76" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:space="preserve" xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+ <g id="breadboard">
+ <g id="icon">
+  <metadata id="metadata3284">
+   <rdf:RDF>
+    <cc:Work rdf:about="">
+     <dc:format>image/svg+xml</dc:format>
+     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+     <dc:title/>
+    </cc:Work>
+   </rdf:RDF>
+  </metadata>
+  <defs id="defs3282">
+   <inkscape:perspective id="perspective3286"/>
+   <inkscape:perspective id="perspective3496"/>
+  </defs>
+  <sodipodi:namedview showgrid="false" objecttolerance="10" pagecolor="#ffffff" bordercolor="#666666" id="namedview3280" borderopacity="1" guidetolerance="10" showguides="false" gridtolerance="10">
+   <sodipodi:guide position="3.1069418,23.437146" id="guide3417" orientation="1,0"/>
+   <sodipodi:guide position="7.564728,25.801124" id="guide3419" orientation="0,1"/>
+   <sodipodi:guide position="57.140713,25.801124" id="guide3421" orientation="1,0"/>
+   <sodipodi:guide position="59.774859,25.801124" id="guide3423" orientation="1,0"/>
+   <sodipodi:guide position="3.1069418,29.65103" id="guide3425" orientation="0,1"/>
+   <sodipodi:guide position="62.881801,29.65103" id="guide3475" orientation="1,0"/>
+   <sodipodi:guide position="62.071295,24.855533" id="guide3479" orientation="1,0"/>
+   <sodipodi:guide position="52.547842,3.9174461" id="guide3510" orientation="0,1"/>
+  </sodipodi:namedview>
+  <rect width="2.1600001" x="2.52" y="20.6409" height="3.1240001" style="fill:none" id="connector0pin"/>
+  <rect width="2.1600001" x="9.7200003" y="20.6409" height="3.1240001" style="fill:none" id="connector1pin"/>
+  <rect width="2.1589999" x="16.92" y="20.6409" height="3.1240001" style="fill:none" id="connector2pin"/>
+  <rect width="2.1600001" x="24.118999" y="20.6409" height="3.1240001" style="fill:none" id="connector3pin"/>
+  <rect width="2.1600001" x="31.319" y="20.6409" height="3.1240001" style="fill:none" id="connector4pin"/>
+  <rect width="2.1589999" x="38.521" y="20.6409" height="3.1240001" style="fill:none" id="connector5pin"/>
+  <rect width="2.1600001" x="45.719002" y="20.6409" height="3.1240001" style="fill:none" id="connector6pin"/>
+  <rect width="2.1600001" x="45.71257" y="-4.8760626e-07" height="3.1240001" style="fill:none" id="connector7pin"/>
+  <rect width="2.1600001" x="38.48455" y="0.044074785" height="3.125" style="fill:none" id="connector8pin"/>
+  <rect width="2.1600001" x="31.284555" y="0.044074785" height="3.125" style="fill:none" id="connector9pin"/>
+  <rect width="2.1589999" x="24.086554" y="0.044074785" height="3.125" style="fill:none" id="connector10pin"/>
+  <rect width="2.1600001" x="16.884554" y="0.044074785" height="3.125" style="fill:none" id="connector11pin"/>
+  <rect width="2.1600001" x="9.6845531" y="0.044074785" height="3.125" style="fill:none" id="connector12pin"/>
+  <rect width="2.1589999" x="2.4855535" y="0.044074785" height="3.125" style="fill:none" id="connector13pin"/>
+  <rect width="2.1600001" x="2.52" y="21.6059" height="2.1589999" style="fill:none" id="connector0terminal"/>
+  <rect width="2.1600001" x="9.7200003" y="21.6059" height="2.1589999" style="fill:none" id="connector1terminal"/>
+  <rect width="2.1589999" x="16.92" y="21.6059" height="2.1589999" style="fill:none" id="connector2terminal"/>
+  <rect width="2.1600001" x="24.118999" y="21.6059" height="2.1589999" style="fill:none" id="connector3terminal"/>
+  <rect width="2.1600001" x="31.319" y="21.6059" height="2.1589999" style="fill:none" id="connector4terminal"/>
+  <rect width="2.1589999" x="38.521" y="21.6059" height="2.1589999" style="fill:none" id="connector5terminal"/>
+  <rect width="2.1600001" x="45.719002" y="21.6059" height="2.1589999" style="fill:none" id="connector6terminal"/>
+  <rect width="2.1600001" x="45.71257" y="0.044074785" height="2.1589999" style="fill:none" id="connector7terminal"/>
+  <rect width="2.1600001" x="38.48455" y="0.044074785" height="2.1600001" style="fill:none" id="connector8terminal"/>
+  <rect width="2.1600001" x="31.284555" y="0.044074785" height="2.1600001" style="fill:none" id="connector9terminal"/>
+  <rect width="2.1589999" x="24.086554" y="0.044074785" height="2.1600001" style="fill:none" id="connector10terminal"/>
+  <rect width="2.1600001" x="16.884554" y="0.044074785" height="2.1600001" style="fill:none" id="connector11terminal"/>
+  <rect width="2.1600001" x="9.6845531" y="0.044074785" height="2.1600001" style="fill:none" id="connector12terminal"/>
+  <rect width="2.1589999" x="2.4855535" y="0.044074785" height="2.1600001" style="fill:none" id="connector13terminal"/>
+  <rect width="2.1600001" x="2.52" y="18.953899" height="4.8109999" style="fill:#8c8c8c" id="rect3194"/>
+  <rect width="2.1600001" x="9.7200003" y="18.953899" height="4.8109999" style="fill:#8c8c8c" id="rect3196"/>
+  <rect width="2.1589999" x="16.92" y="18.953899" height="4.8109999" style="fill:#8c8c8c" id="rect3198"/>
+  <rect width="2.1600001" x="24.118999" y="18.953899" height="4.8109999" style="fill:#8c8c8c" id="rect3200"/>
+  <rect width="2.1600001" x="31.319" y="18.953899" height="4.8109999" style="fill:#8c8c8c" id="rect3202"/>
+  <rect width="2.1589999" x="38.521" y="18.953899" height="4.8109999" style="fill:#8c8c8c" id="rect3204"/>
+  <rect width="2.1600001" x="45.719002" y="18.953899" height="4.8109999" style="fill:#8c8c8c" id="rect3206"/>
+  <g id="g3427" transform="translate(1.7076752e-6,0.00490008)">
+   <rect width="2.1600001" x="45.659885" y="0.039174706" height="4.8099999" style="fill:#8c8c8c" id="rect3210"/>
+   <rect width="2.1589999" x="38.521" y="0" height="4.8099999" style="fill:#8c8c8c" id="rect3214"/>
+   <rect width="2.1600001" x="31.319" y="0" height="4.8099999" style="fill:#8c8c8c" id="rect3216"/>
+   <rect width="2.1600001" x="24.118999" y="0" height="4.8099999" style="fill:#8c8c8c" id="rect3218"/>
+   <rect width="2.1589999" x="16.92" y="0" height="4.8099999" style="fill:#8c8c8c" id="rect3220"/>
+   <rect width="2.1600001" x="9.7200003" y="0" height="4.8099999" style="fill:#8c8c8c" id="rect3222"/>
+   <rect width="2.1600001" x="2.52" y="0" height="4.8099999" style="fill:#8c8c8c" id="rect3224"/>
+  </g>
+  <polygon points="57.6,2.16 57.059,8.281 0,8.281 0,2.16 " style="fill:#3d3d3d" id="polygon3226" transform="matrix(0.87335835,0,0,1,0,0.00490008)"/>
+  <polygon points="57.059,15.479 57.6,21.601 0,21.601 0,15.479 " id="polygon3228" transform="matrix(0.87335835,0,0,1,0,0.00490008)"/>
+  <polygon points="6.12,21.412 6.12,20.636 2.52,20.636 2.52,22.074 4.68,22.074 " style="fill:#8c8c8c" id="polygon3234" transform="translate(0,0.00490008)"/>
+  <polygon points="9.72,22.074 11.88,22.074 13.32,21.412 13.32,20.636 8.28,20.636 8.28,21.412 " style="fill:#8c8c8c" id="polygon3240" transform="translate(0,0.00490008)"/>
+  <polygon points="16.92,22.074 19.079,22.074 20.52,21.412 20.52,20.636 15.48,20.636 15.48,21.412 " style="fill:#8c8c8c" id="polygon3244" transform="translate(0,0.00490008)"/>
+  <polygon points="24.119,22.074 26.28,22.074 27.72,21.412 27.72,20.636 22.68,20.636 22.68,21.412 " style="fill:#8c8c8c" id="polygon3248" transform="translate(0,0.00490008)"/>
+  <polygon points="31.319,22.074 33.479,22.074 34.919,21.412 34.919,20.636 29.879,20.636 29.879,21.412 " style="fill:#8c8c8c" id="polygon3252" transform="translate(0,0.00490008)"/>
+  <polygon points="4.68,1.685 2.52,1.685 2.52,3.125 6.12,3.125 6.12,2.347 " style="fill:#8c8c8c" id="polygon3230" transform="translate(0,0.00490008)"/>
+  <polygon points="51.478,3.125 55.079,3.125 55.079,1.685 52.919,1.685 51.478,2.347 " style="fill:#8c8c8c" id="polygon3232" transform="translate(-7.2591128,-0.00100041)"/>
+  <polygon points="13.32,3.125 13.32,2.347 11.88,1.685 9.72,1.685 8.28,2.347 8.28,3.125 " style="fill:#8c8c8c" id="polygon3238" transform="translate(0,0.00490008)"/>
+  <polygon points="20.52,3.125 20.52,2.347 19.079,1.685 16.92,1.685 15.48,2.347 15.48,3.125 " style="fill:#8c8c8c" id="polygon3242" transform="translate(0,0.00490008)"/>
+  <polygon points="27.72,3.125 27.72,2.347 26.28,1.685 24.119,1.685 22.68,2.347 22.68,3.125 " style="fill:#8c8c8c" id="polygon3246" transform="translate(0,0.00490008)"/>
+  <polygon points="34.919,3.125 34.919,2.347 33.479,1.685 31.319,1.685 29.879,2.347 29.879,3.125 " style="fill:#8c8c8c" id="polygon3250" transform="translate(0,0.00490008)"/>
+  <polygon points="42.119,3.125 42.119,2.347 40.68,1.685 38.521,1.685 37.079,2.347 37.079,3.125 " style="fill:#8c8c8c" id="polygon3254" transform="translate(0,0.00490008)"/>
+  <polygon points="38.521,22.074 40.68,22.074 42.119,21.412 42.119,20.636 37.079,20.636 37.079,21.412 " style="fill:#8c8c8c" id="polygon3256" transform="translate(0,0.00490008)"/>
+  <polygon points="56.053,19.821 57.059,19.828 57.6,21.601 57.6,2.16 57.059,3.931 56.053,3.931 " style="fill:#141414" id="polygon3262" transform="translate(-7.2945592,-0.04913369)"/>
+  <polygon points="0,2.16 0.54,3.931 0.54,8.281 3.6,8.281 3.6,15.479 0.54,15.479 0.54,19.828 0,21.601 " style="fill:#1f1f1f" id="polygon3264" transform="translate(0,0.00490008)"/>
+  <polygon points="0.403,11.88 3.6,11.88 3.6,8.281 0.54,8.281 0.403,9.792 " style="fill:#1c1c1c" id="polygon3266" transform="translate(0,0.00490008)"/>
+  <polygon points="0.403,11.88 0.403,13.968 0.54,15.479 3.6,15.479 3.6,11.88 " style="fill:#383838" id="polygon3268" transform="translate(0,0.00490008)"/>
+  <path style="fill:#303030" id="path3270" d="m 0.54,3.9359001 0,4.32 c 1.4886584,0.324 2.6218811,1.8219999 2.6218811,3.6289999 0,1.807 -1.1262704,3.313 -2.6218811,3.637 l 0,4.319 49.117036,0 0,-15.9049999 -49.117036,0 z"/>
+  <path style="fill:#262626" id="path3272" d="M 0.403,9.7969001 V 13.9929 c 1.059,-0.121 1.887,-1.008 1.887,-2.102 0,-1.086 -0.821,-1.9859999 -1.887,-2.0939999 z"/>
+  <circle cx="4.6799998" cy="16.898001" style="fill:#212121" id="circle3274" r="1.483" transform="translate(0,0.00490008)"/>
+  <rect width="32.372002" x="6.494" y="9.7968998" height="5.9499998" style="fill:none" id="rect3276"/>
+  <text x="6.4938998" y="14.0423" style="font-size:5.76000023px;fill:#e5e5e5;font-family:OCRA" id="text3278" font-size="5.76">74LS164N</text>
+  <polygon points="52.919,1.685 51.478,2.347 51.478,3.125 55.079,3.125 55.079,1.685 " style="fill:#8c8c8c" id="polygon3232-6" transform="matrix(1,0,0,-1,-7.2591128,23.755942)"/>
+ </g>
+ </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<svg xmlns="http://www.w3.org/2000/svg"  width="9.46mm" x="0mm" version="1.0" y="0mm" height="8.38mm" viewBox="0 0 946 838" baseProfile="tiny" id="0">
+ <desc   id="0.0" oldid="0.0">
+  <referenceFile   id="0.0.0" oldid="0.0.0">BAS3007A-bread.svg</referenceFile>
+ </desc>
+ <desc   id="0.1" oldid="0.1">BAS3007A</desc>
+ <g   id="breadboard">
+  <rect  width="360" x="50" y="594" fill="#8C8C8C"  height="244" stroke="none" id="con0" stroke-width="0"/>
+  <rect  width="240" x="656" y="594" fill="#8C8C8C"  height="244" stroke="none" id="con1" stroke-width="0"/>
+  <rect  width="240" x="50" y="0" fill="#8C8C8C"  height="244" stroke="none" id="con2" stroke-width="0"/>
+  <rect  width="240" x="656" y="0" fill="#8C8C8C"  height="244" stroke="none" id="con3" stroke-width="0"/>
+  <rect  width="76" x="50" y="762" fill="none"  height="76" id="connector0pin" stroke-width="0"/>
+  <rect  width="76" x="812" y="762" fill="none"  height="76" id="connector1pin" stroke-width="0"/>
+  <rect  width="76" x="812" y="0" fill="none"  height="76" id="connector2pin" stroke-width="0"/>
+  <rect  width="76" x="50" y="0" fill="none"  height="76" id="connector3pin" stroke-width="0"/>
+  <rect  width="946" x="0" y="244" fill="black"  height="356" stroke="none" id="partbody" stroke-width="0"/>
+  <text  x="473" y="460" fill="#e6e6e6" font-family="DroidSans"  text-anchor="middle" stroke="none" id="label" font-size="176.38">BAS3007A</text>
+ </g>
+</svg>

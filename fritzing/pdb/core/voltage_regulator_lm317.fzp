@@ -15,6 +15,7 @@
   <property name="package">TO220 [THT]</property>
   <property name="voltage">Variable V</property>
   <property name="family">Voltage Regulator</property>
+  <property name="type">lm317</property>
  </properties>
  <description>Variable DC Voltage Regulator</description>
  <views>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns="http://www.w3.org/2000/svg"  width="97.03125" version="1.1" height="80.71875" id="0">
+ <desc   id="0.0">
+  <referenceFile   id="0.0.0">NVF4-2_pcb_carrelay.svg</referenceFile>
+ </desc>
+ <defs   id="0.1" oldid="defs8098"/>
+ <metadata   id="0.2" oldid="metadata8101">
+  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  id="0.2.0">
+   <cc:Work xmlns:cc="http://creativecommons.org/ns#"  rdf:about="" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" id="0.2.0.0">
+    <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/"  id="0.2.0.0.0">image/svg+xml</dc:format>
+    <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/"  id="0.2.0.0.1" rdf:resource="http://purl.org/dc/dcmitype/StillImage" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"  id="0.2.0.0.2"/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g  stroke-opacity="1" fill="none"  stroke="#ffffff" id="silkscreen" stroke-width="1">
+  <g  stroke-opacity="1" fill="none"  stroke="#ffffff" id="g5490" stroke-width="1">
+   <path  stroke-opacity="1" fill="none"  stroke="#ffffff" style="stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none" id="slikscreen" stroke-width="1" d="m 96.531467,80.22385 0,-79.72438 -96.023622,0 0,79.72438 c 32.007874,0 64.015748,0 96.023622,0 z"/>
+  </g>
+ </g>
+ <g   id="copper0">
+  <path  fill="#f7bd13"  stroke="none" style="opacity:0.98000004;fill-rule:nonzero;" fill-opacity="0.98039216" id="connector4pin" d="m 41.152682,63.04165 c -1.956914,5e-4 -3.53125,1.6057 -3.53125,3.5624 l 0,7.0817 c 0,1.9572 1.574336,3.532 3.53125,3.5313 l 30.130413,-0.01 c 1.956913,-6e-4 3.543307,-1.5862 3.543307,-3.5433 l 0,-7.0866 c 0,-1.9567 -1.586393,-3.5434 -3.543307,-3.5433 z m 3.543553,5.3008 23.043553,-0.013 c 0.978457,-6e-4 1.78125,0.8028 1.78125,1.7813 0,0.9784 -0.802793,1.75 -1.78125,1.75 l 0,0.031 -23.043553,0.013 c -0.978457,5e-4 -1.75,-0.8029 -1.75,-1.7812 0,-0.9785 0.771543,-1.7813 1.75,-1.7813 z"/>
+  <path  fill="#f7bd13"  stroke="none" style="opacity:0.98000004;fill-rule:nonzero;" fill-opacity="0.98039216" id="connector2pin" d="m 7.491265,32.87135 c -1.956914,5e-4 -3.53125,1.6057 -3.53125,3.5624 l 0,7.0817 c 0,1.9572 1.574336,3.532 3.53125,3.5313 l 30.130413,-0.01 c 1.956913,-6e-4 3.543307,-1.5862 3.543307,-3.5433 l 0,-7.0866 c 0,-1.9567 -1.586393,-3.5434 -3.543307,-3.5433 z m 3.543553,5.3008 23.043553,-0.013 c 0.978457,-6e-4 1.78125,0.8028 1.78125,1.7813 0,0.9784 -0.802793,1.75 -1.78125,1.75 l 0,0.031 -23.043553,0.013 c -0.978457,5e-4 -1.75,-0.8029 -1.75,-1.7812 0,-0.9785 0.771542,-1.7813 1.75,-1.7813 z"/>
+  <path  fill="#f7bd13"  stroke="none" style="opacity:0.98000004;fill-rule:nonzero;" fill-opacity="0.98039216" id="connector0pin" d="m 64.72504,25.24595 c -5e-4,-1.9569 -1.6057,-3.5313 -3.5624,-3.5313 l -7.0817,0 c -1.9572,0 -3.532,1.5744 -3.5313,3.5313 l 0.01,30.1304 c 6e-4,1.9569 1.5862,3.5433 3.5433,3.5433 l 7.0866,0 c 1.9567,0 3.5434,-1.5864 3.5433,-3.5433 z m -5.3008,3.5435 0.013,23.0436 c 6e-4,0.9784 -0.8028,1.7812 -1.7813,1.7812 -0.9784,0 -1.75,-0.8028 -1.75,-1.7812 l -0.031,0 -0.013,-23.0436 c -5e-4,-0.9784 0.8029,-1.75 1.7812,-1.75 0.9785,0 1.7813,0.7716 1.7813,1.75 z"/>
+  <path  fill="#f7bd13"  stroke="none" style="opacity:0.98000004;fill-rule:nonzero;" fill-opacity="0.98039216" id="connector5pin" d="m 93.071497,25.24595 c -5e-4,-1.9569 -1.6057,-3.5313 -3.5624,-3.5313 l -7.0817,0 c -1.9572,0 -3.532,1.5744 -3.5313,3.5313 l 0.01,30.1304 c 6e-4,1.9569 1.5862,3.5433 3.5433,3.5433 l 7.0866,0 c 1.9567,0 3.5434,-1.5864 3.5433,-3.5433 z m -5.3008,3.5435 0.013,23.0436 c 6e-4,0.9784 -0.8028,1.7812 -1.7813,1.7812 -0.9784,0 -1.75,-0.8028 -1.75,-1.7812 l -0.031,0 -0.013,-23.0436 c -5e-4,-0.9784 0.8029,-1.75 1.7812,-1.75 0.9785,0 1.7813,0.7716 1.7813,1.75 z"/>
+  <path  fill="#f7bd13"  stroke="none" style="opacity:0.98000004;fill-rule:nonzero;" fill-opacity="0.98039216" id="connector1pin" d="m 42.570005,3.51409 c -1.956914,5e-4 -3.53125,1.6057 -3.53125,3.5624 l 0,7.0817 c 0,1.9572 1.574336,3.532 3.53125,3.5313 l 30.130413,-0.01 c 1.956913,-6e-4 3.543307,-1.5862 3.543307,-3.5433 l 0,-7.0866 c 0,-1.9567 -1.586393,-3.5434 -3.543307,-3.5433 z m 3.543553,5.3008 23.043553,-0.013 c 0.978457,-6e-4 1.78125,0.8028 1.78125,1.7813 0,0.9784 -0.802793,1.75 -1.78125,1.75 l 0,0.031 -23.043553,0.013 c -0.978457,5e-4 -1.75,-0.8029 -1.75,-1.7812 0,-0.9785 0.771543,-1.7813 1.75,-1.7813 z"/>
+ </g>
+</svg>

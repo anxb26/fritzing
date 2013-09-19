@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<svg xmlns="http://www.w3.org/2000/svg"  width="69.307083" xml:space="preserve" xmlns:xml="http://www.w3.org/XML/1998/namespace" x="0px" version="1.1" y="0px" height="70.866142" viewBox="0 0 55.310656 56.814743" id="0">
+ <desc   id="0.0" oldid="0.0">
+  <referenceFile   id="0.0.0" oldid="0.0.0">mini_USB_connector_schematics.svg</referenceFile>
+ </desc>
+ <metadata   id="0.1" oldid="0.1">
+  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  id="0.1.0" oldid="0.1.0">
+   <cc:Work xmlns:cc="http://creativecommons.org/ns#"  rdf:about="" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" id="0.1.0.0" oldid="0.1.0.0">
+    <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/"  id="0.1.0.0.0" oldid="0.1.0.0.0">image/svg+xml</dc:format>
+    <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/"  id="0.1.0.0.1" oldid="0.1.0.0.1" rdf:resource="http://purl.org/dc/dcmitype/StillImage" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"  id="0.1.0.0.2" oldid="0.1.0.0.2"/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs   id="0.2" oldid="0.2"/>
+ <g   id="schematics">
+  <rect  width="9.7819996" x="44.854458" y="36.905842"  height="1.896" id="0.3.0"/>
+  <rect  width="0.68599999" x="54.941086" y="37.55772"  height="0.866" id="0.3.1"/>
+  <rect  width="9.7819996" x="44.854458" y="28.282843"  height="1.896" id="0.3.2"/>
+  <rect  width="0.68599999" x="54.941086" y="28.934723"  height="0.866" id="0.3.3"/>
+  <rect  width="9.783" x="44.854458" y="11.037842"  height="1.893" id="0.3.4"/>
+  <rect  width="0.68800002" x="54.941086" y="11.756721"  height="0.86699998" id="0.3.5"/>
+  <rect  width="9.783" x="44.854458" y="19.660843"  height="1.8940001" id="0.3.6"/>
+  <rect  width="0.685" x="54.941086" y="20.311722"  height="0.866" id="0.3.7"/>
+  <rect  width="36.008999" x="1.2438223" y="10.483318" fill="none"  height="36.014999" stroke="#000000" style="stroke-linecap:round" id="rect6881" stroke-width="2.22839999"/>
+  <line  fill="none"  stroke="#000000" style="stroke-linecap:round" id="connector0pin" y1="12.121206" y2="12.121206" x1="37.52655" stroke-width="2.22839999" x2="54.594551"/>
+  <rect  width="0.03859280198000001" x="55.68945459401" y="12.11897760001" fill="none"  height="0.00445679998" stroke="none" id="connector0terminal" stroke-width="0"/>
+  <line  fill="none"  stroke="#000000" style="stroke-linecap:round" id="connector1pin" y1="20.744205" y2="20.744205" x1="37.52655" stroke-width="2.22839999" x2="54.594551"/>
+  <rect  width="0.03859280198000001" x="55.68945459401" y="20.74197660001" fill="none"  height="0.00445679998" stroke="none" id="connector1terminal" stroke-width="0"/>
+  <line  fill="none"  stroke="#000000" style="stroke-linecap:round" id="connector2pin" y1="29.367207" y2="29.367207" x1="37.52655" stroke-width="2.22839999" x2="54.594551"/>
+  <rect  width="0.03859280198000001" x="55.68945459401" y="29.36497860001" fill="none"  height="0.00445679998" stroke="none" id="connector2terminal" stroke-width="0"/>
+  <line  fill="none"  stroke="#000000" style="stroke-linecap:round" id="connector3pin" y1="37.990208" y2="37.990208" x1="37.52655" stroke-width="2.22839999" x2="54.594551"/>
+  <rect  width="0.03859280198000001" x="55.68945459401" y="37.98797960001" fill="none"  height="0.00445679998" stroke="none" id="0.3.16" stroke-width="0"/>
+  <g   id="g6893" transform="translate(0.68682237,9.3693182)">
+   <g   id="g6895">
+    <polygon  points="29.851,18.636 29.851,19.524 7.424,19.524 7.424,18.636 "  id="polygon6897"/>
+   </g>
+   <g   id="g6899">
+    <polygon  points="29.254,17.348 32.254,19.08 29.254,20.812 "  id="polygon6901"/>
+   </g>
+   <g   id="g6903">
+    <path   id="path6905" d="m 11.513,19.435 v -0.709 c 0.994,0 2.03,-1.156 3.034,-2.274 1.061,-1.185 2.064,-2.303 3.185,-2.303 h 3.91 v 0.71 h -3.91 c -0.802,0 -1.745,1.051 -2.657,2.067 -1.107,1.233 -2.251,2.509 -3.562,2.509 l 0,0 z"/>
+   </g>
+   <g   id="g6907">
+    <path   id="path6909" d="m 25.478,24.012 h -3.91 c -1.119,0 -2.122,-1.119 -3.185,-2.303 -1.002,-1.117 -2.039,-2.275 -3.034,-2.275 v -0.709 c 1.312,0 2.456,1.276 3.563,2.51 0.911,1.016 1.854,2.067 2.655,2.067 h 3.91 v 0.71 l 0.001,0 z"/>
+   </g>
+   <g   id="g6911">
+    <circle  cx="21.641001"  cy="14.503" r="1.393" id="circle6913" d="m 23.034001,14.503 c 0,0.769333 -0.623668,1.393 -1.393,1.393 -0.769333,0 -1.393,-0.623667 -1.393,-1.393 0,-0.769332 0.623667,-1.393 1.393,-1.393 0.769332,0 1.393,0.623668 1.393,1.393 z"/>
+   </g>
+   <g   id="g6915">
+    <rect  width="2.9489999" x="24.004" y="22.181999"  height="2.951" id="rect6917"/>
+   </g>
+   <g   id="g6919">
+    <circle  cx="7.4749999"  cy="19.08" r="2.483" id="circle6921" d="m 9.9579999,19.08 c 0,1.371323 -1.1116769,2.483 -2.483,2.483 -1.3713231,0 -2.483,-1.111677 -2.483,-2.483 0,-1.371323 1.1116769,-2.483 2.483,-2.483 1.3713231,0 2.483,1.111677 2.483,2.483 z"/>
+   </g>
+  </g>
+  <line  fill="none"  stroke="#000000" style="stroke-linecap:round" id="connector4pin" y1="45.550854" y2="45.550854" x1="37.630749" stroke-width="2.22839999" x2="54.69875"/>
+  <rect  width="0.03859280197999999" x="55.79365359401" y="45.54862560001" fill="none"  height="0.00445679998" stroke="none" id="connector4terminal" stroke-width="0"/>
+  <rect  width="9.783" x="45.531544" y="44.466991"  height="1.893" id="connector0pin-2"/>
+  <rect  width="0.68599999" x="54.88184" y="45.08334"  height="0.866" id="connector3terminal-4"/>
+  <line  fill="none"  stroke="#000000" style="stroke-linecap:round" id="connector8pin" y1="9.8154554" y2="4.7900925" x1="5.9169583" stroke-width="1.20916474" x2="5.9169583"/>
+  <line  fill="none"  stroke="#000000" style="stroke-linecap:round" id="connector7pin" y1="10.013577" y2="4.9882154" x1="30.367832" stroke-width="1.20916474" x2="30.367832"/>
+  <line  fill="none"  stroke="#000000" style="stroke-linecap:round" id="connector6pin" y1="51.840343" y2="46.814976" x1="30.367834" stroke-width="1.20916474" x2="30.367834"/>
+  <line  fill="none"  stroke="#000000" style="stroke-linecap:round" id="connector5pin" y1="51.840343" y2="46.814976" x1="5.9169579" stroke-width="1.20916474" x2="5.9169579"/>
+ </g>
+</svg>

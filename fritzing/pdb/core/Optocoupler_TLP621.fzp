@@ -11,7 +11,7 @@
         <tag>isolator</tag>
     </tags>
     <properties>
-        <property name="package">THT</property>
+        <property name="package">DIP4 [THT]</property>
         <property name="family">Optocoupler</property>
         <property name="part">TLP621</property>
     </properties>

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg xmlns="http://www.w3.org/2000/svg"  width="0.493917in" xml:space="preserve" xmlns:xml="http://www.w3.org/XML/1998/namespace" x="0px" version="1.2" y="0px" overflow="inherit" height="0.124139in" viewBox="0 0 35.562 8.938" baseProfile="tiny" id="0">
+ <desc   id="0.0" oldid="0.0">
+  <referenceFile   id="0.0.0" oldid="0.0.0">pololu_mq_gas_sensor_carrier_pcb.svg</referenceFile>
+ </desc>
+ <g   id="0.1" transform="translate(0,-1038.862)">
+  <g   id="layer1"/>
+ </g>
+ <g   id="silkscreen">
+  <line   stroke="white" id="0.2.0" y1="0" stroke-width="1" x1="0" y2="0" x2="35.5"/>
+  <line   stroke="white" id="0.2.1" y1="0" stroke-width="1" x1="0" y2="8.9" x2="0"/>
+  <line   stroke="white" id="0.2.2" y1="8.9" stroke-width="1" x1="0" y2="8.9" x2="35.5"/>
+  <line   stroke="white" id="0.2.3" y1="0" stroke-width="1" x1="35.5" y2="8.9" x2="35.5"/>
+ </g>
+ <g   id="copper1">
+  <g   id="copper0">
+   <path  fill="none"  stroke="#F6CA34" stroke-linejoin="round" id="connector1pad" stroke-linecap="round" stroke-width="1.8" d="M11.25,4.5c0,1.243-1.007,2.25-2.25,2.25S6.75,5.743,6.75,4.5S7.757,2.25,9,2.25S11.25,3.257,11.25,4.5z"/>
+   <path  fill="none"  stroke="#F6CA34" stroke-linejoin="round" id="connector2pad" stroke-linecap="round" stroke-width="1.8" d="M20.25,4.5c0,1.243-1.007,2.25-2.25,2.25s-2.25-1.007-2.25-2.25S16.757,2.25,18,2.25S20.25,3.257,20.25,4.5z"/>
+   <path  fill="none"  stroke="#F6CA34" stroke-linejoin="round" id="connector3pad" stroke-linecap="round" stroke-width="1.8" d="M29.25,4.5c0,1.243-1.007,2.25-2.25,2.25s-2.25-1.007-2.25-2.25S25.757,2.25,27,2.25S29.25,3.257,29.25,4.5z"/>
+   <path  fill="none"  stroke="#F6CA34" stroke-linejoin="round" id="connector4pad" stroke-linecap="round" stroke-width="1.8" d="M11.25,4.5c0,1.243-1.007,2.25-2.25,2.25S6.75,5.743,6.75,4.5S7.757,2.25,9,2.25S11.25,3.257,11.25,4.5z"/>
+   <path  fill="none"  stroke="#F6CA34" stroke-linejoin="round" id="connector6pad" stroke-linecap="round" stroke-width="1.8" d="M20.25,4.5c0,1.243-1.007,2.25-2.25,2.25s-2.25-1.007-2.25-2.25S16.757,2.25,18,2.25S20.25,3.257,20.25,4.5z"/>
+   <path  fill="none"  stroke="#F6CA34" stroke-linejoin="round" id="connector5pad" stroke-linecap="round" stroke-width="1.8" d="M29.25,4.5c0,1.243-1.007,2.25-2.25,2.25s-2.25-1.007-2.25-2.25S25.757,2.25,27,2.25S29.25,3.257,29.25,4.5z"/>
+  </g>
+ </g>
+</svg>

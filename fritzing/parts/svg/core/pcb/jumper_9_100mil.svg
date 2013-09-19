@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+<svg xmlns="http://www.w3.org/2000/svg"  width="0.14in" x="0in" version="1.2" y="0in" height="0.94in" viewBox="0 0 140 940" baseProfile="tiny" id="0">
+ <desc   id="0.0" oldid="0.0">
+  <referenceFile   id="0.0.0" oldid="0.0.0">jumper_9_100mil_pcb.svg</referenceFile>
+ </desc>
+ <g   id="copper1">
+  <g   id="copper0">
+   <rect  width="58" x="41" y="41" fill="none"  height="58" stroke="rgb(255, 191, 0)" id="square" stroke-width="20"/>
+   <circle  fill="none" cx="70"  cy="70" stroke="rgb(255, 191, 0)" id="connector0pin" r="29" stroke-width="20"/>
+   <circle  fill="none" cx="70"  cy="170" stroke="rgb(255, 191, 0)" id="connector1pin" r="29" stroke-width="20"/>
+   <circle  fill="none" cx="70"  cy="270" stroke="rgb(255, 191, 0)" id="connector2pin" r="29" stroke-width="20"/>
+   <circle  fill="none" cx="70"  cy="370" stroke="rgb(255, 191, 0)" id="connector3pin" r="29" stroke-width="20"/>
+   <circle  fill="none" cx="70"  cy="470" stroke="rgb(255, 191, 0)" id="connector4pin" r="29" stroke-width="20"/>
+   <circle  fill="none" cx="70"  cy="570" stroke="rgb(255, 191, 0)" id="connector5pin" r="29" stroke-width="20"/>
+   <circle  fill="none" cx="70"  cy="670" stroke="rgb(255, 191, 0)" id="connector6pin" r="29" stroke-width="20"/>
+   <circle  fill="none" cx="70"  cy="770" stroke="rgb(255, 191, 0)" id="connector7pin" r="29" stroke-width="20"/>
+   <circle  fill="none" cx="70"  cy="870" stroke="rgb(255, 191, 0)" id="connector8pin" r="29" stroke-width="20"/>
+  </g>
+ </g>
+ <g   id="silkscreen">
+  <line   stroke="white" id="0.2.0" y1="20" stroke-width="10" x1="20" y2="920" x2="20"/>
+  <line   stroke="white" id="0.2.1" y1="920" stroke-width="10" x1="20" y2="920" x2="120"/>
+  <line   stroke="white" id="0.2.2" y1="920" stroke-width="10" x1="120" y2="20" x2="120"/>
+  <line   stroke="white" id="0.2.3" y1="20" stroke-width="10" x1="120" y2="20" x2="20"/>
+  <line   stroke="white" id="0.2.4" y1="55" stroke-width="5" x1="20" y2="20" x2="55"/>
+  <!-- 120 -->
+ </g>
+</svg>

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+<svg width="0.4155in" x="0in" version="1.2" y="0in" xmlns="http://www.w3.org/2000/svg" height="0.342902in" viewBox="0 0 415.5 342.902" baseProfile="tiny" xmlns:svg="http://www.w3.org/2000/svg">
+ <g  id="copper1" stroke-width="0">
+  <rect width="13.7008" x="34.6101" y="287.839" fill="#F7BD13"  height="55.0001" stroke="none" id="connector0pad" stroke-width="0"/>
+  <rect width="13.7008" x="60.2008" y="287.839" fill="#F7BD13"  height="55.0001" stroke="none" id="connector1pad" stroke-width="0"/>
+  <rect width="13.7008" x="85.7913" y="287.839" fill="#F7BD13"  height="55.0001" stroke="none" id="connector2pad" stroke-width="0"/>
+  <rect width="13.7008" x="111.382" y="287.839" fill="#F7BD13"  height="55.0001" stroke="none" id="connector3pad" stroke-width="0"/>
+  <rect width="13.7008" x="136.972" y="287.839" fill="#F7BD13"  height="55.0001" stroke="none" id="connector4pad" stroke-width="0"/>
+  <rect width="13.7008" x="162.562" y="287.839" fill="#F7BD13"  height="55.0001" stroke="none" id="connector5pad" stroke-width="0"/>
+  <rect width="13.7008" x="188.154" y="287.839" fill="#F7BD13"  height="55.0001" stroke="none" id="connector6pad" stroke-width="0"/>
+  <rect width="13.7008" x="213.744" y="287.839" fill="#F7BD13"  height="55.0001" stroke="none" id="connector7pad" stroke-width="0"/>
+  <rect width="13.7008" x="239.335" y="287.839" fill="#F7BD13"  height="55.0001" stroke="none" id="connector8pad" stroke-width="0"/>
+  <rect width="13.7008" x="264.925" y="287.839" fill="#F7BD13"  height="55.0001" stroke="none" id="connector9pad" stroke-width="0"/>
+  <rect width="13.7008" x="290.517" y="287.839" fill="#F7BD13"  height="55.0001" stroke="none" id="connector10pad" stroke-width="0"/>
+  <rect width="13.7008" x="316.106" y="287.839" fill="#F7BD13"  height="55.0001" stroke="none" id="connector11pad" stroke-width="0"/>
+  <rect width="13.7008" x="341.697" y="287.839" fill="#F7BD13"  height="55.0001" stroke="none" id="connector12pad" stroke-width="0"/>
+  <rect width="13.7008" x="367.288" y="287.839" fill="#F7BD13"  height="55.0001" stroke="none" id="connector13pad" stroke-width="0"/>
+  <rect width="13.7008" x="367.288" y="-0.0354331" fill="#F7BD13"  height="55.0001" stroke="none" id="connector14pad" stroke-width="0"/>
+  <rect width="13.7008" x="341.697" y="-0.0354331" fill="#F7BD13"  height="55.0001" stroke="none" id="connector15pad" stroke-width="0"/>
+  <rect width="13.7008" x="316.106" y="-0.0354331" fill="#F7BD13"  height="55.0001" stroke="none" id="connector16pad" stroke-width="0"/>
+  <rect width="13.7008" x="290.517" y="-0.0354331" fill="#F7BD13"  height="55.0001" stroke="none" id="connector17pad" stroke-width="0"/>
+  <rect width="13.7008" x="264.925" y="-0.0354331" fill="#F7BD13"  height="55.0001" stroke="none" id="connector18pad" stroke-width="0"/>
+  <rect width="13.7008" x="239.335" y="-0.0354331" fill="#F7BD13"  height="55.0001" stroke="none" id="connector19pad" stroke-width="0"/>
+  <rect width="13.7008" x="213.744" y="-0.0354331" fill="#F7BD13"  height="55.0001" stroke="none" id="connector20pad" stroke-width="0"/>
+  <rect width="13.7008" x="188.154" y="-0.0354331" fill="#F7BD13"  height="55.0001" stroke="none" id="connector21pad" stroke-width="0"/>
+  <rect width="13.7008" x="162.562" y="-0.0354331" fill="#F7BD13"  height="55.0001" stroke="none" id="connector22pad" stroke-width="0"/>
+  <rect width="13.7008" x="136.972" y="-0.0354331" fill="#F7BD13"  height="55.0001" stroke="none" id="connector23pad" stroke-width="0"/>
+  <rect width="13.7008" x="111.382" y="-0.0354331" fill="#F7BD13"  height="55.0001" stroke="none" id="connector24pad" stroke-width="0"/>
+  <rect width="13.7008" x="85.7913" y="-0.0354331" fill="#F7BD13"  height="55.0001" stroke="none" id="connector25pad" stroke-width="0"/>
+  <rect width="13.7008" x="60.2008" y="-0.0354331" fill="#F7BD13"  height="55.0001" stroke="none" id="connector26pad" stroke-width="0"/>
+  <rect width="13.7008" x="34.6101" y="-0.0354331" fill="#F7BD13"  height="55.0001" stroke="none" id="connector27pad" stroke-width="0"/>
+ </g>
+ <g  id="silkscreen" stroke-width="0">
+  <g  stroke-width="0">
+   <title >element:E$1</title>
+   <g  stroke-width="0">
+    <title >package:SSOP28DB</title>
+    <line  stroke="white" stroke-linecap="round" y1="56.2443" x1="3.07481" y2="56.2443" stroke-width="6" x2="412.524"/>
+    <line  stroke="white" stroke-linecap="round" y1="56.2443" x1="412.524" y2="286.559" stroke-width="6" x2="412.524"/>
+    <line  stroke="white" stroke-linecap="round" y1="286.559" x1="412.524" y2="286.559" stroke-width="6" x2="3.07481"/>
+    <line  stroke="white" stroke-linecap="round" y1="286.559" x1="3.07481" y2="56.2443" stroke-width="6" x2="3.07481"/>
+    <circle fill="none" cx="41.4606"  cy="248.174" stroke="white" r="18.0944" stroke-width="6"/>
+   </g>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="56.692913" version="1.1" gorn="0"  height="60.236217" id="svg2">
+    <desc >
+        <referenceFile >thumb-dial.svg</referenceFile>
+    </desc>
+    <defs  id="defs4"/>
+    <metadata  id="metadata7">
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <cc:Work xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" rdf:about="">
+                <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">image/svg+xml</dc:format>
+                <dc:type xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://purl.org/dc/dcmitype/StillImage" xmlns:dc="http://purl.org/dc/elements/1.1/"/>
+                <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"/>
+            </cc:Work>
+        </rdf:RDF>
+    </metadata>
+    <g  transform="translate(0,-992.12586)">
+        <g >
+            <g >
+                <g gorn="0.3.0.0.0"  id="silkscreen">
+                    <g  transform="matrix(0.96822996,0,0,0.96822996,0.9005682,996.56972)">
+                        <g >
+                            <g >
+                                <path stroke-opacity="1" fill="none" gorn="0.3.0.0.0.0.0.0.0"  stroke="#ffffff" style="stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0" id="path2987" stroke-width="1.86023617000000008" d="m 56.692913,28.346457 c 0,15.655315 -12.691141,28.346456 -28.346456,28.346456 C 12.691141,56.692913 0,44.001772 0,28.346457 0,12.691141 12.691141,0 28.346457,0 44.001772,0 56.692913,12.691141 56.692913,28.346457 z"/>
+                            </g>
+                        </g>
+                    </g>
+                    <path stroke-opacity="1" fill="none" gorn="0.3.0.0.0.1"  stroke="#ffffff" style="stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0" id="path3884" stroke-width="1.43858266" d="m 17.716905,1042.6068 21.259843,0 7.086614,-3.5433 0,-35.4331 -35.433071,0 0,35.4331 z"/>
+                    <path stroke-opacity="1" fill="none" gorn="0.3.0.0.0.2"  stroke="#ffffff" style="stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0" id="path3886" stroke-width="1.43858266" d="m 14.173228,1006.9978 0,7.087 28.346457,0 0,-7.087 -28.346457,0"/>
+                </g>
+            </g>
+        </g>
+    </g>
+    <g gorn="0.4"  id="X"/>
+    <g  transform="translate(1.875,3.5433104)">
+        <g >
+            <g >
+                <g stroke-opacity="1" gorn="0.5.0.0.0"  stroke="#ff9600" id="copper0" stroke-width="1">
+                    <g  transform="matrix(1.3764909,0,0,1.3764909,31.070076,30.255182)">
+                        <g >
+                            <g >
+                                <path stroke-opacity="1" fill="none" gorn="0.5.0.0.0.0.0.0.0"  stroke="#ff9600" style="stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0" id="NC2" stroke-width="1.02379513" d="m 10.629921,5.3149605 a 1.7716535,1.7716535 0 1 1 -3.5433067,0 1.7716535,1.7716535 0 1 1 3.5433067,0 z"/>
+                            </g>
+                        </g>
+                    </g>
+                    <g  transform="matrix(1.3764909,0,0,1.3764909,-2.5209113,30.235989)">
+                        <g >
+                            <g >
+                                <path stroke-opacity="1" fill="none" gorn="0.5.0.0.0.1.0.0.0"  stroke="#ff9600" style="stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0" id="NC1" stroke-width="1.02379513" d="m 10.629921,5.3149605 a 1.7716535,1.7716535 0 1 1 -3.5433067,0 1.7716535,1.7716535 0 1 1 3.5433067,0 z"/>
+                            </g>
+                        </g>
+                    </g>
+                    <g gorn="0.5.0.0.0.2"  id="g3996">
+                        <g  transform="translate(-1.875,-3.5433104)">
+                            <g >
+                                <g >
+                                    <path stroke-opacity="1" fill="#ff9600" gorn="0.5.0.0.0.2.0.0.0.0"  stroke="none" style="stroke-miterlimit:4;stroke-dasharray:none;stroke-linejoin:round;stroke-linecap:square" fill-opacity="1" id="rect3954" stroke-width="0.69999999999999996" d="M 11.53125 0 L 11.53125 7.09375 L 16.84375 7.09375 L 16.84375 0 L 11.53125 0 z M 14.1875 1.59375 C 15.263803 1.59375 16.125 2.4549471 16.125 3.53125 C 16.125 4.6075529 15.263803 5.5 14.1875 5.5 C 13.111197 5.5 12.21875 4.6075529 12.21875 3.53125 C 12.21875 2.4549471 13.111197 1.59375 14.1875 1.59375 z "/>
+                                </g>
+                            </g>
+                        </g>
+                        <path stroke-opacity="1" fill="none" gorn="0.5.0.0.0.2.1"  stroke="#fe9000" style="stroke-linejoin:round;stroke-miterlimit:4;" id="connector3pin" stroke-width="0.5323413" d="m 9.7900877,-3.8001518 5.0448243,0 0,7.6074328 -5.0448243,0 z"/>
+                    </g>
+                    <g  transform="translate(7.0723427,-0.00357089)">
+                        <g >
+                            <g >
+                                <g stroke-opacity="1" gorn="0.5.0.0.0.3.0.0.0"  stroke="#ff9600" id="g3996-3">
+                                    <g  transform="translate(-1.875,-3.5433104)">
+                                        <g >
+                                            <g >
+                                                <path fill="#ff9600" gorn="0.5.0.0.0.3.0.0.0.0.0.0.0"  stroke="none" fill-opacity="1" id="rect3954-0" d="m 11.53125,0 0,7.09375 5.3125,0 0,-7.09375 -5.3125,0 z m 2.65625,1.59375 c 1.076303,0 1.9375,0.8611971 1.9375,1.9375 0,1.0763029 -0.861197,1.96875 -1.9375,1.96875 -1.076303,0 -1.96875,-0.8924471 -1.96875,-1.96875 0,-1.0763029 0.892447,-1.9375 1.96875,-1.9375 z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <path stroke-opacity="1" fill="none" gorn="0.5.0.0.0.3.0.0.0.1"  stroke="#fe9000" style="stroke-linejoin:round;stroke-miterlimit:4;" id="connector4pin" stroke-width="0.5323413" d="m 9.7900877,-3.8001518 5.0448243,0 0,7.6074328 -5.0448243,0 z"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g  transform="translate(14.158957,-0.00357089)">
+                        <g >
+                            <g >
+                                <g stroke-opacity="1" gorn="0.5.0.0.0.4.0.0.0"  stroke="#ff9600" id="g3996-4">
+                                    <g  transform="translate(-1.875,-3.5433104)">
+                                        <g >
+                                            <g >
+                                                <path fill="#ff9600" gorn="0.5.0.0.0.4.0.0.0.0.0.0.0"  stroke="none" fill-opacity="1" id="rect3954-8" d="m 11.53125,0 0,7.09375 5.3125,0 0,-7.09375 -5.3125,0 z m 2.65625,1.59375 c 1.076303,0 1.9375,0.8611971 1.9375,1.9375 0,1.0763029 -0.861197,1.96875 -1.9375,1.96875 -1.076303,0 -1.96875,-0.8924471 -1.96875,-1.96875 0,-1.0763029 0.892447,-1.9375 1.96875,-1.9375 z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <path stroke-opacity="1" fill="none" gorn="0.5.0.0.0.4.0.0.0.1"  stroke="#fe9000" style="stroke-linejoin:round;stroke-miterlimit:4;" id="connector2pin" stroke-width="0.5323413" d="m 9.7900877,-3.8001518 5.0448243,0 0,7.6074328 -5.0448243,0 z"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g  transform="translate(21.245571,-0.00357089)">
+                        <g >
+                            <g >
+                                <g stroke-opacity="1" gorn="0.5.0.0.0.5.0.0.0"  stroke="#ff9600" id="g3996-7">
+                                    <g  transform="translate(-1.875,-3.5433104)">
+                                        <g >
+                                            <g >
+                                                <path fill="#ff9600" gorn="0.5.0.0.0.5.0.0.0.0.0.0.0"  stroke="none" fill-opacity="1" id="rect3954-7" d="m 11.53125,0 0,7.09375 5.3125,0 0,-7.09375 -5.3125,0 z m 2.65625,1.59375 c 1.076303,0 1.9375,0.8611971 1.9375,1.9375 0,1.0763029 -0.861197,1.96875 -1.9375,1.96875 -1.076303,0 -1.96875,-0.8924471 -1.96875,-1.96875 0,-1.0763029 0.892447,-1.9375 1.96875,-1.9375 z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <path stroke-opacity="1" fill="none" gorn="0.5.0.0.0.5.0.0.0.1"  stroke="#fe9000" style="stroke-linejoin:round;stroke-miterlimit:4;" id="connector1pin" stroke-width="0.5323413" d="m 9.7900877,-3.8001518 5.0448243,0 0,7.6074328 -5.0448243,0 z"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g  transform="translate(28.332185,-0.00357089)">
+                        <g >
+                            <g >
+                                <g stroke-opacity="1" gorn="0.5.0.0.0.6.0.0.0"  stroke="#ff9600" id="g3996-0">
+                                    <g  transform="translate(-1.875,-3.5433104)">
+                                        <g >
+                                            <g >
+                                                <path fill="#ff9600" gorn="0.5.0.0.0.6.0.0.0.0.0.0.0"  stroke="none" fill-opacity="1" id="rect3954-3" d="m 11.53125,0 0,7.09375 5.3125,0 0,-7.09375 -5.3125,0 z m 2.65625,1.59375 c 1.076303,0 1.9375,0.8611971 1.9375,1.9375 0,1.0763029 -0.861197,1.96875 -1.9375,1.96875 -1.076303,0 -1.96875,-0.8924471 -1.96875,-1.96875 0,-1.0763029 0.892447,-1.9375 1.96875,-1.9375 z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <path stroke-opacity="1" fill="none" gorn="0.5.0.0.0.6.0.0.0.1"  stroke="#fe9000" style="stroke-linejoin:round;stroke-miterlimit:4;" id="connector0pin" stroke-width="0.5323413" d="m 9.7900877,-3.8001518 5.0448243,0 0,7.6074328 -5.0448243,0 z"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

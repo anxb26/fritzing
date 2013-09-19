@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="0.42in"
+   version="1.2"
+   height="0.72in"
+   viewBox="0 0 420.0 720"
+   id="svg3857"
+   
+   >
+  <metadata
+     id="metadata3948">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3946" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     
+     
+     
+     
+     id="namedview3944"
+     showgrid="false"
+     showguides="true"
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     >
+    <sodipodi:guide
+       orientation="0,1"
+       position="56.233223,76.88136"
+       id="guide4078" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="65.019664,74.684749"
+       id="guide4080" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="-55.793901,78.199326"
+       id="guide4082" />
+  </sodipodi:namedview>
+  <desc
+     id="desc3859">Fritzing footprint SVG</desc>
+  <g
+     id="silkscreen">
+    <line
+       stroke="white"
+       y1="10"
+       stroke-width="10"
+       x1="10"
+       y2="710"
+       x2="10"
+       id="line3862" />
+    <line
+       stroke="white"
+       y1="710"
+       stroke-width="10"
+       x1="10"
+       y2="710"
+       x2="410.0"
+       id="line3864" />
+    <line
+       stroke="white"
+       y1="710"
+       stroke-width="10"
+       x1="410.0"
+       y2="10"
+       x2="410.0"
+       id="line3866" />
+    <line
+       stroke="white"
+       y1="10"
+       stroke-width="10"
+       x1="10"
+       y2="10"
+       x2="160.0"
+       id="line3868" />
+    <line
+       stroke="white"
+       y1="10"
+       stroke-width="10"
+       x1="260.0"
+       y2="10"
+       x2="410.0"
+       id="line3870" />
+  </g>
+  <g
+     id="copper0">
+    <circle
+       style="fill:none;stroke:#ffbf00;stroke-width:20"
+       
+       
+       
+       
+       r="27.5"
+       id="connector0pin"
+       cy="60"
+       cx="60"
+       d="M 87.5,60 C 87.5,75.187831 75.187831,87.5 60,87.5 44.812169,87.5 32.5,75.187831 32.5,60 32.5,44.812169 44.812169,32.5 60,32.5 75.187831,32.5 87.5,44.812169 87.5,60 z" />
+    <circle
+       style="fill:none;stroke:#ffbf00;stroke-width:20"
+       
+       
+       
+       
+       r="27.5"
+       id="connector13pin"
+       cy="60"
+       cx="360"
+       d="m 387.5,60 c 0,15.187831 -12.31217,27.5 -27.5,27.5 -15.18783,0 -27.5,-12.312169 -27.5,-27.5 0,-15.187831 12.31217,-27.5 27.5,-27.5 15.18783,0 27.5,12.312169 27.5,27.5 z" />
+    <circle
+       style="fill:none;stroke:#ffbf00;stroke-width:20"
+       
+       
+       
+       
+       r="27.5"
+       id="connector1pin"
+       cy="160"
+       cx="60"
+       d="m 87.5,160 c 0,15.18783 -12.312169,27.5 -27.5,27.5 -15.187831,0 -27.5,-12.31217 -27.5,-27.5 0,-15.18783 12.312169,-27.5 27.5,-27.5 15.187831,0 27.5,12.31217 27.5,27.5 z" />
+    <circle
+       style="fill:none;stroke:#ffbf00;stroke-width:20"
+       
+       
+       
+       
+       r="27.5"
+       id="connector12pin"
+       cy="160"
+       cx="360"
+       d="m 387.5,160 c 0,15.18783 -12.31217,27.5 -27.5,27.5 -15.18783,0 -27.5,-12.31217 -27.5,-27.5 0,-15.18783 12.31217,-27.5 27.5,-27.5 15.18783,0 27.5,12.31217 27.5,27.5 z" />
+    <circle
+       style="fill:none;stroke:#ffbf00;stroke-width:20"
+       
+       
+       
+       
+       r="27.5"
+       id="connector2pin"
+       cy="260"
+       cx="60"
+       d="m 87.5,260 c 0,15.18783 -12.312169,27.5 -27.5,27.5 -15.187831,0 -27.5,-12.31217 -27.5,-27.5 0,-15.18783 12.312169,-27.5 27.5,-27.5 15.187831,0 27.5,12.31217 27.5,27.5 z" />
+    <circle
+       style="fill:none;stroke:#ffbf00;stroke-width:20"
+       
+       
+       
+       
+       r="27.5"
+       id="connector11pin"
+       cy="260"
+       cx="360"
+       d="m 387.5,260 c 0,15.18783 -12.31217,27.5 -27.5,27.5 -15.18783,0 -27.5,-12.31217 -27.5,-27.5 0,-15.18783 12.31217,-27.5 27.5,-27.5 15.18783,0 27.5,12.31217 27.5,27.5 z" />
+    <circle
+       style="fill:none;stroke:#ffbf00;stroke-width:20"
+       
+       
+       
+       
+       r="27.5"
+       id="connector3pin"
+       cy="360"
+       cx="60"
+       d="m 87.5,360 c 0,15.18783 -12.312169,27.5 -27.5,27.5 -15.187831,0 -27.5,-12.31217 -27.5,-27.5 0,-15.18783 12.312169,-27.5 27.5,-27.5 15.187831,0 27.5,12.31217 27.5,27.5 z" />
+    <circle
+       style="fill:none;stroke:#ffbf00;stroke-width:20"
+       
+       
+       
+       
+       r="27.5"
+       id="connector10pin"
+       cy="360"
+       cx="360"
+       d="m 387.5,360 c 0,15.18783 -12.31217,27.5 -27.5,27.5 -15.18783,0 -27.5,-12.31217 -27.5,-27.5 0,-15.18783 12.31217,-27.5 27.5,-27.5 15.18783,0 27.5,12.31217 27.5,27.5 z" />
+    <circle
+       style="fill:none;stroke:#ffbf00;stroke-width:20"
+       
+       
+       
+       
+       r="27.5"
+       id="connector4pin"
+       cy="460"
+       cx="60"
+       d="m 87.5,460 c 0,15.18783 -12.312169,27.5 -27.5,27.5 -15.187831,0 -27.5,-12.31217 -27.5,-27.5 0,-15.18783 12.312169,-27.5 27.5,-27.5 15.187831,0 27.5,12.31217 27.5,27.5 z" />
+    <circle
+       style="fill:none;stroke:#ffbf00;stroke-width:20"
+       
+       
+       
+       
+       r="27.5"
+       id="connector9pin"
+       cy="460"
+       cx="360"
+       d="m 387.5,460 c 0,15.18783 -12.31217,27.5 -27.5,27.5 -15.18783,0 -27.5,-12.31217 -27.5,-27.5 0,-15.18783 12.31217,-27.5 27.5,-27.5 15.18783,0 27.5,12.31217 27.5,27.5 z" />
+    <circle
+       style="fill:none;stroke:#ffbf00;stroke-width:20"
+       
+       
+       
+       
+       r="27.5"
+       id="connector5pin"
+       cy="560"
+       cx="60"
+       d="m 87.5,560 c 0,15.18783 -12.312169,27.5 -27.5,27.5 -15.187831,0 -27.5,-12.31217 -27.5,-27.5 0,-15.18783 12.312169,-27.5 27.5,-27.5 15.187831,0 27.5,12.31217 27.5,27.5 z" />
+    <circle
+       style="fill:none;stroke:#ffbf00;stroke-width:20"
+       
+       
+       
+       
+       id="circle3887"
+       r="27.5"
+       cy="560"
+       cx="360"
+       d="m 387.5,560 c 0,15.18783 -12.31217,27.5 -27.5,27.5 -15.18783,0 -27.5,-12.31217 -27.5,-27.5 0,-15.18783 12.31217,-27.5 27.5,-27.5 15.18783,0 27.5,12.31217 27.5,27.5 z" />
+    <circle
+       style="fill:none;stroke:#ffbf00;stroke-width:20"
+       
+       
+       
+       
+       r="27.5"
+       id="connector6pin"
+       cy="660"
+       cx="60"
+       d="m 87.5,660 c 0,15.18783 -12.312169,27.5 -27.5,27.5 -15.187831,0 -27.5,-12.31217 -27.5,-27.5 0,-15.18783 12.312169,-27.5 27.5,-27.5 15.187831,0 27.5,12.31217 27.5,27.5 z" />
+    <circle
+       style="fill:none;stroke:#ffbf00;stroke-width:20"
+       
+       
+       
+       
+       r="27.5"
+       id="connector7pin"
+       cy="660"
+       cx="360"
+       d="m 387.5,660 c 0,15.18783 -12.31217,27.5 -27.5,27.5 -15.18783,0 -27.5,-12.31217 -27.5,-27.5 0,-15.18783 12.31217,-27.5 27.5,-27.5 15.18783,0 27.5,12.31217 27.5,27.5 z" />
+    <rect
+       style="fill:none"
+       id="rect3891"
+       height="0.0020000001"
+       y="560"
+       x="364.33734"
+       width="0.0020000001" />
+    <rect
+       style="fill:none"
+       id="connector8pin"
+       height="75"
+       y="522.5"
+       x="326.83734"
+       width="75" />
+    <rect
+       style="fill:none"
+       id="rect3894"
+       height="0.0020000001"
+       y="560"
+       x="364.33734"
+       width="0.0020000001" />
+    <rect
+       style="fill:none"
+       id="rect3896"
+       height="75"
+       y="522.5"
+       x="326.83734"
+       width="75" />
+    <rect
+       style="fill:none"
+       id="rect3898"
+       height="0.0020000001"
+       y="560"
+       x="364.33734"
+       width="0.0020000001" />
+    <rect
+       style="fill:none"
+       id="rect3900"
+       height="75"
+       y="522.5"
+       x="326.83734"
+       width="75" />
+    <rect
+       style="fill:none"
+       id="rect3902"
+       height="0.0020000001"
+       y="560"
+       x="364.33734"
+       width="0.0020000001" />
+    <rect
+       style="fill:none"
+       id="rect3904"
+       height="75"
+       y="522.5"
+       x="326.83734"
+       width="75" />
+    <rect
+       style="fill:none"
+       id="rect3906"
+       height="0.0020000001"
+       y="560"
+       x="364.33734"
+       width="0.0020000001" />
+    <rect
+       style="fill:none"
+       id="rect3908"
+       height="75"
+       y="522.5"
+       x="326.83734"
+       width="75" />
+    <rect
+       style="fill:none"
+       id="rect3910"
+       height="0.0020000001"
+       y="560"
+       x="364.33734"
+       width="0.0020000001" />
+    <rect
+       style="fill:none"
+       id="rect3912"
+       height="75"
+       y="522.5"
+       x="326.83734"
+       width="75" />
+    <rect
+       style="fill:none"
+       id="rect3914"
+       height="0.0020000001"
+       y="560"
+       x="364.33734"
+       width="0.0020000001" />
+    <rect
+       style="fill:none"
+       id="rect3916"
+       height="75"
+       y="522.5"
+       x="326.83734"
+       width="75" />
+    <rect
+       style="fill:none"
+       id="rect3918"
+       height="0.0020000001"
+       y="560"
+       x="364.33734"
+       width="0.0020000001" />
+    <rect
+       style="fill:none"
+       id="rect3920"
+       height="75"
+       y="522.5"
+       x="326.83734"
+       width="75" />
+    <rect
+       style="fill:none"
+       id="rect3922"
+       height="0.0020000001"
+       y="560"
+       x="364.33734"
+       width="0.0020000001" />
+    <rect
+       style="fill:none"
+       id="rect3924"
+       height="75"
+       y="522.5"
+       x="326.83734"
+       width="75" />
+    <rect
+       style="fill:none"
+       id="rect3926"
+       height="0.0020000001"
+       y="560"
+       x="364.33734"
+       width="0.0020000001" />
+    <rect
+       style="fill:none"
+       id="rect3928"
+       height="75"
+       y="522.5"
+       x="326.83734"
+       width="75" />
+    <rect
+       style="fill:none"
+       id="rect3930"
+       height="0.0020000001"
+       y="560"
+       x="364.33734"
+       width="0.0020000001" />
+    <rect
+       style="fill:none"
+       id="rect3932"
+       height="75"
+       y="522.5"
+       x="326.83734"
+       width="75" />
+    <rect
+       style="fill:none"
+       id="rect3934"
+       height="0.0020000001"
+       y="560"
+       x="364.33734"
+       width="0.0020000001" />
+    <rect
+       style="fill:none"
+       id="rect3936"
+       height="75"
+       y="522.5"
+       x="326.83734"
+       width="75" />
+    <rect
+       style="fill:none"
+       id="connector8terminal"
+       height="0.0020000001"
+       y="560"
+       x="364.33734"
+       width="0.0020000001" />
+    <rect
+       style="fill:none"
+       id="rect3939"
+       height="75"
+       y="522.5"
+       x="326.83734"
+       width="75" />
+  </g>
+  <g
+     id="keepout" />
+  <g
+     id="soldermask" />
+  <g
+     id="outline" />
+  <rect
+     style="fill:none;stroke:#ffbf00;stroke-width:20"
+     id="rect3874-2"
+     height="55"
+     y="332.19852"
+     x="332.29691"
+     width="55" />
+  <rect
+     style="fill:none;stroke:#ffbf00;stroke-width:20"
+     id="rect3874-6"
+     height="55"
+     y="332.19852"
+     x="31.966106"
+     width="55" />
+</svg>

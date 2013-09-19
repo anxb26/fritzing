@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<module fritzingVersion="0.5.3b.02.24.4759" icon="custom.png">
+<title>i875parts-working</title>
+<instances>
+ <instance moduleIdRef="b65f958a1afed983ca12939635b424de" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="102a7e799ff2655c51ef66020879bec1" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="3873dc7d914a2d1b34aaa46504b57f19" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="dca0a7997ac9b6a1c96947e7854fdec6" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="7bad999e89e0d81ba56bf12ba7ce7509" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="54bcf648f59eb22e7441ea640bf3ab0a" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="6ce1347fa4f81c89737cd07e86779ace" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="88b198c13e8e22842ae606f780e1b892" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="08926755d227b8636d5abf80eb0392f0" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="e6fdd4d29ddcef6f824b265a914ddec9" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="f92509613a337226be804dc53b484f32" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="119bf4bfddf840eed98415c2f6d63f8f" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="191928254f6fd5d302446f46569e333e" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="849f978c8022bc21e03c01a989234441" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="530a1e8cd5219d3c8e95c0fec1df65cb" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="f21ac02d3a4e59912190b80c4f0a01f6" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="71c5b1e1c8705c9ac27105d4fdb02954" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="3019e57c757ab2964cbf9bdb9c8a8d45" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="e31dbb9d7fc8714e9eea164fa7c0ce2a" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="367d258c9adc09cabccbb4000d0c67fb" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="cb2d467047ce9b293adc2d994c2ace20_54" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="881c3c7abf4e7198456952fa7dbe505c" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="188b4f1ccbda0100173c42b289171fac_4" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="d59071ca6be241b36902d361f78fd2e8_4" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="fad59f8d7103fdc54088a0ce6e3f777d_6" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="c7d09f83111ec7d638d1ad4a2c14bcfa_31" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="77938ee5b20d731f2cabc62b9b18c2d9_6" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="01b06528291620818138ec56143657a3_4" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="56b808f3e078316b4f1b1f3f5aa4ee2e" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="779f21f3b4acd1a8d6c6271dd0354ee0_17" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="d00015d8b6ebadf8bbf9a0d96c372742_3" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="42f333be5e890714d315bca97b3a97eb_16" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="6ebb8c198177502500d98c0046f6216e_2" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="daf5c6f3ee7e6da72522d1ea59fca803_65" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="eb142a74c990aaf6683bb87619d75b57_7" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="9ee234e336635fb30f72824ad0daa2f9_5" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="a4918f876081fd9956d4ed824b6008ed_2" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="c59c24853767675361a2dcc85051831a_2" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="46bda96ebf3d41c46016168fc22a3cd7" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="2ae2189c66d3caf01c8153194c74afcd_22" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="e8360ae23d733cf34d42fb59f43a9ebf_21" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="dc684a63b6316921ca706b4d8c6fa184_4" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="c3c8a80ac9b1539f2717588580289f2a_2" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="8185e689a0252af50ae4c640a309c2ed_6" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="HEF4071B" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="HEF4081B" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="HCTL-2016" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="LS7166" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="af94f16caaf56fbaba03431943ecb0bb_2" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="7ffcd4f1300c2c86b2dd9fc990ccf4b2_176" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="dual_gang_dial_pot_8420eb43fddab5c3d931d69ebc9f9378_13" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="PT4115-sot89-5_bbf2e33826c883f7038f734a5e157fd8_16" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="4017IC_614ece5c11369feef690a5a2125f767d_1" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="mcp23016_71f54e97d1757623b1ea6da3cfd0afdd_1" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="26278a89c8c5b4c74434142e6a1ablue" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="26278a89c8c5b4c74434142e6a1a906c" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="26278a89c8c5b4c74434142e6aorange" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="26278a89c8c5b4c74434142e6a1a906r" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="26278a89c8c5b4c74434142e6a1white" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="4625EEAAE6BC4F238E238C4DA8C4BC26" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+ <instance moduleIdRef="TB6612FNG Breakout v11" modelIndex="5584" >
+<views>
+<iconView layer="">
+<geometry z="0" x="-1" y="-1"/>
+</iconView>
+</views>
+</instance>
+</instances>
+</module>

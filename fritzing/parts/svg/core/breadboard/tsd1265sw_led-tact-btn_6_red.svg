@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Drawn by: Mattia Cuttini http://mattiac.deviantart.com in the crew of Agenzia Zero.net http://www.agenziazero.net  -->
+<!-- Coded by: Carlos Hansen from http://tlaana.com -->
+<svg xmlns="http://www.w3.org/2000/svg" width="0.590542in" xml:space="preserve" xmlns:xml="http://www.w3.org/XML/1998/namespace" x="0px" version="1.2" y="0px" height="0.551889in" viewBox="0 0 42.519 39.736" baseProfile="tiny" id="LED_Tactile_Button">
+<g id="breadboard">
+	<circle id="connector5pin" cx="39.685" cy="20.115" r="1.417"/>
+	<circle id="connector5leg" fill="#8C8C8C" cx="39.685" cy="20.115" r="1.048"/>
+	<circle id="connector4pin" cx="2.835" cy="19.941" r="1.417"/>
+	<circle id="connector4leg" fill="#8C8C8C" cx="2.835" cy="19.941" r="1.048"/>
+	<circle id="connector3pin" cx="14.269" cy="38.318" r="1.417"/>
+	<circle id="connector3leg" fill="#8C8C8C" cx="14.269" cy="38.318" r="1.048"/>
+	<circle id="connector2pin" cx="14.269" cy="1.467" r="1.417"/>
+	<circle id="connector2leg" fill="#8C8C8C" cx="14.269" cy="1.467" r="1.048"/>
+	<circle id="connector1pin" cx="28.441" cy="38.318" r="1.417"/>
+	<circle id="connector1leg" fill="#8C8C8C" cx="28.441" cy="38.318" r="1.048"/>
+	<circle id="connector0pin" cx="28.441" cy="1.467" r="1.417"/>
+	<circle id="connector0leg" fill="#8C8C8C" cx="28.441" cy="1.467" r="1.048"/>
+	<polygon points="38.268,34.018 38.268,5.67 35.433,2.836 7.087,2.836 7.086,2.836 4.251,5.67 4.251,34.016 4.252,34.018 
+		7.086,36.852 35.433,36.852 35.433,36.852 	"/>
+	<polygon fill="#CCCCCC" points="42.519,17.059 35.433,17.059 35.433,5.67 7.086,5.67 7.086,17.059 0,17.059 0,22.727 7.086,22.727 
+		7.086,34.018 35.433,34.018 35.433,22.727 42.519,22.727 	"/>
+	<path fill="#B2B2B2" d="M7.086,11.34h5.669V5.67H7.086V11.34z M29.764,5.67v5.67h5.669V5.67H29.764z M7.086,34.018h5.669v-5.67
+		H7.086V34.018z M29.764,34.018h5.669v-5.67h-5.669V34.018z"/>
+	<circle fill="#FFFFFF" cx="21.26" cy="20.066" r="11.338"/>
+	<circle fill="#B2B2B2" cx="21.355" cy="20.626" r="9.921"/>
+	<path fill="#8C8C8C" d="M12.851,2.836h2.835V0h-2.835V2.836z M27.024,0v2.836h2.835V0H27.024z M12.851,39.688h2.835v-2.835h-2.835
+		V39.688z M27.024,39.688h2.835v-2.835h-2.835V39.688z"/>
+	<polygon fill="#808080" points="4.961,19.421 3.306,19.421 3.306,17.767 2.363,17.767 2.363,19.421 0.709,19.421 0.709,20.363 
+		2.363,20.363 2.363,22.019 3.306,22.019 3.306,20.363 4.961,20.363 	"/>
+	<circle cx="9.921" cy="8.506" r="1.417"/>
+	<path fill="#B2B2B2" d="M8.882,8.07l0.862,0.372c0.031-0.07,0.084-0.119,0.162-0.135L9.739,7.411
+		C9.355,7.483,9.032,7.723,8.882,8.07z"/>
+	<circle cx="32.598" cy="8.506" r="1.417"/>
+	<path fill="#B2B2B2" d="M31.559,8.07l0.861,0.372c0.031-0.07,0.084-0.119,0.162-0.135l-0.167-0.896
+		C32.033,7.483,31.709,7.723,31.559,8.07z"/>
+	<circle cx="9.921" cy="31.183" r="1.417"/>
+	<path fill="#B2B2B2" d="M8.882,30.748l0.862,0.371c0.031-0.07,0.084-0.119,0.162-0.135l-0.167-0.896
+		C9.355,30.16,9.032,30.399,8.882,30.748z"/>
+	<circle cx="32.598" cy="31.183" r="1.417"/>
+	<path fill="#B2B2B2" d="M31.559,30.748l0.861,0.371c0.031-0.07,0.084-0.119,0.162-0.135l-0.167-0.896
+		C32.033,30.16,31.709,30.399,31.559,30.748z"/>
+	<circle fill="#FF3333" cx="21.355" cy="19.892" r="9.921"/>
+	<circle fill="#FF6666" cx="21.355" cy="19.893" r="9.212"/>
+</g>
+</svg>

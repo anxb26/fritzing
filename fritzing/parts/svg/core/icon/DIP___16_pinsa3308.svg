@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Generator: Adobe Illustrator 13.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 14948)  -->
+<svg xmlns="http://www.w3.org/2000/svg"  width="0.305556in" xml:space="preserve" xmlns:xml="http://www.w3.org/XML/1998/namespace" x="0px" version="1.1" y="0px" height="0.305556in" viewBox="0 0 22 22" id="0" enable-background="new 0.283 0.88 22 22">
+<desc><referenceFile>DIP___16_pins__0fc0bfc025692889eeeaa3308__icon__ac2c16563c10f89c5c06c8ddcc2f4cd6.svg</referenceFile></desc>
+
+ <metadata   id="0.0" oldid="metadata94">
+  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  id="0.0.0">
+   <cc:Work xmlns:cc="http://creativecommons.org/ns#"  rdf:about="" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" id="0.0.0.0">
+    <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/"  id="0.0.0.0.0">image/svg+xml</dc:format>
+    <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/"  id="0.0.0.0.1" rdf:resource="http://purl.org/dc/dcmitype/StillImage" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"  id="0.0.0.0.2"/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs   id="0.1" oldid="defs92"/>
+ <rect  width="22.053831" x="0" y="2.1600001"  height="19.440001" style="fill:#303030" id="middle"/>
+ <rect  width="21.991344" x="0" y="2.1600001"  height="1.771" style="fill:#3d3d3d" id="top"/>
+ <rect  width="22.009199" x="0" y="19.829"  height="1.771" id="bottom"/>
+ <polygon  points="0.54,19.829 0,21.601 0,2.16 0.54,3.931 "  style="fill:#1f1f1f" id="left"/>
+ <polygon  points="0.54,8.251 0.403,9.777 0.403,11.88 3.6,11.88 3.6,8.28 "  style="fill:#1c1c1c" id="left-upper-rect"/>
+ <polygon  points="3.6,15.517 3.6,11.88 0.403,11.88 0.403,13.981 0.54,15.517 "  style="fill:#383838" id="left-lower-rect"/>
+ <path   style="fill:#262626" id="slot" d="m 0.403,9.777 v 4.199 C 1.462,13.853 2.29,12.967 2.29,11.872 2.29,10.777 1.469,9.9 0.403,9.777 z"/>
+ <path   style="fill:#303030" id="cover" d="m 0.54,3.931 v 4.313 c 1.714,0.324 3.019,1.821 3.019,3.629 0,1.808 -1.299,3.312 -3.019,3.636 v 0.008 h 3.6 V 3.931 h -3.6 z"/>
+ <circle  cx="4.6799998"  cy="16.898001" style="fill:#212121" id="circle13" r="1.483"/>
+ <rect  width="2.1600001" x="2.52" y="20.636"  height="3.1240001" style="fill:#8c8c8c" id="connector0pin"/>
+ <rect  width="2.1600001" x="2.52" y="21.601"  height="2.1589999" style="fill:#8c8c8c" id="rect35"/>
+ <polygon  points="2.52,22.075 4.68,22.075 6.12,21.413 6.12,20.636 2.52,20.636 "  style="fill:#8c8c8c" id="polygon18"/>
+ <rect  width="2.1600001" x="2.52" y="0"  height="3.125" style="fill:#8c8c8c" id="connector13pin"/>
+ <rect  width="2.1600001" x="2.52" y="0"  height="2.1600001" style="fill:#8c8c8c" id="rect39"/>
+ <polygon  points="6.12,2.347 4.68,1.685 2.52,1.685 2.52,3.125 6.12,3.125 "  style="fill:#8c8c8c" id="polygon22"/>
+ <rect  width="2.1570001" x="9.7200003" y="20.636"  height="3.1240001" style="fill:#8c8c8c" id="connector1pin"/>
+ <rect  width="2.1570001" x="9.7200003" y="21.601"  height="2.1589999" style="fill:#8c8c8c" id="rect51"/>
+ <polygon  points="8.28,20.636 8.28,21.413 9.72,22.075 11.88,22.075 13.32,21.413 13.32,20.636 "  style="fill:#8c8c8c" id="polygon34"/>
+ <rect  width="2.1570001" x="9.7200003" y="0"  height="3.125" style="fill:#8c8c8c" id="connector12pin"/>
+ <rect  width="2.1570001" x="9.7200003" y="0"  height="2.1600001" style="fill:#8c8c8c" id="rect55"/>
+ <polygon  points="13.32,3.125 13.32,2.347 11.88,1.685 9.72,1.685 8.28,2.347 8.28,3.125 "  style="fill:#8c8c8c" id="polygon38"/>
+ <rect  width="2.1600001" x="16.92" y="20.636"  height="3.1240001" style="fill:#8c8c8c" id="connector2pin"/>
+ <rect  width="2.1600001" x="16.92" y="21.601"  height="2.1589999" style="fill:#8c8c8c" id="rect59"/>
+ <polygon  points="15.48,20.636 15.48,21.413 16.92,22.075 19.08,22.075 20.52,21.413 20.52,20.636 "  style="fill:#8c8c8c" id="polygon42"/>
+ <rect  width="2.1600001" x="16.92" y="0"  height="3.125" style="fill:#8c8c8c" id="connector11pin"/>
+ <rect  width="2.1600001" x="16.92" y="0"  height="2.1600001" style="fill:#8c8c8c" id="rect63"/>
+ <polygon  points="20.52,3.125 20.52,2.347 19.08,1.685 16.92,1.685 15.48,2.347 15.48,3.125 "  style="fill:#8c8c8c" id="polygon46"/>
+ <g  xml:space="preserve" xmlns:xml="http://www.w3.org/XML/1998/namespace"  style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:123.00000191%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans" id="text3203" transform="translate(-9.7991901,-3.379031)">
+  <text  x="15.224651" y="12.939932"  style="font-size:6px;fill:#e6e6e6" id="tspan3205">HEF</text>
+ </g>
+ <g  xml:space="preserve" xmlns:xml="http://www.w3.org/XML/1998/namespace"  style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:123.00000191%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans" id="text3107">
+  <text  x="2.1118944" y="14.904035"  style="font-size:6px;fill:#e6e6e6" id="tspan3109">4050B</text>
+ </g>
+</svg>

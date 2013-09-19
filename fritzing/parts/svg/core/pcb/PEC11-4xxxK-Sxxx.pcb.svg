@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns="http://www.w3.org/2000/svg"  width="51.023621" version="1.1" height="58.461788" id="0">
+ <desc   id="0.0" oldid="0.0">
+  <referenceFile   id="0.0.0" oldid="0.0.0">PEC11-4xxxK-Sxxx.pcb.svg</referenceFile>
+ </desc>
+ <defs   id="0.1" oldid="0.1"/>
+ <metadata   id="0.2" oldid="0.2">
+  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  id="0.2.0" oldid="0.2.0">
+   <cc:Work xmlns:cc="http://creativecommons.org/ns#"  rdf:about="" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" id="0.2.0.0" oldid="0.2.0.0">
+    <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/"  id="0.2.0.0.0" oldid="0.2.0.0.0">image/svg+xml</dc:format>
+    <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/"  id="0.2.0.0.1" oldid="0.2.0.0.1" rdf:resource="http://purl.org/dc/dcmitype/StillImage" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"  id="0.2.0.0.2" oldid="0.2.0.0.2"/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g   id="layer3">
+  <g   style="display:inline" id="copper1" transform="translate(2.1259841,-997.44231)">
+   <g   id="copper0">
+    <rect  width="8.5039368" x="-1.062992" y="1020.1181" stroke-opacity="1" fill="none"  height="11.338583" stroke="#f7bd13" style="color:#000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="rect3043" stroke-width="2.12598419"/>
+    <g   id="0.3.0.0.1" transform="matrix(0.93700993,0,0,0.93700993,11.765428,74.588663)">
+     <path  stroke-opacity="1" fill="none"  stroke="#f7bd13" style="color:#000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="connector1pad" stroke-width="1.89075208" d="m 15.236221,1043.5039 a 2.8346458,2.8346458 0 1 1 -5.6692917,0 2.8346458,2.8346458 0 1 1 5.6692917,0 z"/>
+    </g>
+    <g   id="0.3.0.0.2" transform="matrix(0.93700993,0,0,0.93700993,20.623695,74.588663)">
+     <path  stroke-opacity="1" fill="none"  stroke="#f7bd13" style="color:#000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="connector2pad" stroke-width="1.89075208" d="m 15.236221,1043.5039 a 2.8346458,2.8346458 0 1 1 -5.6692917,0 2.8346458,2.8346458 0 1 1 5.6692917,0 z"/>
+    </g>
+    <g   id="0.3.0.0.3" transform="matrix(0.93700993,0,0,0.93700993,2.90716,74.588663)">
+     <path  stroke-opacity="1" fill="none"  stroke="#f7bd13" style="color:#000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="connector0pad" stroke-width="1.89075208" d="m 15.236221,1043.5039 a 2.8346458,2.8346458 0 1 1 -5.6692917,0 2.8346458,2.8346458 0 1 1 5.6692917,0 z"/>
+    </g>
+    <g   id="0.3.0.0.4" transform="matrix(0.93700993,0,0,0.93700993,20.623695,23.21071)">
+     <path  stroke-opacity="1" fill="none"  stroke="#f7bd13" style="color:#000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="connector3pin" stroke-width="1.89075208" d="m 15.236221,1043.5039 a 2.8346458,2.8346458 0 1 1 -5.6692917,0 2.8346458,2.8346458 0 1 1 5.6692917,0 z"/>
+    </g>
+    <g   id="0.3.0.0.5" transform="matrix(0.93700993,0,0,0.93700993,2.90716,23.21071)">
+     <path  stroke-opacity="1" fill="none"  stroke="#f7bd13" style="color:#000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="connector4pin" stroke-width="1.89075208" d="m 15.236221,1043.5039 a 2.8346458,2.8346458 0 1 1 -5.6692917,0 2.8346458,2.8346458 0 1 1 5.6692917,0 z"/>
+    </g>
+    <rect  width="8.5039368" x="39.330708" y="1020.1181" stroke-opacity="1" fill="none"  height="11.338583" stroke="#f7bd13" style="color:#000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="rect3043-5" stroke-width="2.12598419"/>
+   </g>
+  </g>
+  <g   id="silkscreen" transform="translate(2.1259841,-997.44231)">
+   <path  stroke-opacity="1" fill="none"  stroke="#ffffff" style="color:#000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="rect3916" stroke-width="0.70866144" d="m 18.779528,1003.1102 9.212598,0 m 8.503937,0 9.212597,0 10e-7,13.8189 m 0,17.7165 0,15.5906 -9.212598,0 m -26.220472,0 -9.2125989,0 0,-15.5906 m 0,-17.7165 0,-13.8189 9.2125989,0"/>
+   <g  xml:space="preserve" xmlns:xml="http://www.w3.org/XML/1998/namespace" fill="#ffffff"  stroke="none" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:OCRA;-inkscape-font-specification:OCRA" fill-opacity="1" id="text3947" stroke-width="0.70866144" font-size="10">
+    <text  x="11.558171" y="1046.9783"  style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;font-family:OCRA;-inkscape-font-specification:OCRA" id="tspan3949">A</text>
+   </g>
+   <g  xml:space="preserve" xmlns:xml="http://www.w3.org/XML/1998/namespace" fill="#ffffff"  stroke="none" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:OCRA;-inkscape-font-specification:OCRA" id="text3947-7" stroke-width="0.70866144" font-size="10">
+    <text  x="20.416435" y="1046.9783" fill="#ffffff"  stroke="none" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:OCRA;-inkscape-font-specification:OCRA" fill-opacity="1" id="tspan3949-3" font-size="8">C</text>
+   </g>
+   <g  xml:space="preserve" xmlns:xml="http://www.w3.org/XML/1998/namespace" fill="#ffffff"  stroke="none" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:OCRA;-inkscape-font-specification:OCRA" id="text3947-6" stroke-width="0.70899999" font-size="10">
+    <text  x="29.274702" y="1046.9783" fill="#ffffff"  stroke="none" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:OCRA;-inkscape-font-specification:OCRA" fill-opacity="1" id="tspan3949-6" font-size="8">B</text>
+   </g>
+   <path  stroke-opacity="1" fill="none"  stroke="#ffffff" style="color:#000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="path3983" stroke-width="0.70866144" d="m 26.574803,1011.6142 5.669291,0 0,-5.315 m -17.716535,0 0,5.315 4.96063,0 7.086614,3.5433"/>
+  </g>
+ </g>
+</svg>

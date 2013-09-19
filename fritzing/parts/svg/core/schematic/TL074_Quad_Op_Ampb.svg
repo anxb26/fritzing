@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Generator: Adobe Illustrator 13.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 14948)  -->
+<svg width="2.14542in" x="0px" version="1.1" y="0px" xmlns="http://www.w3.org/2000/svg" height="2.525in" viewBox="0 0 154.47 181.8" xmlns:xml="http://www.w3.org/XML/1998/namespace" id="svg2" enable-background="new 0 0.08 154.47 181.8" xml:space="preserve">
+ <g id="schematic">
+  <metadata id="metadata3430">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <cc:Work xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" rdf:about="">
+     <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">image/svg+xml</dc:format>
+     <dc:type xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://purl.org/dc/dcmitype/StillImage" xmlns:dc="http://purl.org/dc/elements/1.1/"/>
+     <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"/>
+    </cc:Work>
+   </rdf:RDF>
+  </metadata>
+  <defs id="defs3428"/>
+  <sodipodi:namedview showgrid="false" objecttolerance="10" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" pagecolor="#ffffff" bordercolor="#666666" id="namedview78" borderopacity="1" guidetolerance="10" showguides="true" gridtolerance="10">
+   <sodipodi:guide position="154.85602,214.30539" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" id="guide3567" orientation="1,0"/>
+   <sodipodi:guide position="47.223896,163.24606" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" id="guide3569" orientation="0,1"/>
+   <sodipodi:guide position="46.265035,136.39795" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" id="guide3571" orientation="0,1"/>
+   <sodipodi:guide position="77.3,167.32121" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" id="guide3609" orientation="1,0"/>
+   <sodipodi:guide position="85.6,151.73973" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" id="guide3611" orientation="1,0"/>
+   <sodipodi:guide position="28.391962,147.29919" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" id="guide3613" orientation="1,0"/>
+   <sodipodi:guide position="108.90648,151.36729" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" id="guide4766" orientation="1,0"/>
+   <sodipodi:guide position="117.21219,152.68095" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" id="guide4768" orientation="1,0"/>
+   <sodipodi:guide position="141.67169,55.134497" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" id="guide4770" orientation="0,1"/>
+   <sodipodi:guide position="138.07596,82.222316" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" id="guide4772" orientation="0,1"/>
+  </sodipodi:namedview>
+  <rect width="106.949" x="22.68" y="1.08" height="179.8" style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="rect5"/>
+  <text x="50.492401" y="21.980499" style="font-size:16.92000008px;font-family:DroidSans" id="label" font-size="16.92">TL074</text>
+  <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line8" y1="29.68" y2="29.68" x1="1.08" x2="21.6"/>
+  <rect width="21.601" x="0" y="28.6" height="2.1589999" style="fill:none" id="connector0pin"/>
+  <rect width="2.1600001" x="0" y="28.6" height="2.1589999" style="fill:none" id="rect3255"/>
+  <text x="28.080799" y="39.200199" style="font-size:9.35999966px;font-family:DroidSans" id="label0" font-size="9.36">1OUT</text>
+  <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line13" y1="29.68" y2="29.68" x1="129.63" x2="151.23"/>
+  <rect width="21.601" x="130.71001" y="28.6" height="2.1589999" style="fill:none" id="connector13pin"/>
+  <rect width="2.1600001" x="152.31" y="28.6" height="2.1589999" style="fill:none" id="rect3260"/>
+  <text x="97.957314" y="39.200199" style="font-size:9.35999966px;font-family:DroidSans" id="label13" font-size="9.36">4OUT</text>
+  <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line18" y1="51.279999" y2="51.279999" x1="1.08" x2="21.6"/>
+  <rect width="21.601" x="0" y="50.200001" height="2.1600001" style="fill:none" id="connector1pin"/>
+  <rect width="2.1600001" x="0" y="50.200001" height="2.1600001" style="fill:none" id="rect3265"/>
+  <text x="28.080799" y="60.799801" style="font-size:9.35999966px;font-family:DroidSans" id="label1" font-size="9.36">1IN-</text>
+  <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line23" y1="51.279999" y2="51.279999" x1="129.63" x2="151.23"/>
+  <rect width="21.601" x="130.71001" y="50.200001" height="2.1600001" style="fill:none" id="connector12pin"/>
+  <rect width="2.1600001" x="152.31" y="50.200001" height="2.1600001" style="fill:none" id="rect3270"/>
+  <text x="105.24239" y="60.799801" style="font-size:9.35999966px;font-family:DroidSans" id="label12" font-size="9.36">4IN-</text>
+  <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line28" y1="72.879997" y2="72.879997" x1="1.08" x2="21.6"/>
+  <rect width="21.601" x="0" y="71.800003" height="2.1600001" style="fill:none" id="connector2pin"/>
+  <rect width="2.1600001" x="0" y="71.800003" height="2.1600001" style="fill:none" id="rect3275"/>
+  <text x="28.080799" y="82.400398" style="font-size:9.35999966px;font-family:DroidSans" id="label2" font-size="9.36">1IN+</text>
+  <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line33" y1="72.879997" y2="72.879997" x1="129.63" x2="151.23"/>
+  <rect width="21.601" x="130.71001" y="71.800003" height="2.1600001" style="fill:none" id="connector11pin"/>
+  <rect width="2.1600001" x="152.31" y="71.800003" height="2.1600001" style="fill:none" id="rect3280"/>
+  <text x="101.31192" y="82.400398" style="font-size:9.35999966px;font-family:DroidSans" id="label11" font-size="9.36">4IN+</text>
+  <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line38" y1="94.480003" y2="94.480003" x1="1.08" x2="21.6"/>
+  <rect width="21.601" x="0" y="93.400002" height="2.1600001" style="fill:none" id="connector3pin"/>
+  <rect width="2.1600001" x="0" y="93.400002" height="2.1600001" style="fill:none" id="rect3285"/>
+  <text x="28.080799" y="104" style="font-size:9.35999966px;font-family:DroidSans" id="label3" font-size="9.36">VCC+</text>
+  <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line43" y1="94.480003" y2="94.480003" x1="129.63" x2="151.23"/>
+  <rect width="21.601" x="130.71001" y="93.400002" height="2.1600001" style="fill:none" id="connector10pin"/>
+  <rect width="2.1600001" x="152.31" y="93.400002" height="2.1600001" style="fill:none" id="rect3290"/>
+  <text x="101.47645" y="104" style="font-size:9.35999966px;font-family:DroidSans" id="label10" font-size="9.36">VCC-</text>
+  <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line48" y1="116.08" y2="116.08" x1="1.08" x2="21.6"/>
+  <rect width="21.601" x="0" y="115" height="2.1600001" style="fill:none" id="connector4pin"/>
+  <rect width="2.1600001" x="0" y="115" height="2.1600001" style="fill:none" id="rect3295"/>
+  <text x="28.080799" y="125.5996" style="font-size:9.35999966px;font-family:DroidSans" id="label4" font-size="9.36">2IN+</text>
+  <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line53" y1="116.08" y2="116.08" x1="129.63" x2="151.23"/>
+  <rect width="21.601" x="130.71001" y="115" height="2.1600001" style="fill:none" id="connector9pin"/>
+  <rect width="2.1600001" x="152.31" y="115" height="2.1600001" style="fill:none" id="rect3300"/>
+  <text x="101.31192" y="125.5996" style="font-size:9.35999966px;font-family:DroidSans" id="label9" font-size="9.36">3IN+</text>
+  <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line58" y1="137.67999" y2="137.67999" x1="1.08" x2="21.6"/>
+  <rect width="21.601" x="0" y="136.60001" height="2.158" style="fill:none" id="connector5pin"/>
+  <rect width="2.1600001" x="0" y="136.60001" height="2.158" style="fill:none" id="rect3305"/>
+  <text x="28.080799" y="147.2012" style="font-size:9.35999966px;font-family:DroidSans" id="label5" font-size="9.36">2IN-</text>
+  <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line63" y1="137.67999" y2="137.67999" x1="129.63" x2="151.23"/>
+  <rect width="21.601" x="130.71001" y="136.60001" height="2.158" style="fill:none" id="connector8pin"/>
+  <rect width="2.1600001" x="152.31" y="136.60001" height="2.158" style="fill:none" id="rect3310"/>
+  <text x="105.24239" y="147.2012" style="font-size:9.35999966px;font-family:DroidSans" id="label8" font-size="9.36">3IN-</text>
+  <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line68" y1="159.28101" y2="159.28101" x1="1.08" x2="21.6"/>
+  <rect width="21.601" x="0" y="158.201" height="2.158" style="fill:none" id="connector6pin"/>
+  <rect width="2.1600001" x="0" y="158.201" height="2.158" style="fill:none" id="rect3315"/>
+  <text x="28.080799" y="168.8008" style="font-size:9.35999966px;font-family:DroidSans" id="label6" font-size="9.36">2OUT</text>
+  <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line73" y1="159.28101" y2="159.28101" x1="129.63" x2="151.23"/>
+  <rect width="21.601" x="130.71001" y="158.201" height="2.158" style="fill:none" id="connector7pin"/>
+  <rect width="2.1600001" x="152.31" y="158.201" height="2.158" style="fill:none" id="rect3320"/>
+  <text x="97.957314" y="168.8008" style="font-size:9.35999966px;font-family:DroidSans" id="label7" font-size="9.36">3OUT</text>
+  <rect width="0.0020000001" x="151.23" y="29.677999" height="0.0020000001" style="fill:none" id="connector13terminal"/>
+  <rect width="0.0020000001" x="151.23" y="51.278" height="0.0020000001" style="fill:none" id="connector12terminal"/>
+  <rect width="0.0020000001" x="151.23" y="72.877998" height="0.0020000001" style="fill:none" id="connector11terminal"/>
+  <rect width="0.0020000001" x="151.23" y="94.478996" height="0.0020000001" style="fill:none" id="connector10terminal"/>
+  <rect width="0.0020000001" x="151.23" y="116.078" height="0.0020000001" style="fill:none" id="connector9terminal"/>
+  <rect width="0.0020000001" x="151.23" y="137.67799" height="0.0020000001" style="fill:none" id="connector8terminal"/>
+  <rect width="0.0020000001" x="151.23" y="159.27699" height="0.0020000001" style="fill:none" id="connector7terminal"/>
+  <rect width="0.0020000001" x="1.5" y="29.677999" height="0.0020000001" style="fill:none" id="connector0terminal"/>
+  <rect width="0.0020000001" x="1.5" y="51.278" height="0.0020000001" style="fill:none" id="connector1terminal"/>
+  <rect width="0.0020000001" x="1.5" y="72.877998" height="0.0020000001" style="fill:none" id="connector2terminal"/>
+  <rect width="0.0020000001" x="1.5" y="94.478996" height="0.0020000001" style="fill:none" id="connector3terminal"/>
+  <rect width="0.0020000001" x="1.5" y="116.078" height="0.0020000001" style="fill:none" id="connector4terminal"/>
+  <rect width="0.0020000001" x="1.5" y="137.67799" height="0.0020000001" style="fill:none" id="connector5terminal"/>
+  <rect width="0.0020000001" x="1.5" y="159.27699" height="0.0020000001" style="fill:none" id="connector6terminal"/>
+  <g id="flowRoot3040"/>
+  <path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" id="path3615" d="m 28.391962,90.852065 57.208038,0 0,-17.499212" transform="matrix(0.79999995,0,0,0.79999995,-1.1444292e-4,0)"/>
+  <path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" id="path3617" d="m 28.391962,64.003955 35.511139,0 0,15.099348 13.396899,0 0,-5.593641" transform="matrix(0.79999995,0,0,0.79999995,-1.1444292e-4,0)"/>
+  <path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" id="path3621" d="m 28.391962,37.066249 53.139581,0 0,16.611416" transform="matrix(0.79999995,0,0,0.79999995,-1.1444292e-4,0)"/>
+  <g id="g3779">
+   <path style="fill:none;stroke:#000000;stroke-width:0.79999995px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" id="path3601" d="m 56.01381,58.665824 9.300456,-16.108863 9.300457,16.108863 z"/>
+   <g style="font-size:11.19999885999999911px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-0.15999999px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Serif;-inkscape-font-specification:DejaVu Serif" id="text3623" xml:space="preserve">
+    <text x="60.716644" y="57.474533" style="font-size:6.39999962000000000px;letter-spacing:-0.15999999px" id="tspan3625">-  </text>
+   </g>
+  </g>
+  <g id="g3779-9" transform="matrix(-1,0,0,1,155.94246,0)">
+   <path style="fill:none;stroke:#000000;stroke-width:0.79999995px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" id="path3601-2" d="m 56.01381,58.665824 9.300456,-16.108863 9.300457,16.108863 z"/>
+   <g style="font-size:11.19999886px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-0.16px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Serif;-inkscape-font-specification:DejaVu Serif" id="text3623-1" xml:space="preserve">
+    <text x="60.716644" y="57.474533" style="font-size:6.39999962px;letter-spacing:-0.16px" id="tspan3625-2">-  </text>
+   </g>
+  </g>
+  <g id="g3779-0-0" transform="matrix(1,0,0,-1,-3e-6,189.64337)">
+   <path style="fill:none;stroke:#000000;stroke-width:0.79999995px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" id="path3601-20-2" d="m 56.01381,58.665824 9.300456,-16.108863 9.300457,16.108863 z"/>
+   <g style="font-size:11.19999886px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-0.16px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Serif;-inkscape-font-specification:DejaVu Serif" id="text3623-7-5" xml:space="preserve">
+    <text x="60.716644" y="57.474533" style="font-size:6.39999962px;letter-spacing:-0.16px" id="tspan3625-0-6">-  </text>
+   </g>
+  </g>
+  <g id="g3779-0-0-0" transform="matrix(-1,0,0,-1,155.94245,189.64337)">
+   <path style="fill:none;stroke:#000000;stroke-width:0.79999995px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" id="path3601-20-2-9" d="m 56.01381,58.665824 9.300456,-16.108863 9.300457,16.108863 z"/>
+   <g style="font-size:11.19999886px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-0.16px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Serif;-inkscape-font-specification:DejaVu Serif" id="text3623-7-5-7" xml:space="preserve">
+    <text x="60.716644" y="57.474533" style="font-size:6.39999962px;letter-spacing:-0.16px" id="tspan3625-0-6-6">-  </text>
+   </g>
+  </g>
+  <path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" id="path4774" d="m 162.04606,90.852065 -53.13958,0 0,-17.596659" transform="matrix(0.79999995,0,0,0.79999995,-1.1444292e-4,0)"/>
+  <path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" id="path4776" d="m 162.28719,64.003955 -33.32041,0 0,17.73893 -11.74604,0 -0.009,-8.402727" transform="matrix(0.79999995,0,0,0.79999995,-1.1444292e-4,0)"/>
+  <path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" id="path4778" d="m 162.04606,37.235753 -48.98673,0 0,16.611417" transform="matrix(0.79999995,0,0,0.79999995,-1.1444292e-4,0)"/>
+  <path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" id="path4780" d="m 162.28719,145.0277 -53.6962,0 0,18.9375" transform="matrix(0.79999995,0,0,0.79999995,-1.1444292e-4,0)"/>
+  <path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" id="path4782" d="m 162.28719,172.11552 -31.16297,0 0,-12.22548 -13.90348,0 0,4.31488" transform="matrix(0.79999995,0,0,0.79999995,-1.1444292e-4,0)"/>
+  <path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" id="path4784" d="m 113.86472,199.20334 48.18276,0 -48.66219,0 0,-15.10206" transform="matrix(0.79999995,0,0,0.79999995,-1.1444292e-4,0)"/>
+  <path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" id="path4786" d="m 28.391962,145.0277 57.208038,0 0,18.21836" transform="matrix(0.79999995,0,0,0.79999995,-1.1444292e-4,0)"/>
+  <path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" id="path4788" d="m 28.391962,172.11552 37.050289,0 0,-14.1432 11.857749,0 0,5.27374" transform="matrix(0.79999995,0,0,0.79999995,-1.1444292e-4,0)"/>
+  <path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" id="path4792" d="m 28.391962,199.20334 53.350923,0 0,-15.58149" transform="matrix(0.79999995,0,0,0.79999995,-1.1444292e-4,0)"/>
+ </g>
+</svg>

@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns="http://www.w3.org/2000/svg"  width="70.866142" version="1.1" height="203.74016" id="0">
+ <desc   id="0.0" oldid="0.0">
+  <referenceFile   id="0.0.0" oldid="0.0.0">garagino_rev1_pcb_2.svg</referenceFile>
+ </desc>
+ <defs   id="0.1" oldid="0.1">
+  <linearGradient   gradientTransform="matrix(1,0,0,-1,273,-448.8574)" href="#SVGID_1_" id="0.1.0" y1="-465.3486" oldid="0.1.0" x1="-267.87961" y2="-465.3486" x2="-253.5798" gradientUnits="userSpaceOnUse"/>
+ </defs>
+ <metadata   id="0.2" oldid="0.2">
+  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  id="0.2.0" oldid="0.2.0">
+   <cc:Work xmlns:cc="http://creativecommons.org/ns#"  rdf:about="" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" id="0.2.0.0" oldid="0.2.0.0">
+    <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/"  id="0.2.0.0.0" oldid="0.2.0.0.0">image/svg+xml</dc:format>
+    <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/"  id="0.2.0.0.1" oldid="0.2.0.0.1" rdf:resource="http://purl.org/dc/dcmitype/StillImage" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"  id="0.2.0.0.2" oldid="0.2.0.0.2"/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g   style="display:inline" id="silkscreen">
+  <g   id="g3050" transform="translate(0,-848.62204)">
+   <path   style="fill:none" id="rect5213" d="m 8.957,878.73904 0,-30.1183 53.1496,0 0,30.1183"/>
+   <path   style="fill:none" id="path5409" d="m 46.41171,878.73905 24.50303,0 0.0501,173.62315 -70.86614,0 L 0,878.73905 l 24.65181,0"/>
+  </g>
+ </g>
+ <g   style="display:inline" id="copper1">
+  <g   style="display:inline" id="copper0" transform="translate(0,-848.62204)">
+   <g   id="g5413" transform="translate(-547.34873,505.6299)">
+    <rect  width="4.9499998" x="557.37408" y="419.38223" fill="none"  height="4.9499998" stroke="#ffbf00" id="rect38-9" stroke-width="1.79999995"/>
+    <g   id="0.4.0.0.1" transform="matrix(0.09,0,0,0.09,554.44904,416.45724)">
+     <circle  fill="none" cx="60"  cy="60" stroke="#ffbf00" r="27.5" id="connector0pin" stroke-width="20"/>
+    </g>
+    <g   id="0.4.0.0.2" transform="matrix(0.09,0,0,0.09,573.51203,416.45724)">
+     <circle  fill="none" cx="360"  cy="60" stroke="#ffbf00" r="27.5" id="connector27pin" stroke-width="20"/>
+    </g>
+    <g   id="0.4.0.0.3" transform="matrix(0.09,0,0,0.09,554.44904,416.45724)">
+     <circle  fill="none" cx="60"  cy="160" stroke="#ffbf00" r="27.5" id="connector1pin" stroke-width="20"/>
+    </g>
+    <g   id="0.4.0.0.4" transform="matrix(0.09,0,0,0.09,573.51203,416.45724)">
+     <circle  fill="none" cx="360"  cy="160" stroke="#ffbf00" r="27.5" id="connector26pin" stroke-width="20"/>
+    </g>
+    <g   id="0.4.0.0.5" transform="matrix(0.09,0,0,0.09,554.44904,416.45724)">
+     <circle  fill="none" cx="60"  cy="260" stroke="#ffbf00" r="27.5" id="connector2pin" stroke-width="20"/>
+    </g>
+    <g   id="0.4.0.0.6" transform="matrix(0.09,0,0,0.09,573.51203,416.45724)">
+     <circle  fill="none" cx="360"  cy="260" stroke="#ffbf00" r="27.5" id="connector25pin" stroke-width="20"/>
+    </g>
+    <g   id="0.4.0.0.7" transform="matrix(0.09,0,0,0.09,554.44904,416.45724)">
+     <circle  fill="none" cx="60"  cy="360" stroke="#ffbf00" r="27.5" id="connector3pin" stroke-width="20"/>
+    </g>
+    <g   id="0.4.0.0.8" transform="matrix(0.09,0,0,0.09,573.51203,416.45724)">
+     <circle  fill="none" cx="360"  cy="360" stroke="#ffbf00" r="27.5" id="connector24pin" stroke-width="20"/>
+    </g>
+    <g   id="0.4.0.0.9" transform="matrix(0.09,0,0,0.09,554.44904,416.45724)">
+     <circle  fill="none" cx="60"  cy="460" stroke="#ffbf00" r="27.5" id="connector4pin" stroke-width="20"/>
+    </g>
+    <g   id="0.4.0.0.10" transform="matrix(0.09,0,0,0.09,573.51203,416.45724)">
+     <circle  fill="none" cx="360"  cy="460" stroke="#ffbf00" r="27.5" id="connector23pin" stroke-width="20"/>
+    </g>
+    <g   id="0.4.0.0.11" transform="matrix(0.09,0,0,0.09,554.44904,416.45724)">
+     <circle  fill="none" cx="60"  cy="560" stroke="#ffbf00" r="27.5" id="connector5pin" stroke-width="20"/>
+    </g>
+    <g   id="0.4.0.0.12" transform="matrix(0.09,0,0,0.09,573.51203,416.45724)">
+     <circle  fill="none" cx="360"  cy="560" stroke="#ffbf00" r="27.5" id="connector22pin" stroke-width="20"/>
+    </g>
+    <g   id="0.4.0.0.13" transform="matrix(0.09,0,0,0.09,554.44904,416.45724)">
+     <circle  fill="none" cx="60"  cy="660" stroke="#ffbf00" r="27.5" id="connector6pin" stroke-width="20"/>
+    </g>
+    <g   id="0.4.0.0.14" transform="matrix(0.09,0,0,0.09,573.51203,416.45724)">
+     <circle  fill="none" cx="360"  cy="660" stroke="#ffbf00" r="27.5" id="connector21pin" stroke-width="20"/>
+    </g>
+    <g   id="0.4.0.0.15" transform="matrix(0.09,0,0,0.09,554.44904,416.45724)">
+     <circle  fill="none" cx="60"  cy="760" stroke="#ffbf00" r="27.5" id="connector7pin" stroke-width="20"/>
+    </g>
+    <g   id="0.4.0.0.16" transform="matrix(0.09,0,0,0.09,573.51203,416.45724)">
+     <circle  fill="none" cx="360"  cy="760" stroke="#ffbf00" r="27.5" id="connector20pin" stroke-width="20"/>
+    </g>
+    <g   id="0.4.0.0.17" transform="matrix(0.09,0,0,0.09,554.44904,416.45724)">
+     <circle  fill="none" cx="60"  cy="860" stroke="#ffbf00" r="27.5" id="connector8pin" stroke-width="20"/>
+    </g>
+    <g   id="0.4.0.0.18" transform="matrix(0.09,0,0,0.09,573.51203,416.45724)">
+     <circle  fill="none" cx="360"  cy="860" stroke="#ffbf00" r="27.5" id="connector19pin" stroke-width="20"/>
+    </g>
+    <g   id="0.4.0.0.19" transform="matrix(0.09,0,0,0.09,554.44904,416.45724)">
+     <circle  fill="none" cx="60"  cy="960" stroke="#ffbf00" r="27.5" id="connector9pin" stroke-width="20"/>
+    </g>
+    <g   id="0.4.0.0.20" transform="matrix(0.09,0,0,0.09,573.51203,416.45724)">
+     <circle  fill="none" cx="360"  cy="960" stroke="#ffbf00" r="27.5" id="connector18pin" stroke-width="20"/>
+    </g>
+    <g   id="0.4.0.0.21" transform="matrix(0.09,0,0,0.09,554.44904,416.45724)">
+     <circle  fill="none" cx="60"  cy="1060" stroke="#ffbf00" r="27.5" id="connector10pin" stroke-width="20"/>
+    </g>
+    <g   id="0.4.0.0.22" transform="matrix(0.09,0,0,0.09,573.51203,416.45724)">
+     <circle  fill="none" cx="360"  cy="1060" stroke="#ffbf00" r="27.5" id="connector17pin" stroke-width="20"/>
+    </g>
+    <g   id="0.4.0.0.23" transform="matrix(0.09,0,0,0.09,554.44904,416.45724)">
+     <circle  fill="none" cx="60"  cy="1160" stroke="#ffbf00" r="27.5" id="connector11pin" stroke-width="20"/>
+    </g>
+    <g   id="0.4.0.0.24" transform="matrix(0.09,0,0,0.09,573.51203,416.45724)">
+     <circle  fill="none" cx="360"  cy="1160" stroke="#ffbf00" r="27.5" id="connector16pin" stroke-width="20"/>
+    </g>
+    <g   id="0.4.0.0.25" transform="matrix(0.09,0,0,0.09,554.44904,416.45724)">
+     <circle  fill="none" cx="60"  cy="1260" stroke="#ffbf00" r="27.5" id="connector12pin" stroke-width="20"/>
+    </g>
+    <g   id="0.4.0.0.26" transform="matrix(0.09,0,0,0.09,573.51203,416.45724)">
+     <circle  fill="none" cx="360"  cy="1260" stroke="#ffbf00" r="27.5" id="connector15pin" stroke-width="20"/>
+    </g>
+    <g   id="0.4.0.0.27" transform="matrix(0.09,0,0,0.09,554.44904,416.45724)">
+     <circle  fill="none" cx="60"  cy="1360" stroke="#ffbf00" r="27.5" id="connector13pin" stroke-width="20"/>
+    </g>
+    <g   id="0.4.0.0.28" transform="matrix(0.09,0,0,0.09,573.51203,416.45724)">
+     <circle  fill="none" cx="360"  cy="1360" stroke="#ffbf00" r="27.5" id="connector14pin" stroke-width="20"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+<svg xmlns="http://www.w3.org/2000/svg"  width="0.32132in" x="0in" version="1.2" y="0in" height="0.24712in" viewBox="0 0 32132 24712" baseProfile="tiny" id="0">
+ <desc   id="0.0" oldid="0.0">
+  <referenceFile   id="0.0.0" oldid="0.0.0">TPA2000D1_Audio_Amplifier smd.svg</referenceFile>
+ </desc>
+ <title   id="0.1" oldid="0.1">TSSOP16.fp</title>
+ <desc   id="0.2" oldid="0.2">Geda footprint file 'TSSOP16.fp' converted by Fritzing</desc>
+ <metadata   id="0.3" oldid="0.3">
+  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  id="0.3.0" oldid="0.3.0">
+   <rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  rdf:about="" id="0.3.0.0" oldid="0.3.0.0">
+    <fz:attr xmlns:fz="http://fritzing.org/gedametadata/1.0/"  id="0.3.0.0.0" name="geda filename" oldid="0.3.0.0.0">TSSOP16.fp</fz:attr>
+    <fz:attr xmlns:fz="http://fritzing.org/gedametadata/1.0/"  id="0.3.0.0.1" name="fritzing version" oldid="0.3.0.0.1">0.5.2b.02.18.4756</fz:attr>
+    <fz:attr xmlns:fz="http://fritzing.org/gedametadata/1.0/"  id="0.3.0.0.2" name="conversion date" oldid="0.3.0.0.2">11/05/2011 18:53:38</fz:attr>
+    <fz:comment xmlns:fz="http://fritzing.org/gedametadata/1.0/"  id="0.3.0.0.3" oldid="0.3.0.0.3">number of pads</fz:comment>
+    <fz:comment xmlns:fz="http://fritzing.org/gedametadata/1.0/"  id="0.3.0.0.4" oldid="0.3.0.0.4">pad width in 1/1000 mil</fz:comment>
+    <fz:comment xmlns:fz="http://fritzing.org/gedametadata/1.0/"  id="0.3.0.0.5" oldid="0.3.0.0.5">pad length in 1/1000 mil</fz:comment>
+    <fz:comment xmlns:fz="http://fritzing.org/gedametadata/1.0/"  id="0.3.0.0.6" oldid="0.3.0.0.6">pad pitch 1/1000 mil</fz:comment>
+    <fz:comment xmlns:fz="http://fritzing.org/gedametadata/1.0/"  id="0.3.0.0.7" oldid="0.3.0.0.7">seperation between pads on opposite sides 1/1000 mil</fz:comment>
+    <fz:comment xmlns:fz="http://fritzing.org/gedametadata/1.0/"  id="0.3.0.0.8" oldid="0.3.0.0.8">X coordinates for the right hand column of pads (1/100 mils)</fz:comment>
+    <fz:comment xmlns:fz="http://fritzing.org/gedametadata/1.0/"  id="0.3.0.0.9" oldid="0.3.0.0.9">pad clearance to plane layer in 1/100 mil</fz:comment>
+    <fz:comment xmlns:fz="http://fritzing.org/gedametadata/1.0/"  id="0.3.0.0.10" oldid="0.3.0.0.10">pad soldermask width in 1/100 mil</fz:comment>
+    <fz:comment xmlns:fz="http://fritzing.org/gedametadata/1.0/"  id="0.3.0.0.11" oldid="0.3.0.0.11">silk screen width (1/100 mils)</fz:comment>
+    <fz:comment xmlns:fz="http://fritzing.org/gedametadata/1.0/"  id="0.3.0.0.12" oldid="0.3.0.0.12">figure out if we have an even or odd number of pins per side</fz:comment>
+    <fz:comment xmlns:fz="http://fritzing.org/gedametadata/1.0/"  id="0.3.0.0.13" oldid="0.3.0.0.13">silk bounding box is -XMAX,-YMAX, XMAX,YMAX (1/100 mils)</fz:comment>
+    <fz:comment xmlns:fz="http://fritzing.org/gedametadata/1.0/"  id="0.3.0.0.14" oldid="0.3.0.0.14">element_flags, description, pcb-name, value, mark_x, mark_y,</fz:comment>
+    <fz:comment xmlns:fz="http://fritzing.org/gedametadata/1.0/"  id="0.3.0.0.15" oldid="0.3.0.0.15">text_x, text_y, text_direction, text_scale, text_flags</fz:comment>
+    <fz:comment xmlns:fz="http://fritzing.org/gedametadata/1.0/"  id="0.3.0.0.16" oldid="0.3.0.0.16">Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]</fz:comment>
+    <fz:comment xmlns:fz="http://fritzing.org/gedametadata/1.0/"  id="0.3.0.0.17" oldid="0.3.0.0.17">punt on the arc on small parts as it can cover the pads</fz:comment>
+    <fz:attr xmlns:fz="http://fritzing.org/gedametadata/1.0/"  id="0.3.0.0.18" name="dist-license" oldid="0.3.0.0.18">GPL</fz:attr>
+    <fz:attr xmlns:fz="http://fritzing.org/gedametadata/1.0/"  id="0.3.0.0.19" name="use-license" oldid="0.3.0.0.19">unlimited</fz:attr>
+    <fz:attr xmlns:fz="http://fritzing.org/gedametadata/1.0/"  id="0.3.0.0.20" name="author" oldid="0.3.0.0.20">gEDA project</fz:attr>
+    <fz:attr xmlns:fz="http://fritzing.org/gedametadata/1.0/"  id="0.3.0.0.21" name="license-url" oldid="0.3.0.0.21">http://www.gnu.org/licenses/gpl.html</fz:attr>
+   </rdf:Description>
+  </rdf:RDF>
+ </metadata>
+ <g   id="copper1">
+  <line  fill="none"  connectorname="1" stroke="#ffbf00" stroke-linejoin="miter" stroke-linecap="square" id="connector0pad" y1="4650" x1="2149" y2="4650" stroke-width="1299" x2="6755"/>
+  <line  fill="none"  connectorname="2" stroke="#ffbf00" stroke-linejoin="miter" stroke-linecap="square" id="connector1pad" y1="7209" x1="2149" y2="7209" stroke-width="1299" x2="6755"/>
+  <line  fill="none"  connectorname="3" stroke="#ffbf00" stroke-linejoin="miter" stroke-linecap="square" id="connector2pad" y1="9768" x1="2149" y2="9768" stroke-width="1299" x2="6755"/>
+  <line  fill="none"  connectorname="4" stroke="#ffbf00" stroke-linejoin="miter" stroke-linecap="square" id="connector3pad" y1="12327" x1="2149" y2="12327" stroke-width="1299" x2="6755"/>
+  <line  fill="none"  connectorname="5" stroke="#ffbf00" stroke-linejoin="miter" stroke-linecap="square" id="connector4pad" y1="14885" x1="2149" y2="14885" stroke-width="1299" x2="6755"/>
+  <line  fill="none"  connectorname="6" stroke="#ffbf00" stroke-linejoin="miter" stroke-linecap="square" id="connector5pad" y1="17444" x1="2149" y2="17444" stroke-width="1299" x2="6755"/>
+  <line  fill="none"  connectorname="7" stroke="#ffbf00" stroke-linejoin="miter" stroke-linecap="square" id="connector6pad" y1="20003" x1="2149" y2="20003" stroke-width="1299" x2="6755"/>
+  <line  fill="none"  connectorname="8" stroke="#ffbf00" stroke-linejoin="miter" stroke-linecap="square" id="connector7pad" y1="22562" x1="2149" y2="22562" stroke-width="1299" x2="6755"/>
+  <line  fill="none"  connectorname="9" stroke="#ffbf00" stroke-linejoin="miter" stroke-linecap="square" id="connector8pad" y1="22562" x1="29983" y2="22562" stroke-width="1299" x2="25377"/>
+  <line  fill="none"  connectorname="10" stroke="#ffbf00" stroke-linejoin="miter" stroke-linecap="square" id="connector9pad" y1="20003" x1="29983" y2="20003" stroke-width="1299" x2="25377"/>
+  <line  fill="none"  connectorname="11" stroke="#ffbf00" stroke-linejoin="miter" stroke-linecap="square" id="connector10pad" y1="17444" x1="29983" y2="17444" stroke-width="1299" x2="25377"/>
+  <line  fill="none"  connectorname="12" stroke="#ffbf00" stroke-linejoin="miter" stroke-linecap="square" id="connector11pad" y1="14885" x1="29983" y2="14885" stroke-width="1299" x2="25377"/>
+  <line  fill="none"  connectorname="13" stroke="#ffbf00" stroke-linejoin="miter" stroke-linecap="square" id="connector12pad" y1="12327" x1="29983" y2="12327" stroke-width="1299" x2="25377"/>
+  <line  fill="none"  connectorname="14" stroke="#ffbf00" stroke-linejoin="miter" stroke-linecap="square" id="connector13pad" y1="9768" x1="29983" y2="9768" stroke-width="1299" x2="25377"/>
+  <line  fill="none"  connectorname="15" stroke="#ffbf00" stroke-linejoin="miter" stroke-linecap="square" id="connector14pad" y1="7209" x1="29983" y2="7209" stroke-width="1299" x2="25377"/>
+  <line  fill="none"  connectorname="16" stroke="#ffbf00" stroke-linejoin="miter" stroke-linecap="square" id="connector15pad" y1="4650" x1="29983" y2="4650" stroke-width="1299" x2="25377"/>
+ </g>
+ <g   id="silkscreen">
+  <line  fill="none"  stroke="white" id="0.4.0" y1="3000" x1="500" y2="24212" stroke-width="1000" x2="500"/>
+  <line  fill="none"  stroke="white" id="0.4.1" y1="24212" x1="500" y2="24212" stroke-width="1000" x2="31632"/>
+  <line  fill="none"  stroke="white" id="0.4.2" y1="24212" x1="31632" y2="3000" stroke-width="1000" x2="31632"/>
+  <line  fill="none"  stroke="white" id="0.4.3" y1="3000" x1="500" y2="3000" stroke-width="1000" x2="13566"/>
+  <line  fill="none"  stroke="white" id="0.4.4" y1="3000" x1="31632" y2="3000" stroke-width="1000" x2="18566"/>
+  <path  fill="none"  stroke="white" id="0.4.5" stroke-width="1000" d="M13566,3000a2500,2500,0,1,0,5000,0"/>
+ </g>
+</svg>
