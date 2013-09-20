@@ -134,7 +134,10 @@
 <tag>Snootlab</tag>
 </tags>
 <properties>
-<property name='family'>Motor Driver</property>
+<property name='family'>Motor IC</property>
+	<property name="type">Motor Driver</property>
+        <property name="variant">L293DNE</property>
+    <property name="package">motor driver shield</property>
 </properties>
 <views>
 <breadboardView>

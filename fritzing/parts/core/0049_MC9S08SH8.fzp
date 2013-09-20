@@ -2,7 +2,7 @@
 <module fritzingVersion="0.3.19b.04.16.4119" moduleId="7bad999e89e0d81ba56bf12ba7ce7509">
     <version>1.0</version>
     <author>Ashkan Ziabakhshdeylami</author>
-    <title>DIP - 20 pins</title>
+    <title>Semiconductor</title>
     <label>MC9S08SH8</label>
     <date>2009-10-23</date>
     <tags>
@@ -12,13 +12,14 @@
         <tag>HCS08SH</tag>
     </tags>
     <properties>
-        <property name="package">DIP (Dual Inline)</property>
-        <property name="family">MC9S08SH8</property>
-        <property name="chip label">MC9S08SH8</property>
+        
+        <property name="family">Semiconductor</property>
+        <property name="variant">MC9S08SH8</property>
+	<property name="package">DIP (Dual Inline)</property>
         <property name="pins">20</property>
         <property name="spacing">300mil</property>
     </properties>
-    <description>A DIP stand-in part for whatever IC you want.  With 20 pins on a 300 mil dual inline package (DIP) footprint.</description>
+    <description>http://www.freescale.com/files/microcontrollers/doc/data_sheet/MC9S08SH8.pdf</description>
     <views>
         <iconView>
             <layers image="icon/DIP_-_20_pins26392.svg">

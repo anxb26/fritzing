@@ -51,7 +51,11 @@
 <tag>Motor Driver</tag>
 </tags>
 <properties>
-<property name="family">Motor Driver</property>
+<property name='family'>Motor IC</property>
+	<property name="type">Motor Driver</property>
+        <property name="variant">A3967</property>
+    <property name="package">breakout board</property>
+
 </properties>
 <views>
 <breadboardView>

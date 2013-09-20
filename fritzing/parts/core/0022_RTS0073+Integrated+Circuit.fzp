@@ -6,17 +6,23 @@
     <label>IC</label>
     <date>2009-10-23</date>
     <tags>
+     <tag>IC</tag>
+      <tag>Audio</tag>
+      <tag>Record</tag>
+      <tag>Playback</tag>
         <tag>DIP</tag>
         <tag>user part</tag>
     </tags>
     <properties>
-        <property name="package">DIP (Dual Inline)</property>
-        <property name="specified voltage">4.98</property>
-        <property name="family">RTS0073</property>
-        <property name="pins">16</property>
-        <property name="spacing">900mil</property>
+          <property name="family">Audio IC</property>
+	<property name="type">playback/record IC</property>
+	<property name="variant">RTS0073</property>
+	<property name="package">DIP (Dual Inline)</property>
+          <property name="pins">16</property>
+          <property name="spacing">900mil</property>
+	<property name="specified voltage">4.98</property>
     </properties>
-    <description>A DIP stand-in part for whatever IC you want.  With 16 pins on a 300 mil dual inline package (DIP) footprint.</description>
+    <description>http://apaltech.com/files/data/rts0073/0073.pdf</description>
     <views>
         <iconView>
             <layers image="icon/RTS0073_Integrated_Circuit__ab451985b2ee.svg">

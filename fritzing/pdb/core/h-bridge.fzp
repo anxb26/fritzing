@@ -12,10 +12,13 @@
         <tag>Quadruple half H-bridge</tag>
     </tags>
     <properties>
-        <property name="family">IC</property>
+        <property name="family">Motor IC</property>
+	<property name="type">Motor Driver</property>
+	<property name="variant">SN754410</property>
+	 <property name="package">THT</property>
         <property name="output current">1.1A</property>
         <property name="max voltage">36V</property>
-    <property name="package">THT</property></properties>
+   </properties>
     <description>Quadruple Half H-Bridge Motor Driver. Drive two motors with 1.1A with this chip. (SN754410 data sheet from TI here http://focus.ti.com/lit/ds/symlink/sn754410.pdf )</description>
     <views>
         <iconView>

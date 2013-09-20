@@ -14,7 +14,10 @@
         <tag>VNH3</tag>
     </tags>
     <properties>
-        <property name="family">Motor Driver</property>
+    <property name='family'>Motor IC</property>
+	<property name="type">Motor Driver</property>
+        <property name="variant">VNH2SP30</property>
+    <property name="package">breakout board</property>
         <property name="part number">MD03A</property>
     </properties>
     <description>The Pololu dual high-power motor driver carrier for the VNH2SP30 motor driver integrated circuits from ST.

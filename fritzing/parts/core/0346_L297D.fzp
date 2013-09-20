@@ -6,10 +6,13 @@
     <date>2012-05-28</date>
     <tags/>
     <properties>
-        <property name="family">Stepper motor controller</property>
-        <property name="part number">L297-1, L297D</property>
+        <property name="family">Motor IC</property>
+	<property name="type">Stepper Motor Controller</property>
+        <property name="variant">L297-1, L297D</property>
+    <property name="package">THT</property>
     </properties>
-    <description>L297 Steppermotor controller</description>
+    <description>L297 Steppermotor controller
+    http://pdf.datasheetcatalog.com/datasheet/SGSThomsonMicroelectronics/mXywyt.pdf</description>
     <views>
         <iconView>
             <layers image="icon/L297D.svg">

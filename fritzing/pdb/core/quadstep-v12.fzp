@@ -46,7 +46,10 @@
 <tag>driver</tag>
 </tags>
 <properties>
-<property name='family'>Motor Controller</property>
+     <property name="family">Motor IC</property>
+	<property name="type">Motor Driver</property>
+	<property name="variant">A4983</property>
+	 <property name="package">Breakoutboard</property>
 </properties>
 <views>
 <breadboardView>

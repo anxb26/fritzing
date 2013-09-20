@@ -9,10 +9,12 @@
         <tag>DIP</tag>
     </tags>
     <properties>
-        <property name="family">Motor Driver</property>
+        <property name="family">Motor IC</property>
+	<property name="type">Motor Driver</property>
         <property name="variant">L293D</property>
     <property name="package">THT</property></properties>
-    <description>L293D Motor Driver</description>
+    <description>L293D Motor Driver 
+    http://pdf.datasheetcatalog.com/datasheet/texasinstruments/l293d.pdf</description>
       <views>
         <iconView>
             <layers image="icon/L293D_icon.svg">

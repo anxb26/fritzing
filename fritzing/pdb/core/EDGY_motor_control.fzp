@@ -9,8 +9,10 @@
         <tag>EDGY</tag>
     </tags>
     <properties>
-        <property name="family">EDGY</property>
-        <property name="variant">motor control</property>
+    <property name='family'>Motor IC</property>
+	<property name="type">Motor Control</property>
+        <property name="variant">L293DD</property>
+    <property name="package">breakout board</property>
     </properties>
     <description>The EDGY motor control is a L293DD breakout board for the use on a breadboard.</description>
     <views>

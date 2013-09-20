@@ -11,10 +11,8 @@
     </tags>
     <properties>
         <property name="package">DIP (Dual Inline) [THT]</property>
-        <property name="family">ULN2803</property>
-        <property name="editable pin labels">true</property>
-        <property name="chip label">ULN2803</property>
-        <property name="part number"></property>
+        <property name="family">Darlington Transistor Driver</property>
+	<property name="variant">ULN2003A</property>
         <property name="pins">18</property>
         <property name="spacing">300mil</property>
     </properties>

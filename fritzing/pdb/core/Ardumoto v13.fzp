@@ -39,7 +39,11 @@
 <tag>ArduMoto</tag>
 </tags>
 <properties>
-<property name='family'>Motor Shield</property>
+
+<property name='family'>Motor IC</property>
+	<property name="type">Motor Driver</property>
+        <property name="variant">L298</property>
+    <property name="package">motor driver shield</property>
 <property name='LCD Header'>No</property>
 </properties>
 <views>

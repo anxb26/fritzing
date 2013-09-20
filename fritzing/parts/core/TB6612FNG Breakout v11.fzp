@@ -3,12 +3,18 @@
 <version>4</version>
 <date>2013-01-10</date>
 <author>jonathan</author>
-<description></description>
+<description>TB6612FNG Breakout v11 
+https://www.sparkfun.com/products/9457 
+http://www.sparkfun.com/datasheets/Robotics/TB6612FNG.pdf
+</description>
 <title>TB6612FNG Breakout v11</title>
 <tags>
 </tags>
 <properties>
-<property name='family'>motor driver</property>
+<property name='family'>Motor IC</property>
+	<property name="type">Motor Driver</property>
+        <property name="variant">TB6612FNG</property>
+    <property name="package">breakout board</property>
 </properties>
 <views>
 <breadboardView>

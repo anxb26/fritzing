@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module fritzingVersion="0.3.8b.09.17.3489" moduleId="b65f958a1afed983ca12939635b424de">
     <author>davidelliott</author>
+    <description>http://www.mouser.com/ds/2/389/CD00149163-114945.pdf</description>
     <title>STP16DP05B1R</title>
     <date>2009-10-25</date>
     <tags/>
     <properties>
-        <property name="family"></property>
+        <property name="family">LED Driver</property>
+		<property name="type">LED Display Driver</property>
+        <property name="variant">STP16DP05B1R</property>
+    <property name="package">THT</property></properties>
+	
     </properties>
     <views>
         <breadboardView>

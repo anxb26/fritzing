@@ -47,8 +47,11 @@
 <tag>PWM</tag>
 </tags>
 <properties>
+<property name='family'>Motor IC</property>
+	<property name="type">Motor Driver</property>
+        <property name="variant">VNH2SP30-E</property>
+    <property name="package">motor driver shield</property>
 <property name='Max Output Current'>30A/Motor</property>
-<property name='family'>Motor Controller</property>
 <property name='No. Motors'>2</property>
 <property name='Operating Voltage'>5.5V - 16V</property>
 </properties>
