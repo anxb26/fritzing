@@ -232,7 +232,11 @@ public:
     void setSquashShape(bool);
     const QPainterPath & selectionShape();
     virtual void setTransform2(const QTransform &);
+
     void initLayerAttributes(LayerAttributes & layerAttributes, ViewLayer::ViewID, ViewLayer::ViewLayerID, ViewLayer::ViewLayerPlacement, bool doConnectors, bool doCreateShape);
+
+    virtual QString getInspectorTitle();
+    virtual void setInspectorTitle(const QString & oldText, const QString & newText);
 
 
 public:
@@ -302,6 +306,7 @@ public slots:
 	void hidePartLabel();
 	void partLabelChanged(const QString &newText);
 	virtual void swapEntry(const QString & text);
+    void showInFolder();
 
 public:
 	static bool zLessThan(ItemBase * & p1, ItemBase * & p2);
