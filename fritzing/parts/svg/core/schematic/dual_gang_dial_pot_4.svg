@@ -1,61 +1,34 @@
-<?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<!-- Generator: Adobe Illustrator 13.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 14948)  -->
-<svg xmlns="http://www.w3.org/2000/svg" width="0.884944in" x="0px" version="1.2" y="0px" gorn="0"  height="0.869639in" viewBox="0 0 63.716 62.614" xmlns:xml="http://www.w3.org/XML/1998/namespace" id="svg2" xml:space="preserve">
-    <desc >
-        <referenceFile >thumb-dial-schema.svg</referenceFile>
-    </desc>
-    <metadata  id="metadata38">
-        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-            <cc:Work xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" rdf:about="">
-                <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">image/svg+xml</dc:format>
-                <dc:type xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://purl.org/dc/dcmitype/StillImage" xmlns:dc="http://purl.org/dc/elements/1.1/"/>
-                <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"/>
-            </cc:Work>
-        </rdf:RDF>
-    </metadata>
-    <defs  id="defs36"/>
-    <rect width="1.895" x="17.797" y="1.824" gorn="0.3"  height="9.783" id="connector0pin"/>
-    <rect width="0.867" x="18.275" y="1.14"  height="0.684"/>
-    <rect width="1.893" x="17.801" y="52.541" gorn="0.5"  height="9.783" id="connector3pin"/>
-    <rect width="0.867" x="18.279" y="62.253"  height="0.687"/>
-    <rect width="1.894" x="29.861" y="42.203" gorn="0.7"  height="9.783" id="connector1pin"/>
-    <rect width="0.866" x="30.409" y="51.986" gorn="0.8"  height="0.684" id="connector1terminal"/>
-    <g gorn="0.9"  id="schematic">
-        <g gorn="0.9.0"  id="g10">
-            <polyline fill="#FFFFFF" points="18.729,1.866 18.729,19.923 22.229,21.785 14.979,25.82 22.229,29.854 14.979,33.889 22.229,37.923 14.979,41.958 18.729,44.13 18.729,62.033 " gorn="0.9.0.0"  stroke="#000000" stroke-linecap="round" id="polyline12" stroke-width="2.2284"/>
-            <polygon points="0.862,22.294 10.897,24.382 8.009,29.642 " gorn="0.9.0.1"  id="polygon14"/>
-            <polyline fill="none" points="5.927,25.103 30.803,38.76 30.803,51.686 " gorn="0.9.0.2"  stroke="#000000" stroke-linecap="round" id="polyline16" stroke-width="2.2284"/>
-        </g>
-    </g>
-    <g  transform="translate(30.040303,-0.24452933)">
-        <g >
-            <g >
-                <g >
-                    <g >
-                        <g gorn="0.10.0.0.0.0.0"  id="schematic-7">
-                            <g gorn="0.10.0.0.0.0.0.0"  id="g10-6">
-                                <g  transform="translate(-0.2814077,0)">
-                                    <g >
-                                        <g >
-                                            <g >
-                                                <g >
-                                                    <path fill="none" gorn="0.10.0.0.0.0.0.0.0.0.0.0.0.0"  stroke="#000000" style="stroke-linecap:round" id="polyline12-6" stroke-width="2.22839999000000022" d="m -10.162191,13.403716 28.891191,0.114682 0,6.404602 3.5,1.862 -7.25,4.035 7.25,4.034 -7.25,4.035 7.25,4.034 -7.25,4.035 3.75,2.172 0,17.903"/>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </g>
-                                <polygon points="0.862,22.294 10.897,24.382 8.009,29.642 " gorn="0.10.0.0.0.0.0.0.1"  id="polygon14-6"/>
-                                <polyline points="5.927,25.103 30.803,38.76 30.803,51.686 " fill="none" gorn="0.10.0.0.0.0.0.0.2"  stroke="#000000" style="stroke-linecap:round" id="polyline16-9" stroke-width="2.22839999"/>
-                                <rect width="1.8939999" x="29.782673" y="41.958466" gorn="0.10.0.0.0.0.0.0.3"  height="9.783" id="connector2pin"/>
-                                <rect width="0.86599994" x="30.330677" y="51.74147" gorn="0.10.0.0.0.0.0.0.4"  height="0.68400002" id="connector1terminal-7"/>
-                                <rect width="1.2194334" x="17.819841" y="61.17437" stroke-opacity="1" fill="#000000" gorn="0.10.0.0.0.0.0.0.5"  height="1.1582452" stroke="#000000" style="stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0" fill-opacity="1" id="connector1terminal-5-2" stroke-width="0.3712002"/>
-                                <rect width="1.8939999" x="17.559645" y="51.140011" gorn="0.10.0.0.0.0.0.0.6"  height="9.783" id="connector4pin"/>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="svg2" xmlns:xml="http://www.w3.org/XML/1998/namespace"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="45.745px" height="43.2px"
+	 viewBox="0 0 45.745 43.2" enable-background="new 0 0 45.745 43.2" xml:space="preserve">
+<g id="schematic">
+	<polyline fill="none" stroke="#000000" stroke-width="0.7" stroke-linecap="round" points="4.147,17.557 21.622,27.475 
+		21.622,37.743 	"/>
+	<polygon points="4.252,19.504 0,15.188 5.84,16.799 	"/>
+	<polyline fill="none" stroke="#000000" stroke-width="0.7" stroke-linecap="round" points="14.422,36 14.422,34.559 11.543,32.401 
+		18.022,28.799 11.543,25.2 18.022,21.6 11.543,18 18.022,14.401 11.543,10.8 14.422,8.64 14.422,7.2 	"/>
+	<path id="connector1terminal" fill="none" d="M21.991,43.2v-1.055l-0.674,0.018V43.2H21.991z"/>
+	
+		<line id="connector1pin" fill="none" stroke="#787878" stroke-width="0.7" stroke-linecap="round" x1="21.643" y1="42.85" x2="21.643" y2="36"/>
+	
+		<line id="connector3pin" fill="none" stroke="#787878" stroke-width="0.7" stroke-linecap="round" x1="14.422" y1="42.85" x2="14.422" y2="36"/>
+	<path id="connector3terminal" fill="none" d="M14.069,42.178h0.703L14.741,43.2h-0.656L14.069,42.178z"/>
+	
+		<line id="connector0pin" fill="none" stroke="#787878" stroke-width="0.7" stroke-linecap="round" x1="14.422" y1="0.35" x2="14.422" y2="7.55"/>
+	<path id="connector0terminal" fill="none" d="M14.084,0l-0.021,1.344l0.689-0.016L14.756,0H14.084z"/>
+	<polyline fill="none" stroke="#000000" stroke-width="0.7" stroke-linecap="round" points="25.747,17.557 43.221,27.475 
+		43.221,37.743 	"/>
+	<polygon points="25.853,19.504 21.6,15.188 27.44,16.799 	"/>
+	<polyline fill="none" stroke="#000000" stroke-width="0.7" stroke-linecap="round" points="36.022,36 36.022,34.559 33.143,32.401 
+		39.622,28.799 33.143,25.2 39.622,21.6 33.143,18 39.622,14.401 33.143,10.8 36.022,8.64 14.422,8.64 	"/>
+	<path id="connector2terminal" fill="none" d="M43.59,43.2v-1.055l-0.674,0.018V43.2H43.59z"/>
+	
+		<line id="connector2pin" fill="none" stroke="#787878" stroke-width="0.7" stroke-linecap="round" x1="43.243" y1="42.85" x2="43.243" y2="36"/>
+	
+		<line id="connector4pin" fill="none" stroke="#787878" stroke-width="0.7" stroke-linecap="round" x1="36.022" y1="42.85" x2="36.022" y2="36"/>
+	<path id="connector4terminal" fill="none" d="M35.668,42.178h0.703L36.34,43.2h-0.656L35.668,42.178z"/>
+</g>
 </svg>

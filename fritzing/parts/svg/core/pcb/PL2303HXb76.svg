@@ -1,8 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <!-- Created with Fritzing (http://www.fritzing.org/) -->
 <svg width="0.4155in" x="0in" version="1.2" y="0in" xmlns="http://www.w3.org/2000/svg" height="0.342902in" viewBox="0 0 415.5 342.902" baseProfile="tiny" xmlns:svg="http://www.w3.org/2000/svg">
- <g  id="copper1" stroke-width="0">
-  <rect width="13.7008" x="34.6101" y="287.839" fill="#F7BD13"  height="55.0001" stroke="none" id="connector0pad" stroke-width="0"/>
+ <g  id="copper1">
+ <g  id="copper0">
+<rect width="13.7008" x="34.6101" y="287.839" fill="#F7BD13"  height="55.0001" stroke="none" id="connector0pad" stroke-width="0"/>
   <rect width="13.7008" x="60.2008" y="287.839" fill="#F7BD13"  height="55.0001" stroke="none" id="connector1pad" stroke-width="0"/>
   <rect width="13.7008" x="85.7913" y="287.839" fill="#F7BD13"  height="55.0001" stroke="none" id="connector2pad" stroke-width="0"/>
   <rect width="13.7008" x="111.382" y="287.839" fill="#F7BD13"  height="55.0001" stroke="none" id="connector3pad" stroke-width="0"/>
@@ -31,6 +32,7 @@
   <rect width="13.7008" x="60.2008" y="-0.0354331" fill="#F7BD13"  height="55.0001" stroke="none" id="connector26pad" stroke-width="0"/>
   <rect width="13.7008" x="34.6101" y="-0.0354331" fill="#F7BD13"  height="55.0001" stroke="none" id="connector27pad" stroke-width="0"/>
  </g>
+  </g>
  <g  id="silkscreen" stroke-width="0">
   <g  stroke-width="0">
    <title >element:E$1</title>

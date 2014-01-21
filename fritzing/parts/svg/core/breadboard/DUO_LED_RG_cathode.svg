@@ -2,33 +2,33 @@
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1"
-	 id="svg2" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:cc="http://creativecommons.org/ns#"
+	 id="svg2" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:svg="http://www.w3.org/2000/svg"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.76px"
 	 height="32.551px" viewBox="0 0 23.76 32.551" enable-background="new 0 0 23.76 32.551" xml:space="preserve">
-<sodipodi:namedview  id="namedview40" guidetolerance="10" gridtolerance="10" showgrid="false" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10">
+<sodipodi:namedview  guidetolerance="10" borderopacity="1" pagecolor="#ffffff" gridtolerance="10" bordercolor="#666666" showgrid="false" objecttolerance="10" id="namedview40">
 	</sodipodi:namedview>
 <g id="breadboard">
 	<g>
-		<rect x="10.729" y="18.357" fill="#8C8C8C" width="2.16" height="14.194"/>
+		<rect x="10.729" y="18.357" fill="#8C8C8C" width="2.161" height="14.193"/>
 	</g>
-	<line id="connector1leg" fill="none" stroke="#8C8C8C" stroke-width="2.16" stroke-linecap="round" d="M11.81,32.551" x1="11.81" y1="32.551" x2="11.81" y2="53.551"/>
-	<line id="connector0leg" fill="none" stroke="#8C8C8C" stroke-width="2.16" stroke-linecap="round" d="M2.68,32.551" x1="2.68" y1="32.551" x2="2.68" y2="53.551"/>
-	<line id="connector4leg" fill="none" stroke="#8C8C8C" stroke-width="2.16" stroke-linecap="round" d="M21.08,32.551" x1="21.08" y1="32.551" x2="21.08" y2="53.551"/>
+	
+		<line id="connector1leg" fill="none" stroke="#8C8C8C" stroke-width="2.16" stroke-linecap="round" x1="11.81" y1="32.551" x2="11.81" y2="53.551"/>
+	
+		<line id="connector0leg" fill="none" stroke="#8C8C8C" stroke-width="2.16" stroke-linecap="round" x1="4.73" y1="32.551" x2="4.73" y2="53.551"/>
+	
+		<line id="connector4leg" fill="none" stroke="#8C8C8C" stroke-width="2.16" stroke-linecap="round" x1="19.252" y1="32.549" x2="19.252" y2="53.549"/>
 	<g id="rgbled">
-		<path id="path16" fill="#8C8C8C" d="M6.963,18.013c0,0,0,3.994,0,5.186c0,1.192-1.271,2.302-2.39,3.428
-			C3.111,28.098,1.6,29.618,1.6,31.36v1.188l0,0h2.16l0,0v-1.023c0-1.096,1.246-2.27,2.345-3.373
-			c1.483-1.493,3.019-3.038,3.019-4.821v-5.313L6.963,18.013L6.963,18.013z"/>
-		<path id="path20" fill="#8C8C8C" d="M19.187,26.625c-1.121-1.127-2.392-2.235-2.392-3.428c0-1.191,0-5.186,0-5.186h-2.16v5.313
-			c0,1.784,1.535,3.329,3.019,4.822C18.755,29.25,20,30.42,20,31.52v1.021l0,0h2.16l0,0v-1.185
-			C22.16,29.618,20.647,28.098,19.187,26.625z"/>
+		<path id="path16" fill="#8C8C8C" d="M6.963,18.014c0,0,0,3.993,0,5.186c0,1.191-1.271,2.302-2.39,3.428
+			c-0.96,0.96-0.923,3.555-0.923,4.732v1.188l0,0h2.16l0,0v-1.022c0-1.096-0.148-2.929,0.295-3.373
+			c1.483-1.493,3.019-3.038,3.019-4.821v-5.313L6.963,18.014L6.963,18.014z"/>
 		<path id="path22" opacity="0.5" fill="#E6E6E6" enable-background="new    " d="M19.133,13.177V7.185
-			C19.133,3.217,15.916,0,11.948,0C7.982,0,4.765,3.217,4.765,7.185v13.834c1.5,1.674,4.153,2.789,7.184,2.789
+			C19.133,3.217,15.916,0,11.948,0C7.982,0,4.765,3.217,4.765,7.185V21.02c1.5,1.674,4.153,2.789,7.184,2.789
 			c4.687,0,8.479-2.658,8.479-5.938v-1.547C20.433,15.167,19.95,14.09,19.133,13.177z"/>
 		<path id="path24" opacity="0.9" fill="#D1D1D1" enable-background="new    " d="M19.133,13.177v3.146
-			c0,2.777-3.217,5.029-7.185,5.029c-3.966,0-7.184-2.252-7.184-5.029v3.148v1.547c1.5,1.672,4.153,2.789,7.184,2.789
+			c0,2.776-3.217,5.028-7.185,5.028c-3.966,0-7.184-2.252-7.184-5.028v3.147v1.547c1.5,1.672,4.153,2.789,7.184,2.789
 			c4.687,0,8.48-2.658,8.48-5.938v-1.546C20.433,15.167,19.95,14.09,19.133,13.177z"/>
-		<path id="path26" opacity="0.24" enable-background="new    " d="M19.133,13.177v3.146c0,2.777-3.217,5.029-7.185,5.029
-			c-3.966,0-7.184-2.252-7.184-5.029v3.148c1.5,1.674,4.153,2.789,7.184,2.789c4.687,0,8.48-2.658,8.48-5.938
+		<path id="path26" opacity="0.24" enable-background="new    " d="M19.133,13.177v3.146c0,2.776-3.217,5.028-7.185,5.028
+			c-3.966,0-7.184-2.252-7.184-5.028v3.147c1.5,1.674,4.153,2.789,7.184,2.789c4.687,0,8.48-2.658,8.48-5.938
 			C20.433,15.167,19.95,14.09,19.133,13.177z"/>
 		
 			<ellipse id="ellipse28" opacity="0.5" fill="#CCCCCC" enable-background="new    " cx="11.95" cy="16.323" rx="7.183" ry="5.029"/>
@@ -39,17 +39,22 @@
 		<path id="path34" opacity="0.6" fill="#FFFFFF" enable-background="new    " d="M15.295,3.802l1.459-0.277
 			c-0.849-1.149-2.108-1.986-3.588-2.271l0.252,1.098C14.194,2.625,14.847,3.142,15.295,3.802z"/>
 		<path id="path36" opacity="0.6" fill="#FFFFFF" enable-background="new    " d="M5.545,20.197v1.546
-			c0.66,0.536,1.447,0.989,2.34,1.334v-1.548C6.992,21.187,6.205,20.732,5.545,20.197z"/>
+			c0.66,0.536,1.447,0.989,2.34,1.334v-1.548C6.992,21.188,6.205,20.732,5.545,20.197z"/>
 		<path id="path38" opacity="0.6" fill="#FFFFFF" enable-background="new    " d="M15.987,20.482
-			c-0.264,0.125-0.537,0.233-0.821,0.334c-0.06,0.021-0.119,0.041-0.181,0.062c-0.569,0.188-1.185,0.321-1.821,0.397
-			c-0.076,0.011-0.154,0.019-0.229,0.025c-0.322,0.029-0.647,0.053-0.983,0.053c-0.148,0-0.312-0.01-0.478-0.024
-			c-1.223-0.058-2.362-0.316-3.344-0.75v-8.507V7.185c0-1.49,0.86-2.767,2.104-3.396l-0.021-0.051L8.946,2.203
-			C7.257,3.224,6.115,5.066,6.115,7.183V19.25c-0.049-0.049-0.313-0.312-0.485-0.533l-0.312,0.698
-			c1.426,1.503,3.861,2.497,6.632,2.497c1.703,0,3.277-0.379,4.572-1.019l-0.531-0.412C15.987,20.482,15.987,20.482,15.987,20.482z"
+			c-0.264,0.125-0.537,0.232-0.821,0.334c-0.06,0.021-0.119,0.041-0.181,0.062c-0.569,0.188-1.186,0.321-1.821,0.397
+			c-0.076,0.011-0.154,0.019-0.229,0.024c-0.322,0.029-0.646,0.054-0.982,0.054c-0.148,0-0.312-0.011-0.478-0.024
+			c-1.223-0.058-2.362-0.315-3.344-0.75v-8.507V7.185c0-1.49,0.86-2.767,2.104-3.396l-0.021-0.051L8.946,2.203
+			c-1.689,1.021-2.831,2.863-2.831,4.98V19.25c-0.049-0.049-0.313-0.313-0.485-0.533l-0.312,0.698
+			c1.426,1.503,3.861,2.497,6.632,2.497c1.703,0,3.277-0.379,4.572-1.02l-0.531-0.412C15.987,20.482,15.987,20.482,15.987,20.482z"
 			/>
+		<path id="path16_1_" fill="#8C8C8C" d="M17.022,18.014l-2.16,0.004v5.313c0,1.783,1.535,3.328,3.019,4.821
+			c0.444,0.444,0.296,2.277,0.296,3.373v1.022l0,0h2.159l0,0v-1.188c0-1.178,0.036-3.772-0.923-4.732
+			c-1.119-1.126-2.391-2.236-2.391-3.428C17.022,22.007,17.022,18.014,17.022,18.014L17.022,18.014z"/>
 	</g>
-	<rect id="connector4pin" x="19.517" y="31.572" fill="none" width="2.761" height="1.813"/>
-	<rect id="connector0pin" x="1.359" y="31.471" fill="none" width="2.4" height="2.07"/>
-	<rect id="connector1pin" x="10.455" y="31.354" fill="none" width="2.775" height="2.079"/>
+	<rect id="connector4pin" x="17.688" y="31.57" fill="none" width="2.762" height="1.813"/>
+	<rect id="connector0pin" x="3.409" y="31.471" fill="none" width="2.4" height="2.07"/>
+	<rect id="connector1pin" x="10.455" y="31.354" fill="none" width="2.774" height="2.08"/>
 </g>
+<path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M19.069,42.065"/>
+<path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M11.87,42.065"/>
 </svg>

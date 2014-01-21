@@ -23,7 +23,8 @@
  <g   id="0.6" transform="translate(0,-23874.018)">
   <g   id="outline"/>
  </g>
- <g   id="copper1">
+ <g   id="copper0">
+<g   id="copper1">
   <rect  width="6588.9854" x="2217.3188" y="24658.26" stroke-opacity="1" fill="#ffbf00"  height="8557.4893" stroke="#ffbf00" style="stroke-miterlimit:4;stroke-dasharray:none" fill-opacity="1" id="connector8pin" stroke-width="1285.03100586"/>
   <rect  width="6588.9854" x="2217.3188" y="3004.7156" stroke-opacity="1" fill="#ffbf00"  height="8557.4893" stroke="#ffbf00" style="stroke-miterlimit:4;stroke-dasharray:none" fill-opacity="1" id="connector7pin" stroke-width="1285.03100586"/>
   <rect  width="6588.9854" x="37256.691" y="3004.7156" stroke-opacity="1" fill="#ffbf00"  height="8557.4893" stroke="#ffbf00" style="stroke-miterlimit:4;stroke-dasharray:none" fill-opacity="1" id="connector6pin" stroke-width="1285.03100586"/>
@@ -39,5 +40,6 @@
   <rect  width="1426.4896" x="19168.646" y="3026.908" stroke-opacity="1" fill="#ffbf00"  height="8316.2539" stroke="#ffbf00" style="stroke-miterlimit:4;stroke-dasharray:none" fill-opacity="1" id="connector1pin" stroke-width="935.715271"/>
   <rect  width="4.724409742000003" x="19879.528595129" y="2549.798395329" fill="none"  height="18.503938342" stroke="none" id="connector1terminal" stroke-width="0"/>
  </g>
+  </g>
  <rect  width="45444.922" x="-20558.854" y="267816.22" stroke-opacity="1" fill="none"  height="41389.832" stroke="#ffffff" style="stroke-miterlimit:4;stroke-dasharray:none" id="silkscreen" stroke-width="1111.11120605"/>
 </svg>

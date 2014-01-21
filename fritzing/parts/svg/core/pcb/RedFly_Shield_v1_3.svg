@@ -35,7 +35,8 @@
   </g>
  </g>
  <g   id="copper0">
-  <circle  fill="none" cx="104.401"  cy="144" stroke="#F7BD13" id="connector81pad" r="2.052" stroke-width="1.224"/>
+ <g   id="copper1">
+<circle  fill="none" cx="104.401"  cy="144" stroke="#F7BD13" id="connector81pad" r="2.052" stroke-width="1.224"/>
   <circle  fill="none" cx="154.8"  cy="7.2" stroke="#F7BD13" id="connector79pad" r="2.052" stroke-width="1.224"/>
   <circle  fill="none" cx="50.4"  cy="7.2" stroke="#F7BD13" id="connector77pad" r="2.052" stroke-width="1.224"/>
   <circle  fill="none" cx="147.6"  cy="7.2" stroke="#F7BD13" id="connector80pad" r="2.052" stroke-width="1.224"/>
@@ -68,4 +69,5 @@
   <circle  fill="none" cx="36"  cy="7.2" stroke="#F7BD13" id="connector158pin" r="2.052" stroke-width="1.224"/>
   <circle  fill="none" cx="28.8"  cy="7.2" stroke="#F7BD13" id="connector159pin" r="2.052" stroke-width="1.224"/>
  </g>
+  </g>
 </svg>

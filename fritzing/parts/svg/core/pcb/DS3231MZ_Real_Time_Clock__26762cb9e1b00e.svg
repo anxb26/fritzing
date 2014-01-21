@@ -14,7 +14,8 @@
   </g>
  </g>
  <g  id="copper1">
-  <rect  width="1.728" x="4.248" y="14.832" fill="#F7BD13" height="6.264" id="connector2pin"/>
+ <g  id="copper0">
+<rect  width="1.728" x="4.248" y="14.832" fill="#F7BD13" height="6.264" id="connector2pin"/>
   <rect  width="1.728" x="0.648" y="0" fill="#F7BD13" height="6.264" id="connector8pin"/>
   <rect  width="1.729" x="7.848" y="0" fill="#F7BD13" height="6.264" id="connector6pin"/>
   <rect  width="1.729" x="7.848" y="14.832" fill="#F7BD13" height="6.264" id="connector3pin"/>
@@ -23,4 +24,5 @@
   <rect  width="1.729" x="11.447" y="0" fill="#F7BD13" height="6.264" id="connector5pin"/>
   <rect  width="1.728" x="0.648" y="14.832" fill="#F7BD13" height="6.264" id="connector1pin"/>
  </g>
+  </g>
 </svg>

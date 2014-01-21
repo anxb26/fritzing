@@ -5,11 +5,13 @@
  </desc>
  <desc   id="0.1" oldid="0.1">SOT143 Footprint</desc>
  <g   id="copper1">
-  <rect  width="120" x="15" y="215" fill="rgb(255, 191, 0)"  height="90" stroke="none" id="connector0pin" stroke-width="0"/>
+ <g   id="copper0">
+<rect  width="120" x="15" y="215" fill="rgb(255, 191, 0)"  height="90" stroke="none" id="connector0pin" stroke-width="0"/>
   <rect  width="80" x="215" y="215" fill="rgb(255, 191, 0)"  height="90" stroke="none" id="connector1pin" stroke-width="0"/>
   <rect  width="80" x="215" y="15" fill="rgb(255, 191, 0)"  height="90" stroke="none" id="connector2pin" stroke-width="0"/>
   <rect  width="80" x="15" y="15" fill="rgb(255, 191, 0)"  height="90" stroke="none" id="connector3pin" stroke-width="0"/>
  </g>
+  </g>
  <g   id="silkscreen">
   <rect  width="306" x="2" y="2" fill="none"  height="316" stroke="white" id="silksquare" stroke-width="10"/>
  </g>

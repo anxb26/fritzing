@@ -1,50 +1,54 @@
-<?xml version='1.0' encoding='utf-8'?>
-<!-- Drawn by: Mattia Cuttini http://mattiac.deviantart.com in the crew of Agenzia Zero.net http://www.agenziazero.net  -->
-<!-- Coded by: Carlos Hansen from http://tlaana.com -->
-<svg xmlns="http://www.w3.org/2000/svg" width="1.36429in" xml:space="preserve" xmlns:xml="http://www.w3.org/XML/1998/namespace" x="0px" version="1.2" y="0px" height="1.63246in" viewBox="0 0 98.229 117.537" baseProfile="tiny" id="svg2">
- <g  id="schematic">
-  <polyline  fill="none" points="53.883,67.899 39.714,75.563 33.914,75.563 " stroke="#000000" stroke-linecap="round" stroke-width="2"/>
-  <rect  width="11.769" x="85.643" y="32.358" height="1.375" id="connector5pin"/>
-  <rect  width="0.207" x="96.955" y="32.905" height="0.207" id="connector5terminal"/>
-  <rect  width="10.341" x="0.819" y="32.358" height="1.375" id="connector4pin"/>
-  <rect  width="0.208" x="0.921" y="32.92" height="0.209" id="connector4terminal"/>
-  <rect  width="8" x="88.948" y="61.974" height="1.603" id="connector3pin"/>
-  <rect  width="0.55" x="96.862" y="62.399" height="0.69" id="connector3terminal"/>
-  <rect  width="8" x="88.948" y="87.575" height="1.6" id="connector2pin"/>
-  <rect  width="0.55" x="96.862" y="88" height="0.692" id="connector2terminal"/>
-  <rect  width="8" x="1.227" y="61.978" height="1.602" id="connector1pin"/>
-  <rect  width="0.553" x="0.819" y="62.403" height="0.691" id="connector1terminal"/>
-  <rect  width="8" x="1.227" y="87.577" height="1.602" id="connector0pin"/>
-  <rect  width="0.553" x="0.819" y="88.002" height="0.692" id="connector0terminal"/>
-  <line  fill="none" stroke="#000000" stroke-linecap="round" y1="33.008" stroke-width="2.4" x1="53.468" y2="33.008" x2="96.955"/>
-  <line  fill="none" stroke="#000000" stroke-linecap="round" y1="22.59" stroke-width="2.4" x1="53.513" y2="43.428" x2="53.513"/>
-  <line  fill="none" stroke="#000000" stroke-linecap="round" y1="33.008" stroke-width="2.4" x1="1.127" y2="33.008" x2="35.224"/>
-  <polygon  fill="none" points="53.468,33.008 44.345,38.274 35.224,43.543 35.224,33.008 35.224,22.476 44.345,27.741 " stroke="#000000" stroke-linejoin="round" stroke-linecap="round" stroke-width="2.4"/>
-  <path  d="M58.979,15.985l-2.037-2.558l-1.169-1.465l-0.871-1.092l9.58-3.461L58.979,15.985L58.979,15.985z"/>
-  <path  d="M63.968,22.534l-2.039-2.555l-1.168-1.465l-0.869-1.091l9.58-3.469L63.968,22.534L63.968,22.534z"/>
-  <line  fill="none" stroke="#000000" stroke-linecap="round" y1="19.479" stroke-width="2.4" x1="49.408" y2="10.813" x2="59.892"/>
-  <line  fill="none" stroke="#000000" stroke-linecap="round" y1="23.813" stroke-width="2.4" x1="57.37" y2="18.245" x2="64.105"/>
-  <path  fill="none" stroke="#000000" stroke-linecap="round" stroke-width="2" d="M84.353,7.411"/>
-  <path  fill="none" stroke="#000000" stroke-linecap="round" stroke-width="2" d="M81.82,60.481"/>
-  <polyline  fill="none" points="96.827,62.763 62.549,62.763 62.549,88.362 96.827,88.362 " stroke="#000000" stroke-linejoin="round" stroke-linecap="round" stroke-width="2"/>
-  <line  fill="none" stroke="#000000" stroke-linecap="round" y1="75.563" stroke-width="2" x1="55.079" y2="75.563" x2="62.549"/>
-  <polyline  fill="none" points="1.368,88.362 33.914,88.362 33.914,62.763 1.368,62.763 " stroke="#000000" stroke-linejoin="round" stroke-linecap="round" stroke-width="2"/>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 24.7898 85.3799)" font-size="10">1</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 24.7898 59.751)" font-size="10">2</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 24.7898 30.0459)" font-size="10">5</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 66.304 85.3799)" font-size="10">3</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 66.304 59.751)" font-size="10">4</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 66.304 30.0459)" font-size="10">6</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 13.8743 114.5986)" font-size="18">T</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 23.0413 114.5986)" font-size="18">S</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 32.3831 114.5986)" font-size="18">D</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 44.6965 114.5986)" font-size="18">1</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 54.6116 114.5986)" font-size="18">2</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 64.5247 114.5986)" font-size="18">6</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 74.4397 114.5986)" font-size="18">5</text>
-  <line  fill="none" stroke="#000000" stroke-linecap="round" y1="2.939" stroke-width="2" x1="22.789" y2="2.939" x2="73.814"/>
-  <line  fill="none" stroke="#000000" stroke-linecap="round" y1="93.647" stroke-width="2" x1="22.789" y2="93.647" x2="73.814"/>
-  <line  fill="none" stroke="#000000" stroke-linecap="round" y1="2.939" stroke-width="2" x1="73.814" y2="93.647" x2="73.814"/>
-  <line  fill="none" stroke="#000000" stroke-linecap="round" y1="2.939" stroke-width="2" x1="22.789" y2="93.647" x2="22.789"/>
- </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="svg2" xmlns:xml="http://www.w3.org/XML/1998/namespace"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="29.083px"
+	 height="27.331px" viewBox="0 0 29.083 27.331" enable-background="new 0 0 29.083 27.331" xml:space="preserve">
+<g id="schematic">
+	
+		<line fill="none" stroke="#000000" stroke-width="0.75" stroke-linecap="round" stroke-miterlimit="10" x1="21.865" y1="9.394" x2="15.855" y2="9.394"/>
+	
+		<line fill="none" stroke="#000000" stroke-width="0.75" stroke-linecap="round" stroke-miterlimit="10" x1="10.271" y1="9.394" x2="5.438" y2="9.394"/>
+	<polyline fill="none" stroke="#000000" stroke-width="0.9" stroke-linecap="round" points="15.922,18.112 11.698,20.397 
+		9.968,20.397 	"/>
+	<rect id="connector5terminal" x="28.764" y="9.363" width="0.062" height="0.062"/>
+	<polygon id="connector4terminal" fill="none" points="0,8.986 2.418,9.013 2.391,9.728 0,9.755 	"/>
+	<rect id="connector3terminal" x="28.736" y="16.473" width="0.164" height="0.206"/>
+	<rect id="connector2terminal" x="28.736" y="23.539" width="0.164" height="0.207"/>
+	<polygon id="connector1terminal" fill="none" points="0,16.235 2.432,16.251 2.405,16.911 0,16.867 	"/>
+	<rect id="connector0terminal" x="0" y="23.275" fill="none" width="2.418" height="0.742"/>
+	
+		<line id="connector5pin" fill="none" stroke="#787878" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="21.865" y1="9.394" x2="28.764" y2="9.394"/>
+	<line fill="none" stroke="#000000" stroke-width="0.9" stroke-linecap="round" x1="15.811" y1="6.288" x2="15.811" y2="12.5"/>
+	
+		<line id="connector4pin" fill="none" stroke="#787878" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="0.4" y1="9.367" x2="6.646" y2="9.367"/>
+	<polygon fill="none" stroke="#000000" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" points="15.798,9.394 
+		13.078,10.963 10.359,12.535 10.359,9.394 10.359,6.253 13.078,7.823 	"/>
+	<path d="M17.441,4.318l-0.607-0.763l-0.349-0.437l-0.26-0.326l2.856-1.032L17.441,4.318L17.441,4.318z"/>
+	<path d="M18.929,6.271l-0.608-0.762l-0.348-0.437l-0.259-0.326l2.856-1.034L18.929,6.271L18.929,6.271z"/>
+	<line fill="none" stroke="#000000" stroke-width="0.9" stroke-linecap="round" x1="14.588" y1="5.36" x2="17.714" y2="2.776"/>
+	<line fill="none" stroke="#000000" stroke-width="0.9" stroke-linecap="round" x1="16.962" y1="6.652" x2="18.969" y2="4.992"/>
+	
+		<line id="connector2pin" fill="none" stroke="#787878" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="21.605" y1="23.646" x2="28.726" y2="23.646"/>
+	<polyline fill="none" stroke="#000000" stroke-width="0.75" stroke-linejoin="round" stroke-miterlimit="10" points="
+		21.605,16.581 18.506,16.581 18.506,23.646 21.605,23.646 	"/>
+	
+		<line id="connector3pin" fill="none" stroke="#787878" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="28.726" y1="16.581" x2="21.896" y2="16.581"/>
+	<line fill="none" stroke="#000000" stroke-width="0.9" stroke-linecap="round" x1="16.279" y1="20.397" x2="18.506" y2="20.397"/>
+	
+		<line id="connector1pin" fill="none" stroke="#787878" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="6.813" y1="16.58" x2="0.4" y2="16.577"/>
+	<polyline fill="none" stroke="#000000" stroke-width="0.75" stroke-linejoin="round" stroke-miterlimit="10" points="6.815,23.645 
+		9.968,23.646 9.968,16.581 6.813,16.58 	"/>
+	
+		<line id="connector0pin" fill="none" stroke="#787878" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="0.4" y1="23.643" x2="6.605" y2="23.645"/>
+	<text transform="matrix(1 0 0 1 7.2468 22.7568)" font-family="'DroidSans'" font-size="2.9816">1</text>
+	<text transform="matrix(1 0 0 1 7.2468 15.6821)" font-family="'DroidSans'" font-size="2.9816">2</text>
+	<text transform="matrix(1 0 0 1 7.2468 8.5093)" font-family="'DroidSans'" font-size="2.9816">5</text>
+	<text transform="matrix(1 0 0 1 19.6248 22.7568)" font-family="'DroidSans'" font-size="2.9816">3</text>
+	<text transform="matrix(1 0 0 1 19.6248 15.6821)" font-family="'DroidSans'" font-size="2.9816">4</text>
+	<text transform="matrix(1 0 0 1 19.6248 8.5093)" font-family="'DroidSans'" font-size="2.9816">6</text>
+	<line fill="none" stroke="#000000" stroke-width="0.9" stroke-linecap="round" x1="6.651" y1="0.428" x2="21.865" y2="0.428"/>
+	
+		<rect x="6.651" y="0.428" fill="none" stroke="#000000" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" width="15.245" height="26.479"/>
+</g>
 </svg>

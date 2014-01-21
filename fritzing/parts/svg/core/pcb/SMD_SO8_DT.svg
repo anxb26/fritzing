@@ -11,8 +11,8 @@
    id="svg2">
   <title
      id="title4">SparkFun.mod</title>
-<g
-     id="copper1">
+<g id="copper1">
+ <g id="copper0">
     <rect
        width="260"
        height="800"
@@ -132,5 +132,6 @@
        d="m 465.67228,2075.0602 a 112.33074,112.33074 0 0 1 -224.66148,0 112.33074,112.33074 0 1 1 224.66148,0 z"
        id="path3060"
        style="fill:#ffffff;fill-opacity:1;stroke:none" />
+  </g>
   </g>
 </svg>

@@ -45,7 +45,7 @@ Pin order: red - com. cathode - green</description>
         </iconView>
     </views>
     <connectors>
-        <connector id="connector4" type="pad" name="green anode">
+        <connector id="connector4" type="male" name="green anode">
             <description>anode pin for green LED</description>
             <views>
                 <breadboardView>
@@ -56,10 +56,11 @@ Pin order: red - com. cathode - green</description>
                 </schematicView>
                 <pcbView>
                     <p layer="copper0" svgId="connector4"/>
-                </pcbView>
+                    <p layer="copper1" svgId="connector4"/>
+		</pcbView>
             </views>
         </connector>
-        <connector id="connector0" type="pad" name="red anode">
+        <connector id="connector0" type="male" name="red anode">
             <description>anode pin for red LED</description>
             <views>
                 <breadboardView>
