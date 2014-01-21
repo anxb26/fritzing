@@ -43,6 +43,7 @@ $Date: 2013-04-28 13:51:10 +0200 (So, 28. Apr 2013) $
 #include "../utils/textutils.h"
 #include "../utils/graphicsutils.h"
 #include "../utils/cursormaster.h"
+#include "../utils/clickablelabel.h"
 #include "../utils/familypropertycombobox.h"
 #include "../referencemodel/referencemodel.h"
 
@@ -53,6 +54,8 @@ $Date: 2013-04-28 13:51:10 +0200 (So, 28. Apr 2013) $
 #include <QSettings>
 #include <QComboBox>
 #include <QBitmap>
+#include <QApplication>
+#include <QClipboard>
 #include <qmath.h>
 
 /////////////////////////////////
@@ -109,31 +112,31 @@ QHash<QString, QString> ItemBase::TranslatedPropertyNames;
 QPointer<ReferenceModel> ItemBase::TheReferenceModel = NULL;
 
 QString ItemBase::PartInstanceDefaultTitle;
-const QList<ItemBase *> ItemBase::emptyList;
+const QList<ItemBase *> ItemBase::EmptyList;
 
-const QColor ItemBase::hoverColor(0,0,0);
-const double ItemBase::hoverOpacity = .20;
-const QColor ItemBase::connectorHoverColor(0,0,255);
-const double ItemBase::connectorHoverOpacity = .40;
+const QColor ItemBase::HoverColor(0,0,0);
+const double ItemBase::HoverOpacity = .20;
+const QColor ItemBase::ConnectorHoverColor(0,0,255);
+const double ItemBase::ConnectorHoverOpacity = .40;
 
 const QColor StandardConnectedColor(0, 255, 0);
 const QColor StandardUnconnectedColor(255, 0, 0);
 
-QPen ItemBase::normalPen(QColor(255,0,0));
-QPen ItemBase::hoverPen(QColor(0, 0, 255));
-QPen ItemBase::connectedPen(StandardConnectedColor);
-QPen ItemBase::unconnectedPen(StandardUnconnectedColor);
-QPen ItemBase::chosenPen(QColor(255,0,0));
-QPen ItemBase::equalPotentialPen(QColor(255,255,0));
+QPen ItemBase::NormalPen(QColor(255,0,0));
+QPen ItemBase::HoverPen(QColor(0, 0, 255));
+QPen ItemBase::ConnectedPen(StandardConnectedColor);
+QPen ItemBase::UnconnectedPen(StandardUnconnectedColor);
+QPen ItemBase::ChosenPen(QColor(255,0,0));
+QPen ItemBase::EqualPotentialPen(QColor(255,255,0));
 
-QBrush ItemBase::normalBrush(QColor(255,0,0));
-QBrush ItemBase::hoverBrush(QColor(0,0,255));
-QBrush ItemBase::connectedBrush(StandardConnectedColor);
-QBrush ItemBase::unconnectedBrush(StandardUnconnectedColor);
-QBrush ItemBase::chosenBrush(QColor(255,0,0));
-QBrush ItemBase::equalPotentialBrush(QColor(255,255,0));
+QBrush ItemBase::NormalBrush(QColor(255,0,0));
+QBrush ItemBase::HoverBrush(QColor(0,0,255));
+QBrush ItemBase::ConnectedBrush(StandardConnectedColor);
+QBrush ItemBase::UnconnectedBrush(StandardUnconnectedColor);
+QBrush ItemBase::ChosenBrush(QColor(255,0,0));
+QBrush ItemBase::EqualPotentialBrush(QColor(255,255,0));
 
-const double ItemBase::normalConnectorOpacity = 0.4;
+const double ItemBase::NormalConnectorOpacity = 0.4;
 
 static QHash<QString, QStringList> CachedValues;
 
@@ -833,12 +836,12 @@ void ItemBase::paintHover(QPainter *painter, const QStyleOptionGraphicsItem *opt
 	Q_UNUSED(option);
 	painter->save();
 	if (m_connectorHoverCount > 0 || m_connectorHoverCount2 > 0) {
-		painter->setOpacity(connectorHoverOpacity);
-		painter->fillPath(shape, QBrush(connectorHoverColor));
+		painter->setOpacity(ConnectorHoverOpacity);
+		painter->fillPath(shape, QBrush(ConnectorHoverColor));
 	}
 	else {
-		painter->setOpacity(hoverOpacity);
-		painter->fillPath(shape, QBrush(hoverColor));
+		painter->setOpacity(HoverOpacity);
+		painter->fillPath(shape, QBrush(HoverColor));
 	}
 	painter->restore();
 }
@@ -1187,10 +1190,11 @@ void ItemBase::partLabelChanged(const QString & newText) {
 
 bool ItemBase::isPartLabelVisible() {
 	if (m_partLabel == NULL) return false;
+	if (!hasPartLabel()) return false;
 	if (!m_partLabel->initialized()) return false;
+
 	return m_partLabel->isVisible();
 }
-
 
 void ItemBase::clearPartLabel() {
 	m_partLabel = NULL;
@@ -1276,7 +1280,7 @@ void ItemBase::cleanup() {
 }
 
 const QList<ItemBase *> & ItemBase::layerKin() {
-	return emptyList;
+	return EmptyList;
 }
 
 ItemBase * ItemBase::layerKinChief() {
@@ -1364,6 +1368,8 @@ void ItemBase::saveLocAndTransform(QXmlStreamWriter & streamWriter)
 
 FSvgRenderer * ItemBase::setUpImage(ModelPart * modelPart, LayerAttributes & layerAttributes)
 {
+    // at this point "this" has not yet been added to the scene, so one cannot get back to the InfoGraphicsView 
+
     ModelPartShared * modelPartShared = modelPart->modelPartShared();
 
 	if (modelPartShared == NULL) {
@@ -1536,49 +1542,41 @@ bool ItemBase::hasConnections()
 	return false;
 }
 
-void ItemBase::getConnectedColor(ConnectorItem *, QBrush * &brush, QPen * &pen, double & opacity, double & negativePenWidth, bool & negativeOffsetRect) {
-	brush = &connectedBrush;
-	pen = &connectedPen;
+void ItemBase::getConnectedColor(ConnectorItem *, QBrush &brush, QPen &pen, double & opacity, double & negativePenWidth, bool & negativeOffsetRect) {
+	brush = ConnectedBrush;
+	pen = ConnectedPen;
 	opacity = 0.2;
 	negativePenWidth = 0;
 	negativeOffsetRect = true;
 }
 
-void ItemBase::getNormalColor(ConnectorItem *, QBrush * &brush, QPen * &pen, double & opacity, double & negativePenWidth, bool & negativeOffsetRect) {
-	brush = &normalBrush;
-	pen = &normalPen;
-	opacity = normalConnectorOpacity;
+void ItemBase::getNormalColor(ConnectorItem *, QBrush &brush, QPen &pen, double & opacity, double & negativePenWidth, bool & negativeOffsetRect) {
+	brush = NormalBrush;
+	pen = NormalPen;
+	opacity = NormalConnectorOpacity;
 	negativePenWidth = 0;
 	negativeOffsetRect = true;
 }
 
-void ItemBase::getUnconnectedColor(ConnectorItem *, QBrush * &brush, QPen * &pen, double & opacity, double & negativePenWidth, bool & negativeOffsetRect) {
-	brush = &unconnectedBrush;
-	pen = &unconnectedPen;
-        opacity = 0.3;
+void ItemBase::getUnconnectedColor(ConnectorItem *, QBrush &brush, QPen &pen, double & opacity, double & negativePenWidth, bool & negativeOffsetRect) {
+	brush = UnconnectedBrush;
+	pen = UnconnectedPen;
+    opacity = 0.3;
 	negativePenWidth = 0;
 	negativeOffsetRect = true;
 }
 
-void ItemBase::getChosenColor(ConnectorItem *, QBrush * &brush, QPen * &pen, double & opacity, double & negativePenWidth, bool & negativeOffsetRect) {
-	brush = &chosenBrush;
-	pen = &chosenPen;
-	opacity = normalConnectorOpacity;
+void ItemBase::getHoverColor(ConnectorItem *, QBrush &brush, QPen &pen, double & opacity, double & negativePenWidth, bool & negativeOffsetRect) {
+	brush = HoverBrush;
+	pen = HoverPen;
+	opacity = NormalConnectorOpacity;
 	negativePenWidth = 0;
 	negativeOffsetRect = true;
 }
 
-void ItemBase::getHoverColor(ConnectorItem *, QBrush * &brush, QPen * &pen, double & opacity, double & negativePenWidth, bool & negativeOffsetRect) {
-	brush = &hoverBrush;
-	pen = &hoverPen;
-	opacity = normalConnectorOpacity;
-	negativePenWidth = 0;
-	negativeOffsetRect = true;
-}
-
-void ItemBase::getEqualPotentialColor(ConnectorItem *, QBrush * &brush, QPen * &pen, double & opacity, double & negativePenWidth, bool & negativeOffsetRect) {
-	brush = &equalPotentialBrush;
-	pen = &equalPotentialPen;
+void ItemBase::getEqualPotentialColor(ConnectorItem *, QBrush &brush, QPen &pen, double & opacity, double & negativePenWidth, bool & negativeOffsetRect) {
+	brush = EqualPotentialBrush;
+	pen = EqualPotentialPen;
 	opacity = 1.0;
 	negativePenWidth = 0;
 	negativeOffsetRect = true;
@@ -1616,11 +1614,11 @@ ConnectorItem * ItemBase::rightClickedConnector() {
 }
 
 QColor ItemBase::connectedColor() {
-	return connectedPen.color();
+	return ConnectedPen.color();
 }
 
 QColor ItemBase::unconnectedColor() {
-	return unconnectedPen.color();
+	return UnconnectedPen.color();
 }
 
 QColor ItemBase::standardConnectedColor() {
@@ -1632,13 +1630,13 @@ QColor ItemBase::standardUnconnectedColor() {
 }
 
 void ItemBase::setConnectedColor(QColor & c) {
-	connectedPen.setColor(c);
-	connectedBrush.setColor(c);
+	ConnectedPen.setColor(c);
+	ConnectedBrush.setColor(c);
 }
 
 void ItemBase::setUnconnectedColor(QColor & c) {
-	unconnectedPen.setColor(c);
-	unconnectedBrush.setColor(c);
+	UnconnectedPen.setColor(c);
+	UnconnectedBrush.setColor(c);
 }
 
 QString ItemBase::translatePropertyName(const QString & key) {
@@ -1686,6 +1684,19 @@ bool ItemBase::collectExtraInfo(QWidget * parent, const QString & family, const 
 	if (prop.compare("id", Qt::CaseInsensitive) == 0) {
 		return true;
 	}
+#ifndef QT_NO_DEBUG
+    if (prop.compare("svg", Qt::CaseInsensitive) == 0 || prop.compare("fzp" , Qt::CaseInsensitive) == 0) {
+        QFileInfo fileInfo(value);
+        if (fileInfo.exists()) {
+            ClickableLabel * label = new ClickableLabel(fileInfo.fileName(), parent);
+            label->setProperty("path", value);
+            label->setToolTip(value);
+            connect(label, SIGNAL(clicked()), this, SLOT(showInFolder()));
+            returnWidget = label;
+        }
+        return true;
+    }
+#endif
 
 	QString tempValue = value;
 	QStringList values = collectValues(family, prop, tempValue);
@@ -1751,6 +1762,10 @@ QStringList ItemBase::collectValues(const QString & family, const QString & prop
 	}
 
 	CachedValues.insert(family + prop, values);
+    //debugInfo("cached " + prop);
+    //foreach(QString v, values) {
+    //    DebugDialog::debug("\t" + v);
+    //}
 	return values;
 }
 
@@ -2212,7 +2227,7 @@ ViewLayer::ViewID ItemBase::useViewIDForPixmap(ViewLayer::ViewID vid, bool)
     return vid;
 }
 
-bool ItemBase::makeLocalModifications(QByteArray &, const QString &) {
+bool ItemBase::makeLocalModifications(QByteArray &, const QString & ) {
     // a bottleneck for modifying part svg xml at setupImage time
     return false;
 }
@@ -2407,4 +2422,43 @@ void ItemBase::renderOne(QDomDocument * masterDoc, QImage * image, const QRectF 
     painter.setRenderHint(QPainter::SmoothPixmapTransform, false);
 	renderer.render(&painter, renderRect);
 	painter.end();
+}
+
+
+void ItemBase::initLayerAttributes(LayerAttributes & layerAttributes, ViewLayer::ViewID viewID, ViewLayer::ViewLayerID viewLayerID, ViewLayer::ViewLayerPlacement viewLayerPlacement, bool doConnectors, bool doCreateShape) {
+    layerAttributes.viewID = viewID;
+    layerAttributes.viewLayerID = viewLayerID;
+    layerAttributes.viewLayerPlacement = viewLayerPlacement;
+    layerAttributes.doConnectors = doConnectors;
+    layerAttributes.createShape = doCreateShape;
+    InfoGraphicsView * infoGraphicsView = InfoGraphicsView::getInfoGraphicsView(this);
+	if (infoGraphicsView != NULL) {
+		layerAttributes.orientation = infoGraphicsView->smdOrientation();
+	}
+}
+	
+void ItemBase::showInFolder() {
+    QString path = sender()->property("path").toString();
+    if (!path.isEmpty()) {
+        FolderUtils::showInFolder(path);
+        QClipboard *clipboard = QApplication::clipboard();
+	    if (clipboard != NULL) {
+		    clipboard->setText(path);
+	    }
+    }
+}
+
+QString ItemBase::getInspectorTitle() {
+    QString t = instanceTitle();
+    if (!t.isEmpty()) return t;
+
+    return title();
+}
+
+void ItemBase::setInspectorTitle(const QString & oldText, const QString & newText) {
+    InfoGraphicsView * infoGraphicsView = InfoGraphicsView::getInfoGraphicsView(this);
+    if (infoGraphicsView == NULL) return;
+
+	DebugDialog::debug(QString("set instance title to %1").arg(newText));
+	infoGraphicsView->setInstanceTitle(id(), oldText, newText, true, false);
 }

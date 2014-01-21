@@ -42,7 +42,7 @@ public:
 	void setHidden(bool hidden);
 	void setInactive(bool inactivate);
 	void clearModelPart();
-	void init(LayerAttributes &, const LayerHash &viewLayers);
+	void initLKPI(LayerAttributes &, const LayerHash &viewLayers);
 	bool isSticky();
 	bool isBaseSticky();
 	void setSticky(bool);
@@ -89,7 +89,6 @@ public:
 	SchematicTextLayerKinPaletteItem(PaletteItemBase * chief, ModelPart *, ViewLayer::ViewID, const ViewGeometry & viewGeometry, long id, QMenu * itemMenu);
 
     void transformItem(const QTransform &, bool includeRatsnest);
- 	bool setUpImage(ModelPart* modelPart, const LayerHash & viewLayers, LayerAttributes &);
     void clearTextThings();
     void setTransform2(const QTransform &);
 
@@ -101,6 +100,8 @@ protected:
     void positionTexts(QList<QDomElement> & texts);
     void initTextThings();
     QString vflip(const QString & svg, bool isFlipped);
+    void setInitialTransform(const QTransform &);
+    void cacheLoaded(const LayerAttributes &);
 
 protected:
     bool m_flipped;

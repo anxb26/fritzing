@@ -473,7 +473,7 @@ QString PinHeader::makePcbSvg(const QString & originalExpectedFileName)
 		svg = makePcbLongPadSvg(pins, expectedFileName.contains("alternating"));
 	}
 	else if (expectedFileName.contains("molex")) {
-		svg = makePcbMolexSvg(pins);
+		svg = makePcbMolexSvg(pins, spacingString);
 	}
     else {
 	    static QString pcbLayerTemplate = "";
@@ -612,6 +612,7 @@ void PinHeader::initSpacings() {
 		Spacings.insert("2.54mm", "0.09843in (2.54mm)");
 		Spacings.insert("100mil", ShroudedSpacing);
 		Spacings.insert("150mil", "0.15in (3.81mm)");
+        Spacings.insert("0.156in", "0.156in (3.96mm)");
 		Spacings.insert("200mil", "0.2in (5.08mm)");
 	}
 }
@@ -621,10 +622,12 @@ QString PinHeader::makeSchematicSvg(const QString & expectedFileName)
 	QStringList pieces = expectedFileName.split("_");
 	if (pieces.count() < 7) return "";
 
+    bool useOldSchematic = expectedFileName.contains(PartFactory::OldSchematicPrefix);
+
     QString spacingString;
     int pins = TextUtils::getPinsAndSpacing(expectedFileName, spacingString);
 	QString form = expectedFileName.contains("female") ? "female" :"male";
-    bool sizeTenth = expectedFileName.contains("10thin");
+    bool sizeTenth = expectedFileName.contains("10thin") || !useOldSchematic;  // some parts before version 0.8.5 used the 0.1 grid
     bool isDouble = sizeTenth && expectedFileName.contains("double");
 
     double width, unitHeight;
@@ -955,11 +958,14 @@ QString PinHeader::makePcbLongPadLockSvg(int pins)
     return header.arg(totalHeight).arg(totalHeight * dpi).arg(repeats).arg(bottom).arg(betweens);
 }
 
-QString PinHeader::makePcbMolexSvg(int pins) 
+QString PinHeader::makePcbMolexSvg(int pins, const QString & spacingString) 
 {
     double dpi = 25.4;
     double originalHeight = 0.105;           // inches
     double increment = 0.1;                 // inches
+    bool ok;
+    double inc = TextUtils::convertToInches(spacingString, &ok, false);
+    if (ok) increment = inc;
 	QString header("<?xml version='1.0' encoding='utf-8'?>\n"
 					"<svg version='1.2' baseProfile='tiny' xmlns='http://www.w3.org/2000/svg' \n"
                     "x='0in' y='0in' width='0.225in' height='%1in' viewBox='0 0 5.715 %2'>\n"

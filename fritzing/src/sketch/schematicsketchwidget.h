@@ -83,7 +83,12 @@ public:
     QHash<QString, QString> getAutorouterSettings();
     void setAutorouterSettings(QHash<QString, QString> &);
 	ViewLayer::ViewLayerPlacement getViewLayerPlacement(ModelPart *, QDomElement & instance, QDomElement & view, ViewGeometry &);
-
+    void setConvertSchematic(bool);
+    void setOldSchematic(bool);
+    bool isOldSchematic();
+    void resizeWires();
+    void resizeLabels();
+    
 public slots:
 	void setVoltage(double voltage, bool doEmit);
 	void setProp(ItemBase *, const QString & propName, const QString & translatedPropName, const QString & oldValue, const QString & newValue, bool redraw);
@@ -97,16 +102,18 @@ protected:
 	double getRatsnestOpacity();
 	double getRatsnestWidth();
 	ViewLayer::ViewLayerID getLabelViewLayerID(ItemBase *);
-	QPoint calcFixedToCenterItemOffset(const QRect & viewPortRect, const QSizeF & helpSize);
 	void extraRenderSvgStep(ItemBase *, QPointF offset, double dpi, double printerScale, QString & outputSvg);
 	QString makeCircleSVG(QPointF p, double r, QPointF offset, double dpi, double printerScale);
 	ViewLayer::ViewLayerPlacement createWireViewLayerPlacement(ConnectorItem * from, ConnectorItem * to);
     void selectAllWires(ViewGeometry::WireFlag flag);
     bool canConnect(Wire * from, ItemBase * to);
     QString checkDroppedModuleID(const QString & moduleID);
+    void viewGeometryConversionHack(ViewGeometry &, ModelPart *);
 
 protected:
 	QTimer m_updateDotsTimer;
+    bool m_convertSchematic;
+    bool m_oldSchematic;
 
     static QSizeF m_jumperItemSize;
 

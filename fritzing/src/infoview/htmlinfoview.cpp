@@ -109,6 +109,7 @@ QSize TagLabel::sizeHint() const
 HtmlInfoView::HtmlInfoView(QWidget * parent) : QScrollArea(parent) 
 {
     this->setWidgetResizable(true);
+
 	this->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
 	m_lastTitleItemBase = NULL;
@@ -460,11 +461,10 @@ void HtmlInfoView::appendWireStuff(Wire* wire, bool swappingEnabled) {
 void HtmlInfoView::appendItemStuff(ItemBase* base, bool swappingEnabled) {
 	if (base == NULL) return;
 
-	appendItemStuff(base, base->modelPart(), swappingEnabled, base->isPartLabelVisible());
+	appendItemStuff(base, base->modelPart(), swappingEnabled);
 }
 
-void HtmlInfoView::appendItemStuff(ItemBase * itemBase, ModelPart * modelPart, bool swappingEnabled, bool labelIsVisible) {
-	Q_UNUSED(labelIsVisible);
+void HtmlInfoView::appendItemStuff(ItemBase * itemBase, ModelPart * modelPart, bool swappingEnabled) {
 
 	if (modelPart == NULL) return;
 	if (modelPart->modelPartShared() == NULL) return;
@@ -474,7 +474,7 @@ void HtmlInfoView::appendItemStuff(ItemBase * itemBase, ModelPart * modelPart, b
 
 	QString nameString;
 	if (swappingEnabled) {
-		nameString = (itemBase) ? itemBase->title() : modelPart->title();
+		nameString = (itemBase) ? itemBase->getInspectorTitle() : modelPart->title();
 	}
 	else {
 		nameString = modelPart->description();
@@ -597,11 +597,7 @@ void HtmlInfoView::setInstanceTitle() {
 	if (!edit->isEnabled()) return;
 	if (m_currentItem == NULL) return;
 
-    InfoGraphicsView * infoGraphicsView = InfoGraphicsView::getInfoGraphicsView(m_currentItem);
-    if (infoGraphicsView == NULL) return;
-
-	DebugDialog::debug(QString("set instance title to %1").arg(edit->text()));
-	infoGraphicsView->setInstanceTitle(m_currentItem->id(), m_partTitle->text(), edit->text(), true, false);
+    m_currentItem->setInspectorTitle(m_partTitle->text(), edit->text());
 }
 
 void HtmlInfoView::instanceTitleEnter() {
@@ -642,22 +638,22 @@ void HtmlInfoView::setUpTitle(ItemBase * itemBase)
     }
 
 	m_lastTitleItemBase = itemBase;
-	if (itemBase) {
-		QString title = itemBase->instanceTitle();
+    bool titleEnabled = true;
+	if (itemBase != NULL) {
+		QString title = itemBase->getInspectorTitle();
 		if (title.isEmpty()) {
 			// assumes a part with an empty title only comes from the parts bin palette
-			m_titleEdit->setEnabled(false);
+			titleEnabled = false;
 			title = itemBase->title();
 		}
-		else {
-			m_titleEdit->setEnabled(true);
-		}
+        if (itemBase->viewID() == ViewLayer::IconView) titleEnabled = false;
 		m_titleEdit->setText(title);
 	}
 	else {
-		m_titleEdit->setEnabled(false);
+		titleEnabled = false;
 		m_titleEdit->setText("");
 	}
+    m_titleEdit->setEnabled(titleEnabled);
 	// helps keep it left aligned?
 	m_titleEdit->setCursorPosition(0);
 

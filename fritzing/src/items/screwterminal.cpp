@@ -30,7 +30,9 @@ $Date: 2013-04-22 23:44:56 +0200 (Mo, 22. Apr 2013) $
 #include "../sketch/infographicsview.h"
 #include "../commands.h"
 #include "../utils/textutils.h"
+#include "../utils/schematicrectconstants.h"
 #include "partlabel.h"
+#include "partfactory.h"
 
 #include <QDomNodeList>
 #include <QDomDocument>
@@ -151,8 +153,53 @@ QString ScrewTerminal::makeBreadboardSvg(const QString & expectedFileName)
 	return svg;
 }
 
-
 QString ScrewTerminal::makeSchematicSvg(const QString & expectedFileName) 
+{
+    if (expectedFileName.contains(PartFactory::OldSchematicPrefix)) {
+        return obsoleteMakeSchematicSvg(expectedFileName);
+    }     
+
+	QStringList pieces = expectedFileName.split("_");
+
+	int pins = pieces.at(2).toInt();			
+	double increment = SchematicRectConstants::NewUnit / 25.4;
+    double incrementPoints = 72 * increment;		// 72 dpi
+    double pinWidthPoints = 72 * SchematicRectConstants::PinWidth / 25.4;
+    double pinLength = 2 * increment;
+    double pinLengthPoints = 2 * incrementPoints;
+
+	QString header("<?xml version='1.0' encoding='utf-8'?>\n"
+					"<svg version='1.1' baseProfile='basic' id='svg2' xmlns:svg='http://www.w3.org/2000/svg'\n"
+					"xmlns='http://www.w3.org/2000/svg'  x='0px' y='0px' width='%1in'\n"
+					"height='percent1in' viewBox='0 0 %2 [percent2]' xml:space='preserve'>\n"
+					"<g id='schematic'>\n");
+    header = header.arg(increment + pinLength).arg(incrementPoints + pinLengthPoints);
+    header.replace("percent", "%");
+
+	QString repeat("<line id='connectorpercent1pin' fill='none' stroke='%1' stroke-width='%2' stroke-linecap='round' stroke-linejoin='round' x1='%3' y1='[%5]' x2='%4' y2='[%5]'/>\n"
+					"<rect id='connectorpercent1terminal' x='0' y='[%6]' width='0' height='%2'/>\n"
+					"<circle fill='none' stroke-width='%2' stroke='%1' cx='%7' cy='[%5]' r='%8' />\n"
+					);
+    
+    repeat = repeat
+                .arg(SchematicRectConstants::PinColor)
+                .arg(pinWidthPoints)
+                .arg(pinWidthPoints / 2)
+                .arg(pinLengthPoints - pinWidthPoints)
+                .arg(incrementPoints / 2)
+                .arg((incrementPoints - pinWidthPoints) / 2)
+                .arg(pinLengthPoints + (incrementPoints / 2) - pinWidthPoints)
+                .arg((incrementPoints / 2) - pinWidthPoints)
+                ;
+    repeat.replace("percent", "%");
+
+	QString svg = TextUtils::incrementTemplateString(header.arg(increment * pins).arg(incrementPoints), 1, incrementPoints * (pins - 1), TextUtils::incMultiplyPinFunction, TextUtils::noCopyPinFunction, NULL);
+	svg += TextUtils::incrementTemplateString(repeat, pins, incrementPoints, TextUtils::standardMultiplyPinFunction, TextUtils::standardCopyPinFunction, NULL);
+	svg += "</g>\n</svg>";
+
+	return svg;
+}
+QString ScrewTerminal::obsoleteMakeSchematicSvg(const QString & expectedFileName) 
 {
 	QStringList pieces = expectedFileName.split("_");
 

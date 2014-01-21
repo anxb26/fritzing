@@ -35,6 +35,7 @@ $Date: 2013-04-22 23:44:56 +0200 (Mo, 22. Apr 2013) $
 #include "../utils/graphicsutils.h"
 #include "../sketch/infographicsview.h"
 #include "partlabel.h"
+#include "partfactory.h"
 #include "layerkinpaletteitem.h"
 #include "../svg/svgfilesplitter.h"
 
@@ -541,13 +542,17 @@ NetLabel::~NetLabel() {
 }
 
 QString NetLabel::makeSvg(ViewLayer::ViewLayerID viewLayerID) {
-    static const double labelFontSize = 200;
-    static const double totalHeight = 300;
-    static const double arrowWidth = totalHeight / 2;
-    static const double strokeWidth = 10;
-    static const double halfStrokeWidth = strokeWidth / 2;
-    static const double labelOffset = 20;
-    static const double labelBaseLine = 220;
+
+    DebugDialog::debug("moduleid " + this->moduleID());
+    double divisor = moduleID().contains(PartFactory::OldSchematicPrefix) ? 1 : 3;
+
+    double labelFontSize = 200 /divisor;
+    double totalHeight = 300 / divisor;
+    double arrowWidth = totalHeight / 2;
+    double strokeWidth = 10 / divisor;
+    double halfStrokeWidth = strokeWidth / 2;
+    double labelOffset = 20 / divisor;
+    double labelBaseLine = 220 / divisor;
 
     QFont font("Droid Sans", labelFontSize * 72 / GraphicsUtils::StandardFritzingDPI, QFont::Normal);
 	QFontMetricsF fm(font);
@@ -557,13 +562,18 @@ QString NetLabel::makeSvg(ViewLayer::ViewLayerID viewLayerID) {
 	QString header("<?xml version='1.0' encoding='UTF-8' standalone='no'?>\n"
 					"<svg xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' version='1.2' baseProfile='tiny' \n"
 					"width='%1in' height='%2in' viewBox='0 0 %3 %4' >\n"
-					"<g id='schematic' >\n"
+					"<g id='%5' >\n"
                     );
 
     bool goLeft = (getDirection() == "left");  // direction is now obsolete; this is left over from 0.7.12 and earlier
     double offset = goLeft ? arrowWidth : 0;
 
-    QString svg = header.arg(totalWidth / 1000).arg(totalHeight / 1000).arg(totalWidth).arg(totalHeight);
+    QString svg = header.arg(totalWidth / 1000)
+            .arg(totalHeight / 1000)
+            .arg(totalWidth)
+            .arg(totalHeight)
+            .arg(ViewLayer::viewLayerXmlNameFromID(viewLayerID))
+            ;
 
     if (viewLayerID == ViewLayer::SchematicText) {
         svg += QString("<text id='label' x='%1' y='%2' fill='#000000' font-family='Droid Sans' font-size='%3'>%4</text>\n")
@@ -654,5 +664,17 @@ ItemBase::PluralType NetLabel::isPlural() {
 
 bool NetLabel::isOnlyNetLabel() {
 	return true;
+}
+
+QString NetLabel::getInspectorTitle() {
+   return getLabel();
+
+}
+
+void NetLabel::setInspectorTitle(const QString & oldText, const QString & newText) {
+    InfoGraphicsView * infoGraphicsView = InfoGraphicsView::getInfoGraphicsView(this);
+    if (infoGraphicsView == NULL) return;
+
+    infoGraphicsView->setProp(this, "label", ItemBase::TranslatedPropertyNames.value("label"), oldText, newText, true);
 }
 

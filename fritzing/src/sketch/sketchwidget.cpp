@@ -72,13 +72,13 @@ $Date: 2013-04-29 07:24:08 +0200 (Mon, 29 Apr 2013) $
 #include "../items/note.h"
 #include "../svg/svgfilesplitter.h"
 #include "../svg/svgflattener.h"
-#include "../help/sketchmainhelp.h"
 #include "../infoview/htmlinfoview.h"
 #include "../items/resizableboard.h"
 #include "../utils/graphicsutils.h"
 #include "../utils/textutils.h"
 #include "../utils/bezier.h"
 #include "../utils/cursormaster.h"
+#include "../utils/fmessagebox.h"
 #include "../fsvgrenderer.h"
 #include "../items/resistor.h"
 #include "../items/mysterypart.h"
@@ -158,6 +158,7 @@ bool zLessThan(QGraphicsItem * & p1, QGraphicsItem * & p2)
 SketchWidget::SketchWidget(ViewLayer::ViewID viewID, QWidget *parent, int size, int minSize)
     : InfoGraphicsView(parent)
 {
+    m_everZoomed = false;
     m_itemMenu = NULL;
     m_pasting = false;
     m_rubberBandLegWasEnabled = m_curvyWires = false;
@@ -179,7 +180,6 @@ SketchWidget::SketchWidget(ViewLayer::ViewID viewID, QWidget *parent, int size, 
 	m_dragBendpointWire = NULL;
 	m_lastHoverEnterItem = NULL;
 	m_lastHoverEnterConnectorItem = NULL;
-	m_fixedToCenterItem = NULL;
 	m_spaceBarWasPressed = m_spaceBarIsPressed = false;
 	m_current = false;
 	m_ignoreSelectionChangeEvents = 0;
@@ -332,6 +332,7 @@ void SketchWidget::loadFromModelParts(QList<ModelPart *> & modelParts, BaseComma
 		// use a function of the model index to ensure the same parts have the same ID across views
 		long newID = ItemBase::getNextID(mp->modelIndex());
 		if (parentCommand == NULL) {
+            viewGeometryConversionHack(viewGeometry, mp);
 			ItemBase * itemBase = addItemAux(mp, viewLayerPlacement, viewGeometry, newID, true, m_viewID, false);
 			if (itemBase != NULL) {
 				if (locked) {
@@ -827,6 +828,7 @@ ItemBase * SketchWidget::addItemAux(ModelPart * modelPart, ViewLayer::ViewLayerP
 		newItem->setZValue(newItem->z());
 		newItem->setVisible(true);
 		addToScene(newItem, getNoteViewLayerID());
+        newItem->addedToScene(temporary);
 		return newItem;
 	}
 
@@ -936,11 +938,11 @@ PaletteItem* SketchWidget::addPartItem(ModelPart * modelPart, ViewLayer::ViewLay
 	else {
 		// nobody falls through to here now?
 
-		QMessageBox::information(NULL, QObject::tr("Fritzing"),
+		FMessageBox::information(NULL, QObject::tr("Fritzing"),
 			QObject::tr("Error reading file %1: %2.").arg(modelPart->path()).arg(error) );
 
 
-		DebugDialog::debug(QString("addPartItem renderImage failed %1").arg(modelPart->moduleID()) );
+		DebugDialog::debug(QString("addPartItem renderImage failed %1 %2").arg(modelPart->moduleID()).arg(error));
 
 		//paletteItem->modelPart()->removeViewItem(paletteItem);
 		//delete paletteItem;
@@ -2867,23 +2869,10 @@ void SketchWidget::categorizeDragWires(QSet<Wire *> & wires, QList<ItemBase *> &
 	}
 }
 
-void SketchWidget::clickBackground(QMouseEvent * event) 
+void SketchWidget::clickBackground(QMouseEvent *) 
 {
 	// in here if you clicked on the sketch itself,
 
-	if (m_fixedToCenterItem && m_fixedToCenterItem->getVisible()) {
-		QRectF r(m_fixedToCenterItemOffset, m_fixedToCenterItem->size());
-		if (r.contains(event->pos())) {
-			QMouseEvent newEvent(event->type(), event->pos() - m_fixedToCenterItemOffset,
-				event->globalPos(), event->button(), event->buttons(), event->modifiers());
-			if (m_fixedToCenterItem->forwardMousePressEvent(&newEvent)) {
-				// update background
-				setBackground(background());
-				this->update();
-				emit firstTimeHelpHidden();
-			}
-		}
-	}
 }
 
 void SketchWidget::prepDragWire(Wire * wire) 
@@ -3053,18 +3042,6 @@ void SketchWidget::mouseMoveEvent(QMouseEvent *event) {
                 delete m_movingSVGRenderer;
 				m_movingSVGRenderer = NULL;
 				return;
-			}
-		}
-	}
-
-	if (event->buttons() == Qt::NoButton) {
-		if (m_fixedToCenterItem && m_fixedToCenterItem->getVisible()) {
-			QSize size((int) m_fixedToCenterItem->size().width(), (int) m_fixedToCenterItem->size().height());
-			QRect r(m_fixedToCenterItemOffset, size);
-			bool within = r.contains(event->pos()) && (itemAt(event->pos()) == NULL);
-			if (m_fixedToCenterItem->setMouseWithin(within)) {
-				// seems to be the only way to force a redraw of the background here
-				setBackground(background());
 			}
 		}
 	}
@@ -4343,6 +4320,9 @@ double SketchWidget::fitInWindow() {
 		itemsRect |= itemBase->sceneBoundingRect();
 	}
 
+    static const double borderFactor = 0.03;
+    itemsRect.adjust(-itemsRect.width() * borderFactor, -itemsRect.height() * borderFactor, itemsRect.width() * borderFactor, itemsRect.height() * borderFactor);
+
 	QRectF viewRect = rect();
 
 	//fitInView(itemsRect.x(), itemsRect.y(), itemsRect.width(), itemsRect.height(), Qt::KeepAspectRatio);
@@ -4586,7 +4566,7 @@ void SketchWidget::mousePressConnectorEvent(ConnectorItem * connectorItem, QGrap
 	m_connectorDragConnector->tempConnectTo(m_connectorDragWire->connector1(), false);
 	m_connectorDragWire->connector1()->tempConnectTo(m_connectorDragConnector, false);
 	if (!m_lastColorSelected.isEmpty()) {
-		m_connectorDragWire->setColorString(m_lastColorSelected, m_connectorDragWire->opacity());
+		m_connectorDragWire->setColorString(m_lastColorSelected, m_connectorDragWire->opacity(), false);
 	}
 }
 
@@ -5077,9 +5057,11 @@ void SketchWidget::changeConnectionAux(long fromID, const QString & fromConnecto
 	}
 
 	if (updateConnections) {
-        QList<ConnectorItem *> already;
-		fromConnectorItem->attachedTo()->updateConnections(fromConnectorItem, false, already);
-		toConnectorItem->attachedTo()->updateConnections(toConnectorItem, false, already);
+        if (updateOK(fromConnectorItem, toConnectorItem)) {
+            QList<ConnectorItem *> already;
+		    fromConnectorItem->attachedTo()->updateConnections(fromConnectorItem, false, already);
+		    toConnectorItem->attachedTo()->updateConnections(toConnectorItem, false, already);
+        }
 	}
 }
 
@@ -5091,18 +5073,6 @@ void SketchWidget::changeConnectionSlot(long fromID, QString fromConnectorID,
 	changeConnection(fromID, fromConnectorID,
 					 toID, toConnectorID, viewLayerPlacement,
 					 connect, false, updateConnections);
-}
-
-void SketchWidget::navigatorScrollChange(double x, double y) {
-	QScrollBar * h = this->horizontalScrollBar();
-	QScrollBar * v = this->verticalScrollBar();
-	int xmin = h->minimum();
-   	int xmax = h->maximum();
-   	int ymin = v->minimum();
-   	int ymax = v->maximum();
-
-   	h->setValue((int) ((xmax - xmin) * x) + xmin);
-   	v->setValue((int) ((ymax - ymin) * y) + ymin);
 }
 
 void SketchWidget::keyReleaseEvent(QKeyEvent * event) {
@@ -5309,7 +5279,8 @@ void SketchWidget::prepDeleteProps(ItemBase * itemBase, long id, const QString &
 					new SetPropCommand(this, id, "logo", logoProp, logoProp, true, parentCommand);
 				}
 				else if (!shapeProp.isEmpty()) {
-					new LoadLogoImageCommand(this, id, shapeProp, logo->modelPart()->localProp("aspectratio").toSizeF(), logo->prop("lastfilename"), "", false, parentCommand);
+                    QString newName = logo->getNewLayerFileName(propsMap.value("layer"));
+					new LoadLogoImageCommand(this, id, shapeProp, logo->modelPart()->localProp("aspectratio").toSizeF(), logo->prop("lastfilename"), newName, false, parentCommand);
 				}
 				prepDeleteOtherProps(itemBase, id, newModuleID, propsMap, parentCommand);
 			}
@@ -6104,7 +6075,6 @@ void SketchWidget::setUpSwapReconnect(SwapThing & swapThing, ItemBase * itemBase
 	QHash<QString, QPolygonF> legs;
 	QHash<QString, ConnectorItem *> formerLegs;
 	if (m2f.count() > 0 && (m_viewID == ViewLayer::BreadboardView)) {
-        swapThing.bbView = this;
 		checkFit(newModelPart, itemBase, newID, found, notFound, m2f, swapThing.byWire, legs, formerLegs, swapThing.parentCommand);
 	}
 
@@ -6517,7 +6487,7 @@ void SketchWidget::changeWireColor(long wireId, const QString& color, double opa
 	ItemBase *item = findItem(wireId);
 	Wire* wire = qobject_cast<Wire*>(item);
 	if (wire) {
-		wire->setColorString(color, opacity);
+		wire->setColorString(color, opacity, true);
 		updateInfoView();
 	}
 }
@@ -7095,6 +7065,18 @@ void SketchWidget::setInstanceTitle(long itemID, const QString & oldText, const 
 	else {
 		if (oldText.compare(newText) == 0) return;
 
+        /*
+        // this doesn't work correctly--undo somehow gets messed up
+        LogoItem * logoItem = qobject_cast<LogoItem *>(itemBase);
+        if (logoItem && logoItem->hasLogo()) {
+            // instead of changing part label, change logo
+            if (logoItem->logo().compare(newText) == 0) return;
+
+            setProp(logoItem, "logo", tr("logo"), logoItem->logo(), newText, true);
+            return;
+        }
+        */
+
 		partLabelChangedAux(itemBase, oldText, newText);
 	}
 }
@@ -7447,9 +7429,6 @@ QString SketchWidget::makeWireSVGAux(Wire * wire, double width, const QString & 
 	}
 }
 
-void SketchWidget::addFixedToCenterItem2(SketchMainHelp * item) {
-	m_fixedToCenterItem = item;
-}
 
 void SketchWidget::drawBackground( QPainter * painter, const QRectF & rect )
 {
@@ -7465,8 +7444,28 @@ void SketchWidget::drawBackground( QPainter * painter, const QRectF & rect )
 	
 	InfoGraphicsView::drawForeground(painter, rect);
 
+	// always draw the logo in the same place in the window
+	// no matter how the view is zoomed or scrolled
+
+    static QPixmap * bgPixmap = NULL;
+    if (bgPixmap == NULL) {
+        bgPixmap = new QPixmap(":resources/images/fritzing_logo_background.png");
+    }
+    if (bgPixmap) {
+		QPointF p = painter->viewport().bottomLeft();
+        int hOffset = 0;
+        if (horizontalScrollBar()->isVisible()) {
+            hOffset = horizontalScrollBar()->height();
+        }
+        p += QPointF(25, hOffset - 25 - bgPixmap->height());
+	    painter->save();
+	    painter->setWindow(painter->viewport());
+	    painter->setTransform(QTransform());
+	    painter->drawPixmap(p,*bgPixmap);
+	    painter->restore();
+    }
+
 	if (m_showGrid) {
-        QColor gridColor(0, 0, 0, 20);
 		double gridSize = m_gridSizeInches * GraphicsUtils::SVGDPI;
         int intGridSize = int(gridSize * 10000);
         if (intGridSize > 0) {
@@ -7488,7 +7487,7 @@ void SketchWidget::drawBackground( QPainter * painter, const QRectF & rect )
             //DebugDialog::debug(QString("lines %1 %2").arg(linesX.count()).arg(linesY.count()));
 
 		    QPen pen;
-		    pen.setColor(gridColor);
+		    pen.setColor(m_gridColor);
 		    pen.setWidth(0);
 		    pen.setCosmetic(true);
 		    //pen.setStyle(Qt::DotLine);            
@@ -7503,43 +7502,17 @@ void SketchWidget::drawBackground( QPainter * painter, const QRectF & rect )
         }
 	}
 
-	// always draw the widget in the same place in the window
-	// no matter how the view is zoomed or scrolled
 
-	if (m_fixedToCenterItem != NULL) {
-		if (m_fixedToCenterItem->getVisible()) {
-			QWidget * widget = m_fixedToCenterItem->widget();
-			if (widget != NULL) {
-				QSizeF helpSize = m_fixedToCenterItem->size();
 
-				/*
-				// add in scrollbar widths so image doesn't jump when scroll bars appear or disappear?
-				if (verticalScrollBar()->isVisible()) {
-					vp.setWidth(vp.width() + verticalScrollBar()->width());
-				}
-				if (horizontalScrollBar()->isVisible()) {
-					vp.setHeight(vp.height() + horizontalScrollBar()->height());
-				}
-				*/
-			
-				m_fixedToCenterItemOffset = calcFixedToCenterItemOffset(painter->viewport(), helpSize);
-
-				painter->save();
-				painter->setWindow(painter->viewport());
-				painter->setTransform(QTransform());
-				painter->drawPixmap(m_fixedToCenterItemOffset, m_fixedToCenterItem->getPixmap());
-				//painter->fillRect(m_fixedToCenterItemOffset.x(), m_fixedToCenterItemOffset.y(), helpsize.width(), helpsize.height(), QBrush(QColor(Qt::blue)));
-				painter->restore();
-			}
-		}
-	}
 }
 
+/*
 QPoint SketchWidget::calcFixedToCenterItemOffset(const QRect & viewPortRect, const QSizeF & helpSize) {
 	QPoint p((int) ((viewPortRect.width() - helpSize.width()) / 2.0),
 			 (int) ((viewPortRect.height() - helpSize.height()) / 2.0));
 	return p;
 }
+*/
 
 void SketchWidget::pushCommand(QUndoCommand * command, QObject * thing) {
 	if (m_undoStack) {
@@ -8188,7 +8161,7 @@ void SketchWidget::resizeJumperItem(long itemID, QPointF pos, QPointF c0, QPoint
 	qobject_cast<JumperItem *>(item)->resize(pos, c0, c1);
 }
 
-int SketchWidget::selectAllObsolete() 
+QList<ItemBase *> SketchWidget::selectAllObsolete() 
 {
 	QSet<ItemBase *> itemBases;
 	foreach (QGraphicsItem * item, scene()->items()) {
@@ -8199,7 +8172,8 @@ int SketchWidget::selectAllObsolete()
 		itemBases.insert(itemBase->layerKinChief());
 	}
 
-	return selectAllItems(itemBases, QObject::tr("Select outdated parts"));
+	selectAllItems(itemBases, QObject::tr("Select outdated parts"));
+    return itemBases.toList();
 }
 
 int SketchWidget::selectAllMoveLock() 
@@ -9172,20 +9146,27 @@ VirtualWire * SketchWidget::makeOneRatsnestWire(ConnectorItem * source, Connecto
 		wire->setVisible(false);
 	}
 
-	wire->setColor(color, getRatsnestOpacity());
-	wire->setWireWidth(getRatsnestWidth(), this, VirtualWire::ShapeWidthExtra + getRatsnestWidth());   
+	wire->setColor(color, ratsnestOpacity());
+	wire->setWireWidth(ratsnestWidth(), this, VirtualWire::ShapeWidthExtra + ratsnestWidth());   
 
 	return wire;
 }
 
-double SketchWidget::getRatsnestOpacity() {
-	return 1.0;
+double SketchWidget::ratsnestOpacity() {
+	return m_ratsnestOpacity;
 }
 
-double SketchWidget::getRatsnestWidth() {
-	return 1.0;
+void SketchWidget::setRatsnestOpacity(double opacity) {
+	m_ratsnestOpacity = opacity;
 }
 
+double SketchWidget::ratsnestWidth() {
+	return m_ratsnestWidth;
+}
+
+void SketchWidget::setRatsnestWidth(double width) {
+	m_ratsnestWidth = width;
+}
 void SketchWidget::makeRatsnestViewGeometry(ViewGeometry & viewGeometry, ConnectorItem * source, ConnectorItem * dest) 
 {
 	QPointF fromPos = source->sceneAdjustedTerminalPoint(NULL);
@@ -9464,7 +9445,7 @@ void SketchWidget::addToSketch(QList<ModelPart *> & modelParts) {
 
     int ix = 0;
     QList<long> ids;
-    int columns = 10;
+    int columns = 50;
     foreach (ModelPart * modelPart, modelParts) {
         ViewGeometry viewGeometry;
         int x = (ix % columns) * 100;
@@ -10000,5 +9981,138 @@ void SketchWidget::packItems(int columns, const QList<long> & ids, QUndoCommand 
     }
 }
 
+QColor SketchWidget::gridColor() const {
+    return m_gridColor;
+}
+
+void SketchWidget::setGridColor(QColor color) {
+    m_gridColor = color;
+}
+
+bool SketchWidget::everZoomed() const {
+    return m_everZoomed;
+}
+
+void SketchWidget::setEverZoomed(bool everZoomed) {
+    m_everZoomed = everZoomed;
+}
+
+bool SketchWidget::updateOK(ConnectorItem *, ConnectorItem *) {
+    return true;
+}
+
+void SketchWidget::testConnectors()
+{
+    static const QString templateModuleID("generic_female_pin_header_1_100mil");
+	static QRectF templateBoundingRect;
+    static QPointF templateOffset;
 
 
+    QSet<ItemBase *> already;
+    foreach (QGraphicsItem * item, scene()->selectedItems()) {
+        ItemBase * itemBase = dynamic_cast<PaletteItemBase *>(item);
+        if (itemBase == NULL) continue;
+
+        already.insert(itemBase->layerKinChief());
+    }
+
+    if (already.count() == 0) return;
+
+    ModelPart * templateModelPart = referenceModel()->genFZP(templateModuleID, referenceModel());
+    if (templateBoundingRect.isNull()) {
+        long newID = ItemBase::getNextID();
+	    ViewGeometry viewGeometry;
+        ItemBase * templateItem = addItemAuxTemp(templateModelPart, ViewLayer::NewTop, viewGeometry, newID, true, viewID(), true);
+	    templateBoundingRect = templateItem->sceneBoundingRect();
+        QPointF templatePos = templateItem->cachedConnectorItems()[0]->sceneAdjustedTerminalPoint(NULL);
+        templateOffset = templatePos - templateBoundingRect.topLeft();
+        foreach (ItemBase * kin, templateItem->layerKin()) delete kin;
+        delete templateItem;
+    }
+
+    QUndoCommand * parentCommand = new QUndoCommand(tr("test connectors"));
+    new CleanUpWiresCommand(this, CleanUpWiresCommand::UndoOnly, parentCommand);
+	new CleanUpRatsnestsCommand(this, CleanUpWiresCommand::UndoOnly, parentCommand);
+
+    foreach (ItemBase * itemBase, already) {
+        QRectF sceneBoundingRect = itemBase->sceneBoundingRect();
+        QPointF center = sceneBoundingRect.center();
+
+        foreach (ConnectorItem * connectorItem, itemBase->cachedConnectorItems()) {
+            QPointF fromPos = connectorItem->sceneAdjustedTerminalPoint(NULL);
+            QPointF toPos = fromPos;
+            double d[4];
+            d[0] = qAbs(fromPos.x() - sceneBoundingRect.left());
+            d[1] = qAbs(fromPos.x() - sceneBoundingRect.right());
+            d[2] = qAbs(fromPos.y() - sceneBoundingRect.top());
+            d[3] = qAbs(fromPos.y() - sceneBoundingRect.bottom());
+            int best = 0;
+            for (int i = 1; i < 4; i++) {
+                if (d[i] < d[best]) best = i;
+            }
+            switch (best) {
+                case 0:
+                    // left
+                    toPos.setX(sceneBoundingRect.left() - (3 * templateBoundingRect.width()));
+                    break;
+                case 1:
+                    // right
+                    toPos.setX(sceneBoundingRect.right() + (3 * templateBoundingRect.width()));
+                    break;
+                case 2:
+                    // top
+                    toPos.setY(sceneBoundingRect.top() - (3 * templateBoundingRect.height()));
+                    break;
+                case 3:
+                    // bottom
+                    toPos.setY(sceneBoundingRect.bottom() + (3 * templateBoundingRect.height()));
+                    break;
+            }
+            
+
+            long newID = ItemBase::getNextID();
+            ViewGeometry vg;
+            vg.setLoc(toPos - templateOffset);
+            newAddItemCommand(BaseCommand::CrossView, templateModelPart, templateModelPart->moduleID(), itemBase->viewLayerPlacement(), vg, newID, true, -1, true, parentCommand);  
+
+            long wireID = ItemBase::getNextID();
+            ViewGeometry vgw;
+	        vgw.setLoc(fromPos);
+	        QLineF line(0, 0, toPos.x() - fromPos.x(), toPos.y() - fromPos.y());
+	        vgw.setLine(line);
+	        vgw.setWireFlags(getTraceFlag());
+            new AddItemCommand(this, BaseCommand::CrossView, ModuleIDNames::WireModuleIDName, itemBase->viewLayerPlacement(), vgw, wireID, false, -1, parentCommand);
+            new ChangeConnectionCommand(this, BaseCommand::CrossView,
+								itemBase->id(), connectorItem->connectorSharedID(),
+								wireID, "connector0",
+								itemBase->viewLayerPlacement(), true, parentCommand);
+            new ChangeConnectionCommand(this, BaseCommand::CrossView,
+								newID, "connector0",
+								wireID, "connector1",
+								itemBase->viewLayerPlacement(), true, parentCommand);
+        }
+    }
+
+    new CleanUpWiresCommand(this, CleanUpWiresCommand::RedoOnly, parentCommand);
+	new CleanUpRatsnestsCommand(this, CleanUpWiresCommand::RedoOnly, parentCommand);
+
+    m_undoStack->waitPush(parentCommand, PropChangeDelay);
+}
+
+void SketchWidget::updateWires() {
+    QList<ConnectorItem *> already;
+    ViewGeometry::WireFlag traceFlag = getTraceFlag();
+    foreach (QGraphicsItem * item, scene()->items()) {
+        Wire * wire = dynamic_cast<Wire *>(item);
+        if (wire == NULL) continue;
+        if (!wire->isTraceType(traceFlag)) continue;
+
+        ConnectorItem * from = wire->connector0()->firstConnectedToIsh();
+        if (from != NULL) wire->connectedMoved(from, wire->connector0(), already);
+        ConnectorItem * to = wire->connector1()->firstConnectedToIsh();
+        if (to != NULL) wire->connectedMoved(to, wire->connector1(), already);
+    }
+}
+
+void SketchWidget::viewGeometryConversionHack(ViewGeometry &, ModelPart *)  {
+}

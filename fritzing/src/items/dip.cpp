@@ -28,9 +28,12 @@ $Date: 2013-04-22 23:44:56 +0200 (Mo, 22. Apr 2013) $
 #include "../utils/textutils.h"
 #include "../utils/graphicsutils.h"
 #include "../utils/familypropertycombobox.h"
+#include "../utils/schematicrectconstants.h"
 #include "../connectors/connectoritem.h"
+#include "../sketch/infographicsview.h"
 #include "../fsvgrenderer.h"
 #include "pinheader.h"
+#include "partfactory.h"
 
 #include <QFontMetricsF>
 
@@ -134,10 +137,11 @@ QString Dip::genModuleID(QMap<QString, QString> & currPropsMap)
 QString Dip::retrieveSchematicSvg(QString & svg) {
 	bool hasLocal = false;
 	QStringList labels = getPinLabels(hasLocal);
-		
+
 	if (hasLocal) {
 		if (this->isDIP()) {
 			svg = makeSchematicSvg(labels);
+            //DebugDialog::debug("make dip " + svg);
 		}
 		else {
 			svg = MysteryPart::makeSchematicSvg(labels, true);
@@ -160,13 +164,44 @@ QString Dip::makeSchematicSvg(const QString & expectedFileName)
 	}
     
     if (expectedFileName.contains("sip", Qt::CaseInsensitive)) {
+        if (expectedFileName.contains(PartFactory::OldSchematicPrefix)) {
+            return MysteryPart::obsoleteMakeSchematicSvg(labels, true);
+        }       
+
         return MysteryPart::makeSchematicSvg(labels, true);
+    }
+
+    if (expectedFileName.contains(PartFactory::OldSchematicPrefix)) {
+        return obsoleteMakeSchematicSvg(labels);
     }
 
 	return makeSchematicSvg(labels);
 }
 
 QString Dip::makeSchematicSvg(const QStringList & labels) 
+{
+    QDomDocument fakeDoc;
+
+    QList<QDomElement> lefts;
+    QList<QDomElement> rights;
+    for (int i = 0; i < labels.count() / 2; i++) {
+        QDomElement element = fakeDoc.createElement("contact");
+        element.setAttribute("connectorIndex", i);
+        element.setAttribute("name", labels.at(i));
+        lefts.append(element);
+        int j = labels.count() - i - 1;
+        element = fakeDoc.createElement("contact");
+        element.setAttribute("connectorIndex", j);
+        element.setAttribute("name", labels.at(j));
+        rights.append(element);
+    }
+    QList<QDomElement> empty;
+    QStringList busNames;
+    QString ic("IC");
+    return SchematicRectConstants::genSchematicDIP(empty, empty, lefts, rights, empty, busNames, ic, false, false, SchematicRectConstants::simpleGetConnectorName);
+}
+
+QString Dip::obsoleteMakeSchematicSvg(const QStringList & labels) 
 {
 	int pins = labels.count();
 	int increment = GraphicsUtils::StandardSchematicSeparationMils;  
@@ -372,8 +407,8 @@ bool Dip::changePinLabels(bool singleRow, bool sip) {
 	QStringList labels = getPinLabels(hasLocal);
 	if (labels.count() == 0) return true;
 
-	QString svg;
 
+	QString svg;
 	if (singleRow) {
 		svg = MysteryPart::makeSchematicSvg(labels, sip);
 	}

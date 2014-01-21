@@ -40,6 +40,7 @@ $Date: 2013-04-07 12:14:50 +0200 (So, 07. Apr 2013) $
 #include "../connectors/connectorshared.h"
 #include "../connectors/busshared.h"
 #include "../utils/folderutils.h"
+#include "../utils/fmessagebox.h"
 
 
 #define MAX_CONN_TRIES 3
@@ -89,7 +90,7 @@ QStringList FailurePropertyMessages;
 
 void noSwappingMessage()
 {
-	QMessageBox::warning(NULL,
+	FMessageBox::warning(NULL,
 			QObject::tr("Oops!"),
 			QObject::tr("Sorry, we have a problem with the swapping mechanism.\nFritzing still works, but you won't be able to change parts properties."),
 			QMessageBox::Ok);
@@ -140,7 +141,7 @@ bool SqliteReferenceModel::loadAll(const QString & databaseName, bool fullLoad, 
             }
             message += "\n" + tr("and %1 other parts").arg(FailurePartMessages.count() - 4);
         }
-	    QMessageBox::warning(NULL, QObject::tr("Oops!"), message, QMessageBox::Ok);   
+	    FMessageBox::warning(NULL, QObject::tr("Oops!"), message, QMessageBox::Ok);   
     }
     else if (FailurePropertyMessages.count() > 0) {
         QString message = tr("The swapping mechanism is disabled for:\n\n");
@@ -157,7 +158,7 @@ bool SqliteReferenceModel::loadAll(const QString & databaseName, bool fullLoad, 
             }
             message += "\n" + tr("and %1 other properties").arg(FailurePropertyMessages.count() - 4);
         }
-	    QMessageBox::warning(NULL, QObject::tr("Oops!"), message, QMessageBox::Ok);   
+	    FMessageBox::warning(NULL, QObject::tr("Oops!"), message, QMessageBox::Ok);   
     }
     return m_swappingEnabled;
 
@@ -1109,7 +1110,8 @@ QStringList SqliteReferenceModel::propValues(const QString &family, const QStrin
 
 	if(query.exec()) {
 		while(query.next()) {
-			retval << query.value(0).toString();
+            QString value = query.value(0).toString();
+            if (!value.isEmpty()) retval << value;
 		}
 	} else {
         debugExec("couldn't retrieve values", query);
@@ -1137,7 +1139,8 @@ QMultiHash<QString, QString> SqliteReferenceModel::allPropValues(const QString &
 			//for (int i = 0; i < record.count(); i++) {
 			//	DebugDialog::debug("result " + record.fieldName(i) + " " + record.value(i).toString());
 			//}
-			retval.insert(query.value(0).toString(), query.value(1).toString());
+            QString prop = query.value(0).toString();
+            if (!prop.isEmpty()) retval.insert(prop, query.value(1).toString());
 		}
 	} else {
         debugExec("couldn't retrieve values", query);

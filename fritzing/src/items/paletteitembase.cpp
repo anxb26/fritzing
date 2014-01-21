@@ -401,6 +401,8 @@ bool PaletteItemBase::setUpImage(ModelPart * modelPart, const LayerHash & viewLa
 		return false;
 	}
 
+    cacheLoaded(layerAttributes);
+
 	m_canFlipVertical = modelPart->canFlipVertical(layerAttributes.viewID);
 	m_canFlipHorizontal = modelPart->canFlipHorizontal(layerAttributes.viewID);
 	m_filename = layerAttributes.filename();
@@ -422,7 +424,7 @@ bool PaletteItemBase::setUpImage(ModelPart * modelPart, const LayerHash & viewLa
 	}
 
 	if (!m_viewGeometry.transform().isIdentity()) {
-		setTransform(m_viewGeometry.transform());
+		setInitialTransform(m_viewGeometry.transform());
 		update();
 	}
 
@@ -510,7 +512,10 @@ void PaletteItemBase::setUpConnectors(FSvgRenderer * renderer, bool ignoreTermin
 }
 
 void PaletteItemBase::connectedMoved(ConnectorItem * from, ConnectorItem * to,  QList<ConnectorItem *> & already) {
-	if (from->connectorType() != Connector::Female) return;
+    // not sure this is necessary any longer
+    return;
+
+    if (from->connectorType() != Connector::Female) return;
 
 	// female connectors really only operate in breadboard view
 	if (m_viewID != ViewLayer::BreadboardView) return;
@@ -603,7 +608,7 @@ LayerKinPaletteItem *PaletteItemBase::newLayerKinPaletteItem(PaletteItemBase * c
     else {
         lk = new LayerKinPaletteItem(chief, modelPart, layerAttributes.viewID, viewGeometry, id, itemMenu);
     }
-	lk->init(layerAttributes, viewLayers);
+	lk->initLKPI(layerAttributes, viewLayers);
 	return lk;
 }
 
@@ -788,6 +793,14 @@ QString PaletteItemBase::normalizeSvg(QString & svg, ViewLayer::ViewLayerID view
 	return splitter.elementString(xmlName);
 }
 
+void PaletteItemBase::setInitialTransform(const QTransform &matrix)
+{
+    setTransform(matrix);
+}
+
+void PaletteItemBase::cacheLoaded(const LayerAttributes &)
+{
+}
 
 /*
 

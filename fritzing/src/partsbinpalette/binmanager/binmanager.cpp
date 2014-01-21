@@ -47,6 +47,7 @@ $Date: 2013-04-14 00:08:36 +0200 (So, 14. Apr 2013) $
 #include "../../utils/textutils.h"
 #include "../../utils/fileprogressdialog.h"
 #include "../../referencemodel/referencemodel.h"
+#include "../../items/partfactory.h"
 #include "../partsbinpalettewidget.h"
 #include "../partsbinview.h"
 
@@ -131,7 +132,7 @@ BinManager::BinManager(class ReferenceModel *referenceModel, class HtmlInfoView 
 
 	lo->setMargin(0);
 	lo->setSpacing(0);
-	setMaximumHeight(500);
+    setMaximumHeight(500);
 }
 
 BinManager::~BinManager() {
@@ -163,6 +164,7 @@ void BinManager::initStandardBins()
 	openCoreBinIn();
 		
 	//DebugDialog::debug("after core bin");
+    currentChanged(m_stackTabWidget->currentIndex());
 
 	connectTabWidget();
 }
@@ -303,7 +305,7 @@ QString BinManager::createIfBinNotExists(const QString & dest, const QString & s
 {
     QString binPath = dest;
     QFile file(source);
-	file.copy(binPath);
+	FolderUtils::slamCopy(file, binPath);
 	return binPath;
 }
 
@@ -468,6 +470,24 @@ PartsBinPaletteWidget* BinManager::newBin() {
 }
 
 void BinManager::currentChanged(int index) {
+	for (int i = 0; i < m_stackTabWidget->count(); i++) {
+		PartsBinPaletteWidget* bin = (PartsBinPaletteWidget *) m_stackTabWidget->widget(i);
+        if (bin == NULL) continue;
+        if (!bin->hasMonoIcon()) continue;
+
+        if (i == index) {
+            m_stackTabWidget->setTabIcon(i, bin->icon());
+        }
+        else {
+            m_stackTabWidget->setTabIcon(i, bin->monoIcon());
+        }
+
+    }
+
+        
+
+    
+
 	PartsBinPaletteWidget *bin = getBin(index);
 	if (bin) setAsCurrentBin(bin);
 }
@@ -902,7 +922,11 @@ void BinManager::search(const QString & searchText) {
     searchBin->removeParts();
     foreach (ModelPart * modelPart, modelParts) {
         //DebugDialog::debug(modelPart->title());
-        if (modelPart->itemType() != ModelPart::SchematicSubpart) {
+        if (modelPart->itemType() == ModelPart::SchematicSubpart) {
+        }
+        else if (modelPart->moduleID().contains(PartFactory::OldSchematicPrefix)) {
+        }
+        else {
             this->addPartTo(searchBin, modelPart, false);
         }
         progress.incValue();
@@ -1277,7 +1301,7 @@ void BinManager::copyFilesToContrib(ModelPart * mp, QWidget * originator) {
 	QFile fzp(path);
 	
 	QString parts = FolderUtils::getUserDataStorePath("parts");
-	fzp.copy(parts + "/contrib/" + info.fileName());
+    FolderUtils::slamCopy(fzp, parts + "/contrib/" + info.fileName());
 	QString prefix = parts + "/svg/contrib/";
 
 	QDir dir = info.absoluteDir();
@@ -1291,7 +1315,7 @@ void BinManager::copyFilesToContrib(ModelPart * mp, QWidget * originator) {
 		QString fn = mp->hasBaseNameFor(viewID);
 		if (!fn.isEmpty()) {
 			QFile svg(dir.absoluteFilePath(fn));
-			svg.copy(prefix + fn);
+            FolderUtils::slamCopy(svg, prefix + fn);
 		}
 	}
 }

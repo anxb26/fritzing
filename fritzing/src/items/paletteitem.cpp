@@ -138,7 +138,7 @@ PaletteItem::~PaletteItem() {
 	}
 }
 
-bool PaletteItem::renderImage(ModelPart * modelPart, ViewLayer::ViewID viewID, const LayerHash & viewLayers, ViewLayer::ViewLayerID viewLayerID, bool doConnectors, QString & error) {
+bool PaletteItem::renderImage(ModelPart * modelPart, ViewLayer::ViewID viewID, const LayerHash & viewLayers, ViewLayer::ViewLayerID viewLayerID, bool doConnectors,  QString & error) {
 	LayerAttributes layerAttributes; 
     initLayerAttributes(layerAttributes, viewID, viewLayerID, viewLayerPlacement(), doConnectors, true);
 	bool result = setUpImage(modelPart, viewLayers, layerAttributes);
@@ -201,6 +201,7 @@ void PaletteItem::loadLayerKin(const LayerHash & viewLayers, ViewLayer::ViewLaye
 void PaletteItem::makeOneKin(qint64 & id, ViewLayer::ViewLayerID viewLayerID, ViewLayer::ViewLayerPlacement viewLayerPlacement, ViewGeometry & viewGeometry, const LayerHash & viewLayers) {
     LayerAttributes layerAttributes;
     initLayerAttributes(layerAttributes, m_viewID, viewLayerID, viewLayerPlacement, true, true);
+
     LayerKinPaletteItem * lkpi = newLayerKinPaletteItem(this, m_modelPart, viewGeometry, id, m_itemMenu, viewLayers, layerAttributes);
 	if (lkpi->ok()) {
 		DebugDialog::debug(QString("adding layer kin %1 %2 %3 %4")
@@ -456,7 +457,7 @@ void PaletteItem::resetImage(InfoGraphicsView * infoGraphicsView) {
     
 	LayerAttributes layerAttributes;
     initLayerAttributes(layerAttributes, viewID(), viewLayerID(), viewLayerPlacement(), true, !m_selectionShape.isEmpty());
-	this->setUpImage(modelPart(), infoGraphicsView->viewLayers(),layerAttributes);
+	this->setUpImage(modelPart(), infoGraphicsView->viewLayers(), layerAttributes);
 	
 	foreach (ItemBase * layerKin, m_layerKin) {
 		resetKinImage(layerKin, infoGraphicsView);
@@ -723,13 +724,16 @@ QStringList PaletteItem::getPinLabels(bool & hasLocal) {
 void PaletteItem::resetConnectors() {
 	if (m_viewID != ViewLayer::SchematicView) return;
 
-	QSizeF size = fsvgRenderer()->defaultSizeF();   // pixels
-	QRectF viewBox = fsvgRenderer()->viewBoxF();
+    FSvgRenderer * renderer = fsvgRenderer();
+    if (renderer == NULL) return;
+
+	QSizeF size = renderer->defaultSizeF();   // pixels
+	QRectF viewBox = renderer->viewBoxF();
 	foreach (ConnectorItem * connectorItem, cachedConnectorItems()) {
 		SvgIdLayer * svgIdLayer = connectorItem->connector()->fullPinInfo(m_viewID, m_viewLayerID);
 		if (svgIdLayer == NULL) continue;
 
-		QRectF bounds = fsvgRenderer()->boundsOnElement(svgIdLayer->m_svgId);
+		QRectF bounds = renderer->boundsOnElement(svgIdLayer->m_svgId);
 		QPointF p(bounds.left() * size.width() / viewBox.width(), bounds.top() * size.height() / viewBox.height());
 		QRectF r = connectorItem->rect();
 		r.moveTo(p.x(), p.y());
@@ -964,7 +968,7 @@ QWidget * PaletteItem::createHoleSettings(QWidget * parent, HoleSettings & holeS
 
 	    QLabel * label = new QLabel(tr("Hole Diameter"));
 	    label->setMinimumHeight(RowHeight);
-	    label->setObjectName("infoViewLabel");
+        label->setObjectName("infoViewGroupBoxLabel");
 	    gridLayout->addWidget(label, 0, 0);
 
 	    holeSettings.thicknessEdit = new QLineEdit(subFrame);
@@ -1564,14 +1568,4 @@ void PaletteItem::retransform(const QTransform & chiefTransform) {
     }
 }
 
-void PaletteItem::initLayerAttributes(LayerAttributes & layerAttributes, ViewLayer::ViewID viewID, ViewLayer::ViewLayerID viewLayerID, ViewLayer::ViewLayerPlacement viewLayerPlacement, bool doConnectors, bool doCreateShape) {
-    layerAttributes.viewID = viewID;
-    layerAttributes.viewLayerID = viewLayerID;
-    layerAttributes.viewLayerPlacement = viewLayerPlacement;
-    layerAttributes.doConnectors = doConnectors;
-    layerAttributes.createShape = doCreateShape;
-    InfoGraphicsView * infoGraphicsView = InfoGraphicsView::getInfoGraphicsView(this);
-	if (infoGraphicsView != NULL) {
-		layerAttributes.orientation = infoGraphicsView->smdOrientation();
-	}
-}
+

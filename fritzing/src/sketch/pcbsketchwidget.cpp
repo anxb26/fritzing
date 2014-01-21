@@ -36,7 +36,6 @@ $Date: 2013-04-28 13:51:10 +0200 (So, 28. Apr 2013) $
 #include "../connectors/connectoritem.h"
 #include "../items/moduleidnames.h"
 #include "../items/partlabel.h"
-#include "../help/sketchmainhelp.h"
 #include "../fsvgrenderer.h"
 #include "../autoroute/autorouteprogressdialog.h"
 #include "../autoroute/drc.h"
@@ -356,12 +355,6 @@ void PCBSketchWidget::addDefaultParts() {
 	changeBoardLayers(2, true);
 }
 
-QPoint PCBSketchWidget::calcFixedToCenterItemOffset(const QRect & viewPortRect, const QSizeF & helpSize) {
-	QPoint p((int) ((viewPortRect.width() - helpSize.width()) / 2.0),
-			 30);
-	return p;
-}
-
 void PCBSketchWidget::showEvent(QShowEvent * event) {
 	SketchWidget::showEvent(event);
 	dealWithDefaultParts();
@@ -373,13 +366,8 @@ void PCBSketchWidget::dealWithDefaultParts() {
 
 	m_addDefaultParts = false;
 
-	if (m_fixedToCenterItem == NULL) return;
-
-	// place the default rectangular board in relation to the first time help area
-
-	QSizeF helpSize = m_fixedToCenterItem->size();
 	QSizeF vpSize = this->viewport()->size();
-	QSizeF partSize(600, 200);
+	QSizeF partSize(300, 200);
 
 	//if (vpSize.height() < helpSize.height() + 50 + partSize.height()) {
 		//vpSize.setWidth(vpSize.width() - verticalScrollBar()->width());
@@ -387,10 +375,7 @@ void PCBSketchWidget::dealWithDefaultParts() {
 
 	QPointF p;
 	p.setX((int) ((vpSize.width() - partSize.width()) / 2.0));
-	p.setY((int) helpSize.height());
-
-	// TODO: make these constants less arbitrary (get the size and location of the icon which the board is replacing)
-	p += QPointF(0, 50);
+	p.setY((int) ((vpSize.height() - partSize.height()) / 2.0));
 
 	// place it
 	QPointF q = mapToScene(p.toPoint());
@@ -449,7 +434,7 @@ void PCBSketchWidget::initWire(Wire * wire, int penWidth) {
 	Q_UNUSED(penWidth);
 	if (wire->getRatsnest()) return;
 
-	wire->setColorString(traceColor(wire->connector0()), 1.0);
+	wire->setColorString(traceColor(wire->connector0()), 1.0, false);
 	wire->setPenWidth(1, this, 2);
 }
 
@@ -582,14 +567,6 @@ bool PCBSketchWidget::canCreateWire(Wire * dragWire, ConnectorItem * from, Conne
 {
 	Q_UNUSED(dragWire);
 	return ((from != NULL) && (to != NULL));
-}
-
-double PCBSketchWidget::getRatsnestOpacity() {
-	return 0.7;
-}
-
-double PCBSketchWidget::getRatsnestWidth() {
-	return 0.7;
 }
 
 ConnectorItem * PCBSketchWidget::findNearestPartConnectorItem(ConnectorItem * fromConnectorItem) {
@@ -1176,7 +1153,7 @@ void PCBSketchWidget::changeLayer(long id, double z, ViewLayer::ViewLayerID view
 	if (tw != NULL) {
 		ViewLayer::ViewLayerPlacement viewLayerPlacement = ViewLayer::specFromID(viewLayerID);
 		tw->setViewLayerPlacement(viewLayerPlacement);
-		tw->setColorString(traceColor(viewLayerPlacement), 1.0);
+		tw->setColorString(traceColor(viewLayerPlacement), 1.0, true);
 		ViewLayer * viewLayer = m_viewLayers.value(viewLayerID);
 		tw->setInactive(!viewLayer->isActive());
 		tw->setHidden(!viewLayer->visible());
@@ -1765,7 +1742,7 @@ Wire * PCBSketchWidget::createTempWireForDragging(Wire * fromWire, ModelPart * w
 	viewGeometry.setPCBTrace(true);
 	Wire * wire =  SketchWidget::createTempWireForDragging(fromWire, wireModel, connectorItem, viewGeometry, spec);
 	if (fromWire == NULL) {
-		wire->setColorString(traceColor(connectorItem), 1.0);
+		wire->setColorString(traceColor(connectorItem), 1.0, false);
 		double traceWidth = getTraceWidth();
 		double minDim = connectorItem->minDimension();
 		if (minDim < traceWidth) {
@@ -1775,7 +1752,7 @@ Wire * PCBSketchWidget::createTempWireForDragging(Wire * fromWire, ModelPart * w
 		wire->setProperty(FakeTraceProperty, true);
 	}
 	else {
-		wire->setColorString(fromWire->colorString(), fromWire->opacity());
+		wire->setColorString(fromWire->colorString(), fromWire->opacity(), false);
 		wire->setWireWidth(fromWire->width(), this, fromWire->hoverStrokeWidth());
 	}
 
@@ -1792,12 +1769,15 @@ void PCBSketchWidget::prereleaseTempWireForDragging(Wire* wire)
 
 void PCBSketchWidget::rotatePartLabels(double degrees, QTransform & transform, QPointF center, QUndoCommand * parentCommand)
 {
+    QList<ItemBase *> savedValues = m_savedItems.values();
+    /*
     QSet<ItemBase *> boards;
-	foreach (ItemBase * itemBase, m_savedItems.values()) {
+	foreach (ItemBase * itemBase, savedValues) {
         if (Board::isBoard(itemBase)) {
 		    boards.insert(itemBase);
 		}
 	}
+
 
 	if (boards.count() == 0) return;
 
@@ -1805,12 +1785,14 @@ void PCBSketchWidget::rotatePartLabels(double degrees, QTransform & transform, Q
     foreach (ItemBase * board, boards.values()) {
         bbr |= board->sceneBoundingRect();
     }
+    */
 
 	foreach (QGraphicsItem * item, scene()->items()) {
 		PartLabel * partLabel = dynamic_cast<PartLabel *>(item);
 		if (partLabel == NULL) continue;
 		if (!partLabel->isVisible()) continue;
-		if (!bbr.intersects(partLabel->sceneBoundingRect())) continue;
+		//if (!bbr.intersects(partLabel->sceneBoundingRect())) continue;  // if the part is on the board and the label is off the board, this does not rotate
+        if (!savedValues.contains(partLabel->owner()->layerKinChief())) continue;
 
 		QPointF offset = partLabel->pos() - partLabel->owner()->pos();
 		new MoveLabelCommand(this, partLabel->owner()->id(), partLabel->pos(), offset, partLabel->pos(), offset, parentCommand);
@@ -2921,4 +2903,10 @@ bool PCBSketchWidget::dropOnBottom() {
     if (!layerIsActive(ViewLayer::Copper1)) return true;
 
     return viewFromBelow();
+}
+
+bool PCBSketchWidget::updateOK(ConnectorItem * c1, ConnectorItem * c2) {
+    // don't update if both connectors belong to parts--this isn't legit in schematic or pcb view
+    if (c1->attachedTo()->wireFlags()) return true;
+    return c2->attachedTo()->wireFlags() != 0;
 }

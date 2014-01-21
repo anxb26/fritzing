@@ -96,7 +96,7 @@ int PartsBinListView::setItemAux(ModelPart * modelPart, int position) {
 		lwi->setText("        " + TranslatedCategoryNames.value(modelPart->instanceText(), modelPart->instanceText()));
 	}
 	else {
-		loadImage(lwi, moduleID);
+		loadImage(modelPart, lwi, moduleID);
 	}
 
 	if(position > -1 && position < count()) {
@@ -370,24 +370,20 @@ void PartsBinListView::reloadPart(const QString & moduleID) {
 
 		if (itemBase->moduleID().compare(moduleID) == 0) {
 			lwi->setText(itemBase->title());
-			loadImage(lwi, moduleID);
+			loadImage(itemBase->modelPart(), lwi, moduleID);
 			return;
 		}
 	}
 }
 
-void PartsBinListView::loadImage(QListWidgetItem * lwi, const QString & moduleID) 
+void PartsBinListView::loadImage(ModelPart * modelPart, QListWidgetItem * lwi, const QString & moduleID) 
 {
     ItemBase * itemBase = ItemBaseHash.value(moduleID);
     if (itemBase == NULL) {
-		ModelPart * modelPart = itemBase->modelPart();
 		itemBase = PartFactory::createPart(modelPart, ViewLayer::NewTop, ViewLayer::IconView, ViewGeometry(), ItemBase::getNextID(), NULL, NULL, false);
 		ItemBaseHash.insert(moduleID, itemBase);
 		LayerAttributes layerAttributes;
-        layerAttributes.viewID = ViewLayer::IconView;
-        layerAttributes.viewLayerID = ViewLayer::Icon;
-        layerAttributes.viewLayerPlacement = itemBase->viewLayerPlacement();
-        layerAttributes.createShape = layerAttributes.doConnectors = false;
+        itemBase->initLayerAttributes(layerAttributes, ViewLayer::IconView, ViewLayer::Icon, itemBase->viewLayerPlacement(), false, false);
 		FSvgRenderer * renderer = itemBase->setUpImage(modelPart, layerAttributes);
 		if (renderer != NULL) {
 			if (itemBase) {

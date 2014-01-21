@@ -434,3 +434,4 @@ void InfoGraphicsView::rotateX(double degrees, bool rubberBandLegEnabled, ItemBa
     Q_UNUSED(rubberBandLegEnabled);
     Q_UNUSED(originatingItem);
 }
+

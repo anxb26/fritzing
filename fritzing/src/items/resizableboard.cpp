@@ -114,7 +114,7 @@ void Board::paintHover(QPainter *painter, const QStyleOptionGraphicsItem *option
 	Q_UNUSED(option);
 	painter->save();
 	painter->setOpacity(0);
-	painter->fillPath(this->hoverShape(), QBrush(hoverColor));
+	painter->fillPath(this->hoverShape(), QBrush(HoverColor));
 	painter->restore();
 }
 
@@ -280,8 +280,8 @@ void Board::fileNameEntry(const QString & filename) {
 	foreach (QString name, getImageNames()) {
 		if (filename.compare(name) == 0) {
 			QString f = FolderUtils::getApplicationSubFolderPath("parts") + "/svg/core/pcb/" + filename + ".svg";
-			return prepLoadImageAux(f, false);
-			break;
+			prepLoadImageAux(f, false);
+			return;
 		}
 	}
 
@@ -812,11 +812,8 @@ void ResizableBoard::resizePixels(double w, double h, const LayerHash & viewLaye
 
 bool ResizableBoard::resizeMM(double mmW, double mmH, const LayerHash & viewLayers) {
 	if (mmW == 0 || mmH == 0) {
-		LayerAttributes layerAttributes;
-        layerAttributes.viewID = m_viewID;
-        layerAttributes.viewLayerID = m_viewLayerID;
-        layerAttributes.viewLayerPlacement = m_viewLayerPlacement;
-        layerAttributes.createShape = layerAttributes.doConnectors = true;
+        LayerAttributes layerAttributes;
+        this->initLayerAttributes(layerAttributes, m_viewID, m_viewLayerID, m_viewLayerPlacement, true, true);
 		setUpImage(modelPart(), viewLayers, layerAttributes);
 		modelPart()->setLocalProp("height", QVariant());
 		modelPart()->setLocalProp("width", QVariant());
@@ -1450,7 +1447,7 @@ QString ResizableBoard::getShapeForRenderer(const QString & svg, ViewLayer::View
     header += ">\n";
 
     header = header + xml + "\n</svg>";
-    //DebugDialog::debug(header);
+    //DebugDialog::debug("resizableBoard " + header);
 	return header;
 }
 

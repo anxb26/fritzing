@@ -61,6 +61,10 @@ public:
 	void addedToScene(bool temporary);
 	void setHeight(double h);
 	void paintHover(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
+    bool hasLogo();
+    QString getNewLayerFileName(const QString & newLayer);
+    QString getInspectorTitle();
+    void setInspectorTitle(const QString & oldText, const QString & newText);
 
 protected slots:
 	void logoEntry();
@@ -89,6 +93,7 @@ protected:
 	virtual QString flipSvg(const QString & svg);
 	QString flipSvgAux(QString & newSvg);
 	QStringList collectValues(const QString & family, const QString & prop, QString & value);
+    void logoEntryAux(const QString & newText);
 
 protected:
 	QString m_logo;

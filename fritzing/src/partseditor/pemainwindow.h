@@ -110,16 +110,19 @@ public slots:
 	void connectorsTypeChanged(Connector::ConnectorType);
 	void smdChanged(const QString &);
 	void showing(SketchWidget *);
+    void updateExportMenu();
+    void updateEditMenu();
+    void s2sMessageSlot(const QString & message);
 
 protected:
 	void closeEvent(QCloseEvent * event);
 	bool event(QEvent *);
     void initLockedFiles(bool lockFiles);
-    void initSketchWidgets();
+    void initSketchWidgets(bool withIcons);
     void initProgrammingWidget();
     void initDock();
-    void initHelper();
     void moreInitDock();
+    void setInitialView();
     void createActions();
     void createMenus();
     QList<QWidget*> getButtonsForView(ViewLayer::ViewID);
@@ -131,7 +134,7 @@ protected:
 	QMenu *schematicWireMenu();
 	QMenu *breadboardWireMenu();
 	void setTitle();
-    void createViewMenuActions();
+    void createViewMenuActions(bool showWelcome);
     void createFileMenuActions();
     void createViewMenu();
 	void createEditMenu();
@@ -193,6 +196,7 @@ protected:
     bool anyMarquee();
     bool anyVisible();
     QString makeDirName();
+	void initWelcomeView();
 
 protected slots:
     void initZoom();
@@ -212,6 +216,7 @@ protected slots:
 	void reuseBreadboard();
 	void reuseSchematic();
 	void reusePCB();
+    void convertToTenth();
 	void hideOtherViews();
     void updateLayerMenu(bool resetLayout = false);
 	void updateAssignedConnectors();
@@ -237,6 +242,7 @@ protected:
     QAction * m_reuseSchematicAct;
     QAction * m_reusePCBAct;
 	QAction * m_hideOtherViewsAct;
+    QAction * m_convertToTenthAct;
 
 	QPointer<SketchAreaWidget> m_iconWidget;
 	QPointer<class IconSketchWidget> m_iconGraphicsView;

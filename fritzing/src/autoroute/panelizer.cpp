@@ -41,6 +41,7 @@ $Date: 2013-04-22 01:45:43 +0200 (Mo, 22. Apr 2013) $
 #include "../version/version.h"
 #include "../processeventblocker.h"
 #include "../connectors/connectoritem.h"
+#include "../connectors/svgidlayer.h"
 
 #include "cmrouter/tileutils.h"
 
@@ -435,6 +436,20 @@ void Panelizer::panelize(FApplication * app, const QString & panelFilename, bool
 
 		TextUtils::mergeSvg(doc, merger, "");
 		merger = TextUtils::mergeSvgFinish(doc);
+
+        int endix = merger.lastIndexOf("</svg>");
+        QString text = "<text x='%1' y='%2' text-anchor='end' fill='#000000' stroke='none' stroke-width='0' font-size='250' font-family='OCRA'>%3 panel %4  %5 %6</text>\n";
+        text = text
+                .arg(planePair->panelWidth * GraphicsUtils::StandardFritzingDPI)
+                .arg(planePair->panelHeight * GraphicsUtils::StandardFritzingDPI + (250 / 2))
+                .arg(outputDir.dirName())
+                .arg(planePair->index)
+                .arg(panelParams.prefix)
+                .arg(QTime::currentTime().toString())
+                ;
+
+        merger.insert(endix, text);
+
 		QString fname = svgDir.absoluteFilePath(QString("%1.%2.svg").arg(prefix).arg("identification"));
 		TextUtils::writeUtf8(fname, merger);
 
@@ -841,12 +856,12 @@ bool Panelizer::openWindows(QDomElement & boardElement, QHash<QString, QString> 
             return false;
         }
 
-		MainWindow * mainWindow = app->openWindowForService(false);
+		MainWindow * mainWindow = app->openWindowForService(false, 3);
         mainWindow->setCloseSilently(true);
 
 		FolderUtils::setOpenSaveFolderAux(fzDir.absolutePath());
 
-		if (!mainWindow->loadWhich(copyPath, false, false, "")) {
+		if (!mainWindow->loadWhich(copyPath, false, false, false, "")) {
 			writePanelizerOutput(QString("failed to load '%1'").arg(copyPath));
 			return false;
 		}
@@ -865,7 +880,6 @@ bool Panelizer::openWindows(QDomElement & boardElement, QHash<QString, QString> 
 			continue;
         }
         
-		mainWindow->showPCBView();
 		foreach (QGraphicsItem * item, mainWindow->pcbView()->scene()->items()) {
 			ItemBase * itemBase = dynamic_cast<ItemBase *>(item);
 			if (itemBase == NULL) continue;
@@ -1242,7 +1256,7 @@ void Panelizer::addOptional(int optionalCount, QList<PanelItem *> & refPanelItem
 
 /////////////////////////////////////////////////////////////////////////////////
 
-void Panelizer::inscribe(FApplication * app, const QString & panelFilename, bool drc) 
+void Panelizer::inscribe(FApplication * app, const QString & panelFilename, bool drc, bool noMessages) 
 {
     initPanelizerOutput(panelFilename, "inscribe");
 
@@ -1319,7 +1333,7 @@ void Panelizer::inscribe(FApplication * app, const QString & panelFilename, bool
 
 	board = boards.firstChildElement("board");
 	while (!board.isNull()) {
-		MainWindow * mainWindow = inscribeBoard(board, fzzFilePaths, app, fzDir, drc, copyDir);
+		MainWindow * mainWindow = inscribeBoard(board, fzzFilePaths, app, fzDir, drc, noMessages, copyDir);
 		if (mainWindow) {
 			mainWindow->setCloseSilently(true);
 			mainWindow->close();
@@ -1334,7 +1348,7 @@ void Panelizer::inscribe(FApplication * app, const QString & panelFilename, bool
 
 }
 
-MainWindow * Panelizer::inscribeBoard(QDomElement & board, QHash<QString, QString> & fzzFilePaths, FApplication * app, QDir & fzDir, bool drc, QDir & copyDir)
+MainWindow * Panelizer::inscribeBoard(QDomElement & board, QHash<QString, QString> & fzzFilePaths, FApplication * app, QDir & fzDir, bool drc, bool noMessages, QDir & copyDir)
 {
 	QString boardName = board.attribute("name");
 	int optional = board.attribute("maxOptionalCount", "").toInt();
@@ -1361,29 +1375,34 @@ MainWindow * Panelizer::inscribeBoard(QDomElement & board, QHash<QString, QStrin
     }
 
     QFile file(originalPath);
-    QFile::remove(copyPath);
-    bool ok = file.copy(copyPath);
+    bool ok = FolderUtils::slamCopy(file, copyPath);
     if (!ok) {
         QMessageBox::warning(NULL, QObject::tr("Fritzing"), QObject::tr("unable to copy file '%1' to '%2'.").arg(originalPath).arg(copyPath));
         return NULL;
     }
 
-	MainWindow * mainWindow = app->openWindowForService(false);
+	MainWindow * mainWindow = app->openWindowForService(false, 3);
 
 	FolderUtils::setOpenSaveFolderAux(fzDir.absolutePath());
 
-	if (!mainWindow->loadWhich(copyPath, false, false, "")) {
+	if (!mainWindow->loadWhich(copyPath, false, false, false, "")) {
 		writePanelizerOutput(QString("failed to load '%1'").arg(copyPath));
 		return mainWindow;
 	}
 
-	mainWindow->showPCBView();
+    QList<ItemBase *> items = mainWindow->pcbView()->selectAllObsolete();
+	if (items.count() > 0) {
+        QFileInfo info(copyPath);
+        writePanelizerOutput(QString("%2 ... %1 obsolete items").arg(items.count()).arg(info.fileName()));
+    }
 
     int moved = mainWindow->pcbView()->checkLoadedTraces();
     if (moved > 0) {
         QFileInfo info(originalPath);
         QString message = QObject::tr("%2 ... %1 wires moved from their saved position").arg(moved).arg(info.fileName());
-        QMessageBox::warning(NULL, QObject::tr("Fritzing"), message);
+        if (!noMessages) {
+            QMessageBox::warning(NULL, QObject::tr("Fritzing"), message);
+        }
         writePanelizerOutput(message); 
         collectFilenames(info.fileName());
     }
@@ -1440,8 +1459,8 @@ MainWindow * Panelizer::inscribeBoard(QDomElement & board, QHash<QString, QStrin
 		DebugDialog::debug(QString("%1 filled:%2").arg(copyPath).arg(filled));
 	}
 
-    checkDonuts(mainWindow, true);
-    checkText(mainWindow, true);
+    checkDonuts(mainWindow, !noMessages);
+    checkText(mainWindow, !noMessages);
 
     if (drc) {
 	    foreach (ItemBase * boardItem, boards) {
@@ -1761,6 +1780,7 @@ int Panelizer::checkDonuts(MainWindow * mainWindow, bool displayMessage) {
 
     return donuts.count() / 2;
 }
+
 
 int Panelizer::bestFitLoop(QList<PanelItem *> & refPanelItems, PanelParams & panelParams, bool customPartsOnly, QList<PlanePair *> & returnPlanePairs, QList<PanelItem *> & returnInsertPanelItems, const QDir & svgDir) 
 {

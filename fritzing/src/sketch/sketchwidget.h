@@ -104,6 +104,9 @@ public:
 class SketchWidget : public InfoGraphicsView
 {
 	Q_OBJECT
+    Q_PROPERTY(QColor gridColor READ gridColor WRITE setGridColor DESIGNABLE true)
+    Q_PROPERTY(double ratsnestWidth READ ratsnestWidth WRITE setRatsnestWidth DESIGNABLE true)
+    Q_PROPERTY(double ratsnestOpacity READ ratsnestOpacity WRITE setRatsnestOpacity DESIGNABLE true)
 
 public:
     SketchWidget(ViewLayer::ViewID, QWidget *parent=0, int size=400, int minSize=300);
@@ -257,7 +260,7 @@ public:
 	virtual ViewLayer::ViewLayerID getWireViewLayerID(const ViewGeometry & viewGeometry, ViewLayer::ViewLayerPlacement);
 	ItemBase * findItem(long id);
 	long createWire(ConnectorItem * from, ConnectorItem * to, ViewGeometry::WireFlags, bool dontUpdate, BaseCommand::CrossViewType, QUndoCommand * parentCommand);
-	int selectAllObsolete();
+	QList<ItemBase *> selectAllObsolete();
 	int selectAllMoveLock();
 	void setMoveLock(long id, bool lock);
 	bool partLabelsVisible();
@@ -279,7 +282,6 @@ public:
 	virtual double defaultGridSizeInches();
 	void clearPasteOffset();
 	virtual ViewLayer::ViewLayerPlacement defaultViewLayerPlacement(ModelPart *);
-	void addFixedToCenterItem2(class SketchMainHelp *item);
 	void collectAllNets(QHash<class ConnectorItem *, int> & indexer, QList< QList<class ConnectorItem *>* > & allPartConnectorItems, bool includeSingletons, bool bothSides);
 	virtual bool routeBothSides();
 	virtual void changeLayer(long id, double z, ViewLayer::ViewLayerID viewLayerID);
@@ -313,8 +315,10 @@ public:
 	void renamePins(long itemID, const QStringList & labels, bool singleRow);
 	void getRatsnestColor(QColor &);
 	VirtualWire * makeOneRatsnestWire(ConnectorItem * source, ConnectorItem * dest, bool routed, QColor color, bool force);
-	virtual double getRatsnestOpacity();
-	virtual double getRatsnestWidth();
+	double ratsnestOpacity();
+    void setRatsnestOpacity(double);
+	double ratsnestWidth();
+    void setRatsnestWidth(double);
 	void setAnyInRotation();
 	ConnectorItem * findConnectorItem(ConnectorItem * foreignConnectorItem);
 	void setGroundFillSeed(long id, const QString & connectorID, bool seed);
@@ -333,6 +337,12 @@ public:
     void hidePartLayer(long id, ViewLayer::ViewLayerID, bool hide);
     void hidePartLayer(ItemBase *, ViewLayer::ViewLayerID, bool hide);
     void moveItem(ItemBase *, double x, double y);
+    QColor gridColor() const;
+    void setGridColor(QColor);
+    bool everZoomed() const;
+    void setEverZoomed(bool);
+    void testConnectors();
+    void updateWires();
 
 protected:
     void dragEnterEvent(QDragEnterEvent *);
@@ -470,7 +480,6 @@ protected:
 	bool resizingBoardRelease();
 	void resizeBoard();
     void resizeWithHandle(ItemBase * itemBase, double mmW, double mmH);
-	virtual QPoint calcFixedToCenterItemOffset(const QRect & viewPortRect, const QSizeF & helpSize);
 	virtual bool acceptsTrace(const ViewGeometry &);
 	virtual ItemBase * placePartDroppedInOtherView(ModelPart *, ViewLayer::ViewLayerPlacement, const ViewGeometry & viewGeometry, long id, SketchWidget * dropOrigin);
 	void showPartLabelsAux(bool show, QList<ItemBase *> & itemBases);
@@ -509,6 +518,8 @@ protected:
     QList<ItemBase *> collectSuperSubs(ItemBase *);
     void squashShapes(QPointF scenePos);
     void unsquashShapes();
+    virtual bool updateOK(ConnectorItem *, ConnectorItem *);
+    virtual void viewGeometryConversionHack(ViewGeometry &, ModelPart *);
 
 protected:
 	static bool lessThan(int a, int b);
@@ -544,7 +555,6 @@ signals:
 	void showLabelFirstTimeSignal(long itemID, bool show, bool doEmit);
 	void dropPasteSignal(SketchWidget *);
 	void changeBoardLayersSignal(int, bool doEmit);
-	void firstTimeHelpHidden();
 	void deleteTracesSignal(QSet<ItemBase *> & deletedItems, QHash<ItemBase *, SketchWidget *> & otherDeletedItems, QList<long> & deletedIDs, bool isForeign, QUndoCommand * parentCommand);
 	void makeDeleteItemCommandPrepSignal(ItemBase * itemBase, bool foreign, QUndoCommand * parentCommand);
 	void makeDeleteItemCommandFinalSignal(ItemBase * itemBase, bool foreign, QUndoCommand * parentCommand);
@@ -580,7 +590,6 @@ protected slots:
 	void wireConnectedSlot(long fromID, QString fromConnectorID, long toID, QString toConnectorID);
 	void wireDisconnectedSlot(long fromID, QString fromConnectorID);
 	void changeConnectionSlot(long fromID, QString fromConnectorID, long toID, QString toConnectorID, ViewLayer::ViewLayerPlacement, bool connect, bool updateConnections);
-	void navigatorScrollChange(double x, double y);
 	void restartPasteCount();
 	void dragIsDoneSlot(class ItemDrag *);
 	void statusMessage(QString message, int timeout = 0);
@@ -692,9 +701,6 @@ protected:
 	int m_ignoreSelectionChangeEvents;
 	bool m_current;
 
-	class SketchMainHelp * m_fixedToCenterItem;
-	QPoint m_fixedToCenterItemOffset;
-
 	QString m_lastColorSelected;
 
 	ConnectorPairHash m_moveDisconnectedFromFemale;
@@ -748,6 +754,10 @@ protected:
     bool m_pasting;
 	QPointer<class ResizableBoard> m_resizingBoard;
     QList< QPointer<ItemBase> > m_squashShapes;
+    QColor m_gridColor;
+    bool m_everZoomed;
+    double m_ratsnestOpacity;
+    double m_ratsnestWidth;
 
 public:
 	static ViewLayer::ViewLayerID defaultConnectorLayer(ViewLayer::ViewID viewId);

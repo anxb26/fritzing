@@ -35,11 +35,13 @@ QMultiHash<ViewLayer::ViewLayerID, ViewLayer::ViewLayerID> ViewLayer::alternativ
 QMultiHash<ViewLayer::ViewLayerID, ViewLayer::ViewLayerID> ViewLayer::unconnectables;
 QHash<QString, ViewLayer::ViewLayerID> ViewLayer::xmlHash;
 
-const QString ViewLayer::Copper0Color = "#F28A00";//"#ff9400";
-const QString ViewLayer::Copper1Color = "#FFCB33"; //#ffbf00";
-const QString ViewLayer::Silkscreen1Color = "#ffffff";
-const QString ViewLayer::Silkscreen0Color = "#bbbbcc";
-const QString ViewLayer::BoardColor = "#338040";
+const QString ViewLayer::Copper0Color = "#f9a435";  // "#FFCB33"; //Bottom
+const QString ViewLayer::Copper1Color = "#fdde68";  // "#F28A00"; //Top
+const QString ViewLayer::Copper0WireColor = "#f28a00";
+const QString ViewLayer::Copper1WireColor = "#f2c600";
+const QString ViewLayer::Silkscreen0Color = "#444444";
+const QString ViewLayer::Silkscreen1Color = "#000000";
+const QString ViewLayer::BoardColor = "#ffffff";
 
 static LayerList CopperBottomLayers;
 static LayerList CopperTopLayers;

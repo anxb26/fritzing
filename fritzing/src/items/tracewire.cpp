@@ -81,6 +81,12 @@ QComboBox * TraceWire::createWidthComboBox(double m, QWidget * parent)
 bool TraceWire::collectExtraInfo(QWidget * parent, const QString & family, const QString & prop, const QString & value, bool swappingEnabled, QString & returnProp, QString & returnValue, QWidget * & returnWidget, bool & hide)
 {
 	if (prop.compare("width", Qt::CaseInsensitive) == 0) {
+        if (viewID() != ViewLayer::PCBView) {
+            // only in pcb view for now
+            hide = true;
+            return false;       
+        }
+
 		returnProp = tr("width");
 		QComboBox * comboBox = createWidthComboBox(mils(), parent);
 		comboBox->setEnabled(swappingEnabled);
@@ -142,10 +148,10 @@ int TraceWire::widthEntry(const QString & text, QObject * sender) {
 void TraceWire::setColorFromElement(QDomElement & element) {
 	switch (m_viewLayerID) {
 		case ViewLayer::Copper0Trace:
-			element.setAttribute("color", ViewLayer::Copper0Color);
+			element.setAttribute("color", ViewLayer::Copper0WireColor);
 			break;
 		case ViewLayer::Copper1Trace:
-			element.setAttribute("color", ViewLayer::Copper1Color);
+			element.setAttribute("color", ViewLayer::Copper1WireColor);
 			break;
 		case ViewLayer::SchematicTrace:
 			//element.setAttribute("color", "#000000");

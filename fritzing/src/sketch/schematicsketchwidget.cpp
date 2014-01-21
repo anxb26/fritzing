@@ -29,11 +29,13 @@ $Date: 2013-04-21 09:50:09 +0200 (So, 21. Apr 2013) $
 #include "../items/virtualwire.h"
 #include "../items/symbolpaletteitem.h"
 #include "../items/tracewire.h"
+#include "../items/partlabel.h"
 #include "../connectors/connectoritem.h"
 #include "../waitpushundostack.h"
 #include "../items/moduleidnames.h"
 #include "../fsvgrenderer.h"
 #include "../utils/graphicsutils.h"
+#include "../version/version.h"
 
 #include <limits>
 
@@ -41,8 +43,8 @@ QSizeF SchematicSketchWidget::m_jumperItemSize = QSizeF(0, 0);
 
 static QString SchematicTraceColor = "black";
 static const double TraceHoverStrokeFactor = 3;
-
-static const double TraceWidthMils = 33.3333;
+static const double TraceWidthMils = 9.7222;
+static const double TraceWidthMilsOld = 33.3333;
 
 bool sameGround(ConnectorItem * c1, ConnectorItem * c2) 
 {
@@ -57,6 +59,7 @@ bool sameGround(ConnectorItem * c1, ConnectorItem * c2)
 SchematicSketchWidget::SchematicSketchWidget(ViewLayer::ViewID viewID, QWidget *parent)
     : PCBSketchWidget(viewID, parent)
 {
+    m_oldSchematic = m_convertSchematic = false;
 	m_shortName = QObject::tr("schem");
 	m_viewName = QObject::tr("Schematic View");
 	initBackgroundColor();
@@ -96,7 +99,7 @@ void SchematicSketchWidget::initWire(Wire * wire, int penWidth) {
 	}
 
 	wire->setPenWidth(getTraceWidth(), this, getTraceWidth() * TraceHoverStrokeFactor);
-	wire->setColorString("black", 1.0);
+	wire->setColorString("black", 1.0, false);
 }
 
 bool SchematicSketchWidget::autorouteTypePCB() {
@@ -122,14 +125,6 @@ void SchematicSketchWidget::ensureTraceLayerVisible() {
 	ensureLayerVisible(ViewLayer::SchematicTrace);
 }
 
-double SchematicSketchWidget::getRatsnestOpacity() {
-	return 0.7;
-}
-
-double SchematicSketchWidget::getRatsnestWidth() {
-	return 0.7;
-}
-
 void SchematicSketchWidget::setClipEnds(ClipableWire * vw, bool) {
 	vw->setClipEnds(false);
 }
@@ -138,13 +133,13 @@ void SchematicSketchWidget::getBendpointWidths(Wire * wire, double width, double
 {
 	Q_UNUSED(wire);
 	bendpointWidth = -width - 1;
-	bendpoint2Width = width + 3;
+	bendpoint2Width = width + ((m_oldSchematic) ? 3 : 1);
 	negativeOffsetRect = true;
 }
 
 void SchematicSketchWidget::getLabelFont(QFont & font, QColor & color, ItemBase *) {
 	font.setFamily("Droid Sans");
-	font.setPointSize(9);
+	font.setPointSize(getLabelFontSizeSmall());
 	font.setBold(false);
 	font.setItalic(false);
 	color.setAlpha(255);
@@ -337,7 +332,7 @@ void SchematicSketchWidget::setVoltage(double v, bool doEmit)
 }
 
 double SchematicSketchWidget::defaultGridSizeInches() {
-	return GraphicsUtils::StandardSchematicSeparationMils / 1000;
+	return GraphicsUtils::StandardSchematicSeparation10thinMils / 1000;
 }
 
 ViewLayer::ViewLayerID SchematicSketchWidget::getLabelViewLayerID(ItemBase *) {
@@ -364,10 +359,6 @@ bool SchematicSketchWidget::routeBothSides() {
 	return false;
 }
 
-QPoint SchematicSketchWidget::calcFixedToCenterItemOffset(const QRect & viewPortRect, const QSizeF & helpSize) {
-	return SketchWidget::calcFixedToCenterItemOffset(viewPortRect, helpSize);
-}
-
 void SchematicSketchWidget::addDefaultParts() {
 	SketchWidget::addDefaultParts();
 }
@@ -390,7 +381,7 @@ ViewGeometry::WireFlag SchematicSketchWidget::getTraceFlag() {
 }
 
 double SchematicSketchWidget::getTraceWidth() {
-	return GraphicsUtils::SVGDPI * TraceWidthMils / 1000;
+	return GraphicsUtils::SVGDPI * ((m_oldSchematic ) ? TraceWidthMilsOld : TraceWidthMils) / 1000;
 }
 
 double SchematicSketchWidget::getAutorouterTraceWidth() {
@@ -447,18 +438,18 @@ Wire * SchematicSketchWidget::createTempWireForDragging(Wire * fromWire, ModelPa
 	viewGeometry.setSchematicTrace(true);
 	Wire * wire =  SketchWidget::createTempWireForDragging(fromWire, wireModel, connectorItem, viewGeometry, spec);
 	if (fromWire) {
-		wire->setColorString(fromWire->colorString(), fromWire->opacity());
+		wire->setColorString(fromWire->colorString(), fromWire->opacity(), false);
 	}
 	else {
 		wire->setProperty(PCBSketchWidget::FakeTraceProperty, true);
-		wire->setColorString(traceColor(connectorItem), 1.0);
+	    wire->setColorString(traceColor(connectorItem), 1.0, false);
 	}
 	return wire;
 }
 
 void SchematicSketchWidget::rotatePartLabels(double degrees, QTransform & transform, QPointF center, QUndoCommand * parentCommand)
 {
-	SketchWidget::rotatePartLabels(degrees, transform, center, parentCommand);
+	PCBSketchWidget::rotatePartLabels(degrees, transform, center, parentCommand);
 }
 
 void SchematicSketchWidget::loadFromModelParts(QList<ModelPart *> & modelParts, BaseCommand::CrossViewType crossViewType, QUndoCommand * parentCommand, 
@@ -527,4 +518,61 @@ void SchematicSketchWidget::getDroppedItemViewLayerPlacement(ModelPart * modelPa
 ViewLayer::ViewLayerPlacement SchematicSketchWidget::getViewLayerPlacement(ModelPart * modelPart, QDomElement & instance, QDomElement & view, ViewGeometry & viewGeometry) 
 {
     return SketchWidget::getViewLayerPlacement(modelPart, instance, view, viewGeometry);
+}
+
+
+void SchematicSketchWidget::viewGeometryConversionHack(ViewGeometry & viewGeometry, ModelPart * modelPart) {
+    if (!m_convertSchematic) return;
+    if (modelPart->itemType() == ModelPart::Wire) return;
+    if (viewGeometry.transform().isIdentity()) return;
+
+	ViewGeometry vg;
+    ItemBase * itemBase = addItemAuxTemp(modelPart, ViewLayer::NewTop, vg, 0, true, viewID(), true);
+    double rotation;
+    if (GraphicsUtils::isFlipped(viewGeometry.transform().toAffine(), rotation)) {
+        itemBase->flipItem(Qt::Horizontal);
+    }
+    itemBase->rotateItem(rotation, false);
+    itemBase->saveGeometry();
+    viewGeometry.setTransform(itemBase->getViewGeometry().transform());
+
+    foreach (ItemBase * kin, itemBase->layerKin()) delete kin;
+    delete itemBase;
+}
+
+void SchematicSketchWidget::setOldSchematic(bool old) {
+    m_oldSchematic = old;
+}
+
+bool SchematicSketchWidget::isOldSchematic() {
+    return m_oldSchematic;
+}
+
+void SchematicSketchWidget::setConvertSchematic(bool convert) {
+    m_convertSchematic = convert;
+}
+
+void SchematicSketchWidget::resizeWires() {
+    double tw = getTraceWidth();
+    double sw = getWireStrokeWidth(NULL, tw);
+    foreach (QGraphicsItem * item, scene()->items()) {
+        Wire * wire = dynamic_cast<Wire *>(item);
+        if (wire == NULL) continue;
+        if (!wire->isTraceType(getTraceFlag())) continue;
+
+        wire->setWireWidth(tw, this, sw);
+    }
+}
+
+void SchematicSketchWidget::resizeLabels() {
+
+    double fontSize = getLabelFontSizeSmall();
+    foreach (QGraphicsItem * item, scene()->items()) {
+        ItemBase * itemBase = dynamic_cast<ItemBase *>(item);
+        if (itemBase == NULL) continue;
+
+        if (itemBase->hasPartLabel() && itemBase->partLabel() != NULL) {
+            itemBase->partLabel()->setFontPointSize(fontSize);
+        }
+    }
 }
