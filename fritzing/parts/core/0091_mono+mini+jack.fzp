@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <module fritzingVersion="0.4.0b.07.04.4318" moduleId="6ce1347fa4f81c89737cd07e86779ace">
     <version>1</version>
     <author>Lionel Michel</author>
@@ -34,45 +34,45 @@
         </pcbView>
     </views>
     <connectors>
-        <connector id="connector0" type="male" name="pin 1">
+        <connector type="male" id="connector0" name="pin 1">
             <description>Ring (GND)</description>
             <views>
                 <breadboardView>
-                    <p layer="breadboard" svgId="connector0pin" terminalId="connector0terminal"/>
+                    <p svgId="connector0pin" layer="breadboard" terminalId="connector0terminal"/>
                 </breadboardView>
                 <schematicView>
-                    <p layer="schematic" svgId="connector0pin" terminalId="connector0terminal"/>
+                    <p svgId="connector0pin" layer="schematic" terminalId="connector0terminal"/>
                 </schematicView>
                 <pcbView>
-                    <p layer="copper0" svgId="connector0pin"/>
+                    <p svgId="connector0pin" layer="copper0"/>
                 </pcbView>
             </views>
         </connector>
-        <connector id="connector1" type="male" name="pin 2">
+        <connector type="male" id="connector1" name="pin 2">
             <description>Center Pin (V+)</description>
             <views>
                 <breadboardView>
-                    <p layer="breadboard" svgId="connector1pin" terminalId="connector1terminal"/>
+                    <p svgId="connector1pin" layer="breadboard" terminalId="connector1terminal"/>
                 </breadboardView>
                 <schematicView>
-                    <p layer="schematic" svgId="connector1pin" terminalId="connector1terminal"/>
+                    <p svgId="connector1pin" layer="schematic" terminalId="connector1terminal"/>
                 </schematicView>
                 <pcbView>
-                    <p layer="copper0" svgId="connector1pin"/>
+                    <p svgId="connector1pin" layer="copper0"/>
                 </pcbView>
             </views>
         </connector>
-        <connector id="connector2" type="male" name="pin 3">
+        <connector type="male" id="connector2" name="pin 3">
             <description>Chassis (GND)</description>
             <views>
                 <breadboardView>
-                    <p layer="unknown" svgId="connector2pin"/>
+                    <p svgId="connector2pin" layer="unknown"/>
                 </breadboardView>
                 <schematicView>
-                    <p layer="unknown" svgId="connector2pin"/>
+                    <p svgId="connector2pin" layer="unknown" terminalId="connector2terminal"/>
                 </schematicView>
                 <pcbView>
-                    <p layer="copper0" svgId="connector2pin"/>
+                    <p svgId="connector2pin" layer="copper0"/>
                 </pcbView>
             </views>
         </connector>

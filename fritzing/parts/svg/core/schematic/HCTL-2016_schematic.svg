@@ -1,193 +1,73 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
-<svg xmlns="http://www.w3.org/2000/svg" width="2.42083in" x="0px" version="1.1" y="0px" gorn="0"  height="3.58854in" viewBox="0 0 174.3 258.375" xmlns:xml="http://www.w3.org/XML/1998/namespace" enable-background="new 0 0 174.3 258.375" id="Layer_1" xml:space="preserve">
-    <desc >
-        <referenceFile >HCTL2016.svg</referenceFile>
-    </desc>
-    <metadata  id="metadata3827">
-        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-            <cc:Work xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" rdf:about="">
-                <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">image/svg+xml</dc:format>
-                <dc:type xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://purl.org/dc/dcmitype/StillImage" xmlns:dc="http://purl.org/dc/elements/1.1/"/>
-                <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"/>
-            </cc:Work>
-        </rdf:RDF>
-    </metadata>
-    <defs  id="defs3825"/>
-    <g gorn="0.3"  id="schematic">
-        <rect width="10" x="1.15" y="59.226" fill="none" gorn="0.3.0"  height="2" id="connector0pin"/>
-        <rect width="10" x="1.15" y="85.226" fill="none" gorn="0.3.1"  height="2" id="connector1pin"/>
-        <rect width="10" x="1.15" y="111.226" fill="none" gorn="0.3.2"  height="2" id="connector2pin"/>
-        <rect width="10" x="1.15" y="137.227" fill="none" gorn="0.3.3"  height="2" id="connector3pin"/>
-        <rect width="10" x="1.15" y="163.227" fill="none" gorn="0.3.4"  height="2" id="connector4pin"/>
-        <rect width="10" x="1.15" y="189.227" fill="none" gorn="0.3.5"  height="2" id="connector5pin"/>
-        <rect width="10" x="1.15" y="215.227" fill="none" gorn="0.3.6"  height="2" id="connector6pin"/>
-        <rect width="10" x="1.15" y="241.227" fill="none" gorn="0.3.7"  height="2" id="connector7pin"/>
-        <rect width="10" x="163.15" y="241.227" fill="none" gorn="0.3.8"  height="2" id="connector8pin"/>
-        <rect width="10" x="163.15" y="215.227" fill="none" gorn="0.3.9"  height="2" id="connector9pin"/>
-        <rect width="10" x="163.15" y="189.227" fill="none" gorn="0.3.10"  height="2" id="connector10pin"/>
-        <rect width="10" x="163.15" y="163.227" fill="none" gorn="0.3.11"  height="2" id="connector11pin"/>
-        <rect width="10" x="163.15" y="137.227" fill="none" gorn="0.3.12"  height="2" id="connector12pin"/>
-        <rect width="10" x="163.15" y="111.226" fill="none" gorn="0.3.13"  height="2" id="connector13pin"/>
-        <rect width="10" x="163.15" y="85.226" fill="none" gorn="0.3.14"  height="2" id="connector14pin"/>
-        <rect width="10" x="163.15" y="59.226" fill="none" gorn="0.3.15"  height="2" id="connector15pin"/>
-        <rect width="2" x="1.15" y="59.226" fill="none" gorn="0.3.16"  height="2" id="connector0terminal"/>
-        <rect width="2" x="1.15" y="85.226" fill="none" gorn="0.3.17"  height="2" id="connector1terminal"/>
-        <rect width="2" x="1.15" y="111.226" fill="none" gorn="0.3.18"  height="2" id="connector2terminal"/>
-        <rect width="2" x="1.15" y="137.227" fill="none" gorn="0.3.19"  height="2" id="connector3terminal"/>
-        <rect width="2" x="1.15" y="163.227" fill="none" gorn="0.3.20"  height="2" id="connector4terminal"/>
-        <rect width="2" x="1.15" y="189.227" fill="none" gorn="0.3.21"  height="2" id="connector5terminal"/>
-        <rect width="2" x="1.15" y="215.227" fill="none" gorn="0.3.22"  height="2" id="connector6terminal"/>
-        <rect width="2" x="1.15" y="241.227" fill="none" gorn="0.3.23"  height="2" id="connector7terminal"/>
-        <rect width="2" x="171.15" y="241.227" fill="none" gorn="0.3.24"  height="2" id="connector8terminal"/>
-        <rect width="2" x="171.15" y="215.227" fill="none" gorn="0.3.25"  height="2" id="connector9terminal"/>
-        <rect width="2" x="171.15" y="189.227" fill="none" gorn="0.3.26"  height="2" id="connector10terminal"/>
-        <rect width="2" x="171.15" y="163.227" fill="none" gorn="0.3.27"  height="2" id="connector11terminal"/>
-        <rect width="2" x="171.15" y="137.227" fill="none" gorn="0.3.28"  height="2" id="connector12terminal"/>
-        <rect width="2" x="171.15" y="111.226" fill="none" gorn="0.3.29"  height="2" id="connector13terminal"/>
-        <rect width="2" x="171.15" y="85.226" fill="none" gorn="0.3.30"  height="2" id="connector14terminal"/>
-        <rect width="2" x="171.15" y="59.226" fill="none" gorn="0.3.31"  height="2" id="connector15terminal"/>
-        <rect width="110" x="32.15" y="45.226" fill="none" gorn="0.3.32"  height="212" stroke="#000000" stroke-linejoin="round" id="box" stroke-linecap="round" stroke-width="2.3"/>
-        <line fill="none" gorn="0.3.33"  stroke="#000000" stroke-linejoin="round" stroke-linecap="round" id="line3588" y1="60.226" stroke-width="2.3" x1="1.15" y2="60.226" x2="32.15"/>
-        <line fill="none" gorn="0.3.34"  stroke="#000000" stroke-linejoin="round" stroke-linecap="round" id="line3590" y1="86.226" stroke-width="2.3" x1="1.15" y2="86.226" x2="32.15"/>
-        <line fill="none" gorn="0.3.35"  stroke="#000000" stroke-linejoin="round" stroke-linecap="round" id="line3592" y1="112.226" stroke-width="2.3" x1="1.15" y2="112.226" x2="32.15"/>
-        <line fill="none" gorn="0.3.36"  stroke="#000000" stroke-linejoin="round" stroke-linecap="round" id="line3594" y1="138.227" stroke-width="2.3" x1="1.15" y2="138.227" x2="32.15"/>
-        <line fill="none" gorn="0.3.37"  stroke="#000000" stroke-linejoin="round" stroke-linecap="round" id="line3596" y1="164.227" stroke-width="2.3" x1="1.15" y2="164.227" x2="32.15"/>
-        <line fill="none" gorn="0.3.38"  stroke="#000000" stroke-linejoin="round" stroke-linecap="round" id="line3598" y1="190.227" stroke-width="2.3" x1="1.15" y2="190.227" x2="32.15"/>
-        <line fill="none" gorn="0.3.39"  stroke="#000000" stroke-linejoin="round" stroke-linecap="round" id="line3600" y1="216.227" stroke-width="2.3" x1="1.15" y2="216.227" x2="32.15"/>
-        <line fill="none" gorn="0.3.40"  stroke="#000000" stroke-linejoin="round" stroke-linecap="round" id="line3602" y1="242.227" stroke-width="2.3" x1="1.15" y2="242.227" x2="32.15"/>
-        <line fill="none" gorn="0.3.41"  stroke="#000000" stroke-linejoin="round" stroke-linecap="round" id="line3604" y1="242.227" stroke-width="2.3" x1="142.15" y2="242.227" x2="173.15"/>
-        <line fill="none" gorn="0.3.42"  stroke="#000000" stroke-linejoin="round" stroke-linecap="round" id="line3606" y1="216.227" stroke-width="2.3" x1="142.15" y2="216.227" x2="173.15"/>
-        <line fill="none" gorn="0.3.43"  stroke="#000000" stroke-linejoin="round" stroke-linecap="round" id="line3608" y1="190.227" stroke-width="2.3" x1="142.15" y2="190.227" x2="173.15"/>
-        <line fill="none" gorn="0.3.44"  stroke="#000000" stroke-linejoin="round" stroke-linecap="round" id="line3610" y1="164.227" stroke-width="2.3" x1="142.15" y2="164.227" x2="173.15"/>
-        <line fill="none" gorn="0.3.45"  stroke="#000000" stroke-linejoin="round" stroke-linecap="round" id="line3612" y1="138.227" stroke-width="2.3" x1="142.15" y2="138.227" x2="173.15"/>
-        <line fill="none" gorn="0.3.46"  stroke="#000000" stroke-linejoin="round" stroke-linecap="round" id="line3614" y1="112.226" stroke-width="2.3" x1="142.15" y2="112.226" x2="173.15"/>
-        <line fill="none" gorn="0.3.47"  stroke="#000000" stroke-linejoin="round" stroke-linecap="round" id="line3616" y1="86.226" stroke-width="2.3" x1="142.15" y2="86.226" x2="173.15"/>
-        <line fill="none" gorn="0.3.48"  stroke="#000000" stroke-linejoin="round" stroke-linecap="round" id="line3618" y1="60.226" stroke-width="2.3" x1="142.15" y2="60.226" x2="173.15"/>
-        <g gorn="0.3.49"  id="numbersOnPins">
-            <g gorn="0.3.49.0"  id="g3621">
-                <path gorn="0.3.49.0.0"  id="path3623" d="M22.288,57.077v-0.972h2.099v-5.732l-1.919,0.755l-0.192-1.007l2.363-0.84h0.863v6.824h1.847v0.972H22.288z"/>
-            </g>
-            <g gorn="0.3.49.1"  id="g3625">
-                <path gorn="0.3.49.1.0"  id="path3627" d="M22.096,83.077v-0.876l1.715-1.69c1.644-1.607,1.932-2.159,1.932-2.915c0-0.815-0.553-1.463-1.548-1.463     c-0.708,0-1.366,0.3-1.763,0.612l-0.264-0.936c0.588-0.372,1.354-0.636,2.219-0.636c1.703,0,2.531,1.067,2.531,2.242     c0,1.02-0.372,1.799-1.919,3.263l-1.451,1.379v0.012c0.503-0.012,1.379-0.023,2.471-0.023h1.188v1.031H22.096z"/>
-            </g>
-            <g gorn="0.3.49.2"  id="g3629">
-                <path gorn="0.3.49.2.0"  id="path3631" d="M23.811,109.197c-0.54,0-1.091-0.084-1.486-0.192l0.119-0.971c0.433,0.144,0.937,0.239,1.476,0.239     c1.307,0,1.991-0.588,1.991-1.439s-0.673-1.391-1.943-1.391c-0.432,0-0.768,0.012-1.175,0.06v-0.863h0.275     c1.68,0,2.688-0.456,2.688-1.439c0-0.707-0.563-1.14-1.476-1.14c-0.659,0-1.223,0.181-1.715,0.444l-0.107-0.947     c0.563-0.229,1.223-0.396,2.015-0.396c1.607,0,2.423,0.804,2.423,1.871c0,0.924-0.552,1.548-1.486,1.823l-0.013,0.012     c0.973,0.097,1.691,0.888,1.691,1.823C27.085,108.226,25.802,109.197,23.811,109.197z"/>
-            </g>
-            <g gorn="0.3.49.3"  id="g3633">
-                <path gorn="0.3.49.3.0"  id="path3635" d="M26.45,133.277v1.8h-1.067v-1.8H21.76l-0.084-0.875l3.31-5.121h1.464v5.014h1.282v0.982H26.45L26.45,133.277z      M25.394,128.36h-0.012l-2.604,3.971c0.72-0.036,2.136-0.036,2.614-0.036L25.394,128.36L25.394,128.36z"/>
-            </g>
-            <g gorn="0.3.49.4"  id="g3637">
-                <path gorn="0.3.49.4.0"  id="path3639" d="M23.859,161.186c-0.526,0-0.971-0.049-1.438-0.156v-0.994c0.443,0.145,0.947,0.229,1.522,0.229     c1.283,0,1.991-0.625,1.991-1.607c0-0.959-0.804-1.463-2.039-1.463c-0.504,0-0.996,0.048-1.307,0.096v-4.006h4.222v1.031h-3.214     v2.039c0.204-0.013,0.479-0.023,0.66-0.023c1.859,0,2.842,0.959,2.842,2.193C27.097,160.13,25.802,161.186,23.859,161.186z"/>
-            </g>
-            <g gorn="0.3.49.5"  id="g3641">
-                <path gorn="0.3.49.5.0"  id="path3643" d="M24.747,187.197c-1.691,0-2.724-1.199-2.724-3.286c0-3.334,1.655-4.737,3.982-4.737c0.252,0,0.54,0.012,0.708,0.036     v0.947c-0.24-0.036-0.479-0.062-0.792-0.062c-1.595,0-2.423,0.924-2.734,2.508c-0.023,0.119-0.071,0.336-0.107,0.588h0.012     c0.396-0.66,1.116-1.021,1.943-1.021c1.56,0,2.423,1.009,2.423,2.278C27.457,186.105,26.377,187.197,24.747,187.197z      M24.807,183.061c-1.008,0-1.595,0.814-1.595,1.486c0,0.971,0.563,1.764,1.631,1.764c0.959,0,1.511-0.695,1.511-1.68     C26.354,183.707,25.826,183.061,24.807,183.061z"/>
-            </g>
-            <g gorn="0.3.49.6"  id="g3645">
-                <path gorn="0.3.49.6.0"  id="path3647" d="M24.339,213.077H23.08c0.792-2.171,1.871-4.665,3.01-6.765c-0.276,0.013-1.847,0.023-2.962,0.023h-1.055v-1.057h5.265     v0.937C26.126,208.473,25.034,211.038,24.339,213.077z"/>
-            </g>
-            <g gorn="0.3.49.7"  id="g3649">
-                <path gorn="0.3.49.7.0"  id="path3651" d="M24.626,239.197c-1.56,0-2.579-0.768-2.579-1.955c0-0.995,0.792-1.596,1.667-2.1c-0.912-0.468-1.477-1.02-1.477-1.918     c0-1.188,1.021-2.063,2.52-2.063s2.386,0.792,2.386,1.896c0,0.899-0.684,1.451-1.487,1.932c0.863,0.443,1.68,0.994,1.68,2.087     C27.337,238.382,26.162,239.197,24.626,239.197z M24.615,235.563c-0.757,0.42-1.439,0.863-1.439,1.596     c0,0.672,0.552,1.162,1.559,1.162c0.828,0,1.477-0.42,1.477-1.139C26.21,236.331,25.454,235.947,24.615,235.563z M24.675,232.025     c-0.84,0-1.319,0.502-1.319,1.103c0,0.647,0.443,0.983,1.403,1.452c0.695-0.396,1.283-0.792,1.283-1.428     C26.042,232.443,25.502,232.025,24.675,232.025z"/>
-            </g>
-            <g gorn="0.3.49.8"  id="g3653">
-                <path gorn="0.3.49.8.0"  id="path3655" d="M147.931,239.186c-0.312,0-0.647-0.023-0.96-0.084v-0.972c0.335,0.084,0.72,0.12,1.079,0.12     c1.535,0,2.375-0.792,2.65-2.339c0.035-0.229,0.061-0.372,0.107-0.576h-0.013c-0.383,0.552-1.043,0.888-1.871,0.888     c-1.535,0-2.387-1.008-2.387-2.351c0-1.644,1.128-2.711,2.688-2.711c1.631,0,2.698,0.996,2.698,3.286     C151.924,237.854,150.234,239.186,147.931,239.186z M149.142,232.049c-0.947,0-1.512,0.73-1.512,1.655     c0,0.972,0.552,1.595,1.512,1.595c1.021,0,1.583-0.684,1.583-1.499C150.725,232.793,150.173,232.049,149.142,232.049z"/>
-            </g>
-            <g gorn="0.3.49.9"  id="g3657">
-                <path gorn="0.3.49.9.0"  id="path3659" d="M146.887,213.077v-0.972h2.099v-5.732l-1.919,0.755l-0.191-1.007l2.362-0.84h0.863v6.824h1.849v0.972H146.887     L146.887,213.077z"/>
-                <path gorn="0.3.49.9.1"  id="path3661" d="M155.826,213.197c-1.716,0-2.663-1.057-2.663-4.055c0-2.733,1.176-3.981,2.807-3.981c1.548,0,2.65,0.924,2.65,3.935     C158.62,212.082,157.241,213.197,155.826,213.197z M155.885,206.073c-0.888,0-1.56,0.768-1.56,2.997     c0,2.207,0.407,3.203,1.56,3.203c0.983,0,1.571-0.996,1.571-3.106C157.457,206.854,156.953,206.073,155.885,206.073z"/>
-            </g>
-            <g gorn="0.3.49.10"  id="g3663">
-                <path gorn="0.3.49.10.0"  id="path3665" d="M146.887,187.077v-0.972h2.099v-5.732l-1.919,0.755l-0.191-1.007l2.362-0.84h0.863v6.824h1.849v0.972H146.887     L146.887,187.077z"/>
-                <path gorn="0.3.49.10.1"  id="path3667" d="M153.487,187.077v-0.972h2.1v-5.732l-1.919,0.755l-0.192-1.007l2.363-0.84h0.863v6.824h1.848v0.972H153.487     L153.487,187.077z"/>
-            </g>
-            <g gorn="0.3.49.11"  id="g3669">
-                <path gorn="0.3.49.11.0"  id="path3671" d="M146.887,161.077v-0.972h2.099v-5.732l-1.919,0.755l-0.191-1.007l2.362-0.84h0.863v6.824h1.849v0.972H146.887     L146.887,161.077z"/>
-                <path gorn="0.3.49.11.1"  id="path3673" d="M153.294,161.077v-0.876l1.715-1.69c1.644-1.606,1.932-2.159,1.932-2.915c0-0.814-0.552-1.463-1.547-1.463     c-0.708,0-1.367,0.301-1.764,0.612l-0.264-0.937c0.588-0.371,1.354-0.636,2.219-0.636c1.703,0,2.531,1.067,2.531,2.242     c0,1.021-0.373,1.799-1.921,3.263l-1.45,1.379v0.012c0.504-0.012,1.379-0.022,2.471-0.022h1.188v1.031H153.294z"/>
-            </g>
-            <g gorn="0.3.49.12"  id="g3675">
-                <path gorn="0.3.49.12.0"  id="path3677" d="M146.887,135.077v-0.972h2.099v-5.732l-1.919,0.755l-0.191-1.007l2.362-0.84h0.863v6.824h1.849v0.972H146.887     L146.887,135.077z"/>
-                <path gorn="0.3.49.12.1"  id="path3679" d="M155.009,135.197c-0.539,0-1.091-0.084-1.486-0.192l0.119-0.971c0.433,0.144,0.937,0.239,1.477,0.239     c1.308,0,1.99-0.588,1.99-1.439s-0.672-1.391-1.942-1.391c-0.433,0-0.769,0.012-1.176,0.06v-0.862h0.275     c1.679,0,2.688-0.457,2.688-1.439c0-0.707-0.563-1.14-1.476-1.14c-0.66,0-1.224,0.181-1.715,0.444l-0.108-0.947     c0.563-0.229,1.225-0.396,2.016-0.396c1.606,0,2.423,0.804,2.423,1.871c0,0.924-0.552,1.548-1.487,1.822l-0.012,0.013     c0.971,0.097,1.691,0.888,1.691,1.823C158.285,134.227,157,135.197,155.009,135.197z"/>
-            </g>
-            <g gorn="0.3.49.13"  id="g3681">
-                <path gorn="0.3.49.13.0"  id="path3683" d="M146.887,109.077v-0.972h2.099v-5.732l-1.919,0.755l-0.191-1.007l2.362-0.84h0.863v6.824h1.849v0.972H146.887z"/>
-                <path gorn="0.3.49.13.1"  id="path3685" d="M157.648,107.278v1.799h-1.065v-1.799h-3.623l-0.084-0.876l3.311-5.121h1.463v5.014h1.283v0.983H157.648z      M156.593,102.36h-0.012l-2.604,3.971c0.72-0.036,2.135-0.036,2.615-0.036L156.593,102.36L156.593,102.36z"/>
-            </g>
-            <g gorn="0.3.49.14"  id="g3687">
-                <path gorn="0.3.49.14.0"  id="path3689" d="M146.887,83.077v-0.972h2.099v-5.732l-1.919,0.755l-0.191-1.007l2.362-0.84h0.863v6.824h1.849v0.972H146.887z"/>
-                <path gorn="0.3.49.14.1"  id="path3691" d="M155.058,83.186c-0.527,0-0.972-0.049-1.438-0.156v-0.995c0.442,0.144,0.946,0.228,1.522,0.228     c1.283,0,1.99-0.624,1.99-1.607c0-0.959-0.803-1.463-2.039-1.463c-0.504,0-0.995,0.048-1.307,0.096v-4.006h4.222v1.031h-3.214     v2.039c0.203-0.012,0.479-0.023,0.659-0.023c1.857,0,2.843,0.959,2.843,2.194C158.296,82.13,157,83.186,155.058,83.186z"/>
-            </g>
-            <g gorn="0.3.49.15"  id="g3693">
-                <path gorn="0.3.49.15.0"  id="path3695" d="M146.887,57.077v-0.972h2.099v-5.732l-1.919,0.755l-0.191-1.007l2.362-0.84h0.863v6.824h1.849v0.972H146.887z"/>
-                <path gorn="0.3.49.15.1"  id="path3697" d="M155.945,57.197c-1.689,0-2.723-1.199-2.723-3.286c0-3.334,1.656-4.737,3.982-4.737c0.252,0,0.539,0.012,0.707,0.036     v0.947c-0.239-0.036-0.479-0.061-0.791-0.061c-1.597,0-2.424,0.924-2.734,2.507c-0.023,0.12-0.072,0.336-0.107,0.588h0.013     c0.396-0.66,1.114-1.02,1.941-1.02c1.561,0,2.423,1.008,2.423,2.278C158.656,56.105,157.576,57.197,155.945,57.197z      M156.005,53.06c-1.008,0-1.596,0.815-1.596,1.487c0,0.971,0.563,1.763,1.631,1.763c0.96,0,1.512-0.695,1.512-1.679     C157.552,53.707,157.025,53.06,156.005,53.06z"/>
-            </g>
-        </g>
-        <g gorn="0.3.50"  id="numbersOnPins_1_">
-            <g gorn="0.3.50.0"  id="g3701">
-                <path gorn="0.3.50.0.0"  id="path3703" d="m 121.707,63.077 h -1.236 l -2.914,-8.096 h 1.224 l 1.812,5.205 c 0.156,0.468 0.372,1.104 0.517,1.655 h 0.023 c 0.145,-0.552 0.348,-1.163 0.563,-1.739 l 1.858,-5.121 h 1.128 l -2.975,8.096 z"/>
-            </g>
-            <g gorn="0.3.50.1"  id="g3705">
-                <path gorn="0.3.50.1.0"  id="path3707" d="m 128.369,65.157 c -2.169,0 -3.068,-1.379 -3.068,-3.288 0,-2.06 1.02,-3.599 3.298,-3.599 0.521,0 1.069,0.07 1.55,0.21 L 130,59.32 c -0.471,-0.16 -0.99,-0.26 -1.499,-0.26 -1.54,0 -2.199,1.18 -2.199,2.658 0,1.659 0.72,2.619 2.289,2.619 0.489,0 1.079,-0.141 1.479,-0.34 l 0.149,0.799 c -0.511,0.211 -1.171,0.361 -1.85,0.361 z"/>
-                <path gorn="0.3.50.1.1"  id="path3709" d="m 134.199,65.157 c -2.17,0 -3.068,-1.379 -3.068,-3.288 0,-2.06 1.02,-3.599 3.298,-3.599 0.521,0 1.069,0.07 1.55,0.21 l -0.149,0.84 c -0.471,-0.16 -0.99,-0.26 -1.499,-0.26 -1.54,0 -2.199,1.18 -2.199,2.658 0,1.659 0.72,2.619 2.289,2.619 0.489,0 1.079,-0.141 1.479,-0.34 l 0.149,0.799 c -0.511,0.211 -1.171,0.361 -1.85,0.361 z"/>
-            </g>
-            <g gorn="0.3.50.2"  id="g3753">
-                <path gorn="0.3.50.2.0"  id="path3755" d="m 47.351,241.867 c -0.468,0.18 -1.403,0.443 -2.495,0.443 -1.223,0 -2.231,-0.312 -3.022,-1.066 -0.696,-0.672 -1.127,-1.752 -1.127,-3.011 0,-2.411 1.667,-4.174 4.378,-4.174 0.935,0 1.679,0.204 2.027,0.372 l -0.264,0.852 c -0.432,-0.204 -0.971,-0.348 -1.787,-0.348 -1.967,0 -3.25,1.223 -3.25,3.25 0,2.051 1.223,3.262 3.118,3.262 0.684,0 1.151,-0.096 1.392,-0.216 V 238.82 H 44.69 v -0.839 h 2.663 v 3.886 z"/>
-                <path gorn="0.3.50.2.1"  id="path3757" d="m 48.938,242.227 v -8.083 h 1.151 l 2.579,4.09 c 0.587,0.947 1.067,1.799 1.439,2.626 l 0.036,-0.012 c -0.096,-1.079 -0.12,-2.063 -0.12,-3.322 v -3.382 h 0.983 v 8.083 h -1.055 l -2.566,-4.102 c -0.564,-0.899 -1.104,-1.822 -1.5,-2.698 l -0.036,0.013 c 0.06,1.019 0.072,1.99 0.072,3.334 v 3.453 h -0.983 z"/>
-                <path gorn="0.3.50.2.2"  id="path3759" d="m 56.834,234.264 c 0.636,-0.108 1.391,-0.18 2.219,-0.18 1.499,0 2.566,0.359 3.274,1.007 0.732,0.659 1.151,1.595 1.151,2.902 0,1.319 -0.419,2.399 -1.163,3.143 -0.768,0.755 -2.015,1.163 -3.586,1.163 -0.756,0 -1.368,-0.035 -1.895,-0.096 v -7.939 z m 1.044,7.148 c 0.264,0.035 0.647,0.047 1.055,0.047 2.243,0 3.442,-1.246 3.442,-3.43 0.012,-1.906 -1.067,-3.118 -3.274,-3.118 -0.54,0 -0.947,0.048 -1.223,0.108 v 6.393 z"/>
-            </g>
-            <g  transform="translate(-79.200111,-1.2000022)">
-                <g >
-                    <g gorn="0.3.50.3.0.0"  id="g3799">
-                        <path gorn="0.3.50.3.0.0.0"  id="path3801" d="m 125.761,134.072 c 0,2.77 -1.691,4.258 -3.754,4.258 -2.146,0 -3.635,-1.668 -3.635,-4.114 0,-2.566 1.584,-4.245 3.742,-4.245 2.219,0 3.647,1.69 3.647,4.101 z m -6.285,0.119 c 0,1.74 0.936,3.287 2.592,3.287 1.654,0 2.59,-1.523 2.59,-3.358 0,-1.619 -0.84,-3.298 -2.578,-3.298 -1.741,0 -2.604,1.607 -2.604,3.369 z"/>
-                        <path gorn="0.3.50.3.0.0.1"  id="path3803" d="m 131.294,134.408 h -3.13 v 2.914 h 3.502 v 0.875 h -4.558 v -8.083 h 4.377 v 0.876 h -3.321 v 2.555 h 3.13 v 0.863 z"/>
-                    </g>
-                </g>
-            </g>
-            <line fill="none" gorn="0.3.50.4"  stroke="#020202" id="line3819" y1="125.95399" y2="125.95399" x1="38.121887" stroke-width="1" x2="54.83889"/>
-            <g fill="#000000" gorn="0.3.50.5"  stroke="none" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-weight:normal;line-height:0%;letter-spacing:0px;word-spacing:0px;font-family:Droid Sans" fill-opacity="1" id="text3891" xml:space="preserve" font-size="25.6001">
-                <text x="38.400055" y="59.974842" gorn="0.3.50.5.0"  style="font-size:10.40001488px;line-height:0%" id="tspan3893">D0</text>
-            </g>
-            <g fill="#000000" gorn="0.3.50.6"  stroke="none" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-weight:normal;line-height:0%;letter-spacing:0px;word-spacing:0px;font-family:Droid Sans" fill-opacity="1" id="text3891-9" xml:space="preserve" font-size="25.6001">
-                <text x="37.903763" y="84.912376" gorn="0.3.50.6.0"  style="font-size:10.40001488px;line-height:0%" id="tspan3893-4">CLK</text>
-            </g>
-            <g fill="#000000" gorn="0.3.50.7"  stroke="none" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-weight:normal;line-height:0%;letter-spacing:0px;word-spacing:0px;font-family:Droid Sans" fill-opacity="1" id="text3891-9-8" xml:space="preserve" font-size="25.6001">
-                <text x="37.63052" y="110.89717" gorn="0.3.50.7.0"  style="font-size:10.40001488px;line-height:0%" id="tspan3893-4-8">SEL</text>
-            </g>
-            <g fill="#000000" gorn="0.3.50.8"  stroke="none" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-weight:normal;line-height:0%;letter-spacing:0px;word-spacing:0px;font-family:Droid Sans" fill-opacity="1" id="text3891-9-8-2" xml:space="preserve" font-size="25.6001">
-                <text x="37.712948" y="162.49725" gorn="0.3.50.8.0"  style="font-size:10.40001488px;line-height:0%" id="tspan3893-4-8-4">RST</text>
-            </g>
-            <line fill="none" gorn="0.3.50.9"  stroke="#020202" id="line3819-5" y1="152.37498" y2="152.37498" x1="38.154446" stroke-width="1.10714591" x2="58.645683"/>
-            <g fill="#000000" gorn="0.3.50.10"  stroke="none" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-weight:normal;line-height:0%;letter-spacing:0px;word-spacing:0px;font-family:Droid Sans" fill-opacity="1" id="text3891-9-8-5" xml:space="preserve" font-size="25.6001">
-                <text x="37.312943" y="188.89728" gorn="0.3.50.10.0"  style="font-size:10.40001488px;line-height:0%" id="tspan3893-4-8-1">CH A</text>
-            </g>
-            <g fill="#000000" gorn="0.3.50.11"  stroke="none" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-weight:normal;line-height:0%;letter-spacing:0px;word-spacing:0px;font-family:Droid Sans" fill-opacity="1" id="text3891-9-8-5-7" xml:space="preserve" font-size="25.6001">
-                <text x="38.107281" y="213.69733" gorn="0.3.50.11.0"  style="font-size:10.40001488px;line-height:0%" id="tspan3893-4-8-1-1">CH B</text>
-            </g>
-            <g fill="#000000" gorn="0.3.50.12"  stroke="none" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-weight:normal;line-height:0%;letter-spacing:0px;word-spacing:0px;font-family:Droid Sans" fill-opacity="1" id="text3891-1" xml:space="preserve" font-size="25.6001">
-                <text x="123.90388" y="84.512375" gorn="0.3.50.12.0"  style="font-size:10.40001488px;line-height:0%" id="tspan3893-5">D1</text>
-            </g>
-            <g fill="#000000" gorn="0.3.50.13"  stroke="none" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-weight:normal;line-height:0%;letter-spacing:0px;word-spacing:0px;font-family:Droid Sans" fill-opacity="1" id="text3891-1-2" xml:space="preserve" font-size="25.6001">
-                <text x="122.70389" y="110.91242" gorn="0.3.50.13.0"  style="font-size:10.40001488px;line-height:0%" id="tspan3893-5-7">D2</text>
-            </g>
-            <g fill="#000000" gorn="0.3.50.14"  stroke="none" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-weight:normal;line-height:0%;letter-spacing:0px;word-spacing:0px;font-family:Droid Sans" fill-opacity="1" id="text3891-1-2-6" xml:space="preserve" font-size="25.6001">
-                <text x="124.56662" y="138.2012" gorn="0.3.50.14.0"  style="font-size:10.40001488px;line-height:0%" id="tspan3893-5-7-1">D3</text>
-            </g>
-            <g fill="#000000" gorn="0.3.50.15"  stroke="none" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-weight:normal;line-height:0%;letter-spacing:0px;word-spacing:0px;font-family:Droid Sans" fill-opacity="1" id="text3891-1-2-6-4" xml:space="preserve" font-size="25.6001">
-                <text x="123.5429" y="164.52344" gorn="0.3.50.15.0"  style="font-size:10.40001488px;line-height:0%" id="tspan3893-5-7-1-2">D4</text>
-            </g>
-            <g fill="#000000" gorn="0.3.50.16"  stroke="none" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-weight:normal;line-height:0%;letter-spacing:0px;word-spacing:0px;font-family:Droid Sans" fill-opacity="1" id="text3891-1-2-6-4-3" xml:space="preserve" font-size="25.6001">
-                <text x="124.39143" y="188.19353" gorn="0.3.50.16.0"  style="font-size:10.40001488px;line-height:0%" id="tspan3893-5-7-1-2-2">D5</text>
-            </g>
-            <g fill="#000000" gorn="0.3.50.17"  stroke="none" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-weight:normal;line-height:0%;letter-spacing:0px;word-spacing:0px;font-family:Droid Sans" fill-opacity="1" id="text3891-1-2-6-4-2" xml:space="preserve" font-size="25.6001">
-                <text x="124.39143" y="214.78078" gorn="0.3.50.17.0"  style="font-size:10.40001488px;line-height:0%" id="tspan3893-5-7-1-2-1">D6</text>
-            </g>
-            <g fill="#000000" gorn="0.3.50.18"  stroke="none" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-weight:normal;line-height:0%;letter-spacing:0px;word-spacing:0px;font-family:Droid Sans" fill-opacity="1" id="text3891-1-2-6-4-6" xml:space="preserve" font-size="25.6001">
-                <text x="124.67428" y="241.27097" gorn="0.3.50.18.0"  style="font-size:10.40001488px;line-height:0%" id="tspan3893-5-7-1-2-8">D7</text>
-            </g>
-        </g>
-        <g  transform="matrix(0.80000112,0,0,0.80000112,0,-1.1991692e-4)">
-            <g >
-                <path gorn="0.3.51.0.0"  style="font-size:23.87940025px;font-family:Droid Droid Sans" id="text3821" d="M 61.3125 17.96875 C 59.427482 17.968772 57.694213 18.390108 56.125 19.25 C 54.555774 20.109933 53.350194 21.374598 52.5 23.03125 C 51.649801 24.687935 51.218749 26.618676 51.21875 28.84375 C 51.218749 30.884232 51.590716 32.81563 52.34375 34.59375 C 53.096778 36.37188 54.213339 37.718606 55.65625 38.65625 C 57.099149 39.593896 58.947171 40.0625 61.25 40.0625 C 63.475074 40.0625 65.366163 39.469426 66.90625 38.25 C 68.446303 37.030577 69.532271 35.259757 70.125 32.9375 L 67.28125 32.21875 C 66.892571 34.016315 66.160453 35.3679 65.0625 36.28125 C 63.964517 37.194607 62.615033 37.656252 61.03125 37.65625 C 59.729224 37.656252 58.523643 37.326694 57.40625 36.65625 C 56.288841 35.985813 55.467046 34.949212 54.9375 33.59375 C 54.407944 32.2383 54.124996 30.660752 54.125 28.84375 C 54.124996 27.434864 54.365535 26.076321 54.8125 24.75 C 55.259455 23.423709 56.022167 22.349557 57.125 21.5625 C 58.227819 20.775479 59.607895 20.375019 61.25 20.375 C 62.678318 20.375019 63.869982 20.759462 64.8125 21.46875 C 65.754988 22.178075 66.47319 23.28912 66.96875 24.84375 L 69.75 24.1875 C 69.176705 22.21506 68.144962 20.682021 66.6875 19.59375 C 65.230004 18.505519 63.450125 17.968772 61.3125 17.96875 z M 124.46875 18.25 C 122.43799 18.250021 120.82985 18.789526 119.625 19.84375 C 118.42015 20.898013 117.71586 22.426194 117.53125 24.4375 L 120.21875 24.71875 C 120.22846 23.377884 120.61711 22.320407 121.375 21.5625 C 122.13288 20.804629 123.14309 20.406269 124.40625 20.40625 C 125.60137 20.406269 126.56917 20.785853 127.3125 21.5 C 128.0558 22.214183 128.43749 23.085347 128.4375 24.125 C 128.43749 25.116102 128.03493 26.16872 127.21875 27.28125 C 126.40255 28.393805 124.82224 29.908068 122.5 31.8125 C 121.00365 33.036791 119.85439 34.098468 119.0625 35.03125 C 118.2706 35.964041 117.70326 36.913065 117.34375 37.875 C 117.12027 38.457994 117.01182 39.055926 117.03125 39.6875 L 131.15625 39.6875 L 131.15625 37.1875 L 120.6875 37.1875 C 120.97899 36.711393 121.33428 36.221256 121.78125 35.75 C 122.2282 35.278752 123.23841 34.383955 124.8125 33.0625 C 126.6975 31.468996 128.06366 30.225864 128.875 29.3125 C 129.68632 28.399157 130.27519 27.513418 130.625 26.6875 C 130.97478 25.861608 131.12499 25.04257 131.125 24.1875 C 131.12499 22.506556 130.53887 21.105604 129.34375 19.96875 C 128.1486 18.831936 126.51893 18.250021 124.46875 18.25 z M 140.96875 18.25 C 139.4141 18.250021 138.11884 18.664399 137.09375 19.5 C 136.06865 20.335642 135.30108 21.522447 134.78125 23.0625 C 134.26141 24.602587 134 26.629963 134 29.15625 C 134 33.169187 134.68485 36.065627 136.09375 37.84375 C 137.26945 39.320664 138.90884 40.0625 140.96875 40.0625 C 142.5331 40.0625 143.81864 39.652981 144.84375 38.8125 C 145.86883 37.972021 146.64126 36.790074 147.15625 35.25 C 147.67121 33.709935 147.93748 31.663125 147.9375 29.15625 C 147.93748 27.038057 147.75813 25.37359 147.4375 24.125 C 147.11684 22.876442 146.68855 21.807148 146.125 20.9375 C 145.56143 20.067889 144.83351 19.399056 143.96875 18.9375 C 143.10397 18.475986 142.11529 18.250021 140.96875 18.25 z M 158.8125 18.25 C 158.35581 19.173092 157.56671 20.112399 156.46875 21.09375 C 155.37078 22.075138 154.09219 22.935142 152.625 23.625 L 152.625 26.15625 C 153.44119 25.855051 154.3499 25.38369 155.375 24.78125 C 156.40009 24.17884 157.24342 23.602442 157.875 23 L 157.875 39.6875 L 160.5 39.6875 L 160.5 18.25 L 158.8125 18.25 z M 174.78125 18.25 C 172.52701 18.250021 170.73741 19.055142 169.40625 20.6875 C 167.88075 22.562809 167.09375 25.589235 167.09375 29.71875 C 167.09375 33.411041 167.80775 36.048166 169.1875 37.65625 C 170.56724 39.264338 172.34502 40.0625 174.53125 40.0625 C 175.81382 40.0625 176.95822 39.768392 177.96875 39.15625 C 178.97926 38.544109 179.7656 37.651412 180.34375 36.5 C 180.92187 35.348594 181.21873 34.090888 181.21875 32.75 C 181.21873 30.709536 180.60413 29.068702 179.375 27.78125 C 178.14585 26.493822 176.65522 25.843764 174.90625 25.84375 C 173.90544 25.843764 172.9446 26.06487 172.03125 26.53125 C 171.11789 26.997657 170.35032 27.725575 169.71875 28.6875 C 169.73818 26.549875 169.99264 24.906283 170.46875 23.75 C 170.94486 22.593749 171.58034 21.696193 172.40625 21.09375 C 173.03782 20.627375 173.78937 20.406269 174.625 20.40625 C 175.66466 20.406269 176.54068 20.783095 177.25 21.53125 C 177.67752 21.997662 177.98554 22.751314 178.21875 23.78125 L 180.84375 23.5625 C 180.62997 21.90099 179.97991 20.598773 178.90625 19.65625 C 177.83256 18.713767 176.4622 18.250021 174.78125 18.25 z M 30.5625 18.34375 L 30.5625 39.6875 L 33.375 39.6875 L 33.375 29.625 L 44.5 29.625 L 44.5 39.6875 L 47.3125 39.6875 L 47.3125 18.34375 L 44.5 18.34375 L 44.5 27.125 L 33.375 27.125 L 33.375 18.34375 L 30.5625 18.34375 z M 72 18.34375 L 72 20.84375 L 79.03125 20.84375 L 79.03125 39.6875 L 81.875 39.6875 L 81.875 20.84375 L 88.9375 20.84375 L 88.9375 18.34375 L 72 18.34375 z M 91.75 18.34375 L 91.75 39.6875 L 105.09375 39.6875 L 105.09375 37.1875 L 94.5625 37.1875 L 94.5625 18.34375 L 91.75 18.34375 z M 140.9375 20.40625 C 142.16177 20.406269 143.17894 21.000001 144 22.15625 C 144.82104 23.312535 145.21874 25.638877 145.21875 29.15625 C 145.21874 32.654211 144.82104 34.99027 144 36.15625 C 143.17894 37.322237 142.17359 37.906252 140.96875 37.90625 C 139.76389 37.906252 138.72729 37.317379 137.90625 36.15625 C 137.0852 34.995128 136.6875 32.663928 136.6875 29.15625 C 136.6875 25.648593 137.12761 23.239533 138.03125 21.9375 C 138.75027 20.917282 139.73264 20.406269 140.9375 20.40625 z M 174.375 28.15625 C 175.57012 28.156262 176.5567 28.587314 177.34375 29.4375 C 178.13078 30.287707 178.53124 31.460594 178.53125 32.9375 C 178.53124 34.472718 178.14049 35.668582 177.34375 36.5625 C 176.54698 37.456424 175.57643 37.906252 174.46875 37.90625 C 173.71085 37.906252 173.00237 37.682388 172.3125 37.25 C 171.62262 36.817617 171.0713 36.200909 170.6875 35.375 C 170.30369 34.549099 170.125 33.684894 170.125 32.78125 C 170.125 31.40151 170.54909 30.287707 171.375 29.4375 C 172.2009 28.587314 173.18958 28.156262 174.375 28.15625 z M 107.125 30.65625 L 107.125 33.28125 L 115.1875 33.28125 L 115.1875 30.65625 L 107.125 30.65625 z "/>
-            </g>
-        </g>
-    </g>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+<svg xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' version='1.2' baseProfile='tiny' x='0in' y='0in' width='0.9in' height='0.9in' viewBox='0 0 22.86 22.86' >
+<g id='schematic'>
+<rect class='interior rect' x='5.23875' y='0.15875' width='12.3825' height='22.5425' fill='#FFFFFF' stroke='#000000' stroke-width='0.3175' stroke-linecap='round' />
+<line class='pin' x1='17.6565' y1='2.54' x2='22.7365' y2='2.54' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector15pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='20.1965' y='2.16958' text-anchor='middle'>16</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='17.1626' y='2.78694' text-anchor='end'>VCC</text>
+<rect class='terminal' x='22.7365' y='2.41653' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector15terminal' />
+<line class='pin' x1='17.6565' y1='5.08' x2='22.7365' y2='5.08' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector14pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='20.1965' y='4.70958' text-anchor='middle'>15</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='17.1626' y='5.32694' text-anchor='end'>D1</text>
+<rect class='terminal' x='22.7365' y='4.95653' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector14terminal' />
+<line class='pin' x1='17.6565' y1='7.62' x2='22.7365' y2='7.62' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector13pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='20.1965' y='7.24958' text-anchor='middle'>14</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='17.1626' y='7.86694' text-anchor='end'>D2</text>
+<rect class='terminal' x='22.7365' y='7.49653' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector13terminal' />
+<line class='pin' x1='17.6565' y1='10.16' x2='22.7365' y2='10.16' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector12pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='20.1965' y='9.78958' text-anchor='middle'>13</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='17.1626' y='10.4069' text-anchor='end'>D3</text>
+<rect class='terminal' x='22.7365' y='10.0365' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector12terminal' />
+<line class='pin' x1='17.6565' y1='12.7' x2='22.7365' y2='12.7' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector11pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='20.1965' y='12.3296' text-anchor='middle'>12</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='17.1626' y='12.9469' text-anchor='end'>D4</text>
+<rect class='terminal' x='22.7365' y='12.5765' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector11terminal' />
+<line class='pin' x1='17.6565' y1='15.24' x2='22.7365' y2='15.24' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector10pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='20.1965' y='14.8696' text-anchor='middle'>11</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='17.1626' y='15.4869' text-anchor='end'>D5</text>
+<rect class='terminal' x='22.7365' y='15.1165' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector10terminal' />
+<line class='pin' x1='17.6565' y1='17.78' x2='22.7365' y2='17.78' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector9pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='20.1965' y='17.4096' text-anchor='middle'>10</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='17.1626' y='18.0269' text-anchor='end'>D6</text>
+<rect class='terminal' x='22.7365' y='17.6565' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector9terminal' />
+<line class='pin' x1='17.6565' y1='20.32' x2='22.7365' y2='20.32' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector8pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='20.1965' y='19.9496' text-anchor='middle'>9</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='17.1626' y='20.5669' text-anchor='end'>D7</text>
+<rect class='terminal' x='22.7365' y='20.1965' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector8terminal' />
+<line class='pin' x1='0.123472' y1='2.54' x2='5.20347' y2='2.54' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector0pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='2.66347' y='2.16958' text-anchor='middle'>1</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='5.69736' y='2.78694' text-anchor='start'>D0</text>
+<rect class='terminal' x='-0.123472' y='2.41653' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector0terminal' />
+<line class='pin' x1='0.123472' y1='5.08' x2='5.20347' y2='5.08' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector1pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='2.66347' y='4.70958' text-anchor='middle'>2</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='5.69736' y='5.32694' text-anchor='start'>CLK</text>
+<rect class='terminal' x='-0.123472' y='4.95653' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector1terminal' />
+<line class='pin' x1='0.123472' y1='7.62' x2='5.20347' y2='7.62' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector2pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='2.66347' y='7.24958' text-anchor='middle'>3</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='5.69736' y='7.86694' text-anchor='start'>SEL</text>
+<rect class='terminal' x='-0.123472' y='7.49653' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector2terminal' />
+<line class='pin' x1='0.123472' y1='10.16' x2='5.20347' y2='10.16' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector3pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='2.66347' y='9.78958' text-anchor='middle'>4</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='5.69736' y='10.4069' text-anchor='start'>/OE</text>
+<rect class='terminal' x='-0.123472' y='10.0365' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector3terminal' />
+<line class='pin' x1='0.123472' y1='12.7' x2='5.20347' y2='12.7' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector4pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='2.66347' y='12.3296' text-anchor='middle'>5</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='5.69736' y='12.9469' text-anchor='start'>/RST</text>
+<rect class='terminal' x='-0.123472' y='12.5765' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector4terminal' />
+<line class='pin' x1='0.123472' y1='15.24' x2='5.20347' y2='15.24' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector5pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='2.66347' y='14.8696' text-anchor='middle'>6</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='5.69736' y='15.4869' text-anchor='start'>CH B</text>
+<rect class='terminal' x='-0.123472' y='15.1165' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector5terminal' />
+<line class='pin' x1='0.123472' y1='17.78' x2='5.20347' y2='17.78' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector6pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='2.66347' y='17.4096' text-anchor='middle'>7</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='5.69736' y='18.0269' text-anchor='start'>CH A</text>
+<rect class='terminal' x='-0.123472' y='17.6565' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector6terminal' />
+<line class='pin' x1='0.123472' y1='20.32' x2='5.20347' y2='20.32' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector7pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='2.66347' y='19.9496' text-anchor='middle'>8</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='5.69736' y='20.5669' text-anchor='start'>GND</text>
+<rect class='terminal' x='-0.123472' y='20.1965' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector7terminal' />
+<text class='text' id='label' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#000000' font-size='1.49931' x='11.5888' y='9.98944' text-anchor='middle'>HCTL-</text>
+<text class='text' id='label' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#000000' font-size='1.49931' x='11.5888' y='11.5887' text-anchor='middle'>2016</text>
+</g>
 </svg>

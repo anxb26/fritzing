@@ -1,278 +1,278 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <module fritzingVersion="0.5.2b.02.18.4756" moduleId="6ebb8c198177502500d98c0046f6216e_2" referenceFile="TPA2000D1 Audio Amplifier smd.fzp">
- <version>4</version>
- <author>Fluxà</author>
- <title>AD5231 10 bit Digital Potentiometer</title>
- <label>AD5231</label>
- <date>Sun Mar 31 2013</date>
- <tags>
-  <tag>10 bit</tag>
-  <tag>SPI</tag>
-  <tag>Digital Potentiometer</tag>
-  <tag>IC</tag>
-  <tag>1024 Position</tag>
- </tags>
- <properties>
-  <property name="family">digital potentiometer ic</property>
-  <property name="variant">variant 1</property>
-  <property name="package">TSSOP16</property>
-  <property name="layer"></property>
-  <property name="AD5131"></property>
-  <property name="part number"></property>
- </properties>
- <description>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+    <version>4</version>
+    <author>Fluxà</author>
+    <title>AD5231 10 bit Digital Potentiometer</title>
+    <label>AD5231</label>
+    <date>Sun Mar 31 2013</date>
+    <tags>
+        <tag>10 bit</tag>
+        <tag>SPI</tag>
+        <tag>Digital Potentiometer</tag>
+        <tag>IC</tag>
+        <tag>1024 Position</tag>
+    </tags>
+    <properties>
+        <property name="family">digital potentiometer ic</property>
+        <property name="variant">variant 1</property>
+        <property name="package">TSSOP16</property>
+        <property name="layer"/>
+        <property name="AD5131"/>
+        <property name="part number"/>
+    </properties>
+    <description>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
 &lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
 p, li { white-space: pre-wrap; }
 &lt;/style>&lt;/head>&lt;body style=" font-family:'Lucida Grande'; font-size:13pt; font-weight:400; font-style:normal;">
 &lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Nonvolatile 1024-Position (10 bit) Digital Potentiometer&lt;/p>&lt;/body>&lt;/html></description>
- <views>
-  <iconView>
-   <layers image="icon/TPA2000D1_Audio_Amplifier.svg">
-    <layer layerId="icon"/>
-   </layers>
-  </iconView>
-  <breadboardView>
-   <layers image="breadboard/TPA2000D1_Audio_Amplifier.svg">
-    <layer layerId="breadboard"/>
-   </layers>
-  </breadboardView>
-  <schematicView>
-   <layers image="schematic/AD5131.svg">
-    <layer layerId="schematic"/>
-   </layers>
-  </schematicView>
-  <pcbView>
-   <layers image="pcb/TPA2000D1_Audio_Amplifier smd.svg">
-    <layer layerId="copper1"/>
-    <layer layerId="silkscreen"/>
-   </layers>
-  </pcbView>
- </views>
- <connectors>
-  <connector type="pad" id="connector3" name="SDO">
-   <description>Serial Data Output Pin</description>
-   <views>
-    <breadboardView>
-     <p svgId="connector3pin" layer="breadboard"/>
-    </breadboardView>
-    <schematicView>
-     <p svgId="connector3pin" layer="schematic" terminalId="connector3terminal"/>
-    </schematicView>
-    <pcbView>
-     <p svgId="connector3pad" layer="copper1"/>
-    </pcbView>
-   </views>
-  </connector>
-  <connector type="pad" id="connector15" name="O2">
-   <description>Nonvolatile Digital Output 2. ADDR = 0x1</description>
-   <views>
-    <breadboardView>
-     <p svgId="connector15pin" layer="breadboard"/>
-    </breadboardView>
-    <schematicView>
-     <p svgId="connector15pin" layer="schematic" terminalId="connector15terminal"/>
-    </schematicView>
-    <pcbView>
-     <p svgId="connector15pad" layer="copper1"/>
-    </pcbView>
-   </views>
-  </connector>
-  <connector type="pad" id="connector4" name="GND">
-   <description>Ground Pin</description>
-   <views>
-    <breadboardView>
-     <p svgId="connector4pin" layer="breadboard"/>
-    </breadboardView>
-    <schematicView>
-     <p svgId="connector4pin" layer="schematic" terminalId="connector4terminal"/>
-    </schematicView>
-    <pcbView>
-     <p svgId="connector4pad" layer="copper1"/>
-    </pcbView>
-   </views>
-  </connector>
-  <connector type="pad" id="connector5" name="Vss">
-   <description>Negative Supply. 0V.</description>
-   <views>
-    <breadboardView>
-     <p svgId="connector5pin" layer="breadboard"/>
-    </breadboardView>
-    <schematicView>
-     <p svgId="connector5pin" layer="schematic" terminalId="connector5terminal"/>
-    </schematicView>
-    <pcbView>
-     <p svgId="connector5pad" layer="copper1"/>
-    </pcbView>
-   </views>
-  </connector>
-  <connector type="pad" id="connector6" name="T">
-   <description>Factory testing</description>
-   <views>
-    <breadboardView>
-     <p svgId="connector6pin" layer="breadboard"/>
-    </breadboardView>
-    <schematicView>
-     <p svgId="connector6pin" layer="schematic" terminalId="connector6terminal"/>
-    </schematicView>
-    <pcbView>
-     <p svgId="connector6pad" layer="copper1"/>
-    </pcbView>
-   </views>
-  </connector>
-  <connector type="pad" id="connector7" name="B">
-   <description>Terminal B of RDAC</description>
-   <views>
-    <breadboardView>
-     <p svgId="connector7pin" layer="breadboard"/>
-    </breadboardView>
-    <schematicView>
-     <p svgId="connector7pin" layer="schematic" terminalId="connector7terminal"/>
-    </schematicView>
-    <pcbView>
-     <p svgId="connector7pad" layer="copper1"/>
-    </pcbView>
-   </views>
-  </connector>
-  <connector type="pad" id="connector8" name="W">
-   <description>Wiper Terminal of RDAC. ADDR (RDAC) = 0x0</description>
-   <views>
-    <breadboardView>
-     <p svgId="connector8pin" layer="breadboard"/>
-    </breadboardView>
-    <schematicView>
-     <p svgId="connector8pin" layer="schematic" terminalId="connector8terminal"/>
-    </schematicView>
-    <pcbView>
-     <p svgId="connector8pad" layer="copper1"/>
-    </pcbView>
-   </views>
-  </connector>
-  <connector type="pad" id="connector9" name="A">
-   <description>Terminal A of RDAC</description>
-   <views>
-    <breadboardView>
-     <p svgId="connector9pin" layer="breadboard"/>
-    </breadboardView>
-    <schematicView>
-     <p svgId="connector9pin" layer="schematic" terminalId="connector9terminal"/>
-    </schematicView>
-    <pcbView>
-     <p svgId="connector9pad" layer="copper1"/>
-    </pcbView>
-   </views>
-  </connector>
-  <connector type="pad" id="connector10" name="VDD">
-   <description>Positive Power Supply Pin max 5.5V</description>
-   <views>
-    <breadboardView>
-     <p svgId="connector10pin" layer="breadboard"/>
-    </breadboardView>
-    <schematicView>
-     <p svgId="connector10pin" layer="schematic" terminalId="connector10terminal"/>
-    </schematicView>
-    <pcbView>
-     <p svgId="connector10pad" layer="copper1"/>
-    </pcbView>
-   </views>
-  </connector>
-  <connector type="pad" id="connector11" name="WP">
-   <description>Optional Write Protect Pin</description>
-   <views>
-    <breadboardView>
-     <p svgId="connector11pin" layer="breadboard"/>
-    </breadboardView>
-    <schematicView>
-     <p svgId="connector11pin" layer="schematic" terminalId="connector11terminal"/>
-    </schematicView>
-    <pcbView>
-     <p svgId="connector11pad" layer="copper1"/>
-    </pcbView>
-   </views>
-  </connector>
-  <connector type="pad" id="connector0" name="O1">
-   <description>Nonvolatile Digital Output 1. ADDR = 0x0</description>
-   <views>
-    <breadboardView>
-     <p svgId="connector0pin" layer="breadboard"/>
-    </breadboardView>
-    <schematicView>
-     <p svgId="connector0pin" layer="schematic"/>
-    </schematicView>
-    <pcbView>
-     <p svgId="connector0pad" layer="copper1"/>
-    </pcbView>
-   </views>
-  </connector>
-  <connector type="pad" id="connector12" name="PR">
-   <description>Optional Hardware Override Pin</description>
-   <views>
-    <breadboardView>
-     <p svgId="connector12pin" layer="breadboard"/>
-    </breadboardView>
-    <schematicView>
-     <p svgId="connector12pin" layer="schematic" terminalId="connector12terminal"/>
-    </schematicView>
-    <pcbView>
-     <p svgId="connector12pad" layer="copper1"/>
-    </pcbView>
-   </views>
-  </connector>
-  <connector type="pad" id="connector13" name="CS">
-   <description>Serial Register Chip Select Active Low</description>
-   <views>
-    <breadboardView>
-     <p svgId="connector13pin" layer="breadboard"/>
-    </breadboardView>
-    <schematicView>
-     <p svgId="connector13pin" layer="schematic" terminalId="connector13terminal"/>
-    </schematicView>
-    <pcbView>
-     <p svgId="connector13pad" layer="copper1"/>
-    </pcbView>
-   </views>
-  </connector>
-  <connector type="pad" id="connector1" name="CLK">
-   <description>Serial Input Register Clock Pin</description>
-   <views>
-    <breadboardView>
-     <p svgId="connector1pin" layer="breadboard"/>
-    </breadboardView>
-    <schematicView>
-     <p svgId="connector1pin" layer="schematic" terminalId="connector1terminal"/>
-    </schematicView>
-    <pcbView>
-     <p svgId="connector1pad" layer="copper1"/>
-    </pcbView>
-   </views>
-  </connector>
-  <connector type="pad" id="connector14" name="RDY">
-   <description>Ready. Active-high open-drain output</description>
-   <views>
-    <breadboardView>
-     <p svgId="connector14pin" layer="breadboard"/>
-    </breadboardView>
-    <schematicView>
-     <p svgId="connector14pin" layer="schematic" terminalId="connector14terminal"/>
-    </schematicView>
-    <pcbView>
-     <p svgId="connector14pad" layer="copper1"/>
-    </pcbView>
-   </views>
-  </connector>
-  <connector type="pad" id="connector2" name="SDI">
-   <description>Serial Data Input Pin</description>
-   <views>
-    <breadboardView>
-     <p svgId="connector2pin" layer="breadboard"/>
-    </breadboardView>
-    <schematicView>
-     <p svgId="connector2pin" layer="schematic" terminalId="connector2terminal"/>
-    </schematicView>
-    <pcbView>
-     <p svgId="connector2pad" layer="copper1"/>
-    </pcbView>
-   </views>
-  </connector>
- </connectors>
- <url>http://www.farnell.com/datasheets/85378.pdf</url>
+    <views>
+        <iconView>
+            <layers image="icon/TPA2000D1_Audio_Amplifier.svg">
+                <layer layerId="icon"/>
+            </layers>
+        </iconView>
+        <breadboardView>
+            <layers image="breadboard/TPA2000D1_Audio_Amplifier.svg">
+                <layer layerId="breadboard"/>
+            </layers>
+        </breadboardView>
+        <schematicView>
+            <layers image="schematic/AD5131.svg">
+                <layer layerId="schematic"/>
+            </layers>
+        </schematicView>
+        <pcbView>
+            <layers image="pcb/TPA2000D1_Audio_Amplifier smd.svg">
+                <layer layerId="copper1"/>
+                <layer layerId="silkscreen"/>
+            </layers>
+        </pcbView>
+    </views>
+    <connectors>
+        <connector type="pad" id="connector3" name="SDO">
+            <description>Serial Data Output Pin</description>
+            <views>
+                <breadboardView>
+                    <p svgId="connector3pin" layer="breadboard"/>
+                </breadboardView>
+                <schematicView>
+                    <p svgId="connector3pin" layer="schematic" terminalId="connector3terminal"/>
+                </schematicView>
+                <pcbView>
+                    <p svgId="connector3pad" layer="copper1"/>
+                </pcbView>
+            </views>
+        </connector>
+        <connector type="pad" id="connector15" name="O2">
+            <description>Nonvolatile Digital Output 2. ADDR = 0x1</description>
+            <views>
+                <breadboardView>
+                    <p svgId="connector15pin" layer="breadboard"/>
+                </breadboardView>
+                <schematicView>
+                    <p svgId="connector15pin" layer="schematic" terminalId="connector15terminal"/>
+                </schematicView>
+                <pcbView>
+                    <p svgId="connector15pad" layer="copper1"/>
+                </pcbView>
+            </views>
+        </connector>
+        <connector type="pad" id="connector4" name="GND">
+            <description>Ground Pin</description>
+            <views>
+                <breadboardView>
+                    <p svgId="connector4pin" layer="breadboard"/>
+                </breadboardView>
+                <schematicView>
+                    <p svgId="connector4pin" layer="schematic" terminalId="connector4terminal"/>
+                </schematicView>
+                <pcbView>
+                    <p svgId="connector4pad" layer="copper1"/>
+                </pcbView>
+            </views>
+        </connector>
+        <connector type="pad" id="connector5" name="Vss">
+            <description>Negative Supply. 0V.</description>
+            <views>
+                <breadboardView>
+                    <p svgId="connector5pin" layer="breadboard"/>
+                </breadboardView>
+                <schematicView>
+                    <p svgId="connector5pin" layer="schematic" terminalId="connector5terminal"/>
+                </schematicView>
+                <pcbView>
+                    <p svgId="connector5pad" layer="copper1"/>
+                </pcbView>
+            </views>
+        </connector>
+        <connector type="pad" id="connector6" name="T">
+            <description>Factory testing</description>
+            <views>
+                <breadboardView>
+                    <p svgId="connector6pin" layer="breadboard"/>
+                </breadboardView>
+                <schematicView>
+                    <p svgId="connector6pin" layer="schematic" terminalId="connector6terminal"/>
+                </schematicView>
+                <pcbView>
+                    <p svgId="connector6pad" layer="copper1"/>
+                </pcbView>
+            </views>
+        </connector>
+        <connector type="pad" id="connector7" name="B">
+            <description>Terminal B of RDAC</description>
+            <views>
+                <breadboardView>
+                    <p svgId="connector7pin" layer="breadboard"/>
+                </breadboardView>
+                <schematicView>
+                    <p svgId="connector7pin" layer="schematic" terminalId="connector7terminal"/>
+                </schematicView>
+                <pcbView>
+                    <p svgId="connector7pad" layer="copper1"/>
+                </pcbView>
+            </views>
+        </connector>
+        <connector type="pad" id="connector8" name="W">
+            <description>Wiper Terminal of RDAC. ADDR (RDAC) = 0x0</description>
+            <views>
+                <breadboardView>
+                    <p svgId="connector8pin" layer="breadboard"/>
+                </breadboardView>
+                <schematicView>
+                    <p svgId="connector8pin" layer="schematic" terminalId="connector8terminal"/>
+                </schematicView>
+                <pcbView>
+                    <p svgId="connector8pad" layer="copper1"/>
+                </pcbView>
+            </views>
+        </connector>
+        <connector type="pad" id="connector9" name="A">
+            <description>Terminal A of RDAC</description>
+            <views>
+                <breadboardView>
+                    <p svgId="connector9pin" layer="breadboard"/>
+                </breadboardView>
+                <schematicView>
+                    <p svgId="connector9pin" layer="schematic" terminalId="connector9terminal"/>
+                </schematicView>
+                <pcbView>
+                    <p svgId="connector9pad" layer="copper1"/>
+                </pcbView>
+            </views>
+        </connector>
+        <connector type="pad" id="connector10" name="VDD">
+            <description>Positive Power Supply Pin max 5.5V</description>
+            <views>
+                <breadboardView>
+                    <p svgId="connector10pin" layer="breadboard"/>
+                </breadboardView>
+                <schematicView>
+                    <p svgId="connector10pin" layer="schematic" terminalId="connector10terminal"/>
+                </schematicView>
+                <pcbView>
+                    <p svgId="connector10pad" layer="copper1"/>
+                </pcbView>
+            </views>
+        </connector>
+        <connector type="pad" id="connector11" name="WP">
+            <description>Optional Write Protect Pin</description>
+            <views>
+                <breadboardView>
+                    <p svgId="connector11pin" layer="breadboard"/>
+                </breadboardView>
+                <schematicView>
+                    <p svgId="connector11pin" layer="schematic" terminalId="connector11terminal"/>
+                </schematicView>
+                <pcbView>
+                    <p svgId="connector11pad" layer="copper1"/>
+                </pcbView>
+            </views>
+        </connector>
+        <connector type="pad" id="connector0" name="O1">
+            <description>Nonvolatile Digital Output 1. ADDR = 0x0</description>
+            <views>
+                <breadboardView>
+                    <p svgId="connector0pin" layer="breadboard"/>
+                </breadboardView>
+                <schematicView>
+                    <p svgId="connector0pin" layer="schematic" terminalId="connector0terminal"/>
+                </schematicView>
+                <pcbView>
+                    <p svgId="connector0pad" layer="copper1"/>
+                </pcbView>
+            </views>
+        </connector>
+        <connector type="pad" id="connector12" name="PR">
+            <description>Optional Hardware Override Pin</description>
+            <views>
+                <breadboardView>
+                    <p svgId="connector12pin" layer="breadboard"/>
+                </breadboardView>
+                <schematicView>
+                    <p svgId="connector12pin" layer="schematic" terminalId="connector12terminal"/>
+                </schematicView>
+                <pcbView>
+                    <p svgId="connector12pad" layer="copper1"/>
+                </pcbView>
+            </views>
+        </connector>
+        <connector type="pad" id="connector13" name="CS">
+            <description>Serial Register Chip Select Active Low</description>
+            <views>
+                <breadboardView>
+                    <p svgId="connector13pin" layer="breadboard"/>
+                </breadboardView>
+                <schematicView>
+                    <p svgId="connector13pin" layer="schematic" terminalId="connector13terminal"/>
+                </schematicView>
+                <pcbView>
+                    <p svgId="connector13pad" layer="copper1"/>
+                </pcbView>
+            </views>
+        </connector>
+        <connector type="pad" id="connector1" name="CLK">
+            <description>Serial Input Register Clock Pin</description>
+            <views>
+                <breadboardView>
+                    <p svgId="connector1pin" layer="breadboard"/>
+                </breadboardView>
+                <schematicView>
+                    <p svgId="connector1pin" layer="schematic" terminalId="connector1terminal"/>
+                </schematicView>
+                <pcbView>
+                    <p svgId="connector1pad" layer="copper1"/>
+                </pcbView>
+            </views>
+        </connector>
+        <connector type="pad" id="connector14" name="RDY">
+            <description>Ready. Active-high open-drain output</description>
+            <views>
+                <breadboardView>
+                    <p svgId="connector14pin" layer="breadboard"/>
+                </breadboardView>
+                <schematicView>
+                    <p svgId="connector14pin" layer="schematic" terminalId="connector14terminal"/>
+                </schematicView>
+                <pcbView>
+                    <p svgId="connector14pad" layer="copper1"/>
+                </pcbView>
+            </views>
+        </connector>
+        <connector type="pad" id="connector2" name="SDI">
+            <description>Serial Data Input Pin</description>
+            <views>
+                <breadboardView>
+                    <p svgId="connector2pin" layer="breadboard"/>
+                </breadboardView>
+                <schematicView>
+                    <p svgId="connector2pin" layer="schematic" terminalId="connector2terminal"/>
+                </schematicView>
+                <pcbView>
+                    <p svgId="connector2pad" layer="copper1"/>
+                </pcbView>
+            </views>
+        </connector>
+    </connectors>
+    <url>http://www.farnell.com/datasheets/85378.pdf</url>
 </module>

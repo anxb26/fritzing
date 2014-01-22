@@ -1,205 +1,71 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
-<svg width="2.42083in" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" x="0px" version="1.1" y="0px" xmlns="http://www.w3.org/2000/svg" height="3.58854in" viewBox="0 0 174.3 258.375" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:cc="http://web.resource.org/cc/" id="Layer_1" enable-background="new 0 0 174.3 258.375" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:space="preserve" xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
- <g id="schematic">
-  <metadata id="metadata275">
-   <rdf:RDF>
-    <cc:Work rdf:about="">
-     <dc:format>image/svg+xml</dc:format>
-     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    </cc:Work>
-   </rdf:RDF>
-  </metadata>
-  <defs id="defs273"/>
-  <sodipodi:namedview objecttolerance="10.0" pagecolor="#ffffff" bordercolor="#666666" id="base" guidetolerance="10.0" borderopacity="1.0" gridtolerance="10.0"/>
-  <rect width="10" x="1.15" y="59.226" fill="none" height="2" id="connector0pin"/>
-  <rect width="10" x="1.15" y="85.226" fill="none" height="2" id="connector1pin"/>
-  <rect width="10" x="1.15" y="111.226" fill="none" height="2" id="connector2pin"/>
-  <rect width="10" x="1.15" y="137.227" fill="none" height="2" id="connector3pin"/>
-  <rect width="10" x="1.15" y="163.227" fill="none" height="2" id="connector4pin"/>
-  <rect width="10" x="1.15" y="189.227" fill="none" height="2" id="connector5pin"/>
-  <rect width="10" x="1.15" y="215.227" fill="none" height="2" id="connector6pin"/>
-  <rect width="10" x="1.15" y="241.227" fill="none" height="2" id="connector7pin"/>
-  <rect width="10" x="163.15" y="241.227" fill="none" height="2" id="connector8pin"/>
-  <rect width="10" x="163.15" y="215.227" fill="none" height="2" id="connector9pin"/>
-  <rect width="10" x="163.15" y="189.227" fill="none" height="2" id="connector10pin"/>
-  <rect width="10" x="163.15" y="163.227" fill="none" height="2" id="connector11pin"/>
-  <rect width="10" x="163.15" y="137.227" fill="none" height="2" id="connector12pin"/>
-  <rect width="10" x="163.15" y="111.226" fill="none" height="2" id="connector13pin"/>
-  <rect width="10" x="163.15" y="85.226" fill="none" height="2" id="connector14pin"/>
-  <rect width="10" x="163.15" y="59.226" fill="none" height="2" id="connector15pin"/>
-  <rect width="2" x="1.15" y="59.226" fill="none" height="2" id="connector0terminal"/>
-  <rect width="2" x="1.15" y="85.226" fill="none" height="2" id="connector1terminal"/>
-  <rect width="2" x="1.15" y="111.226" fill="none" height="2" id="connector2terminal"/>
-  <rect width="2" x="1.15" y="137.227" fill="none" height="2" id="connector3terminal"/>
-  <rect width="2" x="1.15" y="163.227" fill="none" height="2" id="connector4terminal"/>
-  <rect width="2" x="1.15" y="189.227" fill="none" height="2" id="connector5terminal"/>
-  <rect width="2" x="1.15" y="215.227" fill="none" height="2" id="connector6terminal"/>
-  <rect width="2" x="1.15" y="241.227" fill="none" height="2" id="connector7terminal"/>
-  <rect width="2" x="171.15" y="241.227" fill="none" height="2" id="connector8terminal"/>
-  <rect width="2" x="171.15" y="215.227" fill="none" height="2" id="connector9terminal"/>
-  <rect width="2" x="171.15" y="189.227" fill="none" height="2" id="connector10terminal"/>
-  <rect width="2" x="171.15" y="163.227" fill="none" height="2" id="connector11terminal"/>
-  <rect width="2" x="171.15" y="137.227" fill="none" height="2" id="connector12terminal"/>
-  <rect width="2" x="171.15" y="111.226" fill="none" height="2" id="connector13terminal"/>
-  <rect width="2" x="171.15" y="85.226" fill="none" height="2" id="connector14terminal"/>
-  <rect width="2" x="171.15" y="59.226" fill="none" height="2" id="connector15terminal"/>
-  <rect width="110" x="32.150002" y="45.226002" height="212" style="fill:none;stroke:#000000;stroke-width:2.29999995;stroke-linecap:round;stroke-linejoin:round" id="box"/>
-  <line style="fill:none;stroke:#000000;stroke-width:2.29999995;stroke-linecap:round;stroke-linejoin:round" id="line37" y1="60.226002" y2="60.226002" x1="1.15" x2="32.150002"/>
-  <line style="fill:none;stroke:#000000;stroke-width:2.29999995;stroke-linecap:round;stroke-linejoin:round" id="line39" y1="86.225998" y2="86.225998" x1="1.15" x2="32.150002"/>
-  <line style="fill:none;stroke:#000000;stroke-width:2.29999995;stroke-linecap:round;stroke-linejoin:round" id="line41" y1="112.226" y2="112.226" x1="1.15" x2="32.150002"/>
-  <line style="fill:none;stroke:#000000;stroke-width:2.29999995;stroke-linecap:round;stroke-linejoin:round" id="line43" y1="138.22701" y2="138.22701" x1="1.15" x2="32.150002"/>
-  <line style="fill:none;stroke:#000000;stroke-width:2.29999995;stroke-linecap:round;stroke-linejoin:round" id="line45" y1="164.22701" y2="164.22701" x1="1.15" x2="32.150002"/>
-  <line style="fill:none;stroke:#000000;stroke-width:2.29999995;stroke-linecap:round;stroke-linejoin:round" id="line47" y1="190.22701" y2="190.22701" x1="1.15" x2="32.150002"/>
-  <line style="fill:none;stroke:#000000;stroke-width:2.29999995;stroke-linecap:round;stroke-linejoin:round" id="line49" y1="216.22701" y2="216.22701" x1="1.15" x2="32.150002"/>
-  <line style="fill:none;stroke:#000000;stroke-width:2.29999995;stroke-linecap:round;stroke-linejoin:round" id="line51" y1="242.22701" y2="242.22701" x1="1.15" x2="32.150002"/>
-  <line style="fill:none;stroke:#000000;stroke-width:2.29999995;stroke-linecap:round;stroke-linejoin:round" id="line53" y1="242.22701" y2="242.22701" x1="142.14999" x2="173.14999"/>
-  <line style="fill:none;stroke:#000000;stroke-width:2.29999995;stroke-linecap:round;stroke-linejoin:round" id="line55" y1="216.22701" y2="216.22701" x1="142.14999" x2="173.14999"/>
-  <line style="fill:none;stroke:#000000;stroke-width:2.29999995;stroke-linecap:round;stroke-linejoin:round" id="line57" y1="190.22701" y2="190.22701" x1="142.14999" x2="173.14999"/>
-  <line style="fill:none;stroke:#000000;stroke-width:2.29999995;stroke-linecap:round;stroke-linejoin:round" id="line59" y1="164.22701" y2="164.22701" x1="142.14999" x2="173.14999"/>
-  <line style="fill:none;stroke:#000000;stroke-width:2.29999995;stroke-linecap:round;stroke-linejoin:round" id="line61" y1="138.22701" y2="138.22701" x1="142.14999" x2="173.14999"/>
-  <line style="fill:none;stroke:#000000;stroke-width:2.29999995;stroke-linecap:round;stroke-linejoin:round" id="line63" y1="112.226" y2="112.226" x1="142.14999" x2="173.14999"/>
-  <line style="fill:none;stroke:#000000;stroke-width:2.29999995;stroke-linecap:round;stroke-linejoin:round" id="line65" y1="86.225998" y2="86.225998" x1="142.14999" x2="173.14999"/>
-  <line style="fill:none;stroke:#000000;stroke-width:2.29999995;stroke-linecap:round;stroke-linejoin:round" id="line67" y1="60.226002" y2="60.226002" x1="142.14999" x2="173.14999"/>
-  <g id="numbersOnPins">
-   <g id="g70">
-    <path id="path72" d="M 22.288,57.077 L 22.288,56.105 L 24.387,56.105 L 24.387,50.373 L 22.468,51.128 L 22.276,50.121 L 24.639,49.281 L 25.502,49.281 L 25.502,56.105 L 27.349,56.105 L 27.349,57.077 L 22.288,57.077 z "/>
-   </g>
-   <g id="g74">
-    <path id="path76" d="M 22.096,83.077 L 22.096,82.201 L 23.811,80.511 C 25.455,78.904 25.743,78.352 25.743,77.596 C 25.743,76.781 25.19,76.133 24.195,76.133 C 23.487,76.133 22.829,76.433 22.432,76.745 L 22.168,75.809 C 22.756,75.437 23.522,75.173 24.387,75.173 C 26.09,75.173 26.918,76.24 26.918,77.415 C 26.918,78.435 26.546,79.214 24.999,80.678 L 23.548,82.057 L 23.548,82.069 C 24.051,82.057 24.927,82.046 26.019,82.046 L 27.207,82.046 L 27.207,83.077 L 22.096,83.077 L 22.096,83.077 z "/>
-   </g>
-   <g id="g78">
-    <path id="path80" d="M 23.811,109.197 C 23.271,109.197 22.72,109.113 22.325,109.005 L 22.444,108.034 C 22.877,108.178 23.381,108.273 23.92,108.273 C 25.227,108.273 25.911,107.685 25.911,106.834 C 25.911,105.983 25.238,105.443 23.968,105.443 C 23.536,105.443 23.2,105.455 22.793,105.503 L 22.793,104.64 L 23.068,104.64 C 24.748,104.64 25.756,104.184 25.756,103.201 C 25.756,102.494 25.193,102.061 24.28,102.061 C 23.621,102.061 23.057,102.242 22.565,102.505 L 22.458,101.558 C 23.021,101.329 23.681,101.162 24.473,101.162 C 26.08,101.162 26.896,101.966 26.896,103.033 C 26.896,103.957 26.344,104.581 25.41,104.856 L 25.397,104.868 C 26.37,104.965 27.088,105.756 27.088,106.691 C 27.085,108.226 25.802,109.197 23.811,109.197 z "/>
-   </g>
-   <g id="g82">
-    <path id="path84" d="M 26.45,133.277 L 26.45,135.077 L 25.383,135.077 L 25.383,133.277 L 21.76,133.277 L 21.676,132.402 L 24.986,127.281 L 26.45,127.281 L 26.45,132.295 L 27.732,132.295 L 27.732,133.277 L 26.45,133.277 L 26.45,133.277 z M 25.394,128.36 L 25.382,128.36 L 22.778,132.331 C 23.498,132.295 24.914,132.295 25.392,132.295 L 25.394,128.36 L 25.394,128.36 z "/>
-   </g>
-   <g id="g86">
-    <path id="path88" d="M 23.859,161.186 C 23.333,161.186 22.888,161.137 22.421,161.03 L 22.421,160.036 C 22.864,160.181 23.368,160.265 23.943,160.265 C 25.226,160.265 25.934,159.64 25.934,158.658 C 25.934,157.699 25.13,157.195 23.895,157.195 C 23.391,157.195 22.899,157.243 22.588,157.291 L 22.588,153.285 L 26.81,153.285 L 26.81,154.316 L 23.596,154.316 L 23.596,156.355 C 23.8,156.342 24.075,156.332 24.256,156.332 C 26.115,156.332 27.098,157.291 27.098,158.525 C 27.097,160.13 25.802,161.186 23.859,161.186 z "/>
-   </g>
-   <g id="g90">
-    <path id="path92" d="M 24.747,187.197 C 23.056,187.197 22.023,185.998 22.023,183.911 C 22.023,180.577 23.678,179.174 26.005,179.174 C 26.257,179.174 26.545,179.186 26.713,179.21 L 26.713,180.157 C 26.473,180.121 26.234,180.095 25.921,180.095 C 24.326,180.095 23.498,181.019 23.187,182.603 C 23.164,182.722 23.116,182.939 23.08,183.191 L 23.092,183.191 C 23.488,182.531 24.208,182.17 25.035,182.17 C 26.595,182.17 27.458,183.179 27.458,184.448 C 27.457,186.105 26.377,187.197 24.747,187.197 z M 24.807,183.061 C 23.799,183.061 23.212,183.875 23.212,184.547 C 23.212,185.518 23.775,186.311 24.843,186.311 C 25.802,186.311 26.354,185.616 26.354,184.631 C 26.354,183.707 25.826,183.061 24.807,183.061 z "/>
-   </g>
-   <g id="g94">
-    <path id="path96" d="M 24.339,213.077 L 23.08,213.077 C 23.872,210.906 24.951,208.412 26.09,206.312 C 25.814,206.325 24.243,206.335 23.128,206.335 L 22.073,206.335 L 22.073,205.278 L 27.338,205.278 L 27.338,206.215 C 26.126,208.473 25.034,211.038 24.339,213.077 z "/>
-   </g>
-   <g id="g98">
-    <path id="path100" d="M 24.626,239.197 C 23.066,239.197 22.047,238.429 22.047,237.242 C 22.047,236.247 22.839,235.646 23.714,235.142 C 22.802,234.674 22.237,234.122 22.237,233.224 C 22.237,232.036 23.258,231.161 24.757,231.161 C 26.256,231.161 27.143,231.953 27.143,233.057 C 27.143,233.956 26.459,234.508 25.656,234.989 C 26.519,235.432 27.336,235.983 27.336,237.076 C 27.337,238.382 26.162,239.197 24.626,239.197 z M 24.615,235.563 C 23.858,235.983 23.176,236.426 23.176,237.159 C 23.176,237.831 23.728,238.321 24.735,238.321 C 25.563,238.321 26.212,237.901 26.212,237.182 C 26.21,236.331 25.454,235.947 24.615,235.563 z M 24.675,232.025 C 23.835,232.025 23.356,232.527 23.356,233.128 C 23.356,233.775 23.799,234.111 24.759,234.58 C 25.454,234.184 26.042,233.788 26.042,233.152 C 26.042,232.443 25.502,232.025 24.675,232.025 z "/>
-   </g>
-   <g id="g102">
-    <path id="path104" d="M 147.931,239.186 C 147.619,239.186 147.284,239.163 146.971,239.102 L 146.971,238.13 C 147.306,238.214 147.691,238.25 148.05,238.25 C 149.585,238.25 150.425,237.458 150.7,235.911 C 150.735,235.682 150.761,235.539 150.807,235.335 L 150.794,235.335 C 150.411,235.887 149.751,236.223 148.923,236.223 C 147.388,236.223 146.536,235.215 146.536,233.872 C 146.536,232.228 147.664,231.161 149.224,231.161 C 150.855,231.161 151.922,232.157 151.922,234.447 C 151.924,237.854 150.234,239.186 147.931,239.186 z M 149.142,232.049 C 148.195,232.049 147.63,232.779 147.63,233.704 C 147.63,234.676 148.182,235.299 149.142,235.299 C 150.163,235.299 150.725,234.615 150.725,233.8 C 150.725,232.793 150.173,232.049 149.142,232.049 z "/>
-   </g>
-   <g id="g106">
-    <path id="path108" d="M 146.887,213.077 L 146.887,212.105 L 148.986,212.105 L 148.986,206.373 L 147.067,207.128 L 146.876,206.121 L 149.238,205.281 L 150.101,205.281 L 150.101,212.105 L 151.95,212.105 L 151.95,213.077 L 146.887,213.077 L 146.887,213.077 z "/>
-    <path id="path110" d="M 155.826,213.197 C 154.11,213.197 153.163,212.14 153.163,209.142 C 153.163,206.409 154.339,205.161 155.97,205.161 C 157.518,205.161 158.62,206.085 158.62,209.096 C 158.62,212.082 157.241,213.197 155.826,213.197 z M 155.885,206.073 C 154.997,206.073 154.325,206.841 154.325,209.07 C 154.325,211.277 154.732,212.273 155.885,212.273 C 156.868,212.273 157.456,211.277 157.456,209.167 C 157.457,206.854 156.953,206.073 155.885,206.073 z "/>
-   </g>
-   <g id="g112">
-    <path id="path114" d="M 146.887,187.077 L 146.887,186.105 L 148.986,186.105 L 148.986,180.373 L 147.067,181.128 L 146.876,180.121 L 149.238,179.281 L 150.101,179.281 L 150.101,186.105 L 151.95,186.105 L 151.95,187.077 L 146.887,187.077 L 146.887,187.077 z "/>
-    <path id="path116" d="M 153.487,187.077 L 153.487,186.105 L 155.587,186.105 L 155.587,180.373 L 153.668,181.128 L 153.476,180.121 L 155.839,179.281 L 156.702,179.281 L 156.702,186.105 L 158.55,186.105 L 158.55,187.077 L 153.487,187.077 L 153.487,187.077 z "/>
-   </g>
-   <g id="g118">
-    <path id="path120" d="M 146.887,161.077 L 146.887,160.105 L 148.986,160.105 L 148.986,154.373 L 147.067,155.128 L 146.876,154.121 L 149.238,153.281 L 150.101,153.281 L 150.101,160.105 L 151.95,160.105 L 151.95,161.077 L 146.887,161.077 L 146.887,161.077 z "/>
-    <path id="path122" d="M 153.294,161.077 L 153.294,160.201 L 155.009,158.511 C 156.653,156.905 156.941,156.352 156.941,155.596 C 156.941,154.782 156.389,154.133 155.394,154.133 C 154.686,154.133 154.027,154.434 153.63,154.745 L 153.366,153.808 C 153.954,153.437 154.72,153.172 155.585,153.172 C 157.288,153.172 158.116,154.239 158.116,155.414 C 158.116,156.435 157.743,157.213 156.195,158.677 L 154.745,160.056 L 154.745,160.068 C 155.249,160.056 156.124,160.046 157.216,160.046 L 158.404,160.046 L 158.404,161.077 L 153.294,161.077 z "/>
-   </g>
-   <g id="g124">
-    <path id="path126" d="M 146.887,135.077 L 146.887,134.105 L 148.986,134.105 L 148.986,128.373 L 147.067,129.128 L 146.876,128.121 L 149.238,127.281 L 150.101,127.281 L 150.101,134.105 L 151.95,134.105 L 151.95,135.077 L 146.887,135.077 L 146.887,135.077 z "/>
-    <path id="path128" d="M 155.009,135.197 C 154.47,135.197 153.918,135.113 153.523,135.005 L 153.642,134.034 C 154.075,134.178 154.579,134.273 155.119,134.273 C 156.427,134.273 157.109,133.685 157.109,132.834 C 157.109,131.983 156.437,131.443 155.167,131.443 C 154.734,131.443 154.398,131.455 153.991,131.503 L 153.991,130.641 L 154.266,130.641 C 155.945,130.641 156.954,130.184 156.954,129.202 C 156.954,128.495 156.391,128.062 155.478,128.062 C 154.818,128.062 154.254,128.243 153.763,128.506 L 153.655,127.559 C 154.218,127.33 154.88,127.163 155.671,127.163 C 157.277,127.163 158.094,127.967 158.094,129.034 C 158.094,129.958 157.542,130.582 156.607,130.856 L 156.595,130.869 C 157.566,130.966 158.286,131.757 158.286,132.692 C 158.285,134.227 157,135.197 155.009,135.197 z "/>
-   </g>
-   <g id="g130">
-    <path id="path132" d="M 146.887,109.077 L 146.887,108.105 L 148.986,108.105 L 148.986,102.373 L 147.067,103.128 L 146.876,102.121 L 149.238,101.281 L 150.101,101.281 L 150.101,108.105 L 151.95,108.105 L 151.95,109.077 L 146.887,109.077 L 146.887,109.077 z "/>
-    <path id="path134" d="M 157.648,107.278 L 157.648,109.077 L 156.583,109.077 L 156.583,107.278 L 152.96,107.278 L 152.876,106.402 L 156.187,101.281 L 157.65,101.281 L 157.65,106.295 L 158.933,106.295 L 158.933,107.278 L 157.648,107.278 z M 156.593,102.36 L 156.581,102.36 L 153.977,106.331 C 154.697,106.295 156.112,106.295 156.592,106.295 L 156.593,102.36 L 156.593,102.36 z "/>
-   </g>
-   <g id="g136">
-    <path id="path138" d="M 146.887,83.077 L 146.887,82.105 L 148.986,82.105 L 148.986,76.373 L 147.067,77.128 L 146.876,76.121 L 149.238,75.281 L 150.101,75.281 L 150.101,82.105 L 151.95,82.105 L 151.95,83.077 L 146.887,83.077 L 146.887,83.077 z "/>
-    <path id="path140" d="M 155.058,83.186 C 154.531,83.186 154.086,83.137 153.62,83.03 L 153.62,82.035 C 154.062,82.179 154.566,82.263 155.142,82.263 C 156.425,82.263 157.132,81.639 157.132,80.656 C 157.132,79.697 156.329,79.193 155.093,79.193 C 154.589,79.193 154.098,79.241 153.786,79.289 L 153.786,75.283 L 158.008,75.283 L 158.008,76.314 L 154.794,76.314 L 154.794,78.353 C 154.997,78.341 155.273,78.33 155.453,78.33 C 157.31,78.33 158.296,79.289 158.296,80.524 C 158.296,82.13 157,83.186 155.058,83.186 z "/>
-   </g>
-   <g id="g142">
-    <path id="path144" d="M 146.887,57.077 L 146.887,56.105 L 148.986,56.105 L 148.986,50.373 L 147.067,51.128 L 146.876,50.121 L 149.238,49.281 L 150.101,49.281 L 150.101,56.105 L 151.95,56.105 L 151.95,57.077 L 146.887,57.077 z "/>
-    <path id="path146" d="M 155.945,57.197 C 154.256,57.197 153.222,55.998 153.222,53.911 C 153.222,50.577 154.878,49.174 157.204,49.174 C 157.456,49.174 157.743,49.186 157.911,49.21 L 157.911,50.157 C 157.672,50.121 157.432,50.096 157.12,50.096 C 155.523,50.096 154.696,51.02 154.386,52.603 C 154.363,52.723 154.314,52.939 154.279,53.191 L 154.292,53.191 C 154.688,52.531 155.406,52.171 156.233,52.171 C 157.794,52.171 158.656,53.179 158.656,54.449 C 158.656,56.105 157.576,57.197 155.945,57.197 z M 156.005,53.06 C 154.997,53.06 154.409,53.875 154.409,54.547 C 154.409,55.518 154.972,56.31 156.04,56.31 C 157,56.31 157.552,55.615 157.552,54.631 C 157.552,53.707 157.025,53.06 156.005,53.06 z "/>
-   </g>
-  </g>
-  <text x="38.532001" y="31.7617" style="font-size:23.87940025px;font-family:DroidSans" id="text270" font-size="23.8794">CNY74-4</text>
-  <rect width="12" x="217.6483" y="166.13524" height="2" style="fill:none" id="rect3061"/>
-  <rect width="1" x="217.6483" y="166.13524" height="2" style="fill:none" id="rect3073"/>
-  <g id="g3263">
-   <path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="polyline2979" d="M 1,30.654 L 24,30.654 L 43,30.654 L 43,37.256996" transform="translate(27.916121,29.524303)"/>
-   <path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="polyline2981" d="M 1,59.654 L 24,59.654 L 43,59.654 L 43,50.231" transform="translate(27.916121,26.495183)"/>
-   <polygon points="43,50.231 37.356,40.457 48.643,40.457 43,50.231 " style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="polygon2983" transform="translate(27.916121,27.582533)"/>
-   <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line2985" y1="77.81353" y2="77.81353" x1="65.272125" x2="76.559113"/>
-   <g id="g2987" transform="matrix(0.4121642,-0.7852026,0.5226293,0.6192389,33.599677,82.307442)">
-    <path id="path2989" d="M 58.94,57.864 L 61.52,55.808 L 62.999,54.629 L 64.1,53.749 L 67.592,63.417 L 58.94,57.864 L 58.94,57.864 z "/>
-    <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line2991" y1="47.554001" y2="57.832001" x1="54.933998" x2="63.134998"/>
-   </g>
-   <g id="g2993" transform="matrix(0.4174974,-0.7788167,0.5183788,0.6272516,29.563606,82.340157)">
-    <path id="path2995" d="M 57.271,66.871 L 59.851,64.815 L 61.33,63.635 L 62.43,62.756 L 65.923,72.424 L 57.271,66.871 L 57.271,66.871 z "/>
-    <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line2997" y1="56.561001" y2="66.838997" x1="53.264999" x2="61.466"/>
-   </g>
-   <g id="g3257" transform="matrix(1,0,0,-1,0,146.32784)">
-    <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line2999" y1="62.379711" x1="98.814491" y2="83.092712" x2="98.814491"/>
-    <path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="polyline3001" d="M 141.84952,86.14936 L 116.63551,86.14936 L 107.09951,86.14936 L 107.09951,83.80736 L 98.814515,75.52136"/>
-    <path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="polyline3003" d="M 98.814515,69.205478 L 107.09952,62.52048 L 107.09952,60.17848 L 118.84952,60.17848 L 141.84952,60.17848"/>
-    <polygon points="87.984,86.171 81.494,84.433 86.244,79.682 87.984,86.171 " id="polygon3005" transform="translate(19.849515,-1.41729)"/>
-   </g>
-  </g>
-  <g id="g3280" transform="matrix(1,0,0,-1,-8.1898226e-5,198.48307)">
-   <path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="path3282" d="M 1,30.654 L 24,30.654 L 43,30.654 L 43,37.256996" transform="translate(27.916121,29.524303)"/>
-   <path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="path3284" d="M 1,59.654 L 24,59.654 L 43,59.654 L 43,50.231" transform="translate(27.916121,26.495183)"/>
-   <polygon points="43,50.231 37.356,40.457 48.643,40.457 43,50.231 " style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="polygon3286" transform="translate(27.916121,27.582533)"/>
-   <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line3288" y1="77.81353" y2="77.81353" x1="65.272125" x2="76.559113"/>
-   <g id="g3290" transform="matrix(0.4121642,-0.7852026,0.5226293,0.6192389,33.599677,82.307442)">
-    <path id="path3292" d="M 58.94,57.864 L 61.52,55.808 L 62.999,54.629 L 64.1,53.749 L 67.592,63.417 L 58.94,57.864 L 58.94,57.864 z "/>
-    <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line3294" y1="47.554001" y2="57.832001" x1="54.933998" x2="63.134998"/>
-   </g>
-   <g id="g3296" transform="matrix(0.4174974,-0.7788167,0.5183788,0.6272516,29.563606,82.340157)">
-    <path id="path3298" d="M 57.271,66.871 L 59.851,64.815 L 61.33,63.635 L 62.43,62.756 L 65.923,72.424 L 57.271,66.871 L 57.271,66.871 z "/>
-    <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line3300" y1="56.561001" y2="66.838997" x1="53.264999" x2="61.466"/>
-   </g>
-   <g id="g3302" transform="matrix(1,0,0,-1,0,146.32784)">
-    <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line3304" y1="62.379711" x1="98.814491" y2="83.092712" x2="98.814491"/>
-    <path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="path3306" d="M 141.84952,86.14936 L 116.63551,86.14936 L 107.09951,86.14936 L 107.09951,83.80736 L 98.814515,75.52136"/>
-    <path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="path3308" d="M 98.814515,69.205478 L 107.09952,62.52048 L 107.09952,60.17848 L 118.84952,60.17848 L 141.84952,60.17848"/>
-    <polygon points="87.984,86.171 81.494,84.433 86.244,79.682 87.984,86.171 " id="polygon3310" transform="translate(19.849515,-1.41729)"/>
-   </g>
-  </g>
-  <g id="g3312" transform="translate(-8.1898226e-5,104.04092)">
-   <path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="path3314" d="M 1,30.654 L 24,30.654 L 43,30.654 L 43,37.256996" transform="translate(27.916121,29.524303)"/>
-   <path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="path3316" d="M 1,59.654 L 24,59.654 L 43,59.654 L 43,50.231" transform="translate(27.916121,26.495183)"/>
-   <polygon points="43,50.231 37.356,40.457 48.643,40.457 43,50.231 " style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="polygon3318" transform="translate(27.916121,27.582533)"/>
-   <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line3320" y1="77.81353" y2="77.81353" x1="65.272125" x2="76.559113"/>
-   <g id="g3322" transform="matrix(0.4121642,-0.7852026,0.5226293,0.6192389,33.599677,82.307442)">
-    <path id="path3324" d="M 58.94,57.864 L 61.52,55.808 L 62.999,54.629 L 64.1,53.749 L 67.592,63.417 L 58.94,57.864 L 58.94,57.864 z "/>
-    <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line3326" y1="47.554001" y2="57.832001" x1="54.933998" x2="63.134998"/>
-   </g>
-   <g id="g3328" transform="matrix(0.4174974,-0.7788167,0.5183788,0.6272516,29.563606,82.340157)">
-    <path id="path3330" d="M 57.271,66.871 L 59.851,64.815 L 61.33,63.635 L 62.43,62.756 L 65.923,72.424 L 57.271,66.871 L 57.271,66.871 z "/>
-    <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line3332" y1="56.561001" y2="66.838997" x1="53.264999" x2="61.466"/>
-   </g>
-   <g id="g3334" transform="matrix(1,0,0,-1,0,146.32784)">
-    <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line3336" y1="62.379711" x1="98.814491" y2="83.092712" x2="98.814491"/>
-    <path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="path3338" d="M 141.84952,86.14936 L 116.63551,86.14936 L 107.09951,86.14936 L 107.09951,83.80736 L 98.814515,75.52136"/>
-    <path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="path3340" d="M 98.814515,69.205478 L 107.09952,62.52048 L 107.09952,60.17848 L 118.84952,60.17848 L 141.84952,60.17848"/>
-    <polygon points="87.984,86.171 81.494,84.433 86.244,79.682 87.984,86.171 " id="polygon3342" transform="translate(19.849515,-1.41729)"/>
-   </g>
-  </g>
-  <g id="g3344" transform="matrix(1,0,0,-1,-8.1898226e-5,302.40794)">
-   <path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="path3346" d="M 1,30.654 L 24,30.654 L 43,30.654 L 43,37.256996" transform="translate(27.916121,29.524303)"/>
-   <path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="path3348" d="M 1,59.654 L 24,59.654 L 43,59.654 L 43,50.231" transform="translate(27.916121,26.495183)"/>
-   <polygon points="43,50.231 37.356,40.457 48.643,40.457 43,50.231 " style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="polygon3350" transform="translate(27.916121,27.582533)"/>
-   <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line3352" y1="77.81353" y2="77.81353" x1="65.272125" x2="76.559113"/>
-   <g id="g3354" transform="matrix(0.4121642,-0.7852026,0.5226293,0.6192389,33.599677,82.307442)">
-    <path id="path3356" d="M 58.94,57.864 L 61.52,55.808 L 62.999,54.629 L 64.1,53.749 L 67.592,63.417 L 58.94,57.864 L 58.94,57.864 z "/>
-    <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line3358" y1="47.554001" y2="57.832001" x1="54.933998" x2="63.134998"/>
-   </g>
-   <g id="g3360" transform="matrix(0.4174974,-0.7788167,0.5183788,0.6272516,29.563606,82.340157)">
-    <path id="path3362" d="M 57.271,66.871 L 59.851,64.815 L 61.33,63.635 L 62.43,62.756 L 65.923,72.424 L 57.271,66.871 L 57.271,66.871 z "/>
-    <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line3364" y1="56.561001" y2="66.838997" x1="53.264999" x2="61.466"/>
-   </g>
-   <g id="g3366" transform="matrix(1,0,0,-1,0,146.32784)">
-    <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="line3368" y1="62.379711" x1="98.814491" y2="83.092712" x2="98.814491"/>
-    <path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="path3370" d="M 141.84952,86.14936 L 116.63551,86.14936 L 107.09951,86.14936 L 107.09951,83.80736 L 98.814515,75.52136"/>
-    <path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" id="path3372" d="M 98.814515,69.205478 L 107.09952,62.52048 L 107.09952,60.17848 L 118.84952,60.17848 L 141.84952,60.17848"/>
-    <polygon points="87.984,86.171 81.494,84.433 86.244,79.682 87.984,86.171 " id="polygon3374" transform="translate(19.849515,-1.41729)"/>
-   </g>
-  </g>
- </g>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+<svg xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' version='1.2' baseProfile='tiny' x='0in' y='0in' width='0.8in' height='0.9in' viewBox='0 0 20.32 22.86' >
+<g id='schematic'>
+<rect class='interior rect' x='5.23875' y='0.15875' width='9.8425' height='22.5425' fill='#FFFFFF' stroke='#000000' stroke-width='0.3175' stroke-linecap='round' />
+<line class='pin' x1='15.1165' y1='2.54' x2='20.1965' y2='2.54' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector15pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='17.6565' y='2.16958' text-anchor='middle'>16</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='14.6226' y='2.78694' text-anchor='end'>T1-E</text>
+<rect class='terminal' x='20.1965' y='2.41653' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector15terminal' />
+<line class='pin' x1='15.1165' y1='5.08' x2='20.1965' y2='5.08' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector14pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='17.6565' y='4.70958' text-anchor='middle'>15</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='14.6226' y='5.32694' text-anchor='end'>T1-C</text>
+<rect class='terminal' x='20.1965' y='4.95653' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector14terminal' />
+<line class='pin' x1='15.1165' y1='7.62' x2='20.1965' y2='7.62' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector13pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='17.6565' y='7.24958' text-anchor='middle'>14</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='14.6226' y='7.86694' text-anchor='end'>T2-C</text>
+<rect class='terminal' x='20.1965' y='7.49653' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector13terminal' />
+<line class='pin' x1='15.1165' y1='10.16' x2='20.1965' y2='10.16' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector12pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='17.6565' y='9.78958' text-anchor='middle'>13</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='14.6226' y='10.4069' text-anchor='end'>T2-E</text>
+<rect class='terminal' x='20.1965' y='10.0365' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector12terminal' />
+<line class='pin' x1='15.1165' y1='12.7' x2='20.1965' y2='12.7' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector11pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='17.6565' y='12.3296' text-anchor='middle'>12</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='14.6226' y='12.9469' text-anchor='end'>T3-E</text>
+<rect class='terminal' x='20.1965' y='12.5765' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector11terminal' />
+<line class='pin' x1='15.1165' y1='15.24' x2='20.1965' y2='15.24' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector10pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='17.6565' y='14.8696' text-anchor='middle'>11</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='14.6226' y='15.4869' text-anchor='end'>T3-C</text>
+<rect class='terminal' x='20.1965' y='15.1165' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector10terminal' />
+<line class='pin' x1='15.1165' y1='17.78' x2='20.1965' y2='17.78' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector9pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='17.6565' y='17.4096' text-anchor='middle'>10</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='14.6226' y='18.0269' text-anchor='end'>T4-C</text>
+<rect class='terminal' x='20.1965' y='17.6565' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector9terminal' />
+<line class='pin' x1='15.1165' y1='20.32' x2='20.1965' y2='20.32' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector8pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='17.6565' y='19.9496' text-anchor='middle'>9</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='14.6226' y='20.5669' text-anchor='end'>T4-E</text>
+<rect class='terminal' x='20.1965' y='20.1965' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector8terminal' />
+<line class='pin' x1='0.123472' y1='2.54' x2='5.20347' y2='2.54' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector0pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='2.66347' y='2.16958' text-anchor='middle'>1</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='5.69736' y='2.78694' text-anchor='start'>D1-A</text>
+<rect class='terminal' x='-0.123472' y='2.41653' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector0terminal' />
+<line class='pin' x1='0.123472' y1='5.08' x2='5.20347' y2='5.08' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector1pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='2.66347' y='4.70958' text-anchor='middle'>2</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='5.69736' y='5.32694' text-anchor='start'>D1-C</text>
+<rect class='terminal' x='-0.123472' y='4.95653' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector1terminal' />
+<line class='pin' x1='0.123472' y1='7.62' x2='5.20347' y2='7.62' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector2pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='2.66347' y='7.24958' text-anchor='middle'>3</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='5.69736' y='7.86694' text-anchor='start'>D2-C</text>
+<rect class='terminal' x='-0.123472' y='7.49653' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector2terminal' />
+<line class='pin' x1='0.123472' y1='10.16' x2='5.20347' y2='10.16' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector3pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='2.66347' y='9.78958' text-anchor='middle'>4</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='5.69736' y='10.4069' text-anchor='start'>D1-A</text>
+<rect class='terminal' x='-0.123472' y='10.0365' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector3terminal' />
+<line class='pin' x1='0.123472' y1='12.7' x2='5.20347' y2='12.7' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector4pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='2.66347' y='12.3296' text-anchor='middle'>5</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='5.69736' y='12.9469' text-anchor='start'>D3-A</text>
+<rect class='terminal' x='-0.123472' y='12.5765' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector4terminal' />
+<line class='pin' x1='0.123472' y1='15.24' x2='5.20347' y2='15.24' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector5pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='2.66347' y='14.8696' text-anchor='middle'>6</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='5.69736' y='15.4869' text-anchor='start'>D3-C</text>
+<rect class='terminal' x='-0.123472' y='15.1165' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector5terminal' />
+<line class='pin' x1='0.123472' y1='17.78' x2='5.20347' y2='17.78' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector6pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='2.66347' y='17.4096' text-anchor='middle'>7</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='5.69736' y='18.0269' text-anchor='start'>D4-C</text>
+<rect class='terminal' x='-0.123472' y='17.6565' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector6terminal' />
+<line class='pin' x1='0.123472' y1='20.32' x2='5.20347' y2='20.32' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector7pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='2.66347' y='19.9496' text-anchor='middle'>8</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='5.69736' y='20.5669' text-anchor='start'>D4-A</text>
+<rect class='terminal' x='-0.123472' y='20.1965' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector7terminal' />
+</g>
 </svg>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <module fritzingVersion="0.3.14b.12.23.3905" moduleId="3873dc7d914a2d1b34aaa46504b57f19">
     <version>1.0</version>
     <author>Fritzing Part-o-matic</author>
@@ -6,21 +6,21 @@
     <label>IC</label>
     <date>2009-10-23</date>
     <tags>
-     <tag>IC</tag>
-      <tag>Audio</tag>
-      <tag>Record</tag>
-      <tag>Playback</tag>
+        <tag>IC</tag>
+        <tag>Audio</tag>
+        <tag>Record</tag>
+        <tag>Playback</tag>
         <tag>DIP</tag>
         <tag>user part</tag>
     </tags>
     <properties>
-          <property name="family">Audio IC</property>
-	<property name="type">playback/record IC</property>
-	<property name="variant">RTS0073</property>
-	<property name="package">DIP (Dual Inline)</property>
-          <property name="pins">16</property>
-          <property name="spacing">900mil</property>
-	<property name="specified voltage">4.98</property>
+        <property name="family">Audio IC</property>
+        <property name="type">playback/record IC</property>
+        <property name="variant">RTS0073</property>
+        <property name="package">DIP (Dual Inline)</property>
+        <property name="pins">16</property>
+        <property name="spacing">900mil</property>
+        <property name="specified voltage">4.98</property>
     </properties>
     <description>http://apaltech.com/files/data/rts0073/0073.pdf</description>
     <views>
@@ -47,227 +47,227 @@
         </pcbView>
     </views>
     <connectors>
-        <connector id="connector15" type="male" name="MICG">
+        <connector type="male" id="connector15" name="MICG">
             <description>When recording, this goes to the negative end of the microphone.</description>
             <views>
                 <breadboardView>
-                    <p layer="breadboard" svgId="connector15pin" terminalId="connector15terminal"/>
+                    <p svgId="connector15pin" layer="breadboard" terminalId="connector15terminal"/>
                 </breadboardView>
                 <schematicView>
-                    <p layer="schematic" svgId="connector15pin" terminalId="connector15terminal"/>
+                    <p svgId="connector15pin" layer="schematic" terminalId="connector15terminal"/>
                 </schematicView>
                 <pcbView>
-                    <p layer="copper0" svgId="connector15pin"/>
+                    <p svgId="connector15pin" layer="copper0"/>
                 </pcbView>
             </views>
         </connector>
-        <connector id="connector3" type="male" name="MODE">
+        <connector type="male" id="connector3" name="MODE">
             <description>Connect directly to ground to use push-button recording mode. Connect to VCC to trigger voice-activated recording mode.</description>
             <views>
                 <breadboardView>
-                    <p layer="breadboard" svgId="connector3pin" terminalId="connector3terminal"/>
+                    <p svgId="connector3pin" layer="breadboard" terminalId="connector3terminal"/>
                 </breadboardView>
                 <schematicView>
-                    <p layer="schematic" svgId="connector3pin"/>
+                    <p svgId="connector3pin" layer="schematic" terminalId="connector3terminal"/>
                 </schematicView>
                 <pcbView>
-                    <p layer="copper0" svgId="connector3pin"/>
+                    <p svgId="connector3pin" layer="copper0"/>
                 </pcbView>
             </views>
         </connector>
-        <connector id="connector4" type="male" name="BD">
+        <connector type="male" id="connector4" name="BD">
             <description>Audio output.</description>
             <views>
                 <breadboardView>
-                    <p layer="breadboard" svgId="connector4pin" terminalId="connector4terminal"/>
+                    <p svgId="connector4pin" layer="breadboard" terminalId="connector4terminal"/>
                 </breadboardView>
                 <schematicView>
-                    <p layer="schematic" svgId="connector4pin" terminalId="connector4terminal"/>
+                    <p svgId="connector4pin" layer="schematic" terminalId="connector4terminal"/>
                 </schematicView>
                 <pcbView>
-                    <p layer="copper0" svgId="connector4pin"/>
+                    <p svgId="connector4pin" layer="copper0"/>
                 </pcbView>
             </views>
         </connector>
-        <connector id="connector5" type="male" name="MOUT">
+        <connector type="male" id="connector5" name="MOUT">
             <description>Amplified microphone putput.</description>
             <views>
                 <breadboardView>
-                    <p layer="breadboard" svgId="connector5pin" terminalId="connector5terminal"/>
+                    <p svgId="connector5pin" layer="breadboard" terminalId="connector5terminal"/>
                 </breadboardView>
                 <schematicView>
-                    <p layer="schematic" svgId="connector5pin" terminalId="connector5terminal"/>
+                    <p svgId="connector5pin" layer="schematic" terminalId="connector5terminal"/>
                 </schematicView>
                 <pcbView>
-                    <p layer="copper0" svgId="connector5pin"/>
+                    <p svgId="connector5pin" layer="copper0"/>
                 </pcbView>
             </views>
         </connector>
-        <connector id="connector6" type="male" name="MIN">
+        <connector type="male" id="connector6" name="MIN">
             <description>Microphone input signal.</description>
             <views>
                 <breadboardView>
-                    <p layer="breadboard" svgId="connector6pin" terminalId="connector6terminal"/>
+                    <p svgId="connector6pin" layer="breadboard" terminalId="connector6terminal"/>
                 </breadboardView>
                 <schematicView>
-                    <p layer="schematic" svgId="connector6pin" terminalId="connector6terminal"/>
+                    <p svgId="connector6pin" layer="schematic" terminalId="connector6terminal"/>
                 </schematicView>
                 <pcbView>
-                    <p layer="copper0" svgId="connector6pin"/>
+                    <p svgId="connector6pin" layer="copper0"/>
                 </pcbView>
             </views>
         </connector>
-        <connector id="connector7" type="male" name="GND">
+        <connector type="male" id="connector7" name="GND">
             <description>Connect to negative terminal of battery.</description>
             <views>
                 <breadboardView>
-                    <p layer="breadboard" svgId="connector7pin" terminalId="connector7terminal"/>
+                    <p svgId="connector7pin" layer="breadboard" terminalId="connector7terminal"/>
                 </breadboardView>
                 <schematicView>
-                    <p layer="schematic" svgId="connector7pin" terminalId="connector7terminal"/>
+                    <p svgId="connector7pin" layer="schematic" terminalId="connector7terminal"/>
                 </schematicView>
                 <pcbView>
-                    <p layer="copper0" svgId="connector7pin"/>
+                    <p svgId="connector7pin" layer="copper0"/>
                 </pcbView>
             </views>
         </connector>
-        <connector id="connector8" type="male" name="ROB">
+        <connector type="male" id="connector8" name="ROB">
             <description>Connect to VCC to play natural voice. Connect to ground to activate robot effect.</description>
             <views>
                 <breadboardView>
-                    <p layer="breadboard" svgId="connector8pin" terminalId="connector8terminal"/>
+                    <p svgId="connector8pin" layer="breadboard" terminalId="connector8terminal"/>
                 </breadboardView>
                 <schematicView>
-                    <p layer="schematic" svgId="connector8pin" terminalId="connector8terminal"/>
+                    <p svgId="connector8pin" layer="schematic" terminalId="connector8terminal"/>
                 </schematicView>
                 <pcbView>
-                    <p layer="copper0" svgId="connector8pin"/>
+                    <p svgId="connector8pin" layer="copper0"/>
                 </pcbView>
             </views>
         </connector>
-        <connector id="connector9" type="male" name="POSC">
+        <connector type="male" id="connector9" name="POSC">
             <description>Playback oscillator. Usually connected with a 1.2M resistor between VCC. Add a potentiometer with VCC as the wiper and POSC as one of the ends to change play speed.</description>
             <views>
                 <breadboardView>
-                    <p layer="breadboard" svgId="connector9pin" terminalId="connector9terminal"/>
+                    <p svgId="connector9pin" layer="breadboard" terminalId="connector9terminal"/>
                 </breadboardView>
                 <schematicView>
-                    <p layer="schematic" svgId="connector9pin" terminalId="connector9terminal"/>
+                    <p svgId="connector9pin" layer="schematic" terminalId="connector9terminal"/>
                 </schematicView>
                 <pcbView>
-                    <p layer="copper0" svgId="connector9pin"/>
+                    <p svgId="connector9pin" layer="copper0"/>
                 </pcbView>
             </views>
         </connector>
-        <connector id="connector10" type="male" name="ROSC">
+        <connector type="male" id="connector10" name="ROSC">
             <description>Recording oscillator terminal. Usually coneccted to a 1.5M resistor between VCC. Add a potentiometer with VCC as the wiper and ROSC on one end to change the sample rate. Keep in mind this will effect the sample rate and, therefore, your output voice.</description>
             <views>
                 <breadboardView>
-                    <p layer="breadboard" svgId="connector10pin" terminalId="connector10terminal"/>
+                    <p svgId="connector10pin" layer="breadboard" terminalId="connector10terminal"/>
                 </breadboardView>
                 <schematicView>
-                    <p layer="schematic" svgId="connector10pin" terminalId="connector10terminal"/>
+                    <p svgId="connector10pin" layer="schematic" terminalId="connector10terminal"/>
                 </schematicView>
                 <pcbView>
-                    <p layer="copper0" svgId="connector10pin"/>
+                    <p svgId="connector10pin" layer="copper0"/>
                 </pcbView>
             </views>
         </connector>
-        <connector id="connector11" type="male" name="VCC">
+        <connector type="male" id="connector11" name="VCC">
             <description>Connect to battery positive terminal</description>
             <views>
                 <breadboardView>
-                    <p layer="breadboard" svgId="connector11pin" terminalId="connector11terminal"/>
+                    <p svgId="connector11pin" layer="breadboard" terminalId="connector11terminal"/>
                 </breadboardView>
                 <schematicView>
-                    <p layer="schematic" svgId="connector11pin" terminalId="connector11terminal"/>
+                    <p svgId="connector11pin" layer="schematic" terminalId="connector11terminal"/>
                 </schematicView>
                 <pcbView>
-                    <p layer="copper0" svgId="connector11pin"/>
+                    <p svgId="connector11pin" layer="copper0"/>
                 </pcbView>
             </views>
         </connector>
-        <connector id="connector0" type="male" name="P1B">
+        <connector type="male" id="connector0" name="P1B">
             <description>Connect to ground to start playback</description>
             <views>
                 <breadboardView>
-                    <p layer="breadboard" svgId="connector0pin" terminalId="connector0terminal"/>
+                    <p svgId="connector0pin" layer="breadboard" terminalId="connector0terminal"/>
                 </breadboardView>
                 <schematicView>
-                    <p layer="schematic" svgId="connector0pin" terminalId="connector0terminal"/>
+                    <p svgId="connector0pin" layer="schematic" terminalId="connector0terminal"/>
                 </schematicView>
                 <pcbView>
-                    <p layer="copper0" svgId="connector0pin"/>
+                    <p svgId="connector0pin" layer="copper0"/>
                 </pcbView>
             </views>
         </connector>
-        <connector id="connector12" type="male" name="SEL">
+        <connector type="male" id="connector12" name="SEL">
             <description>Connect to VCC to play natural voice. Connect to potentiometer with the wiper as ground to play vocal effects.</description>
             <views>
                 <breadboardView>
-                    <p layer="breadboard" svgId="connector12pin" terminalId="connector12terminal"/>
+                    <p svgId="connector12pin" layer="breadboard" terminalId="connector12terminal"/>
                 </breadboardView>
                 <schematicView>
-                    <p layer="schematic" svgId="connector12pin" terminalId="connector12terminal"/>
+                    <p svgId="connector12pin" layer="schematic" terminalId="connector12terminal"/>
                 </schematicView>
                 <pcbView>
-                    <p layer="copper0" svgId="connector12pin"/>
+                    <p svgId="connector12pin" layer="copper0"/>
                 </pcbView>
             </views>
         </connector>
-        <connector id="connector1" type="male" name="P2B">
+        <connector type="male" id="connector1" name="P2B">
             <description>Connect to ground to enter repeated playback mode. Disconnect from ground to stop.</description>
             <views>
                 <breadboardView>
-                    <p layer="breadboard" svgId="connector1pin" terminalId="connector1terminal"/>
+                    <p svgId="connector1pin" layer="breadboard" terminalId="connector1terminal"/>
                 </breadboardView>
                 <schematicView>
-                    <p layer="schematic" svgId="connector1pin" terminalId="connector1terminal"/>
+                    <p svgId="connector1pin" layer="schematic" terminalId="connector1terminal"/>
                 </schematicView>
                 <pcbView>
-                    <p layer="copper0" svgId="connector1pin"/>
+                    <p svgId="connector1pin" layer="copper0"/>
                 </pcbView>
             </views>
         </connector>
-        <connector id="connector13" type="male" name="CNT1">
+        <connector type="male" id="connector13" name="CNT1">
             <description>Connect to anode of recording signal.</description>
             <views>
                 <breadboardView>
-                    <p layer="breadboard" svgId="connector13pin" terminalId="connector13terminal"/>
+                    <p svgId="connector13pin" layer="breadboard" terminalId="connector13terminal"/>
                 </breadboardView>
                 <schematicView>
-                    <p layer="schematic" svgId="connector13pin" terminalId="connector13terminal"/>
+                    <p svgId="connector13pin" layer="schematic" terminalId="connector13terminal"/>
                 </schematicView>
                 <pcbView>
-                    <p layer="copper0" svgId="connector13pin"/>
+                    <p svgId="connector13pin" layer="copper0"/>
                 </pcbView>
             </views>
         </connector>
-        <connector id="connector2" type="male" name="Connect to ground to trigger recording mode.">
+        <connector type="male" id="connector2" name="Connect to ground to trigger recording mode.">
             <description>RECB</description>
             <views>
                 <breadboardView>
-                    <p layer="breadboard" svgId="connector2pin" terminalId="connector2terminal"/>
+                    <p svgId="connector2pin" layer="breadboard" terminalId="connector2terminal"/>
                 </breadboardView>
                 <schematicView>
-                    <p layer="schematic" svgId="connector2pin" terminalId="connector2terminal"/>
+                    <p svgId="connector2pin" layer="schematic" terminalId="connector2terminal"/>
                 </schematicView>
                 <pcbView>
-                    <p layer="copper0" svgId="connector2pin"/>
+                    <p svgId="connector2pin" layer="copper0"/>
                 </pcbView>
             </views>
         </connector>
-        <connector id="connector14" type="male" name="CNT2">
+        <connector type="male" id="connector14" name="CNT2">
             <description>Connect to anode of playback indicator.</description>
             <views>
                 <breadboardView>
-                    <p layer="breadboard" svgId="connector14pin" terminalId="connector14terminal"/>
+                    <p svgId="connector14pin" layer="breadboard" terminalId="connector14terminal"/>
                 </breadboardView>
                 <schematicView>
-                    <p layer="schematic" svgId="connector14pin" terminalId="connector14terminal"/>
+                    <p svgId="connector14pin" layer="schematic" terminalId="connector14terminal"/>
                 </schematicView>
                 <pcbView>
-                    <p layer="copper0" svgId="connector14pin"/>
+                    <p svgId="connector14pin" layer="copper0"/>
                 </pcbView>
             </views>
         </connector>

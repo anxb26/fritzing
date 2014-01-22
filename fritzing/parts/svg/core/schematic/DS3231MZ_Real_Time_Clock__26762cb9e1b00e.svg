@@ -1,59 +1,42 @@
-<?xml version='1.0' encoding='utf-8'?>
-<!-- Generator: Adobe Illustrator 13.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 14948)  -->
-<svg xmlns="http://www.w3.org/2000/svg" width="2.50457in" xml:space="preserve" xmlns:xml="http://www.w3.org/XML/1998/namespace" x="0px" version="1.2" y="0px" height="2.39139in" viewBox="0 0 180.329 172.18" baseProfile="tiny" id="svg">
- <g  id="schematic">
-  <rect  width="127.26" x="30.99" y="1.2" fill="#FFFFFF" height="169.779" stroke="#000000" stroke-width="2.4"/>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 50.2695 49.1333)" font-size="18">DS3231MZ</text>
-  <line  fill="none" stroke="#000000" y1="22.633" stroke-width="2.4" x1="159.069" y2="22.633" x2="180.329"/>
-  <line  fill="none" stroke="#000000" y1="65.153" stroke-width="2.4" x1="159.069" y2="65.153" x2="180.329"/>
-  <line  fill="none" stroke="#000000" y1="107.673" stroke-width="2.4" x1="159.069" y2="107.673" x2="180.329"/>
-  <line  fill="none" stroke="#000000" y1="150.192" stroke-width="2.4" x1="159.069" y2="150.192" x2="180.329"/>
-  <line  fill="none" stroke="#000000" y1="22.633" stroke-width="2.4" x1="31.51" y2="22.633" x2="10.25"/>
-  <line  fill="none" stroke="#000000" y1="65.153" stroke-width="2.4" x1="31.51" y2="65.153" x2="10.25"/>
-  <line  fill="none" y1="107.673" x1="31.51" y2="107.673" x2="10.25"/>
-  <line  fill="none" stroke="#000000" y1="150.192" stroke-width="2.4" x1="31.51" y2="150.192" x2="10.25"/>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 36.5098 25.6333)" font-size="10">1</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 37.25 67.2002)" font-size="10">2</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 36.75 110.2002)" font-size="10">3</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 37.25 151.2002)" font-size="10">4</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 145.25 152.7002)" font-size="10">5</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 144.75 108.7002)" font-size="10">6</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 144.75 66.7002)" font-size="10">7</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 145.25 25.7002)" font-size="10">8</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 6.25 18.7002)" font-size="7">32KHZ</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 14.25 59.7002)" font-size="7">V</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 18.0166 59.7002)" font-size="7">c</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 21.2568 59.7002)" font-size="7">c</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 0 102.4502)" font-size="7">I</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 2.3721 102.4502)" font-size="7">N</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 7.4751 102.4502)" font-size="7">T</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 11.1084 102.4502)" font-size="7">/</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 13.7197 102.4502)" font-size="7">S</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 17.353 102.4502)" font-size="7">Q</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 22.4731 102.4502)" font-size="7">W</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 12.75 144.7002)" font-size="7">RST</text>
-  <line  fill="none" stroke="#000000" y1="107.673" stroke-width="2.4" x1="31.51" y2="107.673" x2="10.25"/>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 164.5889 17.6333)" font-size="7">SCL</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 165.0889 60.1533)" font-size="7">S</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 168.7227 60.1533)" font-size="7">D</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 173.4424 60.1533)" font-size="7">A</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 164.5889 103.1729)" font-size="7">Vbat</text>
-  <text  font-family="DroidSans" transform="matrix(1 0 0 1 163.5889 146.1924)" font-size="7">GND</text>
- </g>
- <line  stroke="#000000" id="connector1terminal" y1="22.633" stroke-width="2.4" x1="15.25" y2="22.633" x2="10.25"/>
- <line  fill="none" stroke="#000000" id="connector1pin" y1="22.633" stroke-width="2.4" x1="31.51" y2="22.633" x2="10.25"/>
- <line  fill="none" stroke="#000000" id="connector2terminal" y1="65.153" stroke-width="2.4" x1="14.75" y2="65.153" x2="10.25"/>
- <line  fill="none" stroke="#000000" id="connector2pin" y1="65.153" stroke-width="2.4" x1="31.51" y2="65.153" x2="10.25"/>
- <line  fill="none" stroke="#000000" id="connector3terminal" y1="107.673" stroke-width="2.4" x1="15.25" y2="107.673" x2="10.25"/>
- <line  fill="none" stroke="#000000" id="connector3pin" y1="107.673" stroke-width="2.4" x1="31.51" y2="107.673" x2="10.25"/>
- <line  fill="none" stroke="#000000" id="connector4terminal" y1="150.192" stroke-width="2.4" x1="16.5" y2="150.192" x2="10.25"/>
- <line  fill="none" stroke="#000000" id="connector4pin" y1="150.192" stroke-width="2.4" x1="31.51" y2="150.192" x2="10.25"/>
- <line  fill="none" stroke="#000000" id="connector5terminal" y1="150.192" stroke-width="2.4" x1="173.75" y2="150.192" x2="180.329"/>
- <line  fill="none" stroke="#000000" id="connector5pin" y1="150.192" stroke-width="2.4" x1="159.069" y2="150.192" x2="180.329"/>
- <line  fill="none" stroke="#000000" id="connector6terminal" y1="107.673" stroke-width="2.4" x1="174.5" y2="107.673" x2="180.329"/>
- <line  fill="none" stroke="#000000" id="connector6pin" y1="107.673" stroke-width="2.4" x1="159.069" y2="107.673" x2="180.329"/>
- <line  fill="none" stroke="#000000" id="connector7terminal" y1="65.153" stroke-width="2.4" x1="175.5" y2="65.153" x2="180.329"/>
- <line  fill="none" stroke="#000000" id="connector7pin" y1="65.153" stroke-width="2.4" x1="159.069" y2="65.153" x2="180.329"/>
- <line  fill="none" stroke="#000000" id="connector8terminal" y1="22.633" stroke-width="2.4" x1="176.25" y2="22.633" x2="180.329"/>
- <line  fill="none" stroke="#000000" id="connector8pin" y1="22.633" stroke-width="2.4" x1="159.069" y2="22.633" x2="180.329"/>
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+<svg xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' version='1.2' baseProfile='tiny' x='0in' y='0in' width='1.1in' height='0.5in' viewBox='0 0 27.94 12.7' >
+<g id='schematic'>
+<rect class='interior rect' x='5.23875' y='0.15875' width='17.4625' height='12.3825' fill='#FFFFFF' stroke='#000000' stroke-width='0.3175' stroke-linecap='round' />
+<line class='pin' x1='22.7365' y1='2.54' x2='27.8165' y2='2.54' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector8pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='25.2765' y='2.16958' text-anchor='middle'>8</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='22.2426' y='2.78694' text-anchor='end'>Pin 8</text>
+<rect class='terminal' x='27.8165' y='2.41653' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector8terminal' />
+<line class='pin' x1='22.7365' y1='5.08' x2='27.8165' y2='5.08' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector7pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='25.2765' y='4.70958' text-anchor='middle'>7</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='22.2426' y='5.32694' text-anchor='end'>Pin 7</text>
+<rect class='terminal' x='27.8165' y='4.95653' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector7terminal' />
+<line class='pin' x1='22.7365' y1='7.62' x2='27.8165' y2='7.62' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector6pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='25.2765' y='7.24958' text-anchor='middle'>6</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='22.2426' y='7.86694' text-anchor='end'>Pin 6</text>
+<rect class='terminal' x='27.8165' y='7.49653' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector6terminal' />
+<line class='pin' x1='22.7365' y1='10.16' x2='27.8165' y2='10.16' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector5pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='25.2765' y='9.78958' text-anchor='middle'>5</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='22.2426' y='10.4069' text-anchor='end'>Pin 5</text>
+<rect class='terminal' x='27.8165' y='10.0365' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector5terminal' />
+<line class='pin' x1='0.123472' y1='2.54' x2='5.20347' y2='2.54' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector1pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='2.66347' y='2.16958' text-anchor='middle'>1</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='5.69736' y='2.78694' text-anchor='start'>Pin 1</text>
+<rect class='terminal' x='-0.123472' y='2.41653' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector1terminal' />
+<line class='pin' x1='0.123472' y1='5.08' x2='5.20347' y2='5.08' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector2pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='2.66347' y='4.70958' text-anchor='middle'>2</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='5.69736' y='5.32694' text-anchor='start'>Pin 2</text>
+<rect class='terminal' x='-0.123472' y='4.95653' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector2terminal' />
+<line class='pin' x1='0.123472' y1='7.62' x2='5.20347' y2='7.62' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector3pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='2.66347' y='7.24958' text-anchor='middle'>3</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='5.69736' y='7.86694' text-anchor='start'>Pin 3</text>
+<rect class='terminal' x='-0.123472' y='7.49653' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector3terminal' />
+<line class='pin' x1='0.123472' y1='10.16' x2='5.20347' y2='10.16' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector4pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='2.66347' y='9.78958' text-anchor='middle'>4</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='5.69736' y='10.4069' text-anchor='start'>Pin 4</text>
+<rect class='terminal' x='-0.123472' y='10.0365' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector4terminal' />
+<text class='text' id='label' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#000000' font-size='1.49931' x='14.1288' y='4.10979' text-anchor='middle'>DS3231MZ</text>
+<text class='text' id='label' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#000000' font-size='1.49931' x='14.1288' y='5.7091' text-anchor='middle'>Real Time</text>
+<text class='text' id='label' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#000000' font-size='1.49931' x='14.1288' y='7.3084' text-anchor='middle'>Clock</text>
+</g>
 </svg>

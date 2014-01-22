@@ -1,58 +1,33 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-<svg xmlns="http://www.w3.org/2000/svg"  width="162.44884" version="1.1" height="82.724396" id="0">
- <desc   id="0.0" oldid="0.0">
-  <referenceFile   id="0.0.0" oldid="0.0.0">PEC11-4xxxK-Sxxx.schematic.svg</referenceFile>
- </desc>
- <defs   id="0.1" oldid="0.1"/>
- <metadata   id="0.2" oldid="0.2">
-  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  id="0.2.0" oldid="0.2.0">
-   <cc:Work xmlns:cc="http://creativecommons.org/ns#"  rdf:about="" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" id="0.2.0.0" oldid="0.2.0.0">
-    <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/"  id="0.2.0.0.0" oldid="0.2.0.0.0">image/svg+xml</dc:format>
-    <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/"  id="0.2.0.0.1" oldid="0.2.0.0.1" rdf:resource="http://purl.org/dc/dcmitype/StillImage" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"  id="0.2.0.0.2" oldid="0.2.0.0.2"/>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <g   id="layer1" transform="translate(-78.224409,-878.12598)">
-  <g   id="0.3.0" transform="translate(0,2.5390623e-6)">
-   <path  stroke-opacity="1" fill="none"  stroke="#000000" style="color:#000000;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="path3808" stroke-width="3" d="m 79.724409,892.91336 26.574801,0"/>
-  </g>
-  <g   id="0.3.1" transform="translate(0,2.5390623e-6)">
-   <path  stroke-opacity="1" fill="none"  stroke="#000000" style="color:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="path3810" stroke-width="3" d="m 79.724409,919.48817 26.574801,0"/>
-  </g>
-  <g   id="0.3.2" transform="translate(0,2.5390623e-6)">
-   <path  stroke-opacity="1" fill="none"  stroke="#000000" style="color:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="path3812" stroke-width="3" d="m 79.724409,946.06297 26.574801,0"/>
-  </g>
-  <g   id="g3849" transform="translate(18.602377,-6.6437044)">
-   <path  stroke-opacity="1" fill="none"  stroke="#000000" style="color:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="path3816" stroke-width="1.5" d="m 122.24408,915.50195 5.31496,0 0,-13.2874 10.62993,0 0,13.2874 10.62992,0 0,-13.2874 10.62992,0"/>
-   <path  stroke-opacity="1" fill="none"  stroke="#000000" style="color:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="path3818" stroke-width="1.5" d="m 122.24408,947.39172 10.62992,0 0,-13.2874 10.62993,0 0,13.2874 10.62992,0 0,-13.2874 5.31496,0"/>
-   <path  stroke-opacity="1" fill="#ffffff"  stroke="#000000" style="color:#000000;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:4.5, 4.5;stroke-dashoffset:1.35;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" fill-opacity="1" id="path3820" stroke-width="1.5" d="m 135.53148,896.89959 0,55.80709"/>
-  </g>
-  <path  stroke-opacity="1" fill="none"  stroke="#000000" style="color:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="path3824" stroke-width="1.5" d="m 199.31102,927.46061 0,18.60236 13.28741,0 m 0,-53.14961 -13.28741,10e-6 0,18.60236 -7.97244,15.94488"/>
-  <g   id="0.3.5" transform="translate(0,2.5390623e-6)">
-   <rect  width="106.29922" x="106.29921" y="879.62598" stroke-opacity="1" fill="none"  height="79.724396" stroke="#000000" style="color:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="rect3827" stroke-width="3"/>
-  </g>
-  <path  stroke-opacity="1" fill="none"  stroke="#000000" style="color:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="path3829" stroke-width="3" d="m 239.17324,892.91337 -26.57481,0"/>
-  <path  stroke-opacity="1" fill="none"  stroke="#000000" style="color:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="path3831" stroke-width="3" d="m 239.17324,946.06298 -26.57481,0"/>
-  <g  xml:space="preserve" xmlns:xml="http://www.w3.org/XML/1998/namespace" fill="#000000"  stroke="none" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill-rule:nonzero;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Droid Sans;-inkscape-font-specification:Droid Sans" fill-opacity="1" id="text3837" stroke-width="3" font-size="10">
-   <text  x="111.61417" y="895.57086"  id="tspan3839">CH-A</text>
-  </g>
-  <g  xml:space="preserve" xmlns:xml="http://www.w3.org/XML/1998/namespace" fill="#000000"  stroke="none" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill-rule:nonzero;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Droid Sans;-inkscape-font-specification:Droid Sans" fill-opacity="1" id="text3841" stroke-width="3" font-size="10">
-   <text  x="110.64249" y="948.72046"  id="tspan3843">CH-B</text>
-  </g>
-  <g  xml:space="preserve" xmlns:xml="http://www.w3.org/XML/1998/namespace" fill="#000000"  stroke="none" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill-rule:nonzero;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Droid Sans;-inkscape-font-specification:Droid Sans" fill-opacity="1" id="text3845" stroke-width="3" font-size="10">
-   <text  x="111.00382" y="922.04797"  id="tspan3847">COMM</text>
-  </g>
-  <rect  width="15.944883" x="79.724411" y="891.58459" fill="#000000"  height="2.6575043" stroke="none" style="color:#000000;fill-rule:nonzero;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" fill-opacity="1" id="connector0pin" stroke-width="3"/>
-  <rect  width="0.031889766" x="79.708466117" y="892.9106846457" fill="none"  height="0.0053150086" stroke="none" id="connector0terminal" stroke-width="0"/>
-  <rect  width="15.944883" x="79.724411" y="918.15942" fill="#000000"  height="2.6575043" stroke="none" style="color:#000000;fill-rule:nonzero;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" fill-opacity="1" id="connector1pin" stroke-width="3"/>
-  <rect  width="0.031889766" x="79.708466117" y="919.4855146456999" fill="none"  height="0.0053150086" stroke="none" id="connector1terminal" stroke-width="0"/>
-  <rect  width="15.944883" x="79.724411" y="944.73419" fill="#000000"  height="2.6575043" stroke="none" style="color:#000000;fill-rule:nonzero;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" fill-opacity="1" id="connector2pin" stroke-width="3"/>
-  <rect  width="0.031889766" x="79.708466117" y="946.0602846457" fill="none"  height="0.0053150086" stroke="none" id="connector2terminal" stroke-width="0"/>
-  <rect  width="15.944881" x="223.22835" y="944.73425" fill="#000000"  height="2.6574802" stroke="none" style="color:#000000;fill-rule:nonzero;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" fill-opacity="1" id="connector3pin" stroke-width="3"/>
-  <rect  width="0.031889762" x="239.157286119" y="946.0603326198" fill="none"  height="0.005314960400000001" stroke="none" id="connector3terminal" stroke-width="0"/>
-  <rect  width="15.944881" x="223.22835" y="891.58466" fill="#000000"  height="2.6574802" stroke="none" style="color:#000000;fill-rule:nonzero;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" fill-opacity="1" id="connector4pin" stroke-width="3"/>
-  <rect  width="0.031889762" x="239.157286119" y="892.9107426198" fill="none"  height="0.005314960400000001" stroke="none" id="connector4terminal" stroke-width="0"/>
- </g>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+<svg xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' version='1.2' baseProfile='tiny' x='0in' y='0in' width='1.1in' height='0.5in' viewBox='0 0 27.94 12.7' >
+<g id='schematic'>
+<rect class='interior rect' x='5.23875' y='0.15875' width='17.4625' height='12.3825' fill='#FFFFFF' stroke='#000000' stroke-width='0.3175' stroke-linecap='round' />
+<line class='pin' x1='22.7365' y1='2.54' x2='27.8165' y2='2.54' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector4pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='25.2765' y='2.16958' text-anchor='middle'>5</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='22.2426' y='2.78694' text-anchor='end'>BTN</text>
+<rect class='terminal' x='27.8165' y='2.41653' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector4terminal' />
+<line class='pin' x1='22.7365' y1='7.62' x2='27.8165' y2='7.62' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector3pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='25.2765' y='7.24958' text-anchor='middle'>4</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='22.2426' y='7.86694' text-anchor='end'>BTN</text>
+<rect class='terminal' x='27.8165' y='7.49653' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector3terminal' />
+<line class='pin' x1='0.123472' y1='2.54' x2='5.20347' y2='2.54' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector0pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='2.66347' y='2.16958' text-anchor='middle'>1</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='5.69736' y='2.78694' text-anchor='start'>CH-A</text>
+<rect class='terminal' x='-0.123472' y='2.41653' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector0terminal' />
+<line class='pin' x1='0.123472' y1='5.08' x2='5.20347' y2='5.08' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector1pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='2.66347' y='4.70958' text-anchor='middle'>2</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='5.69736' y='5.32694' text-anchor='start'>COMM</text>
+<rect class='terminal' x='-0.123472' y='4.95653' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector1terminal' />
+<line class='pin' x1='0.123472' y1='7.62' x2='5.20347' y2='7.62' fill='none' stroke='#787878' stroke-width='0.246944' stroke-linecap='round' id='connector2pin' />
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='0.881944' x='2.66347' y='7.24958' text-anchor='middle'>3</text>
+<text class='text' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#8c8c8c' font-size='1.23472' x='5.69736' y='7.86694' text-anchor='start'>CH-B</text>
+<rect class='terminal' x='-0.123472' y='7.49653' width='0.246944' height='0.246944' fill='none' stroke='none' stroke-width='0' id='connector2terminal' />
+<text class='text' id='label' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#000000' font-size='1.49931' x='14.1288' y='2.25194' text-anchor='middle'>Rotary</text>
+<text class='text' id='label' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#000000' font-size='1.49931' x='14.1288' y='3.85125' text-anchor='middle'>Encoder</text>
+<text class='text' id='label' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#000000' font-size='1.49931' x='14.1288' y='5.45055' text-anchor='middle'>(Bourns</text>
+<text class='text' id='label' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#000000' font-size='1.49931' x='14.1288' y='7.04986' text-anchor='middle'>PEC11-</text>
+<text class='text' id='label' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#000000' font-size='1.49931' x='14.1288' y='8.64917' text-anchor='middle'>4xxxK-</text>
+<text class='text' id='label' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#000000' font-size='1.49931' x='14.1288' y='10.2485' text-anchor='middle'>Sxxxx)</text>
+</g>
 </svg>

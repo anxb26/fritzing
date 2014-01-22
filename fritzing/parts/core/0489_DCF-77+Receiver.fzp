@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <module fritzingVersion="0.7.4b.04.10.5970" moduleId="46bda96ebf3d41c46016168fc22a3cd7">
     <version>4</version>
     <author>Christopher Mann</author>
@@ -10,7 +10,7 @@
     </tags>
     <properties>
         <property name="family">IC</property>
-        <property name="part number"></property>
+        <property name="part number"/>
     </properties>
     <description>This is a DCF-77 receiver.
 PON pin should be wired to Ground.
@@ -42,59 +42,59 @@ VDD is power</description>
         </schematicView>
     </views>
     <connectors>
-        <connector id="connector40" type="male" name="VDD">
-            <description></description>
+        <connector type="male" id="connector40" name="VDD">
+            <description/>
             <views>
                 <breadboardView>
-                    <p layer="breadboard" svgId="connector40"/>
+                    <p svgId="connector40" layer="breadboard"/>
                 </breadboardView>
                 <schematicView>
-                    <p layer="schematic" svgId="connector40"/>
+                    <p svgId="connector40" layer="schematic" terminalId="connector40terminal"/>
                 </schematicView>
                 <pcbView>
-                    <p layer="copper0" svgId="connector40"/>
+                    <p svgId="connector40" layer="copper0"/>
                 </pcbView>
             </views>
         </connector>
-        <connector id="connector41" type="male" name="GND">
-            <description></description>
+        <connector type="male" id="connector41" name="GND">
+            <description/>
             <views>
                 <breadboardView>
-                    <p layer="breadboard" svgId="connector41"/>
+                    <p svgId="connector41" layer="breadboard"/>
                 </breadboardView>
                 <schematicView>
-                    <p layer="schematic" svgId="connector41"/>
+                    <p svgId="connector41" layer="schematic" terminalId="connector41terminal"/>
                 </schematicView>
                 <pcbView>
-                    <p layer="copper0" svgId="connector41"/>
+                    <p svgId="connector41" layer="copper0"/>
                 </pcbView>
             </views>
         </connector>
-        <connector id="connector42" type="male" name="DATA">
+        <connector type="male" id="connector42" name="DATA">
             <description>Usually connected to an interrupt input pin of an Arduino</description>
             <views>
                 <breadboardView>
-                    <p layer="breadboard" svgId="connector42"/>
+                    <p svgId="connector42" layer="breadboard"/>
                 </breadboardView>
                 <schematicView>
-                    <p layer="schematic" svgId="connector42"/>
+                    <p svgId="connector42" layer="schematic" terminalId="connector42terminal"/>
                 </schematicView>
                 <pcbView>
-                    <p layer="copper0" svgId="connector42"/>
+                    <p svgId="connector42" layer="copper0"/>
                 </pcbView>
             </views>
         </connector>
-        <connector id="connector43" type="male" name="PON">
+        <connector type="male" id="connector43" name="PON">
             <description>Shoud be connected to ground</description>
             <views>
                 <breadboardView>
-                    <p layer="breadboard" svgId="connector43"/>
+                    <p svgId="connector43" layer="breadboard"/>
                 </breadboardView>
                 <schematicView>
-                    <p layer="schematic" svgId="connector43"/>
+                    <p svgId="connector43" layer="schematic" terminalId="connector43terminal"/>
                 </schematicView>
                 <pcbView>
-                    <p layer="copper0" svgId="connector43"/>
+                    <p svgId="connector43" layer="copper0"/>
                 </pcbView>
             </views>
         </connector>
