@@ -1,0 +1,12 @@
+set folder=C:\Users\joev\Documents\AAA\Fritzing\part-generating\lbr2svg
+set dest=C:\Users\joev\Documents\AAA\Fritzing\part-generating\lbr2svg\output
+set source=C:\Users\joev\Documents\AAA\Fritzing\part-generating\lbr2svg\input
+del %dest%\%folder%\user\*.fzp
+del %dest%\parts\svg\user\breadboard\*.svg
+del %dest%\parts\svg\user\pcb\*.svg
+del %dest%\parts\svg\user\schematic\*.svg
+del %dest%\parts\svg\user\icon\*.svg
+cd %source%
+copy parts\user\*.* %dest%\%folder%\user /Y
+xcopy %source%\parts\svg\user\*.* %dest%\parts\svg\user /Y /S
+copy bins\*.* %dest%\bins\more /Y

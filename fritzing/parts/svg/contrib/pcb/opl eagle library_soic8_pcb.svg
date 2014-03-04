@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+<svg xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' version='1.2' baseProfile='tiny' x='0in' y='0in' width='0.271in' height='0.221925in' viewBox='0 0 6.8834 5.6369' >
+<g id='copper1'>
+<rect id='connector0pad' connectorname='1' x='-1.11022e-16' y='0.8382' width='1.651' height='0.635' stroke='none' stroke-width='0' fill='#F7BD13' stroke-linecap='round'/>
+<rect id='connector1pad' connectorname='2' x='-1.11022e-16' y='2.1082' width='1.651' height='0.635' stroke='none' stroke-width='0' fill='#F7BD13' stroke-linecap='round'/>
+<rect id='connector2pad' connectorname='3' x='-1.11022e-16' y='3.3782' width='1.651' height='0.635' stroke='none' stroke-width='0' fill='#F7BD13' stroke-linecap='round'/>
+<rect id='connector3pad' connectorname='4' x='-1.11022e-16' y='4.6482' width='1.651' height='0.635' stroke='none' stroke-width='0' fill='#F7BD13' stroke-linecap='round'/>
+<rect id='connector4pad' connectorname='5' x='5.2324' y='4.6482' width='1.651' height='0.635' stroke='none' stroke-width='0' fill='#F7BD13' stroke-linecap='round'/>
+<rect id='connector5pad' connectorname='6' x='5.2324' y='3.3782' width='1.651' height='0.635' stroke='none' stroke-width='0' fill='#F7BD13' stroke-linecap='round'/>
+<rect id='connector6pad' connectorname='7' x='5.2324' y='2.1082' width='1.651' height='0.635' stroke='none' stroke-width='0' fill='#F7BD13' stroke-linecap='round'/>
+<rect id='connector7pad' connectorname='8' x='5.2324' y='0.8382' width='1.651' height='0.635' stroke='none' stroke-width='0' fill='#F7BD13' stroke-linecap='round'/>
+<g id='copper0'>
+</g>
+</g>
+<g id='silkscreen'>
+<line class='other' x1='1.4417' y1='5.5607' x2='5.4417' y2='5.5607' stroke='#f0f0f0' stroke-width='0.1524' stroke-linecap='round'/>
+<line class='other' x1='5.4417' y1='0.5607' x2='1.75005' y2='0.5607' stroke='#f0f0f0' stroke-width='0.1524' stroke-linecap='round'/>
+<line class='other' x1='1.75005' y1='0.5607' x2='1.4417' y2='0.86905' stroke='#f0f0f0' stroke-width='0.1524' stroke-linecap='round'/>
+<line class='other' x1='1.4417' y1='0.86905' x2='1.4417' y2='5.5607' stroke='#f0f0f0' stroke-width='0.1524' stroke-linecap='round'/>
+<line class='other' x1='5.4417' y1='0.5607' x2='5.4417' y2='5.5607' stroke='#f0f0f0' stroke-width='0.1524' stroke-linecap='round'/>
+<circle class='other' cx='0.9017' cy='0.2667' r='0.2032' stroke='#f0f0f0' stroke-width='0.127' fill='none' />
+</g>
+</svg>

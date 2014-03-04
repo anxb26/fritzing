@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+<svg xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' version='1.2' baseProfile='tiny' x='0in' y='0in' width='0.500441in' height='0.26048in' viewBox='0 0 12.7112 6.6162' >
+<g id='schematic'>
+<rect class='interior rect' x='0.0762' y='2.73' width='5.08' height='3.81' stroke='none' stroke-width='0' fill='#FFFFFF' />
+<text class='text' id='label' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#000000' font-size='1.49931' x='2.6162' y='2.23604' text-anchor='middle'>SHORT-</text>
+<rect class='interior rect' x='0.0762' y='2.73' width='5.08' height='3.81' stroke='none' stroke-width='0' fill='#FFFFFF' />
+<text class='text' id='label' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#000000' font-size='1.49931' x='2.6162' y='2.23604' text-anchor='middle'>SHORT-</text>
+<text class='text' id='label' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#000000' font-size='1.49931' x='2.6162' y='3.83535' text-anchor='middle'>JUMPER-</text>
+<rect class='interior rect' x='0.0762' y='2.73' width='5.08' height='3.81' stroke='none' stroke-width='0' fill='#FFFFFF' />
+<text class='text' id='label' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#000000' font-size='1.49931' x='2.6162' y='2.23604' text-anchor='middle'>SHORT-</text>
+<text class='text' id='label' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#000000' font-size='1.49931' x='2.6162' y='3.83535' text-anchor='middle'>JUMPER-</text>
+<text class='text' id='label' font-family="'Droid Sans'" stroke='none' stroke-width='0' fill='#000000' font-size='1.49931' x='2.6162' y='5.43465' text-anchor='middle'>2P</text>
+<line class='other' x1='0.0762' y1='2.73' x2='5.1562' y2='2.73' stroke='#000000' stroke-width='0.3175' stroke-linecap='round'/>
+<line class='other' x1='5.1562' y1='2.73' x2='5.1562' y2='6.54' stroke='#000000' stroke-width='0.3175' stroke-linecap='round'/>
+<line class='other' x1='5.1562' y1='6.54' x2='0.0762' y2='6.54' stroke='#000000' stroke-width='0.3175' stroke-linecap='round'/>
+<line class='other' x1='0.0762' y1='6.54' x2='0.0762' y2='2.73' stroke='#000000' stroke-width='0.3175' stroke-linecap='round'/>
+<text class='text' font-family='OCRA' stroke='none' stroke-width='0' fill='#505050' font-size='1.05664' x='0.7112' y='4' text-anchor='start'>Short </text>
+<text class='text' font-family='OCRA' stroke='none' stroke-width='0' fill='#505050' font-size='1.05664' x='0.7112' y='5.905' text-anchor='start'>Jumper</text>
+</g>
+</svg>

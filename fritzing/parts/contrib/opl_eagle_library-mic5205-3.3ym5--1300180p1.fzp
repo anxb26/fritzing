@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<module fritzingVersion='0.7.2b' moduleId='OPL Eagle Library-MIC5205-3.3YM5--1300180P1'>
+<!-- generated from Sparkfun Eagle Library 'OPL Eagle Library' MIC5205-3.3YM5 -1300180P1 -->
+<version>4</version>
+<date>2014-03-04</date>
+<label>U</label>
+<author>www.fritzing.org</author>
+<description>The MIC5205 is an efficient linear voltage regulator with ultra-low-noise output,&lt;p/&gt;
+very low dropout voltage (typically 17mV at light loads and 165mV at 150mA),&lt;p/&gt;
+and very low ground current (600µA at 100mA output).&lt;p/&gt; 
+The MIC5205 offers better than 1% initial accuracy.&lt;p/&gt;
+datasheet here: &lt;u&gt;http://www.micrel.com/product-info/prod/5205.shtml</description>
+<title>MIC5205-3.3YM5</title>
+<tags>
+<tag>MIC5205-3.3YM5</tag>
+<tag>-1300180P1</tag>
+<tag>SOT23-5</tag>
+</tags>
+<properties>
+<property name='package'>sot23-5</property>
+<property name='family'>mic5205-3.3ym5</property>
+<property name='variant'>-1300180p1</property>
+</properties>
+<views>
+<breadboardView>
+<layers image='breadboard/opl eagle library_sot23-5_breadboard.svg'>
+<layer layerId='breadboard'/>
+</layers>
+</breadboardView>
+<schematicView>
+<layers image='schematic/opl eagle library_mic5205_schematic.svg'>
+<layer layerId='schematic'/>
+</layers>
+</schematicView>
+<pcbView>
+<layers image='pcb/opl eagle library_sot23-5_pcb.svg'>
+<layer layerId='copper1'/>
+<layer layerId='silkscreen'/>
+</layers>
+</pcbView>
+<iconView>
+<layers image='breadboard/opl eagle library_sot23-5_breadboard.svg'>
+<layer layerId='icon'/>
+</layers>
+</iconView>
+</views>
+<connectors>
+<connector id='connector3' type='male' name='BYP'>
+<description>BYP</description>
+<views>
+<breadboardView>
+<p layer='breadboard' svgId='connector3pin'/>
+</breadboardView>
+<schematicView>
+<p layer='schematic' svgId='connector3pin' terminalId='connector3terminal'/>
+</schematicView>
+<pcbView>
+<p layer='copper1' svgId='connector3pad'/>
+</pcbView>
+</views>
+</connector>
+<connector id='connector2' type='male' name='EN'>
+<description>EN</description>
+<views>
+<breadboardView>
+<p layer='breadboard' svgId='connector2pin'/>
+</breadboardView>
+<schematicView>
+<p layer='schematic' svgId='connector2pin' terminalId='connector2terminal'/>
+</schematicView>
+<pcbView>
+<p layer='copper1' svgId='connector2pad'/>
+</pcbView>
+</views>
+</connector>
+<connector id='connector1' type='male' name='GND'>
+<description>GND</description>
+<views>
+<breadboardView>
+<p layer='breadboard' svgId='connector1pin'/>
+</breadboardView>
+<schematicView>
+<p layer='schematic' svgId='connector1pin' terminalId='connector1terminal'/>
+</schematicView>
+<pcbView>
+<p layer='copper1' svgId='connector1pad'/>
+</pcbView>
+</views>
+</connector>
+<connector id='connector0' type='male' name='VIN'>
+<description>VIN</description>
+<views>
+<breadboardView>
+<p layer='breadboard' svgId='connector0pin'/>
+</breadboardView>
+<schematicView>
+<p layer='schematic' svgId='connector0pin' terminalId='connector0terminal'/>
+</schematicView>
+<pcbView>
+<p layer='copper1' svgId='connector0pad'/>
+</pcbView>
+</views>
+</connector>
+<connector id='connector4' type='male' name='VOUT'>
+<description>VOUT</description>
+<views>
+<breadboardView>
+<p layer='breadboard' svgId='connector4pin'/>
+</breadboardView>
+<schematicView>
+<p layer='schematic' svgId='connector4pin' terminalId='connector4terminal'/>
+</schematicView>
+<pcbView>
+<p layer='copper1' svgId='connector4pad'/>
+</pcbView>
+</views>
+</connector>
+</connectors>
+<buses>
+</buses>
+</module>
