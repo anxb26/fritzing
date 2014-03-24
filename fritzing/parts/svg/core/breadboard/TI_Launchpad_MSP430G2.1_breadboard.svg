@@ -5,7 +5,7 @@
 	 height="140.1px" viewBox="0 0 188.912 140.1" xml:space="preserve">
 <g id="breadboard">
 	<rect id="rect6361" x="4.53" y="0.619" fill="#BE282E" width="184.381" height="139.44"/>
-	<path id="path12728-4" fill="none" stroke="#FFFFFF" stroke-dasharray="4,1" d="M136.115,140.125L136.542,0"/>
+	<path id="path12728-4" fill="none" stroke="#FFFFFF" stroke-dasharray="4,1" stroke-width="0.9px" d="M136.115,140.125L136.542,0"/>
 	<rect id="connector9" x="88.708" y="133.258" fill="none" width="2.778" height="2.73"/>
 	<rect id="con0terminal" x="89.018" y="133.514" fill="none" width="2.153" height="2.213"/>
 	<rect id="connector8" x="95.894" y="133.258" fill="none" width="2.776" height="2.73"/>
@@ -248,7 +248,7 @@
 	<path id="path10233-3" fill="#FFFFFF" fill-opacity="0.6" d="M178.512,121.581c-0.343-0.131-0.699-0.227-1.082-0.268
 		c-0.946-0.104-1.853,0.1-2.623,0.521l-0.1,0.246c0.869-0.453,1.875-0.666,2.92-0.549c0.322,0.033,0.638,0.107,0.934,0.197
 		L178.512,121.581z"/>
-	<path id="path12728" fill="none" stroke="#FFFFFF" stroke-dasharray="4,1" d="M65.013,140.319L65.44,0.194"/>
+	<path id="path12728" fill="none" stroke="#FFFFFF" stroke-width="0.9px" stroke-dasharray="4,1" d="M65.013,140.319L65.44,0.194"/>
 	<rect id="con52pin" x="56.233" y="4.294" fill="#8C8C8C" width="1.181" height="1.161"/>
 	<rect id="con52pin-1" x="59.745" y="4.294" fill="#8C8C8C" width="1.183" height="1.161"/>
 	<rect id="con52pin-3" x="63.255" y="4.294" fill="#8C8C8C" width="1.183" height="1.161"/>

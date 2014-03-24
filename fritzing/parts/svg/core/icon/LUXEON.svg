@@ -28,13 +28,13 @@
 			c5.035,0,9.115,4.081,9.115,9.116V11.34c0-5.035-4.08-9.116-9.115-9.116s-9.116,4.081-9.116,9.116V11.571z"/>
 		<circle fill="#E6E6E6" cx="21.331" cy="11.34" r="8.533"/>
 		<rect x="16.914" y="6.354" fill="#F7FCB9" width="8.834" height="8.836"/>
-		<line fill="none" stroke="#F7FCB9" stroke-miterlimit="10" x1="21.331" y1="6.354" x2="21.331" y2="2.807"/>
+		<line fill="none" stroke="#F7FCB9" stroke-width="0.9px" stroke-miterlimit="10" x1="21.331" y1="6.354" x2="21.331" y2="2.807"/>
 		<path fill="#F7FCB9" d="M16.914,15.19c0,0,3.667,0.63,4.417,0.63s4.417-0.63,4.417-0.63H16.914z"/>
 		<path fill="#B9BD8B" d="M16.914,15.38c0,0,3.667,0.63,4.417,0.63s4.417-0.63,4.417-0.63v-0.19c0,0-3.667,0.63-4.417,0.63
 			s-4.417-0.63-4.417-0.63V15.38z"/>
 		<rect x="17.561" y="7.089" fill="#F4FC94" width="7.542" height="7.459"/>
 		<rect x="17.561" y="14.548" fill="#B9BD8B" width="7.542" height="0.19"/>
-		<line fill="none" stroke="#F9FDC7" stroke-miterlimit="10" x1="21.331" y1="19.875" x2="21.331" y2="14.74"/>
+		<line fill="none" stroke="#F9FDC7" stroke-width="0.9px" stroke-miterlimit="10" x1="21.331" y1="19.875" x2="21.331" y2="14.74"/>
 		<circle opacity="0.2" fill="#F2F2F2" enable-background="new    " cx="21.33" cy="10.29" r="9.033"/>
 		<path opacity="0.27" fill="#FFFFFF" enable-background="new    " d="M24.748,7.456v4.585c0,0-1.198-2.495-2.198-2.827
 			s-1.563-1.758-2.813-1.758C20.8,7.445,24.748,7.456,24.748,7.456z"/>

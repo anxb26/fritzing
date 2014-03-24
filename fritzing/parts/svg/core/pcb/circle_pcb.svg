@@ -7,9 +7,9 @@
 	<circle id="boardoutline" fill="#FFFFFF" fill-opacity="0.5" cx="79.2" cy="79.2" r="79.2"/>
 </g>
 <g id="silkscreen">
-	<circle fill="none" stroke="#444444" cx="79.2" cy="79.2" r="78.912"/>
+	<circle fill="none" stroke="#444444" stroke-width="0.9px" cx="79.2" cy="79.2" r="78.912"/>
 </g>
 <g id="silkscreen0">
-	<circle fill="none" stroke="#111111" cx="79.2" cy="79.2" r="78.912"/>
+	<circle fill="none" stroke="#111111" stroke-width="0.9px" cx="79.2" cy="79.2" r="78.912"/>
 </g>
 </svg>

@@ -8,18 +8,18 @@
 	<path id="boardoutline" fill="#FFFFFF" fill-opacity="0.5" d="M183.208,0.818l4.308,4.304v32.276l7.182,7.172v92.526l-7.182,7.172
 		v4.35c0.164,1.396-0.839,2.66-2.234,2.824c-0.191,0.021-0.395,0.021-0.592,0H3.65c-1.397,0.164-2.663-0.836-2.827-2.229
 		c-0.023-0.196-0.023-0.396,0-0.596V3.642C0.66,2.245,1.661,0.98,3.058,0.818c0.196-0.023,0.396-0.023,0.592,0H183.208"/>
-	<rect id="pinguide1" x="50.612" y="4.605" fill="none" stroke="#666666" stroke-opacity="0.5" width="133.782" height="6.399"/>
-	<rect id="pinguide2" x="76.533" y="141.271" fill="none" stroke="#666666" stroke-opacity="0.5" width="107.78" height="6.398"/>
-	<rect id="usbconnector" x="1.605" y="27.594" fill="none" stroke="#666666" stroke-opacity="0.5" width="23.899" height="31.979"/>
+	<rect id="pinguide1" x="50.612" y="4.605" fill="none" stroke="#666666" stroke-width="0.9px" stroke-opacity="0.5" width="133.782" height="6.399"/>
+	<rect id="pinguide2" x="76.533" y="141.271" fill="none" stroke="#666666" stroke-width="0.9px" stroke-opacity="0.5" width="107.78" height="6.398"/>
+	<rect id="usbconnector" x="1.605" y="27.594" fill="none" stroke="#666666" stroke-width="0.9px" stroke-opacity="0.5" width="23.899" height="31.979"/>
 </g>
 <g id="silkscreen">
-	<path id="outline" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	<path id="outline" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-width="0.9px" stroke-linejoin="round" stroke-miterlimit="10" d="
 		M183.208,0.818l4.308,4.304v32.276l7.182,7.172v92.526l-7.182,7.172v4.35c0.164,1.396-0.839,2.66-2.234,2.824
 		c-0.191,0.021-0.395,0.021-0.592,0H3.65c-1.397,0.164-2.663-0.836-2.827-2.229c-0.023-0.196-0.023-0.396,0-0.596V3.642
 		C0.66,2.245,1.661,0.98,3.058,0.818c0.196-0.023,0.396-0.023,0.592,0H183.208"/>
 </g>
 <g id="silkscreen0">
-	<path id="outline_1_" fill="none" stroke="#111111" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	<path id="outline_1_" fill="none" stroke="#111111" stroke-width="0.9px" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
 		M183.208,0.818l4.308,4.304v32.276l7.182,7.172v92.526l-7.182,7.172v4.35c0.164,1.396-0.839,2.66-2.234,2.824
 		c-0.191,0.021-0.395,0.021-0.592,0H3.65c-1.397,0.164-2.663-0.836-2.827-2.229c-0.023-0.196-0.023-0.396,0-0.596V3.642
 		C0.66,2.245,1.661,0.98,3.058,0.818c0.196-0.023,0.396-0.023,0.592,0H183.208"/>

@@ -20,13 +20,13 @@
 		15.802,55.424 1.437,51.977 	"/>
 	<polygon opacity="0.3" points="-9.774,48.129 1.437,46.397 1.437,46.686 -9.774,48.418 	"/>
 	<circle fill="#1A1A1A" cx="21.548" cy="33.587" r="17.438"/>
-	<path fill="none" stroke="#E4312C" stroke-miterlimit="10" d="M37.031,30.377c0,8.551-6.932,15.483-15.483,15.483
+	<path fill="none" stroke="#E4312C" stroke-width="0.9px" stroke-miterlimit="10" d="M37.031,30.377c0,8.551-6.932,15.483-15.483,15.483
 		c-8.551,0-15.483-6.932-15.483-15.483"/>
-	<path fill="none" stroke="#AB2521" stroke-miterlimit="10" d="M37.031,31.257c0,8.551-6.932,15.483-15.483,15.483
+	<path fill="none" stroke="#AB2521" stroke-width="0.9px" stroke-miterlimit="10" d="M37.031,31.257c0,8.551-6.932,15.483-15.483,15.483
 		c-8.551,0-15.483-6.932-15.483-15.483"/>
-	<path fill="none" stroke="#AB2521" stroke-miterlimit="10" d="M37.031,29.759c0,8.551-6.932,15.483-15.483,15.483
+	<path fill="none" stroke="#AB2521" stroke-width="0.9px" stroke-miterlimit="10" d="M37.031,29.759c0,8.551-6.932,15.483-15.483,15.483
 		c-8.551,0-15.483-6.932-15.483-15.483"/>
-	<path fill="none" stroke="#E4312C" stroke-miterlimit="10" d="M37.031,32.221c0,8.551-6.932,15.482-15.483,15.482
+	<path fill="none" stroke="#E4312C" stroke-width="0.9px" stroke-miterlimit="10" d="M37.031,32.221c0,8.551-6.932,15.482-15.483,15.482
 		c-8.551,0-15.483-6.932-15.483-15.482"/>
 	<path fill="#CCCCCC" d="M-4.202,18.712v5.592c0.871,0.304,1.809,0.703,1.875,1.033c0.098,0.492,0.042,14.938,0.014,21.694
 		l3.75-0.583v-27.07L-4.202,18.712z"/>
@@ -36,8 +36,8 @@
 		/>
 	<path fill="#B3B3B3" d="M45.421,25.699c0.066-0.33,1.004-0.729,1.875-1.033v-0.361c-0.871,0.304-1.809,0.703-1.875,1.033V25.699z"
 		/>
-	<path fill="none" stroke="#E4312C" stroke-miterlimit="10" d="M1.437,39.962c0,0,0-15.25,8.861-15.25"/>
-	<path fill="none" stroke="#E4312C" stroke-miterlimit="10" d="M41.657,42.462c0,0,0-15.25-8.861-15.25"/>
+	<path fill="none" stroke="#E4312C" stroke-width="0.9px" stroke-miterlimit="10" d="M1.437,39.962c0,0,0-15.25,8.861-15.25"/>
+	<path fill="none" stroke="#E4312C" stroke-width="0.9px" stroke-miterlimit="10" d="M41.657,42.462c0,0,0-15.25-8.861-15.25"/>
 	<circle fill="#333333" cx="21.548" cy="28.422" r="17.438"/>
 	<circle fill="#666666" cx="21.548" cy="27.212" r="17.438"/>
 	<path opacity="0.2" d="M4.11,27.212c0,9.631,7.807,17.438,17.438,17.438c9.631,0,17.438-7.807,17.438-17.438v0.298
