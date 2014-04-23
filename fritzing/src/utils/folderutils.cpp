@@ -37,6 +37,10 @@ $Date: 2013-04-29 13:10:59 +0200 (Mo, 29. Apr 2013) $
 #include <QDesktopServices>
 #include <QUrl>
 #include <QFileInfo>
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+#include <QStandardPaths>
+#endif
+
 
 #include "../debugdialog.h"
 #ifdef QUAZIP_INSTALLED
@@ -251,8 +255,15 @@ const QString FolderUtils::openSaveFolder() {
 			}
 		}
 
-		DebugDialog::debug(QString("default save location: %1").arg(QDesktopServices::storageLocation(QDesktopServices::DocumentsLocation)));
-		return QDesktopServices::storageLocation(QDesktopServices::DocumentsLocation);
+#if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)
+        DebugDialog::debug(QString("default save location: %1").arg(QDesktopServices::storageLocation(QDesktopServices::DocumentsLocation)));
+        return QDesktopServices::storageLocation(QDesktopServices::DocumentsLocation);
+#else
+        QStringList paths = QStandardPaths::standardLocations(QStandardPaths::DocumentsLocation);
+        if (paths.count() > 0) return paths.at(0);
+
+        return "";
+#endif
 	} else {
 		return m_openSaveFolder;
 	}
@@ -335,6 +346,7 @@ void FolderUtils::rmdir(QDir & dir) {
 	dir.rmdir(dir.path());
 }
 
+#ifdef COMPILE_ZIP
 bool FolderUtils::createZipAndSaveTo(const QDir &dirToCompress, const QString &filepath, const QStringList & skipSuffixes) {
 	DebugDialog::debug("zipping "+dirToCompress.path()+" into "+filepath);
 
@@ -516,6 +528,9 @@ bool FolderUtils::unzipTo(const QString &filepath, const QString &dirToDecompres
 	}
 	return true;
 }
+
+#endif // COMPILE_ZIP
+
 
 void FolderUtils::collectFiles(const QDir & parent, QStringList & filters, QStringList & files, bool recursive)
 {

@@ -44,7 +44,6 @@ $Date: 2013-04-21 09:50:09 +0200 (So, 21. Apr 2013) $
 
 static const QRegExp AaCc("[aAcCqQtTsS]");
 static const QRegExp MFinder("([mM])\\s*([0-9.]*)[\\s,]*([0-9.]*)");
-const QRegExp GerberGenerator::MultipleZs("z\\s*[^\\s]");
 
 const QString GerberGenerator::SilkTopSuffix = "_silkTop.gto";
 const QString GerberGenerator::SilkBottomSuffix = "_silkBottom.gbo";
@@ -56,7 +55,6 @@ const QString GerberGenerator::PasteMaskTopSuffix = "_pasteMaskTop.gtp";
 const QString GerberGenerator::PasteMaskBottomSuffix = "_pasteMaskBottom.gbp";
 const QString GerberGenerator::DrillSuffix = "_drill.txt";
 const QString GerberGenerator::OutlineSuffix = "_contour.gm1";
-const QString GerberGenerator::MagicBoardOutlineID = "boardoutline";
 
 const double GerberGenerator::MaskClearanceMils = 5;	
 

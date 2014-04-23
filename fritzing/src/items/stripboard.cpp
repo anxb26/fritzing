@@ -341,7 +341,7 @@ QString Stripboard::retrieveSvg(ViewLayer::ViewLayerID viewLayerID, QHash<QStrin
 {
 	QString svg = Perfboard::retrieveSvg(viewLayerID, svgHash, blackOnly, dpi, factor);
 	if (svg.isEmpty()) return svg;
-	if (!svg.contains(GerberGenerator::MagicBoardOutlineID)) return svg;
+    if (!svg.contains(MagicBoardOutlineID)) return svg;
 
 	/*
 	QFile file(filename());

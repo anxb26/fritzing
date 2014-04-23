@@ -426,7 +426,7 @@ void LogoItem::loadImage(const QString & fileName, bool addName)
 		svg = TextUtils::removeXMLEntities(domDocument.toString());
 	}
 	else {
-		QImage image(fileName);
+        QImage image(fileName);
 		if (image.isNull()) {
 			unableToLoad(fileName, tr("for unknown reasons--possibly the image file is corrupted"));
 			return;
@@ -438,20 +438,10 @@ void LogoItem::loadImage(const QString & fileName, bool addName)
 		
         double res = image.dotsPerMeterX() / GraphicsUtils::InchesPerMeter;
         if (this->m_standardizeColors) {
-		    GroundPlaneGenerator gpg;
-		    gpg.setLayerName(layerName());
-		    gpg.setMinRunSize(1, 1);
-		    gpg.scanImage(image, image.width(), image.height(), 1, res, colorString(), false, false, QSizeF(0, 0), 0, QPointF(0, 0));
-		    if (gpg.newSVGs().count() < 1) {
-			    FMessageBox::information(
-				    NULL,
-				    tr("Unable to display"),
-				    tr("Unable to display image from %1").arg(fileName)
-			    );
-			    return;
-		    }
+            InfoGraphicsView * infoGraphicsView = InfoGraphicsView::getInfoGraphicsView(this);
+            if (infoGraphicsView == NULL) return;
 
-            svg = gpg.mergeSVGs("", layerName());
+            svg = infoGraphicsView->imageToSvg(image, layerName(), colorString());
         }
         else {
             svg = TextUtils::makeSVGHeader(res, res, image.width(), image.height());
@@ -1102,7 +1092,7 @@ bool BoardLogoItem::canRetrieveLayer(ViewLayer::ViewLayerID viewLayerID) {
 bool BoardLogoItem::reloadImage(const QString & svg, const QSizeF & aspectRatio, const QString & fileName, bool addName) 
 {
     bool result;
-    if (!svg.contains(GerberGenerator::MagicBoardOutlineID, Qt::CaseInsensitive)) {
+    if (!svg.contains(MagicBoardOutlineID, Qt::CaseInsensitive)) {
         QString nsvg = setBoardOutline(svg);
         result = LogoItem::reloadImage(nsvg, aspectRatio, fileName, addName);
     }

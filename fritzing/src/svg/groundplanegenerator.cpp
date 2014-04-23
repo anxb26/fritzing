@@ -43,7 +43,11 @@ $Date: 2013-03-26 15:03:18 +0100 (Di, 26. Mrz 2013) $
 #include <QTextStream>
 #include <qmath.h>
 #include <limits>
+#if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)
 #include <QtConcurrentRun>
+#else
+#include <QtConcurrent/QtConcurrentRun>
+#endif
 
 static const double BORDERINCHES = 0.04;
 
@@ -51,8 +55,6 @@ const QString GroundPlaneGenerator::KeepoutSettingName("GPG_Keepout");
 const double GroundPlaneGenerator::KeepoutDefaultMils = 10;  
 
 inline int OFFSET(int x, int y, QImage * image) { return (y * image->width()) + x; }
-
-QString GroundPlaneGenerator::ConnectorName = "connector0pad";
 
 //  !!!!!!!!!!!!!!!!!!!
 //  !!!!!!!!!!!!!!!!!!!  IMPORTANT NOTE:  QRect::right() and QRect::bottom() are off by one--this is a known Qt problem 
@@ -906,7 +908,7 @@ void GroundPlaneGenerator::makeConnector(QList<QPolygon> & polygons, double res,
 				}
 
 				pSvg += QString("<g id='%1'><circle cx='%2' cy='%3' r='%4' fill='%5' stroke='none' stroke-width='0' /></g>\n")
-					.arg(ConnectorName)
+					.arg(GroundPlaneGeneratorConnectorName)
 					.arg(x - minX)
 					.arg(y - minY)
 					.arg(targetRadius)
@@ -942,7 +944,7 @@ void GroundPlaneGenerator::makeConnector(QList<QPolygon> & polygons, double res,
 		}
 	}
 	if (useIndex < 0) {
-		pSvg += QString("<g id='%1'>\n").arg(ConnectorName);
+		pSvg += QString("<g id='%1'>\n").arg(GroundPlaneGeneratorConnectorName);
 		foreach (QPolygon poly, polygons) {
 			pSvg += makeOnePoly(poly, colorString, "", minX, minY);
 		}
@@ -953,7 +955,7 @@ void GroundPlaneGenerator::makeConnector(QList<QPolygon> & polygons, double res,
 		for (int i = 0; i < polygons.count(); i++) {
 			if (i == useIndex) {
 				// has to appear inside a g element
-				pSvg += QString("<g id='%1'>\n").arg(ConnectorName);
+				pSvg += QString("<g id='%1'>\n").arg(GroundPlaneGeneratorConnectorName);
 				pSvg += makeOnePoly(polygons.at(i), colorString, "", minX, minY);
 				pSvg += "</g>";
 			}

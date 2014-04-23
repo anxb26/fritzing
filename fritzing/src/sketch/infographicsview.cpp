@@ -435,3 +435,11 @@ void InfoGraphicsView::rotateX(double degrees, bool rubberBandLegEnabled, ItemBa
     Q_UNUSED(originatingItem);
 }
 
+bool InfoGraphicsView::chooseRatsnestGraph(const QList<ConnectorItem *> *, ViewGeometry::WireFlags, ConnectorPairHash &) {
+    return false;
+}
+
+
+QString InfoGraphicsView::imageToSvg(QImage &, const QString &, const QString &) {
+    return "";
+}

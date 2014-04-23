@@ -695,7 +695,11 @@ double TextUtils::convertToInches(const QString & string) {
 }
 
 QString TextUtils::escapeAnd(const QString & string) {
-	QString s = Qt::escape(string);
+#if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)
+   QString s = Qt::escape(string);
+ #else
+   QString s = string.toHtmlEscaped();
+ #endif
 	s.replace('\'', "&apos;");
 	return s;
 }
@@ -1848,7 +1852,13 @@ void TextUtils::fixStyleAttribute(QDomElement & element, QString & style, const 
 
 QString TextUtils::getRandText() {
 	QString rand = QUuid::createUuid().toString();
-	QString randext = QCryptographicHash::hash(rand.toAscii(),QCryptographicHash::Md4).toHex();
+    QByteArray byteArray;
+#if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)
+    byteArray = rand.toAscii();
+#else
+    byteArray = rand.toLatin1();
+#endif
+    QString randext = QCryptographicHash::hash(byteArray,QCryptographicHash::Md4).toHex();
 	return randext;
 }
 

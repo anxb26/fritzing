@@ -196,11 +196,11 @@ ItemBase * ModelPart::viewItem(ViewLayer::ViewID viewID) {
 	return NULL;
 }
 
-void ModelPart::saveInstances(const QString & fileName, QXmlStreamWriter & streamWriter, bool startDocument) {
+void ModelPart::saveInstances(const QString & fileName, QXmlStreamWriter & streamWriter, bool startDocument, const QString & versionString) {
 	if (startDocument) {
 		streamWriter.writeStartDocument();
     	streamWriter.writeStartElement("module");
-		streamWriter.writeAttribute("fritzingVersion", Version::versionString());
+        streamWriter.writeAttribute("fritzingVersion", versionString);
 		ModelPartSharedRoot * root = modelPartSharedRoot();
 		if (root) {
 			if (!root->icon().isEmpty()) {
@@ -234,7 +234,7 @@ void ModelPart::saveInstances(const QString & fileName, QXmlStreamWriter & strea
 		ModelPart* mp = qobject_cast<ModelPart *>(*i);
 		if (mp == NULL) continue;
 
-		mp->saveInstances(fileName, streamWriter, false);
+        mp->saveInstances(fileName, streamWriter, false, "");
 	}
 
 
@@ -340,11 +340,11 @@ void ModelPart::writeNestedTag(QXmlStreamWriter & streamWriter, QString tagName,
 	streamWriter.writeEndElement();
 }
 
-void ModelPart::saveAsPart(QXmlStreamWriter & streamWriter, bool startDocument) {
+void ModelPart::saveAsPart(QXmlStreamWriter & streamWriter, bool startDocument, const QString & versionString) {
 	if (startDocument) {
 		streamWriter.writeStartDocument();
     	streamWriter.writeStartElement("module");
-		streamWriter.writeAttribute("fritzingVersion", Version::versionString());
+        streamWriter.writeAttribute("fritzingVersion", versionString);
         QString moduleID = m_modelPartShared->moduleID();
         moduleID.remove(PartFactory::OldSchematicPrefix);
 		streamWriter.writeAttribute("moduleId", moduleID);
@@ -410,7 +410,7 @@ void ModelPart::saveAsPart(QXmlStreamWriter & streamWriter, bool startDocument) 
 		ModelPart * mp = qobject_cast<ModelPart *>(*i);
 		if (mp == NULL) continue;
 
-		mp->saveAsPart(streamWriter, false);
+        mp->saveAsPart(streamWriter, false, "");
 	}
 
 	if (startDocument) {

@@ -167,7 +167,7 @@ void GroundPlane::setSvgAux(const QString & svg) {
 	if (result) {
 		resetRenderer(svg);
 		if (m_connector0) {
-			QPainterPath painterPath = splitter.painterPath(GraphicsUtils::SVGDPI, GroundPlaneGenerator::ConnectorName);
+            QPainterPath painterPath = splitter.painterPath(GraphicsUtils::SVGDPI, GroundPlaneGeneratorConnectorName);
 			m_connector0->setRect(painterPath.boundingRect());
 			m_connector0->setShape(painterPath);
 		}

@@ -1736,7 +1736,7 @@ void SketchWidget::copyHeart(QList<ItemBase *> & bases, bool saveBoundingRects, 
 	foreach (ItemBase * base, bases) {
 		if (base->getRatsnest()) continue;
 
-		base->modelPart()->saveInstances("", streamWriter, false);
+		base->modelPart()->saveInstances("", streamWriter, false, Version::versionString());
 		modelIndexes.append(base->modelPart()->modelIndex());
 	}
 	streamWriter.writeEndElement();
@@ -10116,3 +10116,27 @@ void SketchWidget::updateWires() {
 
 void SketchWidget::viewGeometryConversionHack(ViewGeometry &, ModelPart *)  {
 }
+
+bool SketchWidget::chooseRatsnestGraph(const QList<ConnectorItem *> * partConnectorItems, ViewGeometry::WireFlags wireFlags, ConnectorPairHash & pairHash) {
+    return GraphUtils::chooseRatsnestGraph(partConnectorItems, wireFlags, pairHash);
+}
+
+QString SketchWidget::imageToSvg(QImage & image, const QString & layerName, const QString & colorString)
+{
+    GroundPlaneGenerator gpg;
+    gpg.setLayerName(layerName);
+    gpg.setMinRunSize(1, 1);
+    gpg.scanImage(image, image.width(), image.height(), 1, res, colorString, false, false, QSizeF(0, 0), 0, QPointF(0, 0));
+    if (gpg.newSVGs().count() < 1) {
+	    FMessageBox::information(
+		    NULL,
+		    tr("Unable to display"),
+		    tr("Unable to display image from %1").arg(fileName)
+	    );
+	    return;
+    }
+
+    return gpg.mergeSVGs("", layerName());
+}
+
+

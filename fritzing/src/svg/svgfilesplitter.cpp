@@ -639,7 +639,11 @@ void SvgFileSplitter::normalizeCommandSlot(QChar command, bool relative, QList<d
 
 	double d;
 	pathUserData->string.append(command);
-	switch(command.toAscii()) {
+  #if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)
+    switch(command.toAscii()) {
+  #else
+    switch(command.toLatin1()) {
+  #endif
 		case 'v':
 		case 'V':
 			//DebugDialog::debug("'v' and 'V' are now removed by preprocessing; shouldn't be here");
@@ -738,7 +742,11 @@ void SvgFileSplitter::shiftCommandSlot(QChar command, bool relative, QList<doubl
 
 	double d;
 	pathUserData->string.append(command);
-	switch(command.toAscii()) {
+#if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)
+    switch(command.toAscii()) {
+#else
+    switch(command.toLatin1()) {
+#endif
 		case 'v':
 		case 'V':
 			//DebugDialog::debug("'v' and 'V' are now removed by preprocessing; shouldn't be here");
@@ -873,8 +881,12 @@ void SvgFileSplitter::convertHVSlot(QChar command, bool relative, QList<double> 
 	HVConvertData * data = (HVConvertData *) userData;
 
 	double x, y;
-	switch(command.toAscii()) {
-		case 'M':
+#if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)
+    switch(command.toAscii()) {
+#else
+    switch(command.toLatin1()) {
+#endif
+        case 'M':
 			data->path.append(command);
 			for (int i = 0; i < args.count(); i += 2) {
 				data->x = data->subX = args[i];

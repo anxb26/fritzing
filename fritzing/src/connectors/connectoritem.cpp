@@ -224,7 +224,6 @@ parts editor support
 #include "../items/virtualwire.h"
 #include "../model/modelpart.h"
 #include "../utils/graphicsutils.h"
-#include "../utils/graphutils.h"
 #include "../utils/textutils.h"
 #include "../utils/ratsnestcolors.h"
 #include "../utils/bezier.h"
@@ -1836,7 +1835,7 @@ void ConnectorItem::displayRatsnest(QList<ConnectorItem *> & partConnectorItems,
 	}
 
 	ConnectorPairHash result;
-	GraphUtils::chooseRatsnestGraph(&partConnectorItems, (ViewGeometry::RatsnestFlag | ViewGeometry::NormalFlag | ViewGeometry::PCBTraceFlag | ViewGeometry::SchematicTraceFlag) ^ myFlag, result);
+    infoGraphicsView->chooseRatsnestGraph(&partConnectorItems, (ViewGeometry::RatsnestFlag | ViewGeometry::NormalFlag | ViewGeometry::PCBTraceFlag | ViewGeometry::SchematicTraceFlag) ^ myFlag, result);
 
 	foreach (ConnectorItem * key, result.uniqueKeys()) {
 		foreach (ConnectorItem * value, result.values(key)) {

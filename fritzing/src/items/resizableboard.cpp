@@ -420,13 +420,13 @@ void Board::moreCheckImage(const QString & filename) {
 	int errorColumn;
 	QDomDocument domDocument;
 	domDocument.setContent(nsvg, &errorStr, &errorLine, &errorColumn);
-    QDomElement element = TextUtils::findElementWithAttribute(domDocument.documentElement(), "id", GerberGenerator::MagicBoardOutlineID);
+    QDomElement element = TextUtils::findElementWithAttribute(domDocument.documentElement(), "id", MagicBoardOutlineID);
 
     int subpaths = 1;
     int mCount = 0;
     if (element.tagName() == "path") {
         QString originalPath = element.attribute("d", "").trimmed();
-        if (GerberGenerator::MultipleZs.indexIn(originalPath) >= 0) {
+        if (MultipleZs.indexIn(originalPath) >= 0) {
             QStringList ds = element.attribute("d").split("z", QString::SkipEmptyParts);
             subpaths = ds.count();
             foreach (QString d, ds) {
@@ -480,7 +480,7 @@ QString Board::setBoardOutline(const QString & svg) {
 
     if (leaves.count() == 1) {
         QDomElement leaf = leaves.at(0);
-        leaf.setAttribute("id", GerberGenerator::MagicBoardOutlineID);
+        leaf.setAttribute("id", MagicBoardOutlineID);
         return TextUtils::removeXMLEntities(domDocument.toString());
     }
 
@@ -510,7 +510,7 @@ QString Board::setBoardOutline(const QString & svg) {
 
     if (maxIndex >= 0) {
         QDomElement leaf = leaves.at(maxIndex);
-        leaf.setAttribute("id", GerberGenerator::MagicBoardOutlineID);
+        leaf.setAttribute("id", MagicBoardOutlineID);
         return TextUtils::removeXMLEntities(domDocument.toString());
     }
 
