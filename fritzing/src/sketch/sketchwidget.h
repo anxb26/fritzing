@@ -644,6 +644,10 @@ public slots:
     void addSubpart(long id, long subpartid, bool doEmit);
     void packItems(int columns, const QList<long> & ids, QUndoCommand *parent, bool doEmit);
 
+    bool chooseRatsnestGraph(const QList<ConnectorItem *> * equipotentials, ViewGeometry::WireFlags, ConnectorPairHash & result);
+    QString imageToSvg(QImage & image, const QString & layerName, const QString & colorString);
+
+
 protected:
 	enum StatusConnectStatus {
 		StatusConnectNotTried,

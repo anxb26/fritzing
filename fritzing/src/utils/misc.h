@@ -115,4 +115,9 @@ static const int InfoViewMinHeight = 50;
 static const int DockWidthDefault = 300;
 static const int DockHeightDefault = 50;
 
+static const QString MagicBoardOutlineID("boardoutline");
+static const QRegExp MultipleZs("z\\s*[^\\s]");
+static const QString GroundPlaneGeneratorConnectorName("connector0pad");
+
+
 #endif

@@ -54,8 +54,10 @@ public:
 	static bool isEmptyFileName(const QString &filename, const QString &unsavedFilename);
 	static void rmdir(const QString &dirPath);
 	static void rmdir(QDir & dir);
+#ifdef COMPILE_ZIP
 	static bool createZipAndSaveTo(const QDir &dirToCompress, const QString &filename, const QStringList & skipSuffixes);
 	static bool unzipTo(const QString &filepath, const QString &dirToDecompress, QString & error);
+#endif
 	static void replicateDir(QDir srcDir, QDir targDir);
 	static void cleanup();
     static void collectFiles(const QDir & parent, QStringList & filters, QStringList & files, bool recursive);

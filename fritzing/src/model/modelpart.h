@@ -92,8 +92,8 @@ public:
 	ModelPartShared * modelPartShared();
     ModelPartSharedRoot * modelPartSharedRoot();
 	void setModelPartShared(ModelPartShared *modelPartShared);
-	void saveInstances(const QString & fileName, QXmlStreamWriter & streamWriter, bool startDocument);
-	void saveAsPart(QXmlStreamWriter & streamWriter, bool startDocument);
+    void saveInstances(const QString & fileName, QXmlStreamWriter & streamWriter, bool startDocument, const QString & versionString);
+    void saveAsPart(QXmlStreamWriter & streamWriter, bool startDocument, const QString & versionString);
 	void addViewItem(class ItemBase *);
 	void removeViewItem(class ItemBase *);
     void killViewItems();

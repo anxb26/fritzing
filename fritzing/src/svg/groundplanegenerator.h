@@ -74,8 +74,6 @@ public:
 	void setMinRunSize(int minRunSize, int minRiseSize);
     QString mergeSVGs(const QString & initialSVG, const QString & layerName);
 
-public:
-	static QString ConnectorName;
 
 signals:
 	void postImageSignal(GroundPlaneGenerator *, QImage * copperImage, QImage * boardImage, QGraphicsItem * board, QList<QRectF> *);
