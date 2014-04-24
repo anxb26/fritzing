@@ -1045,9 +1045,10 @@ void Wire::setLineAnd(QLineF line, QPointF pos, bool useLine) {
 }
 
 ConnectorItem * Wire::otherConnector(ConnectorItem * oneConnector) {
-	if (oneConnector == m_connector0) return m_connector1;
+    if (oneConnector == m_connector0.data()) return m_connector1;
+    if (oneConnector == m_connector1.data()) return m_connector0;
 
-	return m_connector0;
+    return NULL;
 }
 
 ConnectorItem * Wire::connector0() {

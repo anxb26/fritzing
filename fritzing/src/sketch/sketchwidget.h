@@ -92,15 +92,6 @@ struct RenderThing {
     bool hideTerminalPoints;
 };
 
-class SizeItem : public QObject, public QGraphicsLineItem
-{
-	Q_OBJECT
-	
-public:
-	SizeItem();
-	~SizeItem();
-};
-
 class SketchWidget : public InfoGraphicsView
 {
 	Q_OBJECT

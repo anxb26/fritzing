@@ -121,16 +121,6 @@ bool ensureStrokeWidth(QDomDocument & doc, const QString & connectorID, double f
 
 /////////////////////////////////////////////////////////////////////
 
-SizeItem::SizeItem()
-{
-}
-
-SizeItem::~SizeItem()
-{
-}
-
-/////////////////////////////////////////////////////////////////////
-
 enum ConnectionStatus {
 	IN_,
 	OUT_,
