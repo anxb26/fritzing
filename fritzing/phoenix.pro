@@ -140,6 +140,7 @@ include(pri/sketch.pri)
 include(pri/translations.pri)
 include(pri/program.pri)
 include(pri/qtsysteminfo.pri)
+include(pri/commands.pri)
 
 !contains(DEFINES, QUAZIP_INSTALLED) {
         include(pri/quazip.pri)

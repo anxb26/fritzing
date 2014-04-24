@@ -443,3 +443,67 @@ bool InfoGraphicsView::chooseRatsnestGraph(const QList<ConnectorItem *> *, ViewG
 QString InfoGraphicsView::imageToSvg(QImage &, const QString &, const QString &) {
     return "";
 }
+
+const QString & InfoGraphicsView::viewName() {
+    return ___emptyString___;
+}
+
+void InfoGraphicsView::writeUndo(const QUndoCommand *, int indent, const BaseCommand *)
+{
+    Q_UNUSED(indent);
+}
+
+void InfoGraphicsView::changeWireWidth(long wireId, double width) {
+    Q_UNUSED(wireId);
+    Q_UNUSED(width);
+}
+
+
+void InfoGraphicsView::changeWireColor(long wireId, const QString& color, double opacity) {
+    Q_UNUSED(wireId);
+    Q_UNUSED(color);
+    Q_UNUSED(opacity);
+}
+
+void InfoGraphicsView::changeWireCurve(long id, const Bezier * bezier, bool autoroutable) {
+    Q_UNUSED(id);
+    Q_UNUSED(bezier);
+    Q_UNUSED(autoroutable);
+}
+
+void InfoGraphicsView::deleteItem(long id, bool deleteModelPart, bool doEmit, bool later) {
+    Q_UNUSED(id);
+    Q_UNUSED(deleteModelPart);
+    Q_UNUSED(doEmit);
+    Q_UNUSED(later);
+}
+
+ItemBase * InfoGraphicsView::addItem(const QString & moduleID, ViewLayer::ViewLayerPlacement, BaseCommand::CrossViewType, const ViewGeometry &, long id, long modelIndex,  AddDeleteItemCommand *) {
+    Q_UNUSED(moduleID);
+    Q_UNUSED(id);
+    Q_UNUSED(modelIndex);
+    return NULL;
+}
+
+void InfoGraphicsView::changeConnection(long fromID, const QString & fromConnectorID,
+                                    long toID, const QString & toConnectorID,
+                                    ViewLayer::ViewLayerPlacement,
+                                    bool connect, bool doEmit, bool updateConnections)
+{
+    Q_UNUSED(fromID);
+    Q_UNUSED(fromConnectorID);
+    Q_UNUSED(toID);
+    Q_UNUSED(toConnectorID);
+    Q_UNUSED(connect);
+    Q_UNUSED(doEmit);
+    Q_UNUSED(updateConnections);
+}
+
+void InfoGraphicsView::changeWire(long fromID, QLineF line, QPointF pos, bool updateConnections, bool updateRatsnest)
+{
+    Q_UNUSED(fromID);
+    Q_UNUSED(line);
+    Q_UNUSED(pos);
+    Q_UNUSED(updateConnections);
+    Q_UNUSED(updateRatsnest);
+}

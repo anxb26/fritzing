@@ -31,9 +31,11 @@ $Date: 2012-12-17 11:27:32 +0100 (Mo, 17. Dez 2012) $
 #include <QMenu>
 #include <QHash>
 #include <QList>
+#include <QUndoCommand>
 
 #include "../items/itembase.h"
 #include "zoomablegraphicsview.h"
+#include "commands/commands.h"
 
 class InfoGraphicsView : public ZoomableGraphicsView
 {
@@ -120,6 +122,20 @@ public:
 
     virtual bool chooseRatsnestGraph(const QList<ConnectorItem *> * equipotentials, ViewGeometry::WireFlags, ConnectorPairHash & result);
     virtual QString imageToSvg(QImage & image, const QString & layerName, const QString & colorString);
+    virtual const QString & viewName();
+    virtual void writeUndo(const QUndoCommand *, int indent, const class BaseCommand * parent);
+    virtual void changeWireWidth(long wireId, double width);
+    virtual void changeWireColor(long wireId, const QString& color, double opacity);
+    virtual void changeWireCurve(long id, const Bezier *, bool autoroutable);
+    virtual void deleteItem(long id, bool deleteModelPart, bool doEmit, bool later);
+    virtual ItemBase * addItem(const QString & moduleID, ViewLayer::ViewLayerPlacement, BaseCommand::CrossViewType, const ViewGeometry &, long id, long modelIndex, class AddDeleteItemCommand * originatingCommand);
+    virtual void changeConnection(long fromID,
+                          const QString & fromConnectorID,
+                          long toID, const QString & toConnectorID,
+                          ViewLayer::ViewLayerPlacement,
+                          bool connect, bool doEmit,
+                          bool updateConnections);
+    virtual void changeWire(long fromID, QLineF line, QPointF pos, bool updateConnections, bool updateRatsnest);
 
 
 public slots:

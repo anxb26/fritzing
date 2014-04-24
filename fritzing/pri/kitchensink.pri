@@ -17,7 +17,6 @@
 # $Date: 2012-09-13 05:05:28 +0200 (Do, 13. Sep 2012) $
 # ********************************************************************/
 HEADERS += \
-    src/commands.h \
     src/debugdialog.h \
     src/fapplication.h \
     src/fsplashscreen.h \
@@ -33,7 +32,6 @@ HEADERS += \
     src/waitpushundostack.h 
     
 SOURCES += \
-    src/commands.cpp \
     src/debugdialog.cpp \
     src/fapplication.cpp \
     src/fsplashscreen.cpp \
