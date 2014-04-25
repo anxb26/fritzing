@@ -394,18 +394,19 @@ void InfoGraphicsView::resolveTemporary(bool, ItemBase *)
 }
 void InfoGraphicsView::newWire(Wire * wire) 
 {
-	bool succeeded = connect(wire, SIGNAL(wireChangedSignal(Wire*, const QLineF & , const QLineF & , QPointF, QPointF, ConnectorItem *, ConnectorItem *)	),
+    bool succeeded[4];
+    succeeded[0] = connect(wire, SIGNAL(wireChangedSignal(Wire*, const QLineF & , const QLineF & , QPointF, QPointF, ConnectorItem *, ConnectorItem *)	),
 			this, SLOT(wireChangedSlot(Wire*, const QLineF & , const QLineF & , QPointF, QPointF, ConnectorItem *, ConnectorItem *)),
 			Qt::DirectConnection);		// DirectConnection means call the slot directly like a subroutine, without waiting for a thread or queue
-	succeeded = connect(wire, SIGNAL(wireChangedCurveSignal(Wire*, const Bezier *, const Bezier *, bool)),
+    succeeded[1] = connect(wire, SIGNAL(wireChangedCurveSignal(Wire*, const Bezier *, const Bezier *, bool)),
 			this, SLOT(wireChangedCurveSlot(Wire*, const Bezier *, const Bezier *, bool)),
 			Qt::DirectConnection);		// DirectConnection means call the slot directly like a subroutine, without waiting for a thread or queue
-	succeeded = succeeded && connect(wire, SIGNAL(wireSplitSignal(Wire*, QPointF, QPointF, const QLineF & )),
+    succeeded[2] = connect(wire, SIGNAL(wireSplitSignal(Wire*, QPointF, QPointF, const QLineF & )),
 			this, SLOT(wireSplitSlot(Wire*, QPointF, QPointF, const QLineF & )));
-	succeeded = succeeded && connect(wire, SIGNAL(wireJoinSignal(Wire*, ConnectorItem *)),
+    succeeded[3]= connect(wire, SIGNAL(wireJoinSignal(Wire*, ConnectorItem *)),
 			this, SLOT(wireJoinSlot(Wire*, ConnectorItem*)));
-	if (!succeeded) {
-		DebugDialog::debug("wire signal connect failed");
+    for (int i = 0; i < 4; i++) {
+        if (!succeeded[i]) DebugDialog::debug(QString("wire signal connect failed %1").arg(i));
 	}
 
 	emit newWireSignal(wire);
