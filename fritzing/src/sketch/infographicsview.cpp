@@ -449,10 +449,12 @@ const QString & InfoGraphicsView::viewName() {
     return ___emptyString___;
 }
 
+#ifndef QT_NO_DEBUG
 void InfoGraphicsView::writeUndo(const QUndoCommand *, int indent, const BaseCommand *)
 {
     Q_UNUSED(indent);
 }
+#endif
 
 void InfoGraphicsView::changeWireWidth(long wireId, double width) {
     Q_UNUSED(wireId);

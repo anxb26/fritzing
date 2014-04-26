@@ -123,7 +123,9 @@ public:
     virtual bool chooseRatsnestGraph(const QList<ConnectorItem *> * equipotentials, ViewGeometry::WireFlags, ConnectorPairHash & result);
     virtual QString imageToSvg(QImage & image, const QString & layerName, const QString & colorString);
     virtual const QString & viewName();
+#ifndef QT_NO_DEBUG
     virtual void writeUndo(const QUndoCommand *, int indent, const class BaseCommand * parent);
+#endif
     virtual void changeWireWidth(long wireId, double width);
     virtual void changeWireColor(long wireId, const QString& color, double opacity);
     virtual void changeWireCurve(long id, const Bezier *, bool autoroutable);

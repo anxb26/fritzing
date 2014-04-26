@@ -1,0 +1,13 @@
+<colors>
+	<color name="ShapeHover" color="#000000" opacity="0.2" />
+	<color name="ConnectedShapeHover" color="#0000ff" opacity="0.4" />
+	<color name="Connected" color="#00ff00" opacity="0.2" />
+	<color name="Unconnected" color="#ff0000" opacity="0.3" />
+	<color name="Normal" color="#ff0000" opacity="0.4" />
+	<color name="Hover" color="#0000ff" opacity="0.4" />
+	<color name="Equipotential" color="#ffff00" opacity="1.0" />
+</colors>
+
+
+
+

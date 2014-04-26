@@ -506,6 +506,7 @@ bool FApplication::init() {
 	RatsnestColors::initNames();
 	Wire::initNames();
 	ItemBase::initNames();
+	ItemBase::initColors();
 	ViewLayer::initNames();
 	Connector::initNames();
 	BinManager::initNames();

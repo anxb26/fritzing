@@ -235,6 +235,7 @@ public:
     void initLayerAttributes(LayerAttributes & layerAttributes, ViewLayer::ViewID, ViewLayer::ViewLayerID, ViewLayer::ViewLayerPlacement, bool doConnectors, bool doCreateShape);
     virtual QString getInspectorTitle();
     virtual void setInspectorTitle(const QString & oldText, const QString & newText);
+    void setPaintSelected(bool);
 
 public:
 	virtual void getConnectedColor(ConnectorItem *, QBrush &, QPen &, double & opacity, double & negativePenWidth, bool & negativeOffsetRect);
@@ -248,17 +249,35 @@ protected:
 	static QPen HoverPen;
 	static QPen ConnectedPen;
 	static QPen UnconnectedPen;
-	static QPen ChosenPen;
-	static QPen EqualPotentialPen;
+    static QPen EquipotentialPen;
 	static QBrush HoverBrush;
 	static QBrush NormalBrush;
 	static QBrush ConnectedBrush;
 	static QBrush UnconnectedBrush;
-	static QBrush ChosenBrush;
-	static QBrush EqualPotentialBrush;
-	static const double NormalConnectorOpacity;
+    static QBrush EquipotentialBrush;
 
 public:
+    static QBrush ConnectedShapeHoverBrush;
+    static QBrush ShapeHoverBrush;
+
+public:
+    static QColor ShapeHoverColor;
+    static QColor ConnectedShapeHoverColor;
+    static QColor NormalColor;
+    static QColor HoverColor;
+    static QColor ConnectedColor;
+    static QColor UnconnectedColor;
+    static QColor EquipotentialColor;
+    static double ShapeHoverOpacity;
+    static double ConnectedShapeHoverOpacity;
+    static double NormalOpacity;
+    static double HoverOpacity;
+    static double ConnectedOpacity;
+    static double UnconnectedOpacity;
+    static double EquipotentialOpacity;
+
+public:
+    static void initColors();
 	static QColor connectedColor();
 	static QColor unconnectedColor();
 	static QColor standardConnectedColor();
@@ -375,6 +394,7 @@ protected:
     QList< QPointer<ItemBase> > m_subparts;
     bool m_squashShape;
     QPainterPath m_selectionShape;
+    bool m_paintSelected;
       
  protected:
 	static long nextID;
@@ -386,10 +406,6 @@ public:
 	static QHash<QString, QString> TranslatedPropertyNames;
     static QString PartInstanceDefaultTitle;
 	static const QList<ItemBase *> EmptyList;
-	const static QColor HoverColor;
-	const static double HoverOpacity;
-	const static QColor ConnectorHoverColor;
-	const static double ConnectorHoverOpacity;
 
 public:
 	static void initNames();

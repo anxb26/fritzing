@@ -2,6 +2,7 @@
     <qresource prefix="/">
         <file>resources/zoomfactors.txt</file>
         <file>resources/ratsnestcolors.xml</file>
+        <file>resources/connectorcolors.xml</file>
         <file>resources/properties.xml</file>
         <file>resources/vias.xml</file>
         <file>resources/images/splash/fhp_logo_small.png</file>

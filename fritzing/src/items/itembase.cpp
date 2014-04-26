@@ -57,6 +57,7 @@ $Date: 2013-04-28 13:51:10 +0200 (So, 28. Apr 2013) $
 #include <QApplication>
 #include <QClipboard>
 #include <qmath.h>
+#include <QtDebug>
 
 /////////////////////////////////
 
@@ -114,29 +115,40 @@ QPointer<ReferenceModel> ItemBase::TheReferenceModel = NULL;
 QString ItemBase::PartInstanceDefaultTitle;
 const QList<ItemBase *> ItemBase::EmptyList;
 
-const QColor ItemBase::HoverColor(0,0,0);
-const double ItemBase::HoverOpacity = .20;
-const QColor ItemBase::ConnectorHoverColor(0,0,255);
-const double ItemBase::ConnectorHoverOpacity = .40;
+QColor ItemBase::ShapeHoverColor;
+double ItemBase::ShapeHoverOpacity;
+QBrush ItemBase::ShapeHoverBrush;
 
-const QColor StandardConnectedColor(0, 255, 0);
-const QColor StandardUnconnectedColor(255, 0, 0);
+QColor ItemBase::ConnectedShapeHoverColor;
+double ItemBase::ConnectedShapeHoverOpacity;
+QBrush ItemBase::ConnectedShapeHoverBrush;
 
-QPen ItemBase::NormalPen(QColor(255,0,0));
-QPen ItemBase::HoverPen(QColor(0, 0, 255));
-QPen ItemBase::ConnectedPen(StandardConnectedColor);
-QPen ItemBase::UnconnectedPen(StandardUnconnectedColor);
-QPen ItemBase::ChosenPen(QColor(255,0,0));
-QPen ItemBase::EqualPotentialPen(QColor(255,255,0));
+QColor ItemBase::NormalColor;
+double ItemBase::NormalOpacity;
 
-QBrush ItemBase::NormalBrush(QColor(255,0,0));
-QBrush ItemBase::HoverBrush(QColor(0,0,255));
-QBrush ItemBase::ConnectedBrush(StandardConnectedColor);
-QBrush ItemBase::UnconnectedBrush(StandardUnconnectedColor);
-QBrush ItemBase::ChosenBrush(QColor(255,0,0));
-QBrush ItemBase::EqualPotentialBrush(QColor(255,255,0));
+QColor ItemBase::HoverColor;
+double ItemBase::HoverOpacity;
 
-const double ItemBase::NormalConnectorOpacity = 0.4;
+QColor ItemBase::EquipotentialColor;
+double ItemBase::EquipotentialOpacity;
+
+QColor ItemBase::ConnectedColor;
+double ItemBase::ConnectedOpacity;
+
+QColor ItemBase::UnconnectedColor;
+double ItemBase::UnconnectedOpacity;
+
+QPen ItemBase::NormalPen;
+QPen ItemBase::HoverPen;
+QPen ItemBase::ConnectedPen;
+QPen ItemBase::UnconnectedPen;
+QPen ItemBase::EquipotentialPen;
+
+QBrush ItemBase::NormalBrush;
+QBrush ItemBase::HoverBrush;
+QBrush ItemBase::ConnectedBrush;
+QBrush ItemBase::UnconnectedBrush;
+QBrush ItemBase::EquipotentialBrush;
 
 static QHash<QString, QStringList> CachedValues;
 
@@ -145,6 +157,7 @@ static QHash<QString, QStringList> CachedValues;
 ItemBase::ItemBase( ModelPart* modelPart, ViewLayer::ViewID viewID, const ViewGeometry & viewGeometry, long id, QMenu * itemMenu )
 	: QGraphicsSvgItem()
 {
+    m_paintSelected = true;
     m_fsvgRenderer = NULL;
     m_superpart = NULL;
 	m_acceptsMousePressLegEvent = true;
@@ -324,21 +337,6 @@ void ItemBase::initNames() {
 	}
 
 	PartInstanceDefaultTitle = tr("Part");
-
-	QSettings settings;
-	QString colorName = settings.value("ConnectedColor").toString();
-	if (!colorName.isEmpty()) {
-		QColor color;
-		color.setNamedColor(colorName);
-		setConnectedColor(color);
-	}
-
-	colorName = settings.value("UnconnectedColor").toString();
-	if (!colorName.isEmpty()) {
-		QColor color;
-		color.setNamedColor(colorName);
-		setUnconnectedColor(color);
-	}
 
 }
 
@@ -826,6 +824,8 @@ void ItemBase::paintHover(QPainter *painter, const QStyleOptionGraphicsItem *opt
 
 void ItemBase::paintSelected(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
+    if (!m_paintSelected) return;
+
 	Q_UNUSED(widget);
 	GraphicsUtils::qt_graphicsItem_highlightSelected(painter, option, boundingRect(), hoverShape());
 }
@@ -836,12 +836,12 @@ void ItemBase::paintHover(QPainter *painter, const QStyleOptionGraphicsItem *opt
 	Q_UNUSED(option);
 	painter->save();
 	if (m_connectorHoverCount > 0 || m_connectorHoverCount2 > 0) {
-		painter->setOpacity(ConnectorHoverOpacity);
-		painter->fillPath(shape, QBrush(ConnectorHoverColor));
+        painter->setOpacity(ConnectedShapeHoverOpacity);
+        painter->fillPath(shape, ConnectedShapeHoverBrush);
 	}
 	else {
-		painter->setOpacity(HoverOpacity);
-		painter->fillPath(shape, QBrush(HoverColor));
+        painter->setOpacity(ShapeHoverOpacity);
+        painter->fillPath(shape, ShapeHoverBrush);
 	}
 	painter->restore();
 }
@@ -1545,7 +1545,7 @@ bool ItemBase::hasConnections()
 void ItemBase::getConnectedColor(ConnectorItem *, QBrush &brush, QPen &pen, double & opacity, double & negativePenWidth, bool & negativeOffsetRect) {
 	brush = ConnectedBrush;
 	pen = ConnectedPen;
-	opacity = 0.2;
+    opacity = ConnectedOpacity;
 	negativePenWidth = 0;
 	negativeOffsetRect = true;
 }
@@ -1553,7 +1553,7 @@ void ItemBase::getConnectedColor(ConnectorItem *, QBrush &brush, QPen &pen, doub
 void ItemBase::getNormalColor(ConnectorItem *, QBrush &brush, QPen &pen, double & opacity, double & negativePenWidth, bool & negativeOffsetRect) {
 	brush = NormalBrush;
 	pen = NormalPen;
-	opacity = NormalConnectorOpacity;
+    opacity = NormalOpacity;
 	negativePenWidth = 0;
 	negativeOffsetRect = true;
 }
@@ -1561,23 +1561,23 @@ void ItemBase::getNormalColor(ConnectorItem *, QBrush &brush, QPen &pen, double 
 void ItemBase::getUnconnectedColor(ConnectorItem *, QBrush &brush, QPen &pen, double & opacity, double & negativePenWidth, bool & negativeOffsetRect) {
 	brush = UnconnectedBrush;
 	pen = UnconnectedPen;
-    opacity = 0.3;
+    opacity = UnconnectedOpacity;
 	negativePenWidth = 0;
 	negativeOffsetRect = true;
 }
 
 void ItemBase::getHoverColor(ConnectorItem *, QBrush &brush, QPen &pen, double & opacity, double & negativePenWidth, bool & negativeOffsetRect) {
-	brush = HoverBrush;
-	pen = HoverPen;
-	opacity = NormalConnectorOpacity;
+    brush = HoverBrush;
+    pen = HoverPen;
+    opacity = HoverOpacity;
 	negativePenWidth = 0;
 	negativeOffsetRect = true;
 }
 
 void ItemBase::getEqualPotentialColor(ConnectorItem *, QBrush &brush, QPen &pen, double & opacity, double & negativePenWidth, bool & negativeOffsetRect) {
-	brush = EqualPotentialBrush;
-	pen = EqualPotentialPen;
-	opacity = 1.0;
+    brush = EquipotentialBrush;
+    pen = EquipotentialPen;
+    opacity = EquipotentialOpacity;
 	negativePenWidth = 0;
 	negativeOffsetRect = true;
 }
@@ -1622,19 +1622,21 @@ QColor ItemBase::unconnectedColor() {
 }
 
 QColor ItemBase::standardConnectedColor() {
-	return StandardConnectedColor;
+    return ConnectedColor;
 }
 
 QColor ItemBase::standardUnconnectedColor() {
-	return StandardUnconnectedColor;
+    return UnconnectedColor;
 }
 
 void ItemBase::setConnectedColor(QColor & c) {
+    ConnectedColor = c;
 	ConnectedPen.setColor(c);
 	ConnectedBrush.setColor(c);
 }
 
 void ItemBase::setUnconnectedColor(QColor & c) {
+    UnconnectedColor = c;
 	UnconnectedPen.setColor(c);
 	UnconnectedBrush.setColor(c);
 }
@@ -2461,4 +2463,91 @@ void ItemBase::setInspectorTitle(const QString & oldText, const QString & newTex
 
 	DebugDialog::debug(QString("set instance title to %1").arg(newText));
 	infoGraphicsView->setInstanceTitle(id(), oldText, newText, true, false);
+}
+
+void ItemBase::setPaintSelected(bool paintSelected) {
+    m_paintSelected = paintSelected;
+}
+
+void ItemBase::initColors() {
+    static bool initialized = false;
+    if (initialized) return;
+
+    QFile file(":/resources/connectorcolors.xml");
+
+    QString errorStr;
+    int errorLine;
+    int errorColumn;
+    QDomDocument domDocument;
+
+    if (!domDocument.setContent(&file, true, &errorStr, &errorLine, &errorColumn)) {
+        return;
+    }
+
+    QDomElement root = domDocument.documentElement();
+    if (root.isNull()) {
+        return;
+    }
+
+    if (root.tagName() != "colors") {
+        return;
+    }
+
+    QSettings settings;
+
+
+    QDomElement colorElement = root.firstChildElement("color");
+    while (!colorElement.isNull()) {
+        double opacity = colorElement.attribute("opacity").toDouble();
+        QColor color(colorElement.attribute("color"));
+        QString name = colorElement.attribute("name");
+        // TODO: make a hash
+        if (name == "ShapeHover") {
+            ShapeHoverColor = color;
+            ShapeHoverOpacity = opacity;
+            ShapeHoverBrush.setColor(color);
+        }
+        else if (name == "ConnectedShapeHover") {
+            ConnectedShapeHoverColor = color;
+            ConnectedShapeHoverOpacity = opacity;
+            ConnectedShapeHoverBrush.setColor(color);
+        }
+        else if (name == "Normal") {
+            NormalColor = color;
+            NormalOpacity = opacity;
+            NormalPen.setColor(color);
+            NormalBrush.setColor(color);
+        }
+        else if (name == "Connected") {
+            ConnectedOpacity = opacity;
+            QString colorName = settings.value("ConnectedColor").toString();
+            if (!colorName.isEmpty()) {
+                color.setNamedColor(colorName);
+            }
+            setConnectedColor(color);
+        }
+        else if (name == "Unconnected") {
+            UnconnectedOpacity = opacity;
+            QString colorName = settings.value("UnconnectedColor").toString();
+            if (!colorName.isEmpty()) {
+                color.setNamedColor(colorName);
+            }
+            setUnconnectedColor(color);
+        }
+        else if (name == "Equipotential") {
+            EquipotentialColor = color;
+            EquipotentialOpacity = opacity;
+            EquipotentialPen.setColor(color);
+            EquipotentialBrush.setColor(color);
+        }
+        else if (name == "Hover") {
+            HoverColor = color;
+            HoverOpacity = opacity;
+            HoverPen.setColor(color);
+            HoverBrush.setColor(color);
+        }
+        colorElement = colorElement.nextSiblingElement("color");
+    }
+
+    initialized = true;
 }

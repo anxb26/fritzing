@@ -154,7 +154,7 @@ Wire::Wire( ModelPart * modelPart, ViewLayer::ViewID viewID,  const ViewGeometry
 {
     m_banded = false;
 	m_bezier = NULL;
-	m_displayBendpointCursor = m_canHaveCurve = true;
+    m_displayMoveCursor = m_displayBendpointCursor = m_canHaveCurve = true;
 	m_hoverStrokeWidth = DefaultHoverStrokeWidth;
 	m_connector0 = m_connector1 = NULL;
 	m_partLabel = initLabel ? new PartLabel(this, NULL) : NULL;
@@ -353,12 +353,12 @@ void Wire::paintHover(QPainter *painter, const QStyleOptionGraphicsItem *option,
 	Q_UNUSED(option);
 	painter->save();
 	if ((m_connectorHoverCount > 0 && !(m_dragEnd || m_dragCurve)) || m_connectorHoverCount2 > 0) {
-		painter->setOpacity(.50);
-		painter->fillPath(this->hoverShape(), QBrush(ConnectorHoverColor));
+        painter->setOpacity(ConnectedShapeHoverOpacity);
+        painter->fillPath(this->hoverShape(), ConnectedShapeHoverBrush);
 	}
 	else {
-		painter->setOpacity(HoverOpacity);
-		painter->fillPath(this->hoverShape(), QBrush(HoverColor));
+        painter->setOpacity(ShapeHoverOpacity);
+        painter->fillPath(this->hoverShape(), ShapeHoverBrush);
 	}
 	painter->restore();
 }
@@ -1885,7 +1885,7 @@ void Wire::updateCursor(Qt::KeyboardModifiers modifiers)
 		// dragging a segment of wire between bounded by two other wires
 		CursorMaster::instance()->addCursor(this, *CursorMaster::RubberbandCursor);
 	}
-	else if (totalConnections == 0) {
+    else if (m_displayMoveCursor && (totalConnections == 0)) {
 		// only in breadboard view
 		CursorMaster::instance()->addCursor(this, *CursorMaster::MoveCursor);
 	}
@@ -1912,7 +1912,11 @@ ViewLayer::ViewID Wire::useViewIDForPixmap(ViewLayer::ViewID vid, bool)
 }
 
 void Wire::setDisplayBendpointCursor(bool dbc) {
-	m_displayBendpointCursor = dbc;
+    m_displayBendpointCursor = dbc;
+}
+
+void Wire::setDisplayMoveCursor(bool dmc) {
+    m_displayMoveCursor = dmc;
 }
 
 bool Wire::banded() {

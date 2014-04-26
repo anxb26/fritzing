@@ -159,7 +159,8 @@ public:
 	bool hasShadow();
 	bool canChainMultiple();
 	void cursorKeyEvent(Qt::KeyboardModifiers modifiers);
-	void setDisplayBendpointCursor(bool);
+    void setDisplayBendpointCursor(bool);
+    void setDisplayMoveCursor(bool);
     bool banded();
     void setBanded(bool);
 	void setProp(const QString & prop, const QString & value);
@@ -245,7 +246,8 @@ protected:
 	double m_hoverStrokeWidth;
 	bool m_canHaveCurve;
 	class Bezier * m_bezier;
-	bool m_displayBendpointCursor;
+    bool m_displayBendpointCursor;
+    bool m_displayMoveCursor;
     bool m_banded;
 
 public:
