@@ -355,11 +355,11 @@ void Wire::paintHover(QPainter *painter, const QStyleOptionGraphicsItem *option,
 	if ((m_connectorHoverCount > 0 && !(m_dragEnd || m_dragCurve)) || m_connectorHoverCount2 > 0) {
         painter->setOpacity(ConnectedShapeHoverOpacity);
         painter->fillPath(this->hoverShape(), ConnectedShapeHoverBrush);
-	}
+    }
 	else {
         painter->setOpacity(ShapeHoverOpacity);
         painter->fillPath(this->hoverShape(), ShapeHoverBrush);
-	}
+    }
 	painter->restore();
 }
 

@@ -117,11 +117,11 @@ const QList<ItemBase *> ItemBase::EmptyList;
 
 QColor ItemBase::ShapeHoverColor;
 double ItemBase::ShapeHoverOpacity;
-QBrush ItemBase::ShapeHoverBrush;
+QBrush ItemBase::ShapeHoverBrush(Qt::SolidPattern);
 
 QColor ItemBase::ConnectedShapeHoverColor;
 double ItemBase::ConnectedShapeHoverOpacity;
-QBrush ItemBase::ConnectedShapeHoverBrush;
+QBrush ItemBase::ConnectedShapeHoverBrush(Qt::SolidPattern);
 
 QColor ItemBase::NormalColor;
 double ItemBase::NormalOpacity;
@@ -144,11 +144,11 @@ QPen ItemBase::ConnectedPen;
 QPen ItemBase::UnconnectedPen;
 QPen ItemBase::EquipotentialPen;
 
-QBrush ItemBase::NormalBrush;
-QBrush ItemBase::HoverBrush;
-QBrush ItemBase::ConnectedBrush;
-QBrush ItemBase::UnconnectedBrush;
-QBrush ItemBase::EquipotentialBrush;
+QBrush ItemBase::NormalBrush(Qt::SolidPattern);
+QBrush ItemBase::HoverBrush(Qt::SolidPattern);
+QBrush ItemBase::ConnectedBrush(Qt::SolidPattern);
+QBrush ItemBase::UnconnectedBrush(Qt::SolidPattern);
+QBrush ItemBase::EquipotentialBrush(Qt::SolidPattern);
 
 static QHash<QString, QStringList> CachedValues;
 
