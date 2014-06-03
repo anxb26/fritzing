@@ -236,6 +236,7 @@ public:
     virtual QString getInspectorTitle();
     virtual void setInspectorTitle(const QString & oldText, const QString & newText);
     void setPaintSelected(bool);
+    void setItemMenu(QMenu *);
 
 public:
 	virtual void getConnectedColor(ConnectorItem *, QBrush &, QPen &, double & opacity, double & negativePenWidth, bool & negativeOffsetRect);

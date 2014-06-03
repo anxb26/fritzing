@@ -178,6 +178,7 @@ public:
 	static void initNames();
 	static void cleanup();
     static QVector<qreal> TheDash;
+    static void setShadowWidthIncrement(double);
 
 protected:
 	void mouseDoubleClickEvent(QGraphicsSceneMouseEvent *event);
@@ -255,6 +256,9 @@ public:
 	static QHash<QString, QString> colorTrans;
 	static QHash<int, QString> widthTrans;
 	static QList<int> widths;
+
+protected:
+    static double ShadowWidthIncrement;
 
 signals:
 	void wireChangedSignal(Wire* me, const QLineF & oldLine, const QLineF & newLine, QPointF oldPos, QPointF newPos, ConnectorItem * from, ConnectorItem * to);

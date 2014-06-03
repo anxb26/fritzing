@@ -2551,3 +2551,7 @@ void ItemBase::initColors() {
 
     initialized = true;
 }
+
+void ItemBase::setItemMenu(QMenu * menu) {
+    m_itemMenu = menu;
+}

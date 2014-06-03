@@ -101,6 +101,8 @@ const double DefaultHoverStrokeWidth = 4;
 static Bezier UndoBezier;
 static BezierDisplay * TheBezierDisplay = NULL;
 
+double Wire::ShadowWidthIncrement = 2;
+
 ////////////////////////////////////////////////////////////
 
 bool alphaLessThan(QColor * c1, QColor * c2)
@@ -370,7 +372,9 @@ QPainterPath Wire::hoverShape() const
 
 QPainterPath Wire::shape() const
 {
-	return shapeAux(m_pen.widthF());
+    double w = m_pen.widthF();
+    if (m_shadowPen.widthF() > w) w = m_shadowPen.widthF();
+    return shapeAux(w);
 }
 
 QPainterPath Wire::shapeAux(double width) const
@@ -1535,7 +1539,7 @@ void Wire::setPenWidth(double w, InfoGraphicsView * infoGraphicsView, double hov
 	infoGraphicsView->getBendpointWidths(this, w, m_bendpointWidth, m_bendpoint2Width, m_negativeOffsetRect);
 	m_bendpointPen.setWidthF(qAbs(m_bendpointWidth));
 	m_bendpoint2Pen.setWidthF(qAbs(m_bendpoint2Width));
-	m_shadowPen.setWidthF(w + 2);
+    m_shadowPen.setWidthF(w + ShadowWidthIncrement);
 }
 
 bool Wire::connectionIsAllowed(ConnectorItem * to) {
@@ -1950,3 +1954,6 @@ void Wire::setProp(const QString & prop, const QString & value) {
 	ItemBase::setProp(prop, value);
 }
 
+void Wire::setShadowWidthIncrement(double inc) {
+    ShadowWidthIncrement = inc;
+}
