@@ -44,17 +44,21 @@ $Date: 2013-02-26 16:26:03 +0100 (Di, 26. Feb 2013) $
 
 // utilities from http://www.flong.com/texts/code/shapers_bez/
 
-double B0 (double t){
+inline double B0 (double t){
   return (1-t)*(1-t)*(1-t);
 }
-double B1 (double t){
+inline double B1 (double t){
   return  3*t* (1-t)*(1-t);
 }
-double B2 (double t){
+inline double B2 (double t){
   return 3*t*t* (1-t);
 }
-double B3 (double t){
+inline double B3 (double t){
   return t*t*t;
+}
+
+inline QPointF midlerp(QPointF a, QPointF b) {
+    return (a * 0.5) + (b * 0.5);
 }
 
 /////////////////////////////////////////////
@@ -378,6 +382,34 @@ void Bezier::copy(const Bezier * other)
 	m_endpoint1 = other->m_endpoint1;
 	m_isEmpty = other->m_isEmpty;
 	m_drag_cp0 = other->m_drag_cp0;
+}
+
+double Bezier::yFromX(double x, double minDistance) const {
+    // http://www.atalasoft.com/blogs/stevehawley/may-2013/how-to-split-a-cubic-bezier-curve
+    // http://math.stackexchange.com/questions/26846/is-there-an-explicit-form-for-cubic-bezier-curves
+
+    if (qAbs(x - m_endpoint0.x()) < minDistance) return m_endpoint0.y();
+    if (qAbs(x - m_endpoint1.x()) < minDistance) return m_endpoint1.y();
+
+    QPointF p4 = midlerp(m_endpoint0, m_cp0);
+    QPointF p5 = midlerp(m_cp0, m_cp1);
+    QPointF p6 = midlerp(m_cp1, m_endpoint1);
+    QPointF p7 = midlerp(p4, p5);
+    QPointF p8 = midlerp(p5, p6);
+    QPointF p9 = midlerp(p7, p8);
+
+    if (x <= p9.x()) {
+        // pick left
+        Bezier b(p4, p7);
+        b.set_endpoints(m_endpoint0, p9);
+        return b.yFromX(x, minDistance);
+    }
+    else {
+        // pick right
+        Bezier b(p8, p6);
+        b.set_endpoints(p9, m_endpoint1);
+        return b.yFromX(x, minDistance);
+    }
 }
 
 double Bezier::findSplit(QPointF p, double minDistance) const

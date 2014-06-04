@@ -53,6 +53,7 @@ public:
 	bool operator!=(const Bezier &) const;
 	void recalc(QPointF p);
 	void initToEnds(QPointF cp0, QPointF cp1); 
+    double yFromX(double x, double minDistance) const;
 	double xFromT(double t) const;
 	double xFromTPrime(double t) const;
 	double yFromT(double t) const;
