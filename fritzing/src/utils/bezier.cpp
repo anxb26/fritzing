@@ -384,32 +384,53 @@ void Bezier::copy(const Bezier * other)
 	m_drag_cp0 = other->m_drag_cp0;
 }
 
-double Bezier::yFromX(double x, double minDistance) const {
+double Bezier::yFromX(double x, double minDistance, int maxIterations) const {
     // http://www.atalasoft.com/blogs/stevehawley/may-2013/how-to-split-a-cubic-bezier-curve
     // http://math.stackexchange.com/questions/26846/is-there-an-explicit-form-for-cubic-bezier-curves
+    // http://collada.org/public_forum/showthread.php/909-Animation-Bezier-interpolation?s=9230d98a130df0fe0f068d3c67215075&p=3701#post3701
 
-    if (qAbs(x - m_endpoint0.x()) < minDistance) return m_endpoint0.y();
-    if (qAbs(x - m_endpoint1.x()) < minDistance) return m_endpoint1.y();
-
-    QPointF p4 = midlerp(m_endpoint0, m_cp0);
-    QPointF p5 = midlerp(m_cp0, m_cp1);
-    QPointF p6 = midlerp(m_cp1, m_endpoint1);
-    QPointF p7 = midlerp(p4, p5);
-    QPointF p8 = midlerp(p5, p6);
-    QPointF p9 = midlerp(p7, p8);
-
-    if (x <= p9.x()) {
-        // pick left
-        Bezier b(p4, p7);
-        b.set_endpoints(m_endpoint0, p9);
-        return b.yFromX(x, minDistance);
+    if (qAbs(x - m_endpoint0.x()) < minDistance) {
+        return m_endpoint0.y();
     }
-    else {
-        // pick right
-        Bezier b(p8, p6);
-        b.set_endpoints(p9, m_endpoint1);
-        return b.yFromX(x, minDistance);
+    if (qAbs(x - m_endpoint1.x()) < minDistance) {
+        return m_endpoint1.y();
     }
+
+    double u = 0, v = 1;   // keep an estimate of t
+
+    Bezier b(m_cp0, m_cp1);
+    b.set_endpoints(m_endpoint0, m_endpoint1);
+    for (int i = 0; i < maxIterations; i++) {
+        QPointF p4 = midlerp(b.m_endpoint0, b.m_cp0);
+        QPointF p5 = midlerp(b.m_cp0, b.m_cp1);
+        QPointF p6 = midlerp(m_cp1, m_endpoint1);
+        QPointF p7 = midlerp(p4, p5);
+        QPointF p8 = midlerp(p5, p6);
+        QPointF p9 = midlerp(p7, p8);
+
+        if (qAbs(p9.x() - x) < minDistance) {
+            return p9.y();
+        }
+
+        if (p9.x() < x) {
+            // go right
+            b.m_endpoint0 = p9;
+            b.m_cp0 = p8;
+            b.m_cp1 = p6;
+            u = (u + v) * 0.5;
+        }
+        else {
+            b.m_endpoint1 = p9;
+            b.m_cp0  = p4;
+            b.m_cp1 = p7;
+            v = (u + v) * 0.5;
+        }
+    }
+
+    double t = (u + v) * 0.5;
+    if (t < 0) return yFromT(0);
+    if (t > 1) return yFromT(1);
+    return yFromT(t);
 }
 
 double Bezier::findSplit(QPointF p, double minDistance) const
