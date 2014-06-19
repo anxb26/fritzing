@@ -154,6 +154,7 @@ Wire * WireAction::wire() {
 Wire::Wire( ModelPart * modelPart, ViewLayer::ViewID viewID,  const ViewGeometry & viewGeometry, long id, QMenu* itemMenu, bool initLabel)
 	: ItemBase(modelPart, viewID, viewGeometry, id, itemMenu)
 {
+    m_constrainTop = m_constrainBottom = 0;
     m_banded = false;
 	m_bezier = NULL;
     m_displayMoveCursor = m_displayBendpointCursor = m_canHaveCurve = true;
@@ -519,6 +520,20 @@ void Wire::mouseMoveEventAux(QPointF eventPos, Qt::KeyboardModifiers modifiers) 
 	if (m_spaceBarWasPressed) {
 		return;
 	}
+
+    if (m_constrainTop < m_constrainBottom) {
+        QPointF scenePos = mapToScene(eventPos);
+        bool changed = false;
+        if (scenePos.y() < m_constrainTop) {
+            scenePos.setY(m_constrainTop);
+            changed = true;
+        }
+        if (scenePos.y() > m_constrainBottom) {
+            scenePos.setY(m_constrainBottom);
+            changed = true;
+        }
+        if (changed) eventPos = mapFromScene(scenePos);
+    }
 
 	if (m_dragCurve) {
 		prepareGeometryChange();
@@ -1956,4 +1971,9 @@ void Wire::setProp(const QString & prop, const QString & value) {
 
 void Wire::setShadowWidthIncrement(double inc) {
     ShadowWidthIncrement = inc;
+}
+
+void Wire::constrainY(double top, double bottom) {
+    m_constrainTop = top;
+    m_constrainBottom = bottom;
 }

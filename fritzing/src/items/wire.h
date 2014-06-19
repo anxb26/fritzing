@@ -164,6 +164,7 @@ public:
     bool banded();
     void setBanded(bool);
 	void setProp(const QString & prop, const QString & value);
+    void constrainY(double top, double bottom);
 
 protected slots:
 	void colorEntry(const QString & text);
@@ -250,6 +251,8 @@ protected:
     bool m_displayBendpointCursor;
     bool m_displayMoveCursor;
     bool m_banded;
+    double m_constrainTop;
+    double m_constrainBottom;
 
 public:
 	static QStringList colorNames;
