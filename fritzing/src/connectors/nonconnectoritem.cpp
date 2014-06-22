@@ -45,7 +45,7 @@ NonConnectorItem::NonConnectorItem(ItemBase * attachedTo) : QGraphicsRectItem(at
 {
 	m_effectively = EffectivelyUnknown;
 	m_radius = m_strokeWidth = 0;
-	m_layerHidden = m_isPath = m_inactive = m_hidden = false;
+    m_cosmetic = m_layerHidden = m_isPath = m_inactive = m_hidden = false;
 	m_attachedTo = attachedTo;
     setAcceptHoverEvents(false);
 	setAcceptedMouseButtons(Qt::NoButton);
@@ -104,9 +104,19 @@ void NonConnectorItem::paint( QPainter * painter, const QStyleOptionGraphicsItem
 			// for parts
 			QRectF r = rect();
             if (r.width() > 0 && r.height() > 0) {
-			    double delta = .66 * m_strokeWidth;
-			    painter->setPen(pen());
-			    painter->drawEllipse(r.adjusted(delta, delta, -delta, -delta));
+                if (m_cosmetic) {
+                    QPen pn = pen();
+                    pn.setCosmetic(true);
+                    pn.setCapStyle(Qt::RoundCap);
+                    pn.setWidthF(m_strokeWidth);
+                    painter->setPen(pn);
+                    painter->drawPoint(r.center());
+                }
+                else {
+                    double delta = .66 * m_strokeWidth;
+                    painter->setPen(pen());
+                    painter->drawEllipse(r.adjusted(delta, delta, -delta, -delta));
+                }
             }
 		}
 	}
@@ -230,4 +240,8 @@ int NonConnectorItem::attachedToItemType() {
 	if (m_attachedTo == NULL) return ModelPart::Unknown;
 
 	return m_attachedTo->itemType();
+}
+
+void NonConnectorItem::setCosmetic(bool cosmetic) {
+    m_cosmetic = cosmetic;
 }

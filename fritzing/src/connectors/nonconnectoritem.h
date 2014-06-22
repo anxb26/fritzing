@@ -64,6 +64,7 @@ public:
     void setIsPath(bool);
     bool isPath();
 	int attachedToItemType();
+    void setCosmetic(bool);
 
 protected:
 	bool doNotPaint();
@@ -90,6 +91,7 @@ protected:
 	bool m_negativeOffsetRect;
 	QPainterPath m_shape;
     bool m_isPath;
+    bool m_cosmetic;
 	
 };
 
