@@ -155,7 +155,7 @@ Wire::Wire( ModelPart * modelPart, ViewLayer::ViewID viewID,  const ViewGeometry
 	: ItemBase(modelPart, viewID, viewGeometry, id, itemMenu)
 {
     m_constrainTop = m_constrainBottom = 0;
-    m_banded = false;
+    m_cosmetic = m_banded = false;
 	m_bezier = NULL;
     m_displayMoveCursor = m_displayBendpointCursor = m_canHaveCurve = true;
 	m_hoverStrokeWidth = DefaultHoverStrokeWidth;
@@ -1809,6 +1809,7 @@ void Wire::setPen(const QPen &pen)
 		prepareGeometryChange();
 	}
     m_pen = pen;
+    m_pen.setCosmetic(m_cosmetic);
     update();
 }
 
@@ -1976,4 +1977,10 @@ void Wire::setShadowWidthIncrement(double inc) {
 void Wire::constrainY(double top, double bottom) {
     m_constrainTop = top;
     m_constrainBottom = bottom;
+}
+
+void Wire::setCosmetic(bool cosmetic) {
+    m_cosmetic = cosmetic;
+    m_pen.setCosmetic(cosmetic);
+    m_shadowPen.setCosmetic(cosmetic);
 }
