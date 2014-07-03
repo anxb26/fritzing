@@ -274,9 +274,20 @@ QMenuBar * FritzingWindow::menuBarHack() {
     static QMenuBar * TheMenuBar = NULL;
     if (TheMenuBar == NULL) {
         TheMenuBar = new QMenuBar(0);
+        QMenu * menu = TheMenuBar->addMenu("test");
+        menu->setEnabled(true);
+        QAction * action = new QAction(tr("Test action"), this);
+        action->setEnabled(true);
+	    connect(action, SIGNAL(triggered()), this, SLOT(testAction()));
+        menu->addAction(action);
+
     }
     return TheMenuBar;
 #else
     return menuBar();
 #endif
+}
+
+void FritzingWindow::testAction() {
+    QMessageBox::information(NULL, "", "this is a test");
 }

@@ -57,6 +57,7 @@ protected slots:
 	void undoStackCleanChanged(bool isClean);
 	virtual bool save();
 	virtual bool saveAs();
+    void testAction();
 
 protected:
 	bool save(const QString & filename, bool readOnly);
