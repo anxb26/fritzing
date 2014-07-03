@@ -280,6 +280,7 @@ QMenuBar * FritzingWindow::menuBarHack() {
         action->setEnabled(true);
 	    connect(action, SIGNAL(triggered()), this, SLOT(testAction()));
         menu->addAction(action);
+        TheMenuBar->setEnabled(true);
 
     }
     return TheMenuBar;

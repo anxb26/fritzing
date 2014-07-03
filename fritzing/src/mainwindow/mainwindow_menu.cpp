@@ -824,6 +824,9 @@ void MainWindow::createOpenRecentMenu() {
 }
 
 void MainWindow::updateFileMenu() {
+    menuBarHack()->setEnabled(true);
+    m_fileMenu->setEnabled(true);
+    m_openAct->setEnabled(true);
     m_printAct->setEnabled(m_currentGraphicsView != NULL);
 
 	updateRecentFileActions();
