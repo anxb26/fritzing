@@ -1363,7 +1363,7 @@ void MainWindow::createAddToBinSubmenu(QMenu * parentMenu) {
 }
 
 void MainWindow::createFileMenu() {
-    m_fileMenu = menuBar()->addMenu(tr("&File"));
+    m_fileMenu = menuBarHack()->addMenu(tr("&File"));
     m_fileMenu->addAction(m_newAct);
     m_fileMenu->addAction(m_openAct);
     m_fileMenu->addAction(m_revertAct);
@@ -1433,7 +1433,7 @@ void MainWindow::populateExportMenu() {
 
 void MainWindow::createEditMenu()
 {
-    m_editMenu = menuBar()->addMenu(tr("&Edit"));
+    m_editMenu = menuBarHack()->addMenu(tr("&Edit"));
     m_editMenu->addAction(m_undoAct);
     m_editMenu->addAction(m_redoAct);
     m_editMenu->addSeparator();
@@ -1456,7 +1456,7 @@ void MainWindow::createEditMenu()
 }
 
 void MainWindow::createPartMenu() {
-    m_partMenu = menuBar()->addMenu(tr("&Part"));
+    m_partMenu = menuBarHack()->addMenu(tr("&Part"));
     connect(m_partMenu, SIGNAL(aboutToShow()), this, SLOT(updatePartMenu()));
 
 	m_partMenu->addAction(m_openInPartsEditorNewAct);
@@ -1494,7 +1494,7 @@ void MainWindow::createPartMenu() {
 
 void MainWindow::createViewMenu()
 {
-    m_viewMenu = menuBar()->addMenu(tr("&View"));
+    m_viewMenu = menuBarHack()->addMenu(tr("&View"));
     m_viewMenu->addAction(m_zoomInAct);
     m_viewMenu->addAction(m_zoomOutAct);
     m_viewMenu->addAction(m_fitInWindowAct);
@@ -1524,7 +1524,7 @@ void MainWindow::createViewMenu()
 }
 
 void MainWindow::createWindowMenu() {
-    m_windowMenu = menuBar()->addMenu(tr("&Window"));
+    m_windowMenu = menuBarHack()->addMenu(tr("&Window"));
 	m_windowMenu->addAction(m_minimizeAct);
 	m_windowMenu->addSeparator();
 	//m_windowMenu->addAction(m_toggleToolbarAct);
@@ -1534,7 +1534,7 @@ void MainWindow::createWindowMenu() {
 
 void MainWindow::createTraceMenus()
 {
-	m_pcbTraceMenu = menuBar()->addMenu(tr("&Routing"));
+	m_pcbTraceMenu = menuBarHack()->addMenu(tr("&Routing"));
 	m_pcbTraceMenu->addAction(m_newAutorouteAct);
 	m_pcbTraceMenu->addAction(m_newDesignRulesCheckAct);
 	m_pcbTraceMenu->addAction(m_autorouterSettingsAct);
@@ -1572,7 +1572,7 @@ void MainWindow::createTraceMenus()
     //m_pcbTraceMenu->addSeparator();
 	//m_pcbTraceMenu->addAction(m_checkLoadedTracesAct);
 
-    m_schematicTraceMenu = menuBar()->addMenu(tr("&Routing"));
+    m_schematicTraceMenu = menuBarHack()->addMenu(tr("&Routing"));
 	m_schematicTraceMenu->addAction(m_newAutorouteAct);
 	m_schematicTraceMenu->addAction(m_excludeFromAutorouteAct);
 	m_schematicTraceMenu->addAction(m_showUnroutedAct);
@@ -1585,7 +1585,7 @@ void MainWindow::createTraceMenus()
 	m_schematicTraceMenu->addAction(m_tidyWiresAct);
 #endif
 
-	m_breadboardTraceMenu = menuBar()->addMenu(tr("&Routing"));
+	m_breadboardTraceMenu = menuBarHack()->addMenu(tr("&Routing"));
 	m_breadboardTraceMenu->addAction(m_showUnroutedAct);
 	m_breadboardTraceMenu->addAction(m_selectAllWiresAct);
 
@@ -1594,12 +1594,12 @@ void MainWindow::createTraceMenus()
 	connect(m_schematicTraceMenu, SIGNAL(aboutToShow()), this, SLOT(updateTraceMenu()));
 	connect(m_breadboardTraceMenu, SIGNAL(aboutToShow()), this, SLOT(updateTraceMenu()));
 
-    menuBar()->addSeparator();
+    menuBarHack()->addSeparator();
 }
 
 void MainWindow::createHelpMenu()
 {
-    m_helpMenu = menuBar()->addMenu(tr("&Help"));
+    m_helpMenu = menuBarHack()->addMenu(tr("&Help"));
     m_helpMenu->addAction(m_openHelpAct);
     m_helpMenu->addAction(m_examplesAct);
     m_helpMenu->addAction(m_partsRefAct);
@@ -4554,3 +4554,4 @@ void MainWindow::testConnectors() {
 
     m_currentGraphicsView->testConnectors();
 }
+

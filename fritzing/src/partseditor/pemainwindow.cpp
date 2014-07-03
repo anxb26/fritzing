@@ -612,7 +612,7 @@ void PEMainWindow::createMenus()
 }
 
 void PEMainWindow::createFileMenu() {
-    m_fileMenu = menuBar()->addMenu(tr("&File"));
+    m_fileMenu = menuBarHack()->addMenu(tr("&File"));
     m_fileMenu->addAction(m_openAct);
     m_fileMenu->addAction(m_reuseBreadboardAct);
     m_fileMenu->addAction(m_reuseSchematicAct);
@@ -643,7 +643,7 @@ void PEMainWindow::createFileMenu() {
 
 void PEMainWindow::createEditMenu()
 {
-    m_editMenu = menuBar()->addMenu(tr("&Edit"));
+    m_editMenu = menuBarHack()->addMenu(tr("&Edit"));
     m_editMenu->addAction(m_undoAct);
     m_editMenu->addAction(m_redoAct);
     m_editMenu->addSeparator();

@@ -32,6 +32,7 @@ $Date: 2012-10-30 14:21:08 +0100 (Di, 30. Okt 2012) $
 #include <QIcon>
 #include <QAction>
 #include <QAbstractButton>
+#include <QMenuBar>
 
 #include "fritzingwindow.h"
 #include "../debugdialog.h"
@@ -266,4 +267,16 @@ void FritzingWindow::setFileName(const QString & filename) {
 }
 
 void FritzingWindow::notClosableForAWhile() {
+}
+
+QMenuBar * FritzingWindow::menuBarHack() {
+#ifdef Q_OS_MAC
+    static QMenuBar * TheMenuBar = NULL;
+    if (TheMenuBar == NULL) {
+        TheMenuBar = new QMenuBar(0);
+    }
+    return TheMenuBar;
+#else
+    return menuBar();
+#endif
 }

@@ -48,6 +48,7 @@ public:
 
 	virtual void notClosableForAWhile();
 	static bool alreadyHasExtension(const QString &fileName, const QString &extension=___emptyString___);
+    QMenuBar * menuBarHack();
 
 signals:
 	void readOnlyChanged(bool isReadOnly);
@@ -78,6 +79,7 @@ protected:
 
 	void setReadOnly(bool readOnly);
 	virtual bool anyModified();
+
 
 protected:
 	class WaitPushUndoStack * m_undoStack;

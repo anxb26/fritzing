@@ -226,10 +226,10 @@ void ProgramWindow::setup()
     // Setup new menu bar for the programming window
     QMenuBar * menubar = NULL;
     if (parentWidget()) {
-        QMainWindow * mainWindow = qobject_cast<QMainWindow *>(parentWidget());
-        if (mainWindow) menubar = mainWindow->menuBar();
+        FritzingWindow * mainWindow = qobject_cast<FritzingWindow *>(parentWidget());
+        if (mainWindow) menubar = mainWindow->menuBarHack();
     }
-    if (menubar == NULL) menubar = menuBar();
+    if (menubar == NULL) menubar = menuBarHack();
 
     m_fileMenu = menubar->addMenu(tr("&File"));
 
