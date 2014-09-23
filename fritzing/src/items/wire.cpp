@@ -155,7 +155,7 @@ Wire::Wire( ModelPart * modelPart, ViewLayer::ViewID viewID,  const ViewGeometry
 	: ItemBase(modelPart, viewID, viewGeometry, id, itemMenu)
 {
     m_constrainTop = m_constrainBottom = 0;
-    m_cosmetic = m_banded = false;
+    m_dynamic = m_cosmetic = m_banded = false;
 	m_bezier = NULL;
     m_displayMoveCursor = m_displayBendpointCursor = m_canHaveCurve = true;
 	m_hoverStrokeWidth = DefaultHoverStrokeWidth;
@@ -393,7 +393,23 @@ QPainterPath Wire::shapeAux(double width) const
 		path.cubicTo(m_bezier->cp0(), m_bezier->cp1(), m_line.p2());
 	}
 	//DebugDialog::debug(QString("using hoverstrokewidth %1 %2").arg(m_id).arg(m_hoverStrokeWidth));
-	return GraphicsUtils::shapeFromPath(path, m_pen, width, false);
+
+    if (m_dynamic) {
+        QGraphicsScene * sc = this->scene();
+        if (sc == NULL) return path;
+
+        QGraphicsView * view = qobject_cast<QGraphicsView *>(sc->parent());
+        if (view == NULL) return path;
+
+        QPen pn = pen();
+        QPointF p = view->mapToScene(width, width);
+        qreal w = qMin(p.x(), p.y());
+        pn.setWidthF(w);
+        return GraphicsUtils::shapeFromPath(path, pn, w, false);
+    }
+    else {
+        return GraphicsUtils::shapeFromPath(path, m_pen, width, false);
+    }
 }
 
 QRectF Wire::boundingRect() const
@@ -1983,4 +1999,8 @@ void Wire::setCosmetic(bool cosmetic) {
     m_cosmetic = cosmetic;
     m_pen.setCosmetic(cosmetic);
     m_shadowPen.setCosmetic(cosmetic);
+}
+
+void Wire::setDynamic(bool dynamic) {
+    m_dynamic = dynamic;
 }

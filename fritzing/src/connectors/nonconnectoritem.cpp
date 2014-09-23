@@ -221,8 +221,26 @@ QPainterPath NonConnectorItem::shape() const
 {
 	if (m_circular || m_effectively == EffectivelyCircular) {
 		QPainterPath path;
-		path.addEllipse(rect());
-		return GraphicsUtils::shapeFromPath(path, pen(), pen().widthF(), true);
+        QRectF r = rect();
+        if (m_dynamic) {
+            QGraphicsScene * sc = this->scene();
+            if (sc == NULL) return path;
+
+            QGraphicsView * view = qobject_cast<QGraphicsView *>(sc->parent());
+            if (view == NULL) return path;
+
+            QPointF c = r.center();
+            QPen pn = pen();
+            QPointF p = view->mapToScene(pn.widthF(), pn.widthF());
+            QRectF r2(c.x() - p.x(), c.y() - p.y(), p.x() * 2, p.y() * 2);
+            path.addEllipse(r2);
+            return path;
+
+        }
+        else {
+            path.addEllipse(r);
+            return GraphicsUtils::shapeFromPath(path, pen(), pen().widthF(), true);
+        }
 	}
 	else if (!m_shape.isEmpty()) {
 		return m_shape;
@@ -244,4 +262,8 @@ int NonConnectorItem::attachedToItemType() {
 
 void NonConnectorItem::setCosmetic(bool cosmetic) {
     m_cosmetic = cosmetic;
+}
+
+void NonConnectorItem::setDynamic(bool dynamic) {
+    m_dynamic = dynamic;
 }

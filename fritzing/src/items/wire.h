@@ -166,6 +166,7 @@ public:
 	void setProp(const QString & prop, const QString & value);
     void constrainY(double top, double bottom);
     void setCosmetic(bool);
+    void setDynamic(bool);
 
 protected slots:
 	void colorEntry(const QString & text);
@@ -255,6 +256,7 @@ protected:
     double m_constrainTop;
     double m_constrainBottom;
     bool m_cosmetic;
+    bool m_dynamic;
 
 public:
 	static QStringList colorNames;

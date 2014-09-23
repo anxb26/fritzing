@@ -65,6 +65,7 @@ public:
     bool isPath();
 	int attachedToItemType();
     void setCosmetic(bool);
+    void setDynamic(bool);
 
 protected:
 	bool doNotPaint();
@@ -92,6 +93,7 @@ protected:
 	QPainterPath m_shape;
     bool m_isPath;
     bool m_cosmetic;
+    bool m_dynamic;
 	
 };
 

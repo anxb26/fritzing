@@ -4,6 +4,7 @@ phoenix.pro.user
 /phoenix-build-*
 *.user
 *.user*
+*~
 
 Makefile*
 
