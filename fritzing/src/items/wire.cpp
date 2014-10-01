@@ -445,7 +445,7 @@ void Wire::contextMenuEvent(QGraphicsSceneContextMenuEvent *event)
 
 void Wire::mousePressEvent(QGraphicsSceneMouseEvent *event)
 {
-	ItemBase::mousePressEvent(event);
+    ItemBase::mousePressEvent(event);
 }
 
 void Wire::initDragCurve(QPointF scenePos) {

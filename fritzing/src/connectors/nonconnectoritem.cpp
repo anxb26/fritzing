@@ -30,6 +30,7 @@ $Date: 2013-02-26 16:26:03 +0100 (Di, 26. Feb 2013) $
 #include <QPen>
 #include <QColor>
 #include <limits>
+#include <QtMath>
 
 #include "../sketch/infographicsview.h"
 #include "../debugdialog.h"
@@ -229,11 +230,12 @@ QPainterPath NonConnectorItem::shape() const
             QGraphicsView * view = qobject_cast<QGraphicsView *>(sc->parent());
             if (view == NULL) return path;
 
+            // preserve the location, since that is already in scene coords
+            // but convert the width and height as if they were in view coords
             QPointF c = r.center();
-            QPen pn = pen();
-            QPointF p = view->mapToScene(pn.widthF(), pn.widthF());
-            QRectF r2(c.x() - p.x(), c.y() - p.y(), p.x() * 2, p.y() * 2);
-            path.addEllipse(r2);
+            QPointF dim = view->mapToScene(qCeil(r.width()), qCeil(r.height()));
+            QRectF s(c.x() - dim.x(), c.y() - dim.y(), dim.x() * 2, dim.y() * 2);
+            path.addRect(s);
             return path;
 
         }

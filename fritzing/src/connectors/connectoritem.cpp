@@ -317,7 +317,7 @@ ConnectorItem::ConnectorItem( Connector * connector, ItemBase * attachedTo )
 {
 	// initialize m_connectorT, otherwise will trigger qWarning("QLine::unitVector: New line does not have unit length");
 	// TODO: figure out why paint is being called with m_connectorT not initialized
-	m_groundFillSeed = false;
+    m_groundFillSeed = false;
 	m_connectorDetectT = m_connectorDrawT = 0;
 	m_draggingCurve = m_draggingLeg = m_rubberBandLeg = m_bigDot = m_hybrid = false;
 	m_hoverEnterSpaceBarWasPressed = m_spaceBarWasPressed = false;
@@ -805,12 +805,18 @@ void ConnectorItem::mousePressEvent(QGraphicsSceneMouseEvent *event) {
 		return;
 	}
 
-	if (m_attachedTo->filterMousePressConnectorEvent(this, event)) {
-		event->ignore();
-		return;
-	}
+    // special case for unconnected wires
+    if (this->connectionsCount() == 0) {
+        event->ignore();
+        return;
+    }
 
-	clearEqualPotentialDisplay();
+    if (m_attachedTo->filterMousePressConnectorEvent(this, event)) {
+        event->ignore();
+        return;
+    }
+
+    clearEqualPotentialDisplay();
 
 	InfoGraphicsView *infographics = InfoGraphicsView::getInfoGraphicsView(this);
 	if (infographics != NULL && infographics->spaceBarIsPressed()) {
@@ -1634,6 +1640,9 @@ void ConnectorItem::paint(QPainter * painter, const QStyleOptionGraphicsItem * o
 {
 	if (m_hybrid) return;
 	if (doNotPaint()) return;
+
+    // special case for unconnected wires
+    if (this->connectionsCount() == 0) return;
 
 	if (m_legPolygon.count() > 1) {
 		paintLeg(painter);
