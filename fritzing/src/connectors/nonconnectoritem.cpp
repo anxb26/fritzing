@@ -230,11 +230,14 @@ QPainterPath NonConnectorItem::shape() const
             QGraphicsView * view = qobject_cast<QGraphicsView *>(sc->parent());
             if (view == NULL) return path;
 
-            // preserve the location, since that is already in scene coords
+            // preserve the center location, since that is already in scene coords
             // but convert the width and height as if they were in view coords
             QPointF c = r.center();
-            QPointF dim = view->mapToScene(qCeil(r.width()), qCeil(r.height()));
-            QRectF s(c.x() - dim.x(), c.y() - dim.y(), dim.x() * 2, dim.y() * 2);
+            QPointF dim0 = view->mapToScene(0, 0);
+            QPointF dim1 = view->mapToScene(qCeil(r.width()), qCeil(r.height()));
+            qreal dx = dim1.x() - dim0.x();
+            qreal dy = dim1.y() - dim0.y();
+            QRectF s(c.x() - (dx / 2), c.y() - (dy / 2), dx, dy);
             path.addRect(s);
             return path;
 
