@@ -402,8 +402,9 @@ QPainterPath Wire::shapeAux(double width) const
         if (view == NULL) return path;
 
         QPen pn = pen();
-        QPointF p = view->mapToScene(width, width);
-        qreal w = qMin(p.x(), p.y());
+        QPointF p1 = view->mapToScene(0, 0);
+        QPointF p2 = view->mapToScene(width, width);
+        qreal w = qMin(p2.x() - p1.x(), p2.y() - p1.y());
         pn.setWidthF(w);
         return GraphicsUtils::shapeFromPath(path, pn, w, false);
     }
