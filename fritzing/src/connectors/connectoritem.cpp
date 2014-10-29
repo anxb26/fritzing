@@ -811,6 +811,11 @@ void ConnectorItem::mousePressEvent(QGraphicsSceneMouseEvent *event) {
         return;
     }
 
+    if (m_attachedTo->moveLock()) {
+        event->ignore();
+        return;
+    }
+
     if (m_attachedTo->filterMousePressConnectorEvent(this, event)) {
         event->ignore();
         return;

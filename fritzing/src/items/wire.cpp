@@ -431,6 +431,11 @@ QRectF Wire::boundingRect() const
 
 void Wire::mouseDoubleClickEvent(QGraphicsSceneMouseEvent *event) {
 	//DebugDialog::debug("checking press event");
+    if (moveLock()) {
+        event->ignore();
+        return;
+    }
+
 	emit wireSplitSignal(this, event->scenePos(), this->pos(), this->line());
 }
 
